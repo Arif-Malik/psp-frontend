@@ -1,2 +1,5 @@
 server.js
 test.html
+.idea/
+node_modules/
+demo.html
