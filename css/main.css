@@ -149,6 +149,9 @@ body {
 .products-header .view-all {
     padding-top: 35px;
 }
+.products-header .view-all p{
+   font-size: 16px;
+}
 
 .products-header .view-all > i {
     padding-right: 2px;
@@ -315,19 +318,19 @@ button:focus {
 .bg-red {
     color: #FFFFFF;
     background-color: #e31c21;
-    padding-left: 2px;
+    text-align: center;
 }
 
 .bg-purple {
     color: #FFFFFF;
     background-color: #872d91;
-    padding-left: 2px;
+    text-align: center;
 }
 
 .bg-blue {
     color: #FFFFFF;
     background-color: #0098ce;
-    padding-left: 2px;
+    text-align: center;
 }
 
 .text-faded {
@@ -398,6 +401,10 @@ button:focus {
     left: 0;
 }
 
+.product-circle-arrow {
+    padding: 10px;
+    text-decoration: none !important;
+}
 .products-header .pull-left {
     margin-left: -5px;
 }
