@@ -12,6 +12,14 @@ body {
     margin: 0 auto;
 }
 
+/*.test-image{*/
+    /*background-image: url("../images/PSP_02.png");*/
+    /*/!*background-position: center center;*!/*/
+    /*background-size: cover;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
 /*
 * header - navigation
 */
@@ -67,6 +75,10 @@ body {
     margin-top: 8px;
     background-color: transparent;
     font-size: 14px;
+}
+.navbar--default .profile-section a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .navbar--default .profile-section i {
@@ -235,7 +247,7 @@ footer .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group
     border-top-color: transparent;
 }
 
-footer .toggle-footer, .social li > a > i {
+.toggle-footer, .social a > i {
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
@@ -401,7 +413,7 @@ button:focus {
     left: 0;
 }
 
-.product-circle-arrow {
+.product-.navbar--default .profile-section-arrow {
     padding: 10px;
     text-decoration: none !important;
 }
