@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 /*.test-image{*/
     /*background-image: url("../images/PSP_02.png");*/
     /*/!*background-position: center center;*!/*/
@@ -78,7 +82,7 @@ body {
 }
 .navbar--default .profile-section a {
     text-decoration: none;
-    color: #000000;
+    color: #231f1f;
 }
 
 .navbar--default .profile-section i {
@@ -86,7 +90,7 @@ body {
 }
 
 .navbar--default .newsletter a {
-    color: #000000;
+    color: #231f1f;
     text-decoration: none;
 }
 
@@ -382,7 +386,6 @@ button:focus {
 
 .product {
     background-color: #FFFFFF;
-    color: #000;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
@@ -390,6 +393,9 @@ button:focus {
     margin-left: 15px;
     width: 273px;
     float: left;
+}
+.product a {
+    color: #231f1f;
 }
 
 .product .rating-sm {
