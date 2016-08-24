@@ -16,13 +16,13 @@ a {
     text-decoration: none !important;
 }
 
-/*.test-image{*/
-    /*background-image: url("../images/PSP_02.png");*/
-    /*/!*background-position: center center;*!/*/
-    /*background-size: cover;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-/*}*/
+.test-image{
+    background-image: url("../images/PSP_02.png");
+    /*background-position: center center;*/
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
 /*
 * header - navigation
@@ -127,6 +127,22 @@ a {
 }
 
 /*
+* Common banner
+*/
+.common-banner {
+    background-image: url("../images/common-banner.png");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.common-banner .banner-heading {
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: 48%;
+}
+/*
 * Categories banner
 */
 #category-banners {
@@ -215,21 +231,21 @@ a {
     color: white;
 }
 
-section#social-main {
+#social-main {
     margin-top: 80px;
     margin-bottom: 0;
 }
 
-section#social-main .container-fluid {
+#social-main .container-fluid {
     margin: 0;
     padding: 0;
 }
 
-section#newsletter {
+#newsletter {
     background-color: #393535;
 }
 
-section#newsletter h3 {
+#newsletter h3 {
     color: #ffffff;
 }
 
@@ -249,6 +265,9 @@ footer .panel-default {
 
 footer .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top-color: transparent;
+}
+footer .panel-heading a:hover {
+    color: #dfe0df;
 }
 
 .toggle-footer, .social a > i {
@@ -294,6 +313,21 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     border-right: 0px;
 }
 
+/*
+* Page Specifics
+*/
+
+/*
+* Category Home
+*/
+
+#categories-home {
+    background-color: #f4f4f2;
+}
+#categories-home .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 /*
 * bootstrap buttons override css
 */
