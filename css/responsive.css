@@ -1,5 +1,5 @@
 /*mobile Layout*/
-@media (max-width: 767px) {
+@media  only screen and (max-width: 981px) and (-webkit-min-device-pixel-ratio: 2)  {
     /*
     * header - navigation
     */
@@ -149,6 +149,9 @@
         margin-left: 0px;
     }
 
+    #newsletter {
+        padding-bottom: 20px;
+    }
     .newsletter-invitation .input-group {
         width: 100%;
     }
