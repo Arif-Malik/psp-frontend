@@ -16,7 +16,7 @@ a {
     text-decoration: none !important;
 }
 
-.test-image{
+.test-image {
     background-image: url("../images/PSP_02.png");
     /*background-position: center center;*/
     background-size: cover;
@@ -80,6 +80,7 @@ a {
     background-color: transparent;
     font-size: 14px;
 }
+
 .navbar--default .profile-section a {
     text-decoration: none;
     color: #231f1f;
@@ -136,12 +137,14 @@ a {
     width: 100%;
     height: 400px;
 }
+
 .common-banner .banner-heading {
     color: #FFFFFF;
     text-align: center;
     position: relative;
     top: 48%;
 }
+
 /*
 * Categories banner
 */
@@ -181,8 +184,9 @@ a {
 .products-header .view-all {
     padding-top: 35px;
 }
-.products-header .view-all p{
-   font-size: 16px;
+
+.products-header .view-all p {
+    font-size: 16px;
 }
 
 .products-header .view-all > i {
@@ -267,6 +271,7 @@ footer .panel-default {
 footer .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top-color: transparent;
 }
+
 footer .panel-heading a:hover {
     color: #dfe0df;
 }
@@ -325,10 +330,16 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 #categories-home {
     background-color: #f4f4f2;
 }
-#categories-home .container {
-    padding-top: 40px;
+#categories-home .categories-home-header {
+    padding-top: 58px;
     padding-bottom: 40px;
 }
+
+
+/*.product-categories-grid .row {*/
+    /*margin-top: 35px;*/
+/*}*/
+
 /*
 * bootstrap buttons override css
 */
@@ -370,18 +381,21 @@ button:focus {
     color: #FFFFFF;
     background-color: #e31c21;
     text-align: center;
+    padding: 0 2px;
 }
 
 .bg-purple {
     color: #FFFFFF;
     background-color: #872d91;
     text-align: center;
+    padding: 0 2px;
 }
 
 .bg-blue {
     color: #FFFFFF;
     background-color: #0098ce;
     text-align: center;
+    padding: 0 2px;
 }
 
 .text-faded {
@@ -429,6 +443,7 @@ button:focus {
     width: 273px;
     float: left;
 }
+
 .product a {
     color: #231f1f;
 }
@@ -444,7 +459,6 @@ button:focus {
 
 .product .advert {
     color: #FFFFFF;
-    width: 35px;
     font-size: 12px;
     font-weight: 700;
     height: 16px;
@@ -458,6 +472,7 @@ button:focus {
     padding: 10px;
     text-decoration: none !important;
 }
+
 .products-header .pull-left {
     margin-left: -5px;
 }
@@ -487,9 +502,7 @@ button:focus {
     overflow-x: auto;
 }
 
-
 /*Components*/
-
 
 /*Breadcrumbs*/
 .breadcrumb-bar {
@@ -512,18 +525,22 @@ button:focus {
     padding: 0px 10px 0 30px;
     position: relative;
 }
+
 /*we dont need an arrow after the last link*/
 .breadcrumb-bar a:last-child:after {
     content: none;
 }
+
 /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
 .breadcrumb-bar a:first-child {
     padding-left: 46px;
     border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
 }
+
 .breadcrumb-bar a:first-child:before {
     left: 14px;
 }
+
 .breadcrumb-bar a:last-child {
     color: #00af41;
     border-right: 1px solid #494646;
@@ -531,12 +548,12 @@ button:focus {
 
 /*hover/active styles*/
 /*.breadcrumb-bar a.active, .breadcrumb a:hover{*/
-    /*background: #333;*/
-    /*background: linear-gradient(#333, #000);*/
+/*background: #333;*/
+/*background: linear-gradient(#333, #000);*/
 /*}*/
 /*.breadcrumb-bar a.active:after, .breadcrumb a:hover:after {*/
-    /*background: #333;*/
-    /*background: linear-gradient(135deg, #333, #000);*/
+/*background: #333;*/
+/*background: linear-gradient(135deg, #333, #000);*/
 /*}*/
 
 /*adding the arrows for the breadcrumbs using rotated pseudo elements*/

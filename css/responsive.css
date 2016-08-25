@@ -1,5 +1,5 @@
 /*mobile Layout*/
-@media  only screen and (max-width: 981px) and (-webkit-min-device-pixel-ratio: 2)  {
+@media only screen and (max-width: 981px) and (-webkit-min-device-pixel-ratio: 2) {
     /*
     * header - navigation
     */
@@ -61,6 +61,7 @@
         width: 100%;
         height: 180px;
     }
+
     /*Containers*/
     #category-banners {
         background-color: #f4f4f2;
@@ -104,13 +105,15 @@
     .products-header .view-all p {
         font-size: 18px;
     }
+
     .products-header .view-all {
         padding-top: 30px;
     }
 
     .products-header .view-all .pull-left {
-        padding-right: 0!important;
+        padding-right: 0 !important;
     }
+
     #promotions {
         background-color: #f4f4f2;
     }
@@ -168,7 +171,6 @@
     .newsletter-invitation .input-group-btn:last-child > .btn {
         margin-left: 0px;
     }
-
 
     .newsletter-invitation .input-group {
         width: 100%;
@@ -374,6 +376,14 @@
     footer .col-md-2, .col-sm-2, .col-lg-2 {
         border-right: 1px solid #383434;
     }
+
+    /*
+    * Page Specifics
+    */
+    /*
+    * Category Home
+    */
+
 
     /*desktop helper classes*/
     .btn-large {
