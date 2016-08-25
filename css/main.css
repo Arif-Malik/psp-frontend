@@ -334,6 +334,14 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     padding-top: 58px;
     padding-bottom: 40px;
 }
+.categories-home-header .form-group {
+    margin: 0;
+}
+
+#categories-home .product-categories-grid .row > [class*="col-"] {
+    margin-bottom: 24px;
+}
+
 
 
 /*.product-categories-grid .row {*/
@@ -503,6 +511,22 @@ button:focus {
 }
 
 /*Components*/
+/*Rating Stars css override*/
+
+.rating-container .filled-stars {
+    color: #f9be00 !important;
+    text-shadow: none !important;
+    -webkit-text-stroke: unset !important;
+}
+.rating-container .star {
+    margin: 0 1px !important;
+}
+.rating-container .empty-stars {
+    color: #dfe0df !important;
+}
+.glyphicon-star-empty:before {
+    content: '\e006';
+}
 
 /*Breadcrumbs*/
 .breadcrumb-bar {

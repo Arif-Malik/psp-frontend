@@ -383,7 +383,13 @@
     /*
     * Category Home
     */
-
+    #categories-home .product-categories-grid {
+        padding-right: 30px;
+    }
+    .categories-home-header .row > [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 
     /*desktop helper classes*/
     .btn-large {
