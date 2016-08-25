@@ -101,13 +101,33 @@
         border-top: 1px solid #c3c3c2;
     }
 
+    .products-header .view-all p {
+        font-size: 18px;
+    }
+    .products-header .view-all {
+        padding-top: 30px;
+    }
+
+    .products-header .view-all .pull-left {
+        padding-right: 0!important;
+    }
     #promotions {
         background-color: #f4f4f2;
+    }
+
+    .img-content .resource {
+        top: 10%;
+        left: 5%;
     }
 
     section#social-main {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .img-content .food-finder {
+        top: 0;
+        left: 10%;
     }
 
     .img-content .career {
@@ -116,8 +136,8 @@
     }
 
     .img-content .our-pack {
-        top: 20%;
-        left: 50%;
+        top: 10%;
+        left: 58%;
     }
 
     /*
@@ -149,9 +169,7 @@
         margin-left: 0px;
     }
 
-    #newsletter {
-        padding-bottom: 20px;
-    }
+
     .newsletter-invitation .input-group {
         width: 100%;
     }
