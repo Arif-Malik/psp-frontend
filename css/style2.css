@@ -1,0 +1,191 @@
+@media (min-width: 768px) {
+    .price2{
+        color: black !important;
+    }
+    .rating-sm{
+        font-size: 1em !important;
+    }
+    .review-tab{
+        margin-top: 25px;
+        text-align: center;
+        width:50%;
+    }
+    .review-btn-desktop{
+        margin-left: 30px;
+        padding:0px 15px;
+    }
+    .review-btn{
+        margin-top: 25px;
+    }
+    .reviews-desktop .col-sm-2{
+        border-right: none !important;
+    }
+    .review-header-rating{
+        margin-top:8px;
+        margin-left:10px;
+    }
+    .total-reviews-header{
+        margin-top: 18px;
+    }
+    .prod-details{
+        margin-bottom: 20px;
+    }
+    .prod-details .advert {
+        color: #FFFFFF;
+        width: 35px;
+        font-size: 12px;
+        font-weight: 700;
+        height: 16px;
+        border-radius: 2px;
+        top: 0;
+        left: 0;
+    }
+    .prod-title{
+        font-size: 26px;
+
+    }
+    .prod-details .text-muted{
+        font-size: 30px;
+        font-weight: bold;
+        color:#dddddd;
+    }
+    .prod-details .price{
+        color: #ed1d23;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .prod-category{
+        margin-top:10px;
+    }
+    .text-muted-1{
+        font-size: 14px !important;
+        color:#777 !important;
+    }
+    .prod-details .rating-container {
+        float: left;
+        margin-top: 2px;
+    }
+    .write-review{
+        text-decoration: underline;
+        margin-left:10px;
+        font-weight: bold;
+    }
+    .heart-grey{
+        margin-left:10px;
+    }
+    .dropdown{
+        width:50% !important;
+    }
+    .dropdown .drop-down-btn{
+        border-color: transparent !important;
+        border-radius: 0px !important;
+        background-color: #eeeeee !important;
+        color: #080808 !important;
+        width:98% !important;
+        height:48px !important;
+    }
+    .dropdown .drop-down-btn :hover :active :focus{
+        border-color: transparent !important;
+        border-radius: 0px !important;
+        background-color: #eeeeee !important;
+        color: #080808 !important;
+        width:98% !important;
+        height:48px !important;
+    }
+    .regular-font{
+        font-weight: 400;
+    }
+    .dd-menu{
+        width:98%;
+    }
+    .top-margin-6{
+        margin-top: 6px;
+    }
+    .top-margin-10{
+        margin-top: 10px;
+    }
+    .availability-title{
+        font-size: 24px;
+        margin:0px 0px 0px !important;
+        margin-left: 10px !important;
+
+    }
+    .in-stock-flag{
+        font-size: 12px;
+        font-weight: bold;
+        border-style: solid;
+        border-width:2px;
+        border-color:#00AF41;
+        padding:2px 10px;
+        margin-left: 20px;
+
+    }
+    .fourteen-px-p{
+        font-size: 14px;
+    }
+    .fourteen-px-p-underline{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .row-zero-margin{
+        margin-left: 0px !important;
+    }
+    .left-margin-20{
+        margin-left:20px ;
+    }
+    .left-margin-7{
+        margin-left: 7px;
+    }
+    .fav-btn{
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        border-radius: 2px;
+    }
+    .left-margin-2{
+        margin-left: 2px;
+    }
+    .prod-details-accordion .panel{
+        border: none !important;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        border-top: solid 1px #f0f0f0 !important;
+        border-radius:0px !important;
+    }
+    .prod-details-accordion .panel-heading{
+        border:none !important;
+    }
+    .left-padding-15{
+        padding-left: 15px;
+    }
+    .panel-heading{
+        font-size: 30px !important;
+    }
+    .ul-details{
+        font-size: 14px;
+    }
+    .bold-18{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .bold-14{
+        font-size:14px;
+        font-weight: bold;
+    }
+    .regular-14{
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .rating-sm{
+        font-size: 1em !important;
+    }
+    .reviews-desktop{
+        display: none;
+    }
+
+}
