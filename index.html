@@ -8,20 +8,19 @@
 
     <!--Css references-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <!--FontAwesome-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!--Custom Css-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
-    <!--<script src="https://use.typekit.net/ekh8qao.js"></script>-->
-    <!--<script>try {-->
-        <!--Typekit.load({async: true});-->
-    <!--} catch (e) {-->
-    <!--}</script>-->
 
     <script src="https://use.typekit.net/mdw8wog.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
 </head>
 <body>
 <!-- HEADER -->
@@ -104,46 +103,41 @@
 </header>
 <!-- /HEADER -->
 
-<!-- SLIDER -->
-<section id="hero-slider">
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-generic" data-slide-to="1"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active carousel-image">
-                <img src="images/PSP_01.png" alt="Bruno">
+<!--SLIDER-->
+<!--<section id="hero-slider">-->
+<!--<div id="carousel-generic" class="carousel slide" data-ride="carousel">-->
+<!--&lt;!&ndash; Indicators &ndash;&gt;-->
+<!--<ol class="carousel-indicators">-->
+<!--<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>-->
+<!--<li data-target="#carousel-generic" data-slide-to="1"></li>-->
+<!--</ol>-->
+<!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+<!--<div class="carousel-inner">-->
+<!--<div class="item active carousel-image">-->
+<!--<img src="images/PSP_01.png" alt="Bruno">-->
 
-                <div class="carousel-content">
-                    <p class="text-large">Carefully selected products.</p>
+<!--<div class="carousel-content">-->
+<!--<p class="text-large">Carefully selected products.</p>-->
 
-                    <p class="text-large">Minus the hassle.</p>
-                    <a class="btn btn-primary btn-large">Shop Dogs Toys</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/PSP_02.png" id="carousel-img" alt="Bob">
+<!--<p class="text-large">Minus the hassle.</p>-->
+<!--<a class="btn btn-primary btn-large">Shop Dogs Toys</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="item">-->
+<!--<img src="images/PSP_02.png" id="carousel-img" alt="Bob">-->
 
-                <div class="carousel-content">
-                    <p class="text-large">Carefully selected products.</p>
+<!--<div class="carousel-content">-->
+<!--<p class="text-large">Carefully selected products.</p>-->
 
-                    <p class="text-large">Minus the hassle.</p>
-                    <a class="btn btn-primary btn-large">Shop Dogs Toys</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel -->
-</section>
-<!--<section id="test-slider">-->
-    <!--<div class="test-image"></div>-->
-    <!--&lt;!&ndash; Carousel &ndash;&gt;-->
+<!--<p class="text-large">Minus the hassle.</p>-->
+<!--<a class="btn btn-primary btn-large">Shop Dogs Toys</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Carousel &ndash;&gt;-->
 <!--</section>-->
-
-<!-- /SLIDER -->
+<!--/SLIDER-->
 
 <!-- Categories Banners -->
 <section id="category-banners">
@@ -153,8 +147,8 @@
                 <img src="images/category-01.jpg" class="img-responsive" alt="Dog"/>
 
                 <div class="category-content">
-                    <div class="visible-xs">
-                        <h2><strong>Dog</strong></h2>
+                    <div class="visible-xs heading-mobile">
+                        <h2>Dog</h2>
 
                         <p class="text-muted">
                             Keep your best friend happy.
@@ -218,93 +212,110 @@
     </div>
     <br>
 
-    <div class="scroll-container">
-        <div class="container products-container">
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+    <div class="products-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,6 +323,7 @@
     </div>
     <br>
     <br>
+
     <div class="container products-header">
         <div class="pull-left">
             <h3 class="product-heading">
@@ -331,107 +343,111 @@
         </div>
     </div>
     <br>
-    <div class="scroll-container">
-        <div class="container products-container">
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-purple">NEW</p>
-                    <p class="bg-red">SALE</p>
-                    <p class="bg-blue">USA</p>
-                </div>
-                <div class="product-detail">
-                    <div class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </div>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <p><strong>REDFORD NATURALS</strong></p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
-                    </div>
-                    <!--<br>-->
-                    <!--<div class="extend-details">-->
-                    <!--<h6>Details</h6>-->
-                    <!--<ul class="pull-left">-->
-                    <!--<li>All natural ingredients</li>-->
-                    <!--<li>Free range chicken</li>-->
-                    <!--<li>Made in USA</li>-->
-                    <!--</ul>-->
+    <div class="products-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <!--<button class="btn btn-primary btn-lg">Add to Favourites</button>-->
+                            <p class="bg-red">SALE</p>
 
-                    <!--</div>-->
-                </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                            <p class="bg-blue">USA</p>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="product">
-                <div class="advert">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <div class="product-detail">
-                    <a href="#" class="product-image">
-                        <img class="center-block" src="images/promotion.png"/>
-                    </a>
-                    <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                    <hr>
-                    <a href="#"><strong>REDFORD NATURALS</strong></a>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
 
-                    <p>Grain Free chicken & Potatao Dog Food,24 LBS</p>
-                    <del class="text-muted">$49.88</del>
-                    <span class="price">$46.98</span>
-                    <small>with card</small>
-                    <div class="rating">
-                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                        <span class="text-muted">(12)</span>
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
+
+                        </div>
+                        <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <h3>REDFORD NATURALS</h3>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
