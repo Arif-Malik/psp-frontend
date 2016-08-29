@@ -39,6 +39,7 @@
         border-radius: 2px;
         top: 0;
         left: 0;
+        position: absolute;
     }
     .prod-title{
         font-size: 26px;
@@ -83,6 +84,7 @@
         color: #080808 !important;
         width:98% !important;
         height:48px !important;
+        font-size: 14px !important;
     }
     .dropdown .drop-down-btn :hover :active :focus{
         border-color: transparent !important;
@@ -91,6 +93,7 @@
         color: #080808 !important;
         width:98% !important;
         height:48px !important;
+        font-size: 14px !important;
     }
     .regular-font{
         font-weight: 400;
@@ -159,7 +162,7 @@
     .left-padding-15{
         padding-left: 15px;
     }
-    .panel-heading{
+    .panel-heading-font-large{
         font-size: 30px !important;
     }
     .ul-details{
@@ -175,6 +178,9 @@
     }
     .regular-14{
         font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+    .regular-font-weight{
         font-weight: 400 !important;
     }
 }
