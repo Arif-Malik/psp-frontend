@@ -129,13 +129,14 @@ a {
     background-size: cover;
     width: 100%;
     height: 400px;
+    margin-top: -20px;
 }
 
 .common-banner .banner-heading {
     color: #FFFFFF;
     text-align: center;
     position: relative;
-    top: 48%;
+    top: 45%;
 }
 
 /*
