@@ -29,13 +29,13 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle","collapse");
-            $("#carousel-img").attr("src","images/PSP_02_mobile.png");
+            //$("#carousel-img").attr("src","images/PSP_02_mobile.png");
 
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle","");
-            $("#carousel-img").attr("src","images/PSP_02.png");
+            //$("#carousel-img").attr("src","images/PSP_02.png");
         }
     }
 
