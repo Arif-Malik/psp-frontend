@@ -16,6 +16,10 @@ a {
     text-decoration: none !important;
 }
 
+hr {
+    border-top: 1px solid #d6d7d6;
+}
+
 
 /*
 * header - navigation
@@ -439,6 +443,16 @@ button:focus {
     font-size: 24px;
 }
 
+.main-filter {
+
+}
+.main-filter h3 {
+    font-size: 2.5093750250939997em;
+    font-weight: 700;
+    color: #231f1f;
+    padding-left: 10px;
+    margin-top: 0 !important;
+}
 .heading-mobile h2 {
     font-size: 2.0075000200752em;
     font-weight: 900;
@@ -490,7 +504,7 @@ button:focus {
     margin-right: -15px;
 }
 .product-tile img {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .product-tile .caption h3 {
     font-size: 1.6729166833959999em;
