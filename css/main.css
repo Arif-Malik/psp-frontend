@@ -20,7 +20,6 @@ hr {
     border-top: 1px solid #d6d7d6;
 }
 
-
 /*
 * header - navigation
 */
@@ -174,6 +173,7 @@ hr {
 .category-content .shop-buttons {
     margin-top: 235px;
 }
+
 /*
 * Products
 */
@@ -183,7 +183,6 @@ hr {
     padding-top: 70px;
     padding-bottom: 140px;
 }
-
 
 .products-header .view-all {
     padding-top: 35px;
@@ -202,8 +201,8 @@ hr {
     padding-right: 5px !important;
 }
 
-.product-tile  .advert p:first-child {
-border-radius: 5px 0 0;
+.product-tile .advert p:first-child {
+    border-radius: 5px 0 0;
 }
 
 .products-container {
@@ -347,10 +346,12 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 #categories-home {
     background-color: #f4f4f2;
 }
+
 #categories-home .categories-home-header {
     padding-top: 58px;
     padding-bottom: 40px;
 }
+
 .categories-home-header .form-group {
     margin: 0;
 }
@@ -358,7 +359,6 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 #categories-home .product-categories-grid .row > [class*="col-"] {
     margin-bottom: 24px;
 }
-
 
 /*
 * bootstrap buttons override css
@@ -433,6 +433,9 @@ button:focus {
 .text-faded {
     color: #9fa2a2;
 }
+.filter-checked {
+    font-weight: 700 !important;
+}
 
 .text-large {
     font-size: 5.018750050187999em;
@@ -443,9 +446,23 @@ button:focus {
     font-size: 24px;
 }
 
-.main-filter {
 
+.main-filter hr{
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
 }
+.main-filter label, .main-filter a {
+    padding-left: 5px;
+    font-size: 1.1710416783772em;
+    font-weight: 400;
+    color: #231f1f;
+}
+
+.main-filter input[type=checkbox] {
+    margin-top: 0;
+}
+
 .main-filter h3 {
     font-size: 2.5093750250939997em;
     font-weight: 700;
@@ -453,17 +470,117 @@ button:focus {
     padding-left: 10px;
     margin-top: 0 !important;
 }
+.main-filter .panel {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.custom-checkbox {
+    margin-left: -15px !important;
+    margin-top: 5px;
+}
+.custom-checkbox > [type="checkbox"],
+.custom-checkbox > label{
+    margin-bottom:0px !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked),
+.custom-checkbox > [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) + label,
+.custom-checkbox > [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+.custom-checkbox > [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    margin-top:-8px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #c8c9c8;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+.custom-checkbox > [type="checkbox"]:checked + label:after {
+    font: normal normal normal 12px/1.1 'Glyphicons Halflings';
+    content: '\e013';
+    position: absolute;
+    top: 50%;
+    margin-top:-7px;
+    left: 2px;
+    color: #ffffff;
+    xtransition: all .2s;
+}
+
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.custom-checkbox > [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #00af41;
+    border: 2px solid #026937;
+    height: 17px;
+    width:18px;
+    left: 0;
+    top: 49%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
+.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after {
+    content: '\2212';
+    left: 2px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:before,
+.custom-checkbox > [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    cursor: not-allowed;
+    opacity: 1;
+    color: #dadada;
+}
+.custom-checkbox > [type="checkbox"]:disabled:checked + label:after {
+    color: #dadada; cursor: not-allowed;
+}
+.custom-checkbox > [type="checkbox"]:disabled + label {
+    color: #aaa; cursor: not-allowed;
+}
+.custom-checkbox > [type="checkbox"]:checked:focus + label:before,
+.custom-checkbox > [type="checkbox"]:not(:checked):focus + label:before {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(2, 105, 55, 0.6);
+}
 .heading-mobile h2 {
     font-size: 2.0075000200752em;
     font-weight: 900;
     color: #221f1f;
 }
+
 .heading-mobile p {
     font-size: 1.2546875125469998em;
     font-weight: 400;
     color: #939598;
 }
-
 
 /*Images*/
 .img-content {
@@ -494,39 +611,90 @@ button:focus {
 
 }
 
+.filter-accordion {
+    background-color: transparent;
+    border: none;
+    color: #231f1f;
+    cursor: pointer;
+    font-size: 1.1710416783772em;
+    font-weight: 700;
+    outline: none;
+    padding: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: 0.4s;
+    width: 100%;
+}
+
+.filter-accordion.active, button.filter-accordion:hover {
+    background-color: #ddd;
+}
+
+.filter-accordion:after {
+    content: "\2796";
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.filter-accordion.active:after {
+    content: '\02795';
+}
+
+/*Panels*/
+
+.filter-panel {
+    padding: 0 5px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+}
+
+/*.filter-panel .show {*/
+/*opacity: 1;*/
+/*max-height: 500px;*/
+/*}*/
+
 /* Products */
 .product-tile {
     position: relative;
     border-radius: 6px;
 }
+
 .product-tile hr {
     margin-left: -15px;
     margin-right: -15px;
 }
+
 .product-tile img {
     margin-top: 20px;
 }
+
 .product-tile .caption h3 {
     font-size: 1.6729166833959999em;
     font-weight: 700;
     color: #231f1f;
     margin: 0;
 }
+
 .product-tile .caption p {
     font-size: 1.5056250150564em;
     font-weight: 400;
     color: #231f1f;
 }
+
 .product-tile .caption .text-muted {
     color: #dddddd;
 }
+
 .product-tile .caption .price {
     color: #e31c21;
 }
+
 .product-tile .caption small {
     color: #231f1f;
 }
-
 
 .product-.navbar--default .profile-section-arrow {
     padding: 10px;
@@ -537,10 +705,7 @@ button:focus {
     margin-left: -5px;
 }
 
-
-
 /*General*/
-
 
 /*Components*/
 /*Rating Stars css override*/
@@ -548,20 +713,25 @@ button:focus {
 .rating-container {
     float: left;
 }
+
 .rating-container .filled-stars {
     color: #f9be00 !important;
     text-shadow: none !important;
     -webkit-text-stroke: unset !important;
 }
+
 .rating-container .star {
     margin: 0 1px !important;
 }
+
 .rating-container .empty-stars {
     color: #dfe0df !important;
 }
+
 .glyphicon-star-empty:before {
     content: '\e006';
 }
+
 .rating-sm {
     font-size: 1.0em !important;
 }
