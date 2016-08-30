@@ -651,15 +651,12 @@ button:focus {
     transition: 0.6s ease-in-out;
 }
 
-/*.filter-panel .show {*/
-/*opacity: 1;*/
-/*max-height: 500px;*/
-/*}*/
 
 /* Products */
 .product-tile {
     position: relative;
     border-radius: 6px;
+    height: 500px !important;
 }
 
 .product-tile hr {
@@ -672,14 +669,14 @@ button:focus {
 }
 
 .product-tile .caption h3 {
-    font-size: 1.6729166833959999em;
+    font-size: 1.1768968867690859em;
     font-weight: 700;
     color: #231f1f;
     margin: 0;
 }
 
 .product-tile .caption p {
-    font-size: 1.5056250150564em;
+    font-size: 1.51398959847338em;
     font-weight: 400;
     color: #231f1f;
 }
