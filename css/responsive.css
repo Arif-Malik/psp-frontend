@@ -481,6 +481,13 @@
         padding-bottom: 20px;
     }
 
+    /*.product-tile .caption p {*/
+        /*font-size: 0.75699479923669em;*/
+    /*}*/
+
+    /*.product-tile .caption h3 {*/
+        /*font-size: 0.5884484433845429em;*/
+    /*}*/
     #hero-products .products-container .container {
         width: 1170px;
     }
@@ -691,7 +698,8 @@
     #newsletter form .input-group-lg > .input-group-btn > .btn {
         height: 65px;
         width: 90px;
-        font-size: 30px;
+        font-weight: 700;
+        font-size: 24px;
     }
 
     /*
@@ -725,7 +733,8 @@
 
     /*desktop helper classes*/
     .product-heading {
-        font-size: 36px !important;
+        font-size: 2.559em !important;
+        font-weight: 400;
     }
 
     .products-header .view-all .pull-left {

@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
     font-family: Effra !important;
     max-width: 1920px;
+    color: #231f1f !important;
     margin: 0 auto;
 }
 
@@ -185,11 +186,11 @@ hr {
 }
 
 .products-header .view-all {
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .products-header .view-all p {
-    font-size: 16px;
+    font-size: 1.000em;
 }
 
 .products-header .view-all > i {
@@ -218,8 +219,9 @@ hr {
 }
 
 #newsletter h3 {
-    font-size: 2.511884400119094em;
+    font-size: 2.132em;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .img-content .food-finder {
@@ -370,7 +372,7 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 .btn-primary {
     background-color: #00af41;
     border: 1px solid #00af41;
-    font-size: 2.0075000200752em;
+    font-size: 1.500em;
     font-weight: 400;
 }
 
@@ -400,7 +402,7 @@ button:focus {
 
 .advert {
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 0.750em;
     font-weight: 700;
     height: 16px;
     position: absolute;
@@ -438,12 +440,12 @@ button:focus {
 }
 
 .text-large {
-    font-size: 5.018750050187999em;
+    font-size: 4.264em;
     font-weight: 900;
 }
 
 .text-md {
-    font-size: 24px;
+    font-size: 1.500em;
 }
 
 
@@ -593,9 +595,7 @@ button:focus {
     max-width: 100%;
 }
 
-.img-content .btn-primary {
-    padding: 5px 22px;
-}
+
 
 /*
 * Toggle accordion arrows
@@ -656,7 +656,7 @@ button:focus {
 .product-tile {
     position: relative;
     border-radius: 6px;
-    height: 500px !important;
+    height: 435px !important;
 }
 
 .product-tile hr {
@@ -669,28 +669,33 @@ button:focus {
 }
 
 .product-tile .caption h3 {
-    font-size: 1.1768968867690859em;
+    font-size: 0.875em;
     font-weight: 700;
     color: #231f1f;
     margin: 0;
 }
 
 .product-tile .caption p {
-    font-size: 1.51398959847338em;
+    font-size: 1.125em;
     font-weight: 400;
     color: #231f1f;
+    margin: 1px 0 0 0;
 }
 
 .product-tile .caption .text-muted {
     color: #dddddd;
+    font-size: 1.125em;
 }
 
 .product-tile .caption .price {
     color: #e31c21;
+    font-size: 1.125em;
 }
 
 .product-tile .caption small {
     color: #231f1f;
+    font-size: 0.875em;
+    font-weight: 500;
 }
 
 .product-.navbar--default .profile-section-arrow {
