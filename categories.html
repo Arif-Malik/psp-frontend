@@ -145,7 +145,10 @@
             <!--Filter-->
             <div class="col-md-3 hidden-xs">
                 <div class="main-filter">
-                    <h3>Filter</h3>
+                    <div class="filter-heading">
+                        <h3>Filter</h3>
+                        <a class="btn">Clear All</a>
+                    </div>
                     <hr>
                     <button class="filter-accordion">dietary needs</button>
                     <div class="panel filter-panel">
@@ -278,9 +281,88 @@
                     <hr>
                     <button class="filter-accordion">color</button>
                     <div class="panel filter-panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <ul class="list-inline">
+                            <li>
+                                <div class="round-circle-one">
+                                    <input type="checkbox" value="None" id="circle-1" name="check" checked/>
+                                    <label for="circle-1"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-two">
+                                    <input type="checkbox" value="None" id="circle-2" name="check" checked/>
+                                    <label for="circle-2"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-three">
+                                    <input type="checkbox" value="None" id="circle-3" name="check" checked/>
+                                    <label for="circle-3"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-four">
+                                    <input type="checkbox" value="None" id="circle-4" name="check" checked/>
+                                    <label for="circle-4"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-five">
+                                    <input type="checkbox" value="None" id="circle-5" name="check" checked/>
+                                    <label for="circle-5"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-six">
+                                    <input type="checkbox" value="None" id="circle-6" name="check" checked/>
+                                    <label for="circle-6"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-seven">
+                                    <input type="checkbox" value="None" id="circle-7" name="check" checked/>
+                                    <label for="circle-7"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-eight">
+                                    <input type="checkbox" value="None" id="circle-8" name="check" checked/>
+                                    <label for="circle-8"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-nine">
+                                    <input type="checkbox" value="None" id="circle-9" name="check" checked/>
+                                    <label for="circle-9"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-ten">
+                                    <input type="checkbox" value="None" id="circle-10" name="check" checked/>
+                                    <label for="circle-10"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-eleven">
+                                    <input type="checkbox" value="None" id="circle-11" name="check" checked/>
+                                    <label for="circle-11"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-twelve">
+                                    <input type="checkbox" value="None" id="circle-12" name="check" checked/>
+                                    <label for="circle-12"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="round-circle-thirteen">
+                                    <input type="checkbox" value="None" id="circle-13" name="check" checked/>
+                                    <label for="circle-13"></label>
+                                </div>
+                            </li>
+
+
+                        </ul>
                     </div>
                     <hr>
                     <button class="filter-accordion">price range</button>
@@ -309,9 +391,38 @@
                     <hr>
                     <button class="filter-accordion">average rating</button>
                     <div class="panel filter-panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="ratings-btn">
+                                    <button class="btn" value="4">
+                                        <input class="stars-home" value="4" type="number" min=0 max=5 step=1
+                                               data-size="sm"/>
+                                        <span class="text-muted">&nbsp;&#38; up</span>
+                                    </button>
+                                </div>
+                                <div class="ratings-btn">
+                                    <button class="btn" value="3">
+                                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                               data-size="sm"/>
+                                        <span class="text-muted">&nbsp;&#38; up</span>
+                                    </button>
+                                </div>
+                                <div class="ratings-btn">
+                                    <button class="btn" value="2">
+                                        <input class="stars-home" value="2" type="number" min=0 max=5 step=1
+                                               data-size="sm"/>
+                                        <span class="text-muted">&nbsp;&#38; up</span>
+                                    </button>
+                                </div>
+                                <div class="ratings-btn">
+                                    <button class="btn" value="1">
+                                        <input class="stars-home" value="1" type="number" min=0 max=5 step=1
+                                               data-size="sm"/>
+                                        <span class="text-muted">&nbsp;&#38; up</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -329,6 +440,90 @@
                                 <p class="bg-purple">SALE</p>
 
                                 <p class="bg-blue">USA</p>
+                            </div>
+                            <a href="#">
+                                <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                            </a>
+
+                            <div class="caption">
+                                <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                                <hr>
+                                <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                                <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                                <del class="text-muted">$49.88</del>
+                                <span class="price"><strong>$46.98</strong></span>
+                                <small>with card</small>
+                                <div class="rating">
+                                    <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                           data-size="sm"/>
+                                    <span class="text-muted">(12)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                        <div class="thumbnail product-tile">
+                            <div class="advert">
+                                <p class="bg-red">CLEARENCE</p>
+
+                            </div>
+                            <a href="#">
+                                <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                            </a>
+
+                            <div class="caption">
+                                <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                                <hr>
+                                <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                                <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                                <del class="text-muted">$49.88</del>
+                                <span class="price"><strong>$46.98</strong></span>
+                                <small>with card</small>
+                                <div class="rating">
+                                    <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                           data-size="sm"/>
+                                    <span class="text-muted">(12)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                        <div class="thumbnail product-tile">
+                            <div class="advert">
+                                <p class="bg-red">CLEARENCE</p>
+
+                            </div>
+                            <a href="#">
+                                <img class="center-block" src="images/promotion.jpg" alt="product name">
+
+                            </a>
+
+                            <div class="caption">
+                                <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                                <hr>
+                                <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                                <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+                                <del class="text-muted">$49.88</del>
+                                <span class="price"><strong>$46.98</strong></span>
+                                <small>with card</small>
+                                <div class="rating">
+                                    <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                           data-size="sm"/>
+                                    <span class="text-muted">(12)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4 col-xs-6">
+                        <div class="thumbnail product-tile">
+                            <div class="advert">
+                                <p class="bg-red">CLEARENCE</p>
+
                             </div>
                             <a href="#">
                                 <img class="center-block" src="images/promotion.jpg" alt="product name">
