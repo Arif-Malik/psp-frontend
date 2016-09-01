@@ -753,6 +753,10 @@
         display: -ms-flexbox;
         display: flex;
     }
+    footer .row img {
+        display: -webkit-box;
+        margin-top: 25px;
+    }
 
     footer .row > [class*='col-'] {
         display: flex;

@@ -22,6 +22,8 @@ jQuery(document).ready(function () {
     //        $(this).toggleClass('open');
     //    }
     //);
+
+
     /*
      *bootstrap carousel
      **/

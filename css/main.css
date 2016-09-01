@@ -123,7 +123,7 @@ header {
 }
 .yamm-content p {
     font-size: 0.875em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.375em;
 }
 
@@ -134,13 +134,13 @@ header {
 
 .yamm-content ul li a {
     font-size: 0.875em;
-    font-weight: 300;
+    font-weight: 400;
     color: #231f1f;
     line-height: 2.000em;
 }
 
 .yamm-content ul li a:hover {
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: underline !important;
     color: #231f1f;
 }
@@ -321,6 +321,9 @@ footer {
 
 footer .panel, .panel-default, .panel-heading {
     background-color: transparent !important;
+    font-size: 0.813em;
+    font-weight: 700;
+    line-height: 0.813em;
 }
 
 footer .panel-default {
@@ -343,12 +346,17 @@ footer .panel-heading a:hover {
 
 footer .copyright {
     color: #dfe0df;
-    font-size: 9px;
+    font-size: 0.816em;
+    line-height: 1.129em;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 footer .main-footer ul > li > a {
     color: #dfe0df;
-    font-size: 10px;
+    font-size: 0.813em;
+    font-weight: 400;
+    line-height: 1.500em;
 }
 
 footer .main-footer h5 {
@@ -367,7 +375,9 @@ footer .layer-footer > ul > li {
 
 footer .layer-footer > ul > li > a {
     color: #dfe0df;
-    font-size: 8px;
+    font-size: 0.764em;
+    font-weight: 400;
+    line-height: 1.410em;
 }
 
 footer .layer-footer > ul > li:last-child {
