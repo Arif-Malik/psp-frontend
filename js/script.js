@@ -10,6 +10,18 @@ jQuery(document).ready(function () {
         hoverOnClear: false
     });
 
+    /*Toggle drop-down menu*/
+
+    //$(".yamm-fw").hover(
+    //    function() {
+    //        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+    //        $(this).toggleClass('open');
+    //    },
+    //    function() {
+    //        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+    //        $(this).toggleClass('open');
+    //    }
+    //);
     /*
      *bootstrap carousel
      **/
