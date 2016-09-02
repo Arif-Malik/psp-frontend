@@ -329,5 +329,10 @@
     .reviews-desktop{
         display: none;
     }
-
+    #recently-viewed .products-container .container {
+         width: 1170px;
+    }
+    #recommended-products .products-container .container {
+        width: 1170px;
+    }
 }
