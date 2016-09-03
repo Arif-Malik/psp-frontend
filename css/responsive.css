@@ -720,6 +720,9 @@
         text-decoration: none !important;
         padding-right: 10px;
     }
+    .products-header .view-all {
+        margin-right: -12px;
+    }
 
     #promotions {
         padding-top: 90px;
