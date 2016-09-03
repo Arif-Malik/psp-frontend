@@ -234,15 +234,19 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
 }
 .flex-control-thumbs li {
-  width: 24.2%;
+  /*width: 24.2%;*/
   float: left;
-  margin: 0 1% 0 0;
+  margin: 0 13px 0 0;
+  border: 1px solid #D1CFCF;
+  padding: 4px;
+  height: 90px;
+  width: 90px;
 }
-.flex-control-thumbs li:nth-child(4){
-	margin:0;
-}
+/*.flex-control-thumbs li:nth-child(4){*/
+	/*margin:0;*/
+/*}*/
 .flex-control-thumbs img {
-  width: 100%;
+  max-width: 70%;
   height: auto;
   display: block;
   opacity: .7;
@@ -252,7 +256,8 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-    border: 1px solid #D1CFCF;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex-control-thumbs img:hover {
   opacity: 1;

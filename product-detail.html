@@ -17,6 +17,11 @@
     <link href="css/star-rating.min.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css" media="screen" />
+
     <script src="https://use.typekit.net/mdw8wog.js"></script>
     <script>try {
         Typekit.load({async: true});
@@ -344,6 +349,76 @@
 
         <!-- Product Carousal Section -->
         <div class="col-md-6">
+            <!--Heading section for mobile view-->
+            <div class="row visible-xs">
+                <div class="col-xs-12">
+                    <p>NATURAL</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>Natural Balance® L.I.D. Limited Ingredient Diets</p>
+                </div>
+                <div class="col-xs-12">
+                    <p>$76.98</p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="rating">
+                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
+                        <span class="text-muted">(12)</span>
+                        <span><u>Write a Review</u></span>
+                        <img class="pull-right" src="images/share-icon-grey.jpg"/>
+                        <img class="pull-right" src="images/heart-green-filled.jpg"/>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--/Heading section for mobile view-->
+            <hr class="visible-xs full-width-hr">
+            <!-- Product Carousal Section -->
+            <div id="myModal" class="zoom-modal hidden-xs">
+                <img class="zoom-modal-content" id="img01">
+            </div>
+            <div class="flexslider">
+                <img id="zoom-btn" class="hidden-xs zoom-icon-carousel" src="images/zoom-icon-grey.jpg"/>
+                <ul class="slides">
+                    <li data-thumb="images/dog-food-thumbnail.jpg">
+                        <img src="images/dog-food.jpg" data-zoom-image="images/dog-food.jpg" />
+                    </li>
+                    <li data-thumb="images/dog-food-thumbnail.jpg">
+                        <img src="images/dog-food.jpg" data-zoom-image="images/dog-food.jpg" />
+                    </li>
+                    <li data-thumb="images/dog-food-thumbnail2.jpg">
+                        <img src="images/dog-food.jpg" data-zoom-image="images/dog-food.jpg" />
+                    </li>
+                    <li data-thumb="images/dog-food-thumbnail2.jpg">
+                        <img src="images/dog-food.jpg" data-zoom-image="images/dog-food.jpg" />
+                    </li>
+               </ul>
+            </div>
+            <!-- /Product Carousal Section-->
+
+            <!--Share photos Slider - Carousel-->
+            <div class="hidden-xs">
+                <div>
+                    <p class="pull-left share-photos-heading">Share your photos | #MYPSP</p>
+                    <button class="btn btn-primary pull-right share-photos-btn">
+                        <img src="images/camera-icon-green.png" />
+                        Add Photos
+                    </button>
+                </div>
+                <br><br><br>
+                <div class="my-psp-photos">
+                    <div><img src="images/my-psp-5.jpg" /></div>
+                    <div><img src="images/my-psp-1.jpg" /></div>
+                    <div><img src="images/my-psp-2.jpg" /></div>
+                    <div><img src="images/my-psp-3.jpg" /></div>
+                    <div><img src="images/my-psp-4.jpg" /></div>
+                    <div><img src="images/my-psp-6.jpg" /></div>
+                </div>
+            </div>
+            <!--/Share photos Slider - Carousel-->
+
 
         </div>
         <!-- /Product Carousal Section -->
@@ -351,39 +426,41 @@
         <!-- Product Description -->
         <div class="col-md-6">
             <div style="position: relative;">
-                <!-- SALE Flag-->
-                <div class="advert hidden-xs">
-                    <p class="bg-red">SALE</p>
-                </div>
-                <!-- /SALE Flag-->
-                <br class=" hidden-xs">
+               <div class="hidden-xs">
+                    <!-- SALE Flag-->
+                    <div class="advert hidden-xs">
+                        <p class="bg-red">SALE</p>
+                    </div>
+                    <!-- /SALE Flag-->
+                    <br class=" hidden-xs">
 
-                <!-- Product Category-->
-                <p class="prod-category">
-                    <b>NATURAL BALANCE</b>
-                </p>
-                <!-- /Product Category-->
+                    <!-- Product Category-->
+                    <p class="prod-category">
+                        <b>NATURAL BALANCE</b>
+                    </p>
+                    <!-- /Product Category-->
 
-                <!-- /Product Title-->
-                <h4 class="prod-title"><b>Natural Balance® L.I.D. Limited Ingredient
-                    Diets® Sweet Potato & Fish Dry Dog Formula,
-                    26 Pound Bag</b><img class="heart-grey hidden-xs" src="images/heart-grey.jpg"/>
-                </h4>
-                <!-- /Product Title-->
+                    <!-- /Product Title-->
+                    <h4 class="prod-title"><b>Natural Balance® L.I.D. Limited Ingredient
+                        Diets® Sweet Potato & Fish Dry Dog Formula,
+                        26 Pound Bag</b><img class="heart-grey hidden-xs" src="images/heart-grey.jpg"/>
+                    </h4>
+                    <!-- /Product Title-->
 
-                <!-- /Product Description-->
-                <div>
-                <del class="text-muted hidden-xs">$59.98</del>
-                <span class="price">$49.98</span>
-                <small class="hidden-xs"><b>with card</b></small>
-                <div class="rating">
-                    <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                    <span class="text-muted text-muted-1 pull-left">(12)</span>
-                    <span class="write-review">Write a review</span>
+                    <!-- /Product Description-->
+                    <div>
+                    <del class="text-muted hidden-xs">$59.98</del>
+                    <span class="price">$49.98</span>
+                    <small class="hidden-xs"><b>with card</b></small>
+                    <div class="rating">
+                        <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
+                        <span class="text-muted text-muted-1 pull-left">(12)</span>
+                        <span class="write-review">Write a review</span>
+                    </div>
                 </div>
                 <hr>
 
-                <div class="dropdown pull-left" >
+                <div class="dropdown dropdown-product-details pull-left" >
                         <button class="btn btn-primary dropdown-toggle pull-left drop-down-btn"  type="button" data-toggle="dropdown">
                             <span class="pull-left">
                                 <b class="hidden-xs">SIZE:</b>
@@ -397,7 +474,7 @@
                             <li><a href="#">5 LBS</a></li>
                         </ul>
                     </div>
-                <div class="dropdown pull-left" >
+                <div class="dropdown dropdown-product-details pull-left" >
                     <button class="btn btn-primary dropdown-toggle pull-left drop-down-btn" type="button" data-toggle="dropdown">
                         <span class="pull-left">
                             <b class="hidden-xs">FLAVOR:</b>
@@ -426,12 +503,187 @@
                 <p class="fourteen-px-p regular-font">
                     Open Until 9pm
                 </p>
-                <p class="fourteen-px-p-underline pull-left">
-                    View Store Details
-                </p>
-                <p class="fourteen-px-p-underline pull-left left-margin-20">
-                    Check another store
-                </p>
+                   <p  data-toggle="modal" data-target="#StoreDetails" class="fourteen-px-p-underline pull-left">
+                       View Store Details
+                   </p>
+                   <p  data-toggle="modal" data-target="#StoresModal" class="fourteen-px-p-underline pull-left left-margin-20">
+                       Check another store
+                   </p>
+
+                   <!-- Stores List Modal-->
+                   <div class="modal fade stores-modal" id="StoresModal" role="dialog">
+                       <div class="modal-dialog">
+                           <!-- Modal content-->
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                   <button type="button" class="close" data-dismiss="modal">Close</button>
+                                   <h4 class="modal-title">Availability</h4>
+                               </div>
+                               <div class="modal-body">
+                                   <!--Row For my store-->
+                                   <hr>
+                                   <div class="row">
+                                       <div class="col-md-3">
+                                           <img class="img-responsive" src="images/store-photo.jpg"/>
+                                       </div>
+                                       <div class="col-md-5">
+                                           <h5>Pet Supplies Plus Royal Oak</h5>
+                                           <h6>3.1 Miles Away</h6>
+                                           <h6>Open Until 9:00 PM</h6>
+                                           <h6 data-toggle="modal" data-target="#StoreDetails"><u>+ More Store Details</u></h6>
+
+                                       </div>
+                                       <div class="col-md-4">
+                                           <span class="in-stock-flag pull-right">IN STOCK</span>
+                                           <br><br>
+                                           <div class="row row-modal" >
+                                           <p class="my-store-modal pull-right">My Store</p>
+                                           <img class="pull-right" src="images/my-store-icon-green.jpg" />
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <hr>
+                                   <!-- Row for Another Store-->
+                                   <div class="row">
+                                       <div class="col-md-3">
+                                           <img class="img-responsive" src="images/store-photo2.jpg"/>
+                                       </div>
+                                       <div class="col-md-5">
+                                           <h5>Pet Supplies Plus Bloomfield</h5>
+                                           <h6>8 Miles Away</h6>
+                                           <h6>Open Until 9:00 PM</h6>
+                                           <h6 data-toggle="modal" data-target="#StoreDetails"><u>+ More Store Details</u></h6>
+
+                                       </div>
+                                       <div class="col-md-4">
+                                           <span class="low-stock-flag pull-right">LOW STOCK</span>
+                                           <br><br>
+                                           <button type="button" class="btn btn-primary store-modal-btn pull-right">Make My Store</button>
+
+                                       </div>
+                                   </div>
+                                   <hr>
+                                   <!-- Row for out of stock-->
+                                   <div class="row">
+                                       <div class="col-md-3">
+                                           <img class="img-responsive" src="images/store-photo3.jpg"/>
+                                       </div>
+                                       <div class="col-md-5">
+                                           <h5>Pet Supplies Plus Novi</h5>
+                                           <h6>12 Miles Away</h6>
+                                           <h6>Open Until 9:00 PM</h6>
+                                           <h6 data-toggle="modal" data-target="#StoreDetails" ><u>+ More Store Details</u></h6>
+
+                                       </div>
+                                       <div class="col-md-4">
+                                           <span class="out-of-stock-flag pull-right">OUT OF STOCK</span>
+                                           <br><br>
+                                           <button type="button" class="btn btn-primary store-modal-btn pull-right">Make My Store</button>
+
+                                       </div>
+                                   </div>
+                                   <hr>
+                               </div>
+                               <div class="modal-footer">
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <!-- Store Details Modal-->
+                   <div class="modal fade stores-modal" id="StoreDetails" role="dialog">
+                       <div class="modal-dialog">
+                           <!-- Modal content-->
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                   <button type="button" class="close" data-dismiss="modal">Close</button>
+                                   <h4 class="modal-title">Availability</h4>
+                               </div>
+                               <div class="modal-body">
+                                   <!--Row For my store-->
+                                   <hr>
+                                   <div class="row">
+                                       <div class="col-md-2">
+                                           <img class="img-responsive" src="images/store-photo.jpg"/>
+                                       </div>
+                                       <div class="col-md-7">
+                                           <h5>Pet Supplies Plus Royal Oak</h5>
+                                           <h6>3.1 Miles Away</h6>
+                                           <h6>Open Until 9:00 PM</h6>
+                                           <br>
+                                           <h2>ADDRESS</h2>
+                                           <h6>1570 Lake Side Circle</h6>
+                                           <h6>Space F-114</h6>
+                                           <h6>Sterling Heights, MI 48313</h6>
+                                           <br>
+                                           <h6><u>Get Directions</u></h6>
+                                           <h6>Call:(586)-566-2500</h6>
+                                           <br>
+                                           <h2>STORE HOURS</h2>
+                                           <h6>
+                                               <span class="pull-left">Tuesday(Today)</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Wednesday(Tommorrow)</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Thursday</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Friday</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Satuday</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Sunday</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+                                           <h6>
+                                               <span class="pull-left">Monday</span>
+                                               <span class="pull-right">10:00 AM - 9:00 PM</span>
+                                           </h6>
+                                           <br>
+
+
+                                       </div>
+                                       <div class="col-md-3">
+                                           <span class="in-stock-flag pull-right">IN STOCK</span>
+                                           <br><br>
+                                           <div class=" row row-modal">
+                                               <p class="my-store-modal pull-right">My Store</p>
+                                               <img class="pull-right" src="images/my-store-icon-green.jpg" />
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <hr>
+                               </div>
+                               <div class="modal-footer">
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+
                 <img class="left-margin-7" src="images/arrow-right-dark.png">
                 <button  class="btn btn-primary fav-btn">Add to Favourites</button>
                 <div class="hidden-xs">
@@ -457,75 +709,117 @@
 
 <!-- Details Accordion-->
 <div class="container prod-details-accordion">
-    <div class="panel panel-default">
-        <div class="panel-heading"><span class="pull-left">Details</span><span class="pull-right">-</span></div>
-        <br><br>
+    <div  id="details-accordion" class="panel panel-default">
+        <div  class="set-toggle panel-heading" data-toggle="collapse" href="#details-accordion-body"><span class="pull-left">Details</span><span class="pull-right">-</span></div>
+        <br><br class="hidden-xs">
+        <div id="details-accordion-body" class="panel-collapse accordion-list">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="left-padding-15">
+                            <li> Complete, balanced nutrition for puppies, adults and seniors provides high-quality
+                                nutrition for all breeds and life stages
+                            </li>
+                            <br class="hidden-xs">
+                            <li>L.I.D. Limited Ingredient Diets® formulas help you to systematically specify your dog’s
+                                sources of protein and carbohydrates
+                            </li>
+                            <br class="hidden-xs">
+                            <li>Maintains digestive health with a limited list of high-quality proteins and carbohydrate
+                                sources
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <p class="bold-18">Guaranteed Analysis</p>
 
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="left-padding-15">
-                        <li> Complete, balanced nutrition for puppies, adults and seniors provides high-quality
-                            nutrition for all breeds and life stages
-                        </li>
+                        <p class="bold-14">Crude Protein: <span class="regular-14">27.0% min</span></p>
+
+                        <p class="bold-14">Crude Fat:<span class="regular-14"> 16.0% min</span></p>
+
+                        <p class="bold-14">Crude Fiber:<span class="regular-14"> 5.0% min</span></p>
                         <br>
-                        <li>L.I.D. Limited Ingredient Diets® formulas help you to systematically specify your dog’s
-                            sources of protein and carbohydrates
-                        </li>
-                        <br>
-                        <li>Maintains digestive health with a limited list of high-quality proteins and carbohydrate
-                            sources
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <p class="bold-18">Guaranteed Analysis</p>
 
-                    <p class="bold-14">Crude Protein: <span class="regular-14">27.0% min</span></p>
+                        <p class="bold-18">More Info</p>
 
-                    <p class="bold-14">Crude Fat:<span class="regular-14"> 16.0% min</span></p>
+                        <p class="bold-14">Brand:<span class="regular-14"> Natural Balance</span></p>
 
-                    <p class="bold-14">Crude Fiber:<span class="regular-14"> 5.0% min</span></p>
-                    <br>
+                        <p class="bold-14">Weight:<span class="regular-14"> Lorem Ipsum</span></p>
 
-                    <p class="bold-18">More Info</p>
+                        <p class="bold-14">Size:<span class="regular-14"> 12" H 24.5" W 15" D</span></p>
 
-                    <p class="bold-14">Brand:<span class="regular-14"> Natural Balance</span></p>
-
-                    <p class="bold-14">Weight:<span class="regular-14"> Lorem Ipsum</span></p>
-
-                    <p class="bold-14">Size:<span class="regular-14"> 12" H 24.5" W 15" D</span></p>
-
-                    <p class="bold-14">Shipping Weight:<span class="regular-14"> 28 LBS</span></p>
+                        <p class="bold-14">Shipping Weight:<span class="regular-14"> 28 LBS</span></p>
 
 
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <!-- /Details Accordion-->
 
 <!-- Ingredients Accordion-->
 <div class="container prod-details-accordion">
-    <div class="panel panel-default">
-        <div class="panel-heading panel-heading-font-large"><span class="pull-left">Ingredients</span><span class="pull-right">-</span></div>
-        <br><br>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="bold-18">Protein</p>
-                    <p class="bold-14"><span class="regular-14">Salmon,Salmon Meal</span></p>
-                    <br>
-                    <p class="bold-18">Carbohydrates</p>
-                    <p class="bold-14"><span class="regular-14">Sweet Potatoes, Potato Fiber</span></p>
-                </div>
-                <div class="col-md-6">
-                    <p class="bold-18">Other</p>
-                    <p class="bold-14"><span class="regular-14">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</span></p>
+    <div  id="ingredients-accordion" class="panel panel-default">
+        <div class="set-toggle panel-heading" data-toggle="collapse" href="#ingredients-accordion-body"><span class="pull-left">Ingredients</span><span class="pull-right">-</span></div>
+        <br class="hidden-xs"><br class="hidden-xs">
+
+        <div id="ingredients-accordion-body" class="panel-collapse accordion-list">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="bold-18">Protein</p>
+                        <p class="bold-14"><span class="regular-14">Salmon,Salmon Meal</span></p>
+                        <br>
+                        <p class="bold-18">Carbohydrates</p>
+                        <p class="bold-14"><span class="regular-14">Sweet Potatoes, Potato Fiber</span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold-18">Other</p>
+                        <p class="bold-14"><span class="regular-14">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</span></p>
+                    </div>
                 </div>
             </div>
         </div>
+
+    </div>
+</div>
+<!-- /Ingredients Accordion-->
+
+<!-- Reviews Accordion visible only in Mobile View-->
+<div class="container prod-details-accordion visible-xs">
+    <div  id="reviews-accordion" class="panel panel-default">
+        <div class="set-toggle panel-heading rating" data-toggle="collapse" href="#reviews-accordion-body">
+            <span class="pull-left">
+                    <span class="pull-left">Reviews</span>
+                    <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
+                    <span class="text-muted text-muted-1">(12)</span>
+
+            </span>
+            <span class="pull-right">-</span>
+        </div>
+        <br class="hidden-xs"><br class="hidden-xs">
+
+        <div id="reviews-accordion-body" class="panel-collapse accordion-list">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="bold-18">Protein</p>
+                        <p class="bold-14"><span class="regular-14">Salmon,Salmon Meal</span></p>
+                        <br>
+                        <p class="bold-18">Carbohydrates</p>
+                        <p class="bold-14"><span class="regular-14">Sweet Potatoes, Potato Fiber</span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold-18">Other</p>
+                        <p class="bold-14"><span class="regular-14">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- /Ingredients Accordion-->
@@ -1090,5 +1384,57 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/star-rating.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+
+<!--Javascript & Jquery Scripts-->
+<script>
+    // Can also be used with $(document).ready()
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        slideshow: false
+    });
+
+</script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    //Get the image which is currently active
+    var zoom = document.getElementById('zoom-btn');
+
+
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    zoom.onclick = function(){
+        var active_li=document.getElementsByClassName("flex-active-slide")[0].firstChild.nextSibling;
+        //var src=li.child(0);
+
+        //console.log(active_li)
+        //alert(active_li.getAttribute("src"));
+        modal.style.display = "block";
+        modalImg.src = active_li.getAttribute("src");
+    }
+
+    // Get the modal element that closes the modal
+    var span = document.getElementById('myModal');
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
+<script>
+    $('.my-psp-photos').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false
+    });
+</script>
+<!--/Javascript & Jquery Scripts-->
 </body>
 </html>
