@@ -15,7 +15,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
@@ -404,7 +403,8 @@
                     <p class="pull-left share-photos-heading">Share your photos | #MYPSP</p>
                     <button class="btn btn-primary pull-right share-photos-btn">
                         <img src="images/camera-icon-green.png" />
-                        Add Photos
+                        <span>Add Photos
+                        </span>
                     </button>
                 </div>
                 <br><br><br>
@@ -830,7 +830,7 @@
         <div class="pull-left">
             <h3 class="product-heading regular-font-weight">
                 <!--<img src="images/firefly.png" height="50px" width="35px">-->
-                Recently Viewed
+                Recommended
             </h3>
         </div>
         <div class="pull-right view-all">
@@ -1386,55 +1386,5 @@
 <script src="js/script.js" type="text/javascript"></script>
 <script src="js/jquery.flexslider.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
-
-<!--Javascript & Jquery Scripts-->
-<script>
-    // Can also be used with $(document).ready()
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails",
-        slideshow: false
-    });
-
-</script>
-<script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    //Get the image which is currently active
-    var zoom = document.getElementById('zoom-btn');
-
-
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    zoom.onclick = function(){
-        var active_li=document.getElementsByClassName("flex-active-slide")[0].firstChild.nextSibling;
-        //var src=li.child(0);
-
-        //console.log(active_li)
-        //alert(active_li.getAttribute("src"));
-        modal.style.display = "block";
-        modalImg.src = active_li.getAttribute("src");
-    }
-
-    // Get the modal element that closes the modal
-    var span = document.getElementById('myModal');
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-</script>
-<script>
-    $('.my-psp-photos').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        dots: false
-    });
-</script>
-<!--/Javascript & Jquery Scripts-->
 </body>
 </html>

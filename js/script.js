@@ -1,13 +1,52 @@
 jQuery(document).ready(function () {
 
     var filterAccordion = document.getElementsByClassName("filter-accordion");
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    var zoom = document.getElementById('zoom-btn');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
 
+
+    /*Modal  window*/
+
+    zoom.onclick = function(){
+        var active_li=document.getElementsByClassName("flex-active-slide")[0].firstChild.nextSibling;
+        //var src=li.child(0);
+
+        //console.log(active_li)
+        //alert(active_li.getAttribute("src"));
+        modal.style.display = "block";
+        modalImg.src = active_li.getAttribute("src");
+    };
+    // Get the modal element that closes the modal
+    var span = document.getElementById('myModal');
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    /*Carousel*/
+    $('.my-psp-photos').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false
+    });
     /*
      * Stars rating configuration
      */
     $(".stars-home").rating({
         displayOnly: true,
         hoverOnClear: false
+    });
+
+    /*Slider*/
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        slideshow: false
     });
 
     /*Toggle drop-down menu*/

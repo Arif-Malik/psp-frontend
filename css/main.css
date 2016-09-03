@@ -418,6 +418,18 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     margin-bottom: 24px;
 }
 
+/*Product Detail Page*/
+
+#recently-viewed .products-container .container {
+    width: 1170px;
+}
+#recommended-products .products-container .container {
+    width: 1170px;
+}
+#recommended-products .product-tile {
+    min-height: 445px;
+}
+
 /*
 * bootstrap buttons override css
 */
@@ -458,9 +470,9 @@ button:focus {
 
 .advert {
     color: #FFFFFF;
-    font-size: 0.750em;
+    font-size: 0.875em;
     font-weight: 700;
-    height: 16px;
+    /*height: 16px;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -471,21 +483,21 @@ button:focus {
     color: #FFFFFF;
     background-color: #e31c21;
     text-align: center;
-    padding: 0 2px;
+    padding: 0 3px;
 }
 
 .bg-purple {
     color: #FFFFFF;
     background-color: #872d91;
     text-align: center;
-    padding: 0 2px;
+    padding: 0 3px;
 }
 
 .bg-blue {
     color: #FFFFFF;
     background-color: #0098ce;
     text-align: center;
-    padding: 0 2px;
+    padding: 0 3px;
 }
 
 .text-faded {
@@ -747,6 +759,7 @@ button:focus {
 .product-tile {
     position: relative;
     border-radius: 6px;
+    min-height: 425px;
 }
 
 .product-tile hr {
