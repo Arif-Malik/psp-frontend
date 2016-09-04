@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
 
     var filterAccordion = document.getElementsByClassName("filter-accordion");
     // Get the modal
-    var modal = document.getElementById('myModal');
+    var modal = document.getElementById('product-zoom-modal');
     var zoom = document.getElementById('zoom-btn');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -20,7 +20,7 @@ jQuery(document).ready(function () {
         modalImg.src = active_li.getAttribute("src");
     };
     // Get the modal element that closes the modal
-    var span = document.getElementById('myModal');
+    var span = document.getElementById('product-zoom-modal');
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
