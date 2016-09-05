@@ -1005,12 +1005,23 @@
         float: left;
         margin-top: 2px;
     }
-    .write-review{
-        text-decoration: underline;
-        margin-left:10px;
+    .write-review a{
+
+        margin-left:10px !important;
         font-size: 1.001em;
         font-weight: 500;
+
     }
+    .prod-details a{
+        text-decoration: underline !important;
+        color: black !important;
+        cursor: pointer;
+    }
+    .prod-details a:hover
+    {
+        text-decoration: none !important;
+    }
+
     .heart-grey{
         margin-left:10px;
     }
@@ -1098,7 +1109,6 @@
     }
     .fourteen-px-p-underline{
         font-size: 0.876em;
-        text-decoration: underline;
     }
     .row-zero-margin{
         margin-left: 0px !important;
