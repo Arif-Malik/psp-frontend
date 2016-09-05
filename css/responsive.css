@@ -828,7 +828,7 @@
     .navbar-nav>li .dropdown-menu {
         margin-top: -3px !important;
     }
-    .open .dropdown-toggle:after {
+    .navbar-nav .open .dropdown-toggle:after {
         border-bottom: 15px solid #FFFFFF;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
