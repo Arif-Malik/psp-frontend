@@ -1134,8 +1134,7 @@
         box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
-        border-top: solid 1px #f0f0f0 !important;
-        border-radius:0px !important;
+
     }
     .prod-details-accordion .panel-heading{
         border:none !important;
@@ -1149,9 +1148,10 @@
 
 
     /*Details Section*/
-    .prod-details-accordion .panel-heading{
+    .prod-details-accordion .filter-accordion{
         font-size: 1.875em !important;
         font-weight: 400;
+        text-transform: none !important;
     }
     .prod-details-accordion li{
         font-size: 0.875em;
