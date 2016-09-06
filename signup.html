@@ -15,7 +15,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
-    <link href="css/pdp-stylesheet.css" rel="stylesheet">
 
     <script src="https://use.typekit.net/mdw8wog.js"></script>
     <script>try {
@@ -58,7 +57,7 @@
                         <p>MY PPC ACCOUNT</p>
                     </a>
                     <!--<a href="#">-->
-                        <!--<p>LOGIN/REGISTER</p>-->
+                    <!--<p>LOGIN/REGISTER</p>-->
                     <!--</a>-->
                 </li>
             </ul>
@@ -176,6 +175,7 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <h4>Breed Guide</h4>
+
                                                                 <p>discover more about man's best friend ></p>
                                                             </div>
                                                         </div>
@@ -185,6 +185,7 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <h4>Training Guide</h4>
+
                                                                 <p>Check list and how-tos ></p>
                                                             </div>
                                                         </div>
@@ -287,6 +288,7 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <h4>Breed Guide</h4>
+
                                                                 <p>discover more about man's best friend ></p>
                                                             </div>
                                                         </div>
@@ -296,6 +298,7 @@
                                                             </div>
                                                             <div class="col-md-9">
                                                                 <h4>Training Guide</h4>
+
                                                                 <p>Check list and how-tos ></p>
                                                             </div>
                                                         </div>
@@ -308,19 +311,27 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Bird</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Fish</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Reptile</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">small pet</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">brands</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">services</a></li>
-                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">franchising</a></li>
-                    <li class="dropdown yamm-fw hidden-xs"><a href="" data-toggle="dropdown" class="dropdown-toggle"><img src="images/icon-search.png"> </a> </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Bird</a>
+                    </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Fish</a>
+                    </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Reptile</a>
+                    </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">small
+                        pet</a></li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">brands</a>
+                    </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">services</a>
+                    </li>
+                    <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown"
+                                                    class="dropdown-toggle">franchising</a></li>
+                    <li class="dropdown yamm-fw hidden-xs"><a href="" data-toggle="dropdown"
+                                                              class="dropdown-toggle"><img src="images/icon-search.png">
+                    </a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <input type="search" class="form-control input-lg nav-search" placeholder="Search for dog food, supplies and more.">
 </header>
 <!--/Header-->
 
@@ -339,66 +350,76 @@
         <h1>Create a new Pet Supplies Plus online account.</h1>
         <h6>* Required information</h6>
         <br class="hidden-xs"><br class="hidden-xs">
-        <div class="well well-lg">
-        <form role="form">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="fname">* FIRST NAME</label>
-                        <input type="text" class="form-control" id="fname">
+
+        <div class="well well-lg signup-well">
+            <div class="form-container">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="fname">* FIRST NAME</label>
+                                <input type="text" class="form-control input-lg" id="fname" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lname">* LAST NAME</label>
+                                <input type="text" class="form-control input-lg" id="lname" required>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="lname">* LAST NAME</label>
-                        <input type="text" class="form-control" id="lname">
+                    <div class="form-group">
+                        <label for="email">* EMAIL ADDRESS</label>
+                        <input type="email" class="form-control input-lg" id="email" required>
                     </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">* EMAIL ADDRESS</label>
-                <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-                <label for="ppc-no">PPC CARD NUMBER</label>
-                <div class="input-group">
-                    <input type="password" class="form-control" id="ppc-no" aria-describedby="ppcHelp">
-                    <span class = "input-group-addon ppc-no-group">?</span>
-                </div>
+                    <div class="form-group">
+                        <label for="ppc-no">PPC CARD NUMBER</label>
 
-                <small id="ppcHelp" class="form-text text-muted">Only if you’re an existing PPC member.</small>
-            </div>
-            <div class="form-group">
-                <label for="password">* PASSWORD</label>
-                <div class="input-group">
-                    <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
-                    <span class = "input-group-addon show-pwd">Show</span>
-                </div>
-                <small id="passwordHelp" class="form-text text-muted">6-16 Characters</small>
-            </div>
-            <div class="form-group">
-                <label for="RePassword">* CONFIRM PASSWORD</label>
-                <div class="input-group">
-                    <input type="password" class="form-control" id="RePassword">
-                    <span class = "input-group-addon show-pwd-re">Show</span>
-                </div>
+                        <div class="input-group input-group-lg">
+                            <input type="password" class="form-control" id="ppc-no" aria-describedby="ppcHelp">
+                            <span class="input-group-addon ppc-no-group"> <abbr title="World Health Organization">?</abbr></span>
+                        </div>
 
-            </div>
-            <div class="form-group">
-                <label for="zipCode">ZIP/POSTAL CODE</label>
-                <input type="text" class="form-control" id="zipCode">
-            </div>
-            <div class="form-group">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    Notify me about Pet Supplies Plus news, offers and events at my email address.
-                </label>
-            </div>
+                        <small id="ppcHelp" class="form-text text-muted">Only if you’re an existing PPC member.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">* PASSWORD</label>
 
+                        <div class="input-group input-group-lg">
+                            <input type="password" class="form-control" id="password"  required>
+                            <span class="input-group-addon show-pwd">Show</span>
+                        </div>
+                        <small id="passwordHelp" class="form-text text-muted">6-16 Characters</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="RePassword">* CONFIRM PASSWORD</label>
+
+                        <div class="input-group input-group-lg">
+                            <input type="password" class="form-control" id="RePassword" required>
+                            <span class="input-group-addon show-pwd-re">Show</span>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">ZIP/POSTAL CODE</label>
+                        <input type="text" class="form-control input-lg" id="zipCode">
+                    </div>
+                    <div class="form-group">
+                        <div class="label-group-signup">
+                            <div class="round-circle-signup">
+                                <input type="checkbox" value="1" id="terms" name=""/>
+                                <label for="terms"></label>
+                            </div>
+                            <p>Notify me about Pet Supplies Plus news, offers and events at my email address.</p>
+                        </div>
 
 
+                    </div>
 
-            <button type="submit" class="btn btn-primary">Create an Account</button>
-        </form>
-    </div>
+
+                    <button type="submit" class="btn btn-primary">Create an Account</button>
+                </form>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -559,7 +580,7 @@
                                                                                        aria-hidden="true"></i></a></div>
                             </div>
 
-                            <h5 class="hidden-xs"><img src="images/logo-footer.png" alt="pet supplies plus"> </h5>
+                            <h5 class="hidden-xs"><img src="images/logo-footer.png" alt="pet supplies plus"></h5>
                             <small class="copyright">&copy;2016 Pet Supplies Plus<sup>&copy;</sup>.All Rights Reserved.
                             </small>
                         </div>
@@ -591,11 +612,23 @@
 
 
 <script>
-//    Show Password of Password Field
-    $(".show-pwd").mousedown(function(){$("#password").attr('type','text');}).mouseup(function(){$("#password").attr('type','password');}).mouseout(function(){$("#password").attr('type','password');});
+    //    Show Password of Password Field
+    $(".show-pwd").mousedown(function () {
+        $("#password").attr('type', 'text');
+    }).mouseup(function () {
+        $("#password").attr('type', 'password');
+    }).mouseout(function () {
+        $("#password").attr('type', 'password');
+    });
 
-//    Show Password of Confirm Password Field
-    $(".show-pwd-re").mousedown(function(){$("#RePassword").attr('type','text');}).mouseup(function(){$("#RePassword").attr('type','password');}).mouseout(function(){$("#RePassword").attr('type','password');});
+    //    Show Password of Confirm Password Field
+    $(".show-pwd-re").mousedown(function () {
+        $("#RePassword").attr('type', 'text');
+    }).mouseup(function () {
+        $("#RePassword").attr('type', 'password');
+    }).mouseout(function () {
+        $("#RePassword").attr('type', 'password');
+    });
 
 </script>
 </body>

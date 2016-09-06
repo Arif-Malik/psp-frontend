@@ -752,6 +752,38 @@
         margin-left: 0px;
     }
 
+    /*Login/Signup*/
+    .horizontal-break-line{
+        width:100%;
+    }
+
+    .signup-login-container .well{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border:none;
+        margin-bottom:0px;
+        box-shadow: none;
+
+    }
+    .signup-login-container .well{
+        background-color: #f4f4f2 !important;
+    }
+    .signup-login-container .btn-primary{
+        width: 100%;
+    }
+    .input-group-addon{
+        background-color: white !important;
+        cursor: pointer;
+    }
+    .form-group .ppc-no-group{
+        color: #00af41 !important;
+    }
+    .label-group-signup p {
+        margin: 10px 25px 10px 10px;
+    }
+
 }
 
 /*@media (max-width: 767px) {*/
@@ -1422,6 +1454,16 @@
         margin-left: -15px;
         margin-right: 0px;
     }
+
+    /*Login/Signup*/
+    .signup-login-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .signup-login-container .form-container {
+        padding: 30px 60px;
+    }
+
 
 }
 
