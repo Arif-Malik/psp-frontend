@@ -359,17 +359,28 @@
             </div>
             <div class="form-group">
                 <label for="ppc-no">PPC CARD NUMBER</label>
-                <input type="password" class="form-control" id="ppc-no" aria-describedby="ppcHelp">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="ppc-no" aria-describedby="ppcHelp">
+                    <span class = "input-group-addon ppc-no-group">?</span>
+                </div>
+
                 <small id="ppcHelp" class="form-text text-muted">Only if you’re an existing PPC member.</small>
             </div>
             <div class="form-group">
                 <label for="password">* PASSWORD</label>
-                <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+                    <span class = "input-group-addon show-pwd">Show</span>
+                </div>
                 <small id="passwordHelp" class="form-text text-muted">6-16 Characters</small>
             </div>
             <div class="form-group">
                 <label for="RePassword">* CONFIRM PASSWORD</label>
-                <input type="password" class="form-control" id="RePassword">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="RePassword">
+                    <span class = "input-group-addon show-pwd-re">Show</span>
+                </div>
+
             </div>
             <div class="form-group">
                 <label for="zipCode">ZIP/POSTAL CODE</label>
@@ -577,5 +588,15 @@
 <script src="js/jquery.flexslider.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
+
+
+<script>
+//    Show Password of Password Field
+    $(".show-pwd").mousedown(function(){$("#password").attr('type','text');}).mouseup(function(){$("#password").attr('type','password');}).mouseout(function(){$("#password").attr('type','password');});
+
+//    Show Password of Confirm Password Field
+    $(".show-pwd-re").mousedown(function(){$("#RePassword").attr('type','text');}).mouseup(function(){$("#RePassword").attr('type','password');}).mouseout(function(){$("#RePassword").attr('type','password');});
+
+</script>
 </body>
 </html>
