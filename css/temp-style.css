@@ -25,22 +25,11 @@
         display: block;
     }
 
-    #myCarousel{
-        z-index:0;
-    }
-    #myCarousel .thumbnail {
-        margin-bottom:0;
-    }
     .carousel-control {
         color:#939598;
         top:44%;
         bottom:auto;
         opacity:1;
-    }
-    .carousel-control:hover {
-        color:#939598;
-    }
-    .carousel-control.left, .carousel-control.right {
         background-image:none !important;
     }
     .carousel-control.right {
