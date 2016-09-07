@@ -486,11 +486,16 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     text-decoration: none;
 }
 
-.signup-login-container small {
-    color: black;
-    font-size: 1.128em
-}
+/*.signup-login-container small {*/
+    /*color: black;*/
+    /*font-size: 1.128em*/
+/*}*/
 
+.signup-login-container .account-error {
+    color: #ed1d23;
+    font-size: 1.875em;
+    padding-bottom: 20px;
+}
 
 .signup-login-container .input-group-addon {
     background-color: white !important;
@@ -506,6 +511,7 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     line-height: 36px;
     padding: 12px 12px;
 }
+
 .signup-login-container .form-container .login-btn{
     padding: 12px 93px;
 }
@@ -517,6 +523,15 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 .label-group-signup p {
     margin: 25px 20px 10px;
     font-size: 1.313em;
+}
+
+.forgot-password small{
+    padding-top: 5px;
+    color: black;
+    font-size: 1.128em;
+}
+.forgot-password:hover{
+    text-decoration: underline !important;
 }
 
 /*
@@ -592,7 +607,17 @@ button:focus {
 .text-faded {
     color: #9fa2a2;
 }
+/*Form controls*/
+.has-error .form-control {
+    border-color: #ed1d23;
+}
+.has-error .input-group-addon {
+    color: #ed1d23;
+    border-color: #ed1d23;
+}
 
+
+/*Filter*/
 .filter-checked {
     font-weight: 700 !important;
 }

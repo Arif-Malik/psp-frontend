@@ -352,20 +352,29 @@
         <h6 class="hidden-xs">Your Pet Supplies Plus online account.</h6>
         <br class="hidden-xs"><br class="hidden-xs">
 
+        <div class="account-error">
+            <p>Sorry, that password isn't right.please try Again.</p>
+        </div>
         <div class="well well-lg login-well">
             <div class="form-container">
                 <form>
                     <div class="form-group">
                         <label for="email">EMAIL ADDRESS</label>
-                        <input type="email" class="form-control input-lg" id="email">
+                        <input type="email" class="form-control input-lg" id="email" required>
                     </div>
 
                     <div class="form-group">
                         <label for="password">PASSWORD</label>
-                        <input type="password" class="form-control input-lg" id="password" aria-describedby="passwordHelp">
-                        <small id="passwordHelp" class="form-text text-muted">Forgot Password?</small>
-                    </div>
 
+                        <!--Remove has error class from below div to remove red border from password-->
+                        <div class="input-group input-group-lg has-error">
+                            <input type="password" class="form-control" id="password" required>
+                            <span class="input-group-addon show-pwd">Show</span>
+                        </div>
+                        <a href="" class="forgot-password">
+                            <small id="passwordHelp" class="form-text text-muted">Forgot Password?</small>
+                        </a>
+                    </div>
                     <button type="submit" class="btn btn-primary login-btn">Log In</button>
                 </form>
 
