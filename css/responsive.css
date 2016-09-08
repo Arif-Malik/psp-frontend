@@ -229,7 +229,7 @@
 /*/!*font-size: 24px;*!/*/
 /*/!*}*!/*/
 /*}*/
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (max-width: 767px) {
 
 
     /*
@@ -249,6 +249,9 @@
 
 
     /*Header*/
+    .navbar--default {
+        min-height: 35px;
+    }
     .navbar-brand img.visible-xs {
         display: inline !important;
     }
@@ -258,6 +261,39 @@
         padding-top: 15px;
         padding-right: 20px;
         z-index: 1000;
+    }
+
+    /*Navbar toggle cross button*/
+    .navbar-toggle {
+        border: none;
+        background: transparent !important;
+    }
+    .navbar-toggle:hover {
+        background: transparent !important;
+    }
+    .navbar-toggle .icon-bar {
+        width: 22px;
+        transition: all 0.2s;
+    }
+    .navbar-toggle .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+    .navbar-toggle .middle-bar {
+        opacity: 0;
+    }
+    .navbar-toggle .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+    .navbar-toggle.collapsed .top-bar {
+        transform: rotate(0);
+    }
+    .navbar-toggle.collapsed .middle-bar {
+        opacity: 1;
+    }
+    .navbar-toggle.collapsed .bottom-bar {
+        transform: rotate(0);
     }
 
     /*Containers*/
@@ -422,7 +458,7 @@
 
 }
 
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 767px)  {
     /*header*/
 
     .navbar-toggle {
