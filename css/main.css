@@ -20,6 +20,49 @@ hr {
     border-top: 1px solid #d6d7d6;
 }
 
+/*Notification*/
+.show-notification {
+    display: none;
+}
+
+#topbar {
+    position:fixed;
+    top: -60px; /* has to be around the height of the bar or more. */
+    display: block;
+    z-index: 99999;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-color: #c0731e;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    transition: top 1s;
+}
+
+/* Hiding the checkbox */
+#toggleTop {
+    display: none;
+}
+/* Styling the lables, to show and hide the bar */
+#showTop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 30px;
+    display: block;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+}
+#hideTop {
+    float: right;
+    display: inline-block;
+}
+.show-notification {
+    display: block;
+}
+
 /*
 * header - navigation
 */
