@@ -21,12 +21,14 @@ hr {
 }
 
 /*Notification*/
-
+.show-notification {
+    display: none;
+}
 
 #topbar {
     position:fixed;
     top: -60px; /* has to be around the height of the bar or more. */
-    /*display: none;*/
+    display: block;
     z-index: 99999;
     box-sizing: border-box;
     width: 100%;
@@ -35,9 +37,6 @@ hr {
     color: #fff;
     font-size: 25px;
     text-align: center;
-    /*-webkit-box-shadow: 0 8px 6px -6px black;*/
-    /*-moz-box-shadow: 0 8px 6px -6px black;*/
-    /*box-shadow: 0 8px 6px -6px black;*/
     transition: top 1s;
 }
 
