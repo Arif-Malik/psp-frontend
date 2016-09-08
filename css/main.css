@@ -134,11 +134,13 @@ header {
     font-weight: 700;
     line-height: 1.500em;
 }
+
 .yamm-content h4 {
     font-size: 1.125em;
     font-weight: 700;
     line-height: 1.375em;
 }
+
 .yamm-content p {
     font-size: 0.875em;
     font-weight: 400;
@@ -148,7 +150,6 @@ header {
 .yamm-content .guide-container {
     margin-top: 15px;
 }
-
 
 .yamm-content ul li a {
     font-size: 0.875em;
@@ -442,11 +443,114 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 #recently-viewed .products-container .container {
     width: 1170px;
 }
+
 #recommended-products .products-container .container {
     width: 1170px;
 }
+
 #recommended-products .product-tile {
     min-height: 445px;
+}
+
+.horizontal-break-line {
+    width: 85%;
+}
+
+/*Signup page*/
+.signup-login-container .well {
+    background-color: #f4f4f2 !important;
+    margin-bottom: 60px;
+}
+
+.signup-login-container .signup-well {
+    margin-bottom: 80px;
+}
+
+.signup-login-container .login-well {
+    background-color: #f4f4f2 !important;
+    margin-bottom: 300px;
+}
+
+
+.signup-login-container .form-container .un-registered {
+    padding-top: 40px;
+}
+
+.signup-login-container h1 {
+    font-size: 3.751em !important;
+    font-weight: 800 !important;
+}
+
+.signup-login-container h6 {
+    font-size: 1.313em !important;
+    font-weight: 400 !important;
+}
+
+.signup-login-container h5 {
+    font-size: 1.313em !important;
+    font-weight: 700 !important;
+}
+
+.signup-login-container form label {
+    font-size: 1.002em;
+    font-weight: 700;
+}
+
+.signup-login-container form .input-group .form-control {
+    border-right: none;
+}
+
+.signup-login-container abbr {
+    border: none;
+    text-decoration: none;
+}
+
+/*.signup-login-container small {*/
+    /*color: black;*/
+    /*font-size: 1.128em*/
+/*}*/
+
+.signup-login-container .account-error {
+    color: #ed1d23;
+    font-size: 1.875em;
+    padding-bottom: 20px;
+}
+
+.signup-login-container .input-group-addon {
+    background-color: white !important;
+    cursor: pointer;
+}
+
+.signup-login-container .form-group .ppc-no-group {
+    color: #00af41 !important;
+}
+
+.signup-login-container .form-container .btn-primary{
+    font-size: 1.875em;
+    line-height: 36px;
+    padding: 12px 12px;
+}
+
+.signup-login-container .form-container .login-btn{
+    padding: 12px 93px;
+}
+
+.label-group-signup {
+    display: -webkit-box;
+}
+
+.label-group-signup p {
+    margin: 25px 20px 10px;
+    font-size: 1.313em;
+}
+
+.forgot-password small{
+    padding-top: 5px;
+    color: black;
+    font-size: 1.128em;
+}
+.forgot-password:hover{
+    text-decoration: underline !important;
 }
 
 /*
@@ -495,6 +599,7 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 /*Typography*/
@@ -522,7 +627,17 @@ button:focus {
 .text-faded {
     color: #9fa2a2;
 }
+/*Form controls*/
+.has-error .form-control {
+    border-color: #ed1d23;
+}
+.has-error .input-group-addon {
+    color: #ed1d23;
+    border-color: #ed1d23;
+}
 
+
+/*Filter*/
 .filter-checked {
     font-weight: 700 !important;
 }
@@ -933,6 +1048,52 @@ button:focus {
     /*5px - for rounded arrows and
     50px - to prevent hover glitches on the border created using shadows*/
     border-radius: 0 5px 0 50px;
+}
+
+.round-circle-signup input[type=checkbox] {
+    visibility: hidden;
+}
+
+.round-circle-signup {
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    margin: 25px 0;
+
+    border-radius: 100%;
+    position: relative;
+
+}
+
+/**
+ * Create the checkbox button
+ */
+.round-circle-signup label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+
+    background: #393535;
+
+}
+
+/**
+ * Create the checked state
+ */
+.round-circle-signup input[type=checkbox]:checked + label {
+    background: #00af41;
 }
 
 /*Round checkboxes color*/

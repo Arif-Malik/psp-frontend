@@ -45,6 +45,24 @@ jQuery(document).ready(function () {
         slideshow: false
     });
 
+    /*Show/Hide Password*/
+    $(".show-pwd").mousedown(function () {
+        $("#password").attr('type', 'text');
+    }).mouseup(function () {
+        $("#password").attr('type', 'password');
+    }).mouseout(function () {
+        $("#password").attr('type', 'password');
+    });
+
+    //    Show Password of Confirm Password Field
+    $(".show-pwd-re").mousedown(function () {
+        $("#RePassword").attr('type', 'text');
+    }).mouseup(function () {
+        $("#RePassword").attr('type', 'password');
+    }).mouseout(function () {
+        $("#RePassword").attr('type', 'password');
+    });
+
     /*Toggle drop-down menu*/
 
     //$(".yamm-fw").hover(
@@ -88,6 +106,8 @@ jQuery(document).ready(function () {
             $(this).next().removeClass("filter-checked");
         }
     });
+
+
     /*
      * Apply toggle on window load
      */
@@ -109,3 +129,4 @@ jQuery(document).ready(function () {
 
     applyToggle();
 });
+
