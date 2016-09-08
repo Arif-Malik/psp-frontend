@@ -248,6 +248,18 @@
     }
 
 
+    /*Header*/
+    .navbar-brand img.visible-xs {
+        display: inline !important;
+    }
+
+    .header-icon {
+        position: relative;
+        padding-top: 15px;
+        padding-right: 20px;
+        z-index: 1000;
+    }
+
     /*Containers*/
     #category-banners {
         background-color: #f4f4f2;
