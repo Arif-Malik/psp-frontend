@@ -26,6 +26,13 @@ jQuery(document).ready(function () {
     });
 
     // When the user clicks on <span> (x), close the modal
+    //Mobile Carousel
+    $('.psp-photos-slider-mobile').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false
+    });
 
     /*Carousel*/
     $('.my-psp-photos').slick({
@@ -35,8 +42,11 @@ jQuery(document).ready(function () {
         dots: false
     });
     /*
+
+
      * Stars rating configuration
      */
+
     $(".stars-home").rating({
         displayOnly: true,
         hoverOnClear: false
