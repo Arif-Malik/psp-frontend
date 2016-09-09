@@ -20,6 +20,49 @@ hr {
     border-top: 1px solid #d6d7d6;
 }
 
+/*Notification*/
+.show-notification {
+    display: none;
+}
+
+#topbar {
+    position:fixed;
+    top: -60px; /* has to be around the height of the bar or more. */
+    display: block;
+    z-index: 99999;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-color: #c0731e;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    transition: top 1s;
+}
+
+/* Hiding the checkbox */
+#toggleTop {
+    display: none;
+}
+/* Styling the lables, to show and hide the bar */
+#showTop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 30px;
+    display: block;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+}
+#hideTop {
+    float: right;
+    display: inline-block;
+}
+.show-notification {
+    display: block;
+}
+
 /*
 * header - navigation
 */
@@ -1738,4 +1781,40 @@ button:focus {
 
 .yamm .yamm-content {
     padding: 20px 30px;
+}
+
+
+/*Navbar toggle cross button*/
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+    /*width: 22px;*/
+    transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0deg);
+}
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0deg);
 }
