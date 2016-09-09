@@ -7,6 +7,10 @@ jQuery(document).ready(function () {
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
 
+    /*Header Search Bar*/
+    $(".search-icon").click(function(){
+        $(".nav-search").toggle('fast');
+    });
 
     /*Modal  window*/
 

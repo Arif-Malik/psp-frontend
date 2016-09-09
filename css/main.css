@@ -66,10 +66,29 @@ hr {
 /*
 * header - navigation
 */
-header {
+header .global-header {
     background-color: #00af41;
 }
+.nav-search::-webkit-input-placeholder {
+    text-align: center;
+}
 
+.nav-search:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+
+.nav-search::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+
+.nav-search:-ms-input-placeholder {
+    text-align: center;
+}
+.nav-search {
+    display: none;
+}
 .main-header a {
     color: #000;
 }

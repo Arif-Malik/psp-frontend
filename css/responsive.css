@@ -434,21 +434,32 @@
         background-color: #ffffff;
     }
 
+    .navbar-brand {
+        padding: 12px 15px;
+    }
     .navbar-brand img.visible-xs {
     display: inline !important;
     }
 
     .navbar {
-        min-height: 35px;
+        margin-bottom: 0;
     }
     .nav-search {
         border-radius: 0;
     }
     .header-icon {
     position: relative;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-right: 20px;
     z-index: 1000;
+    }
+
+    .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+        background-color: #231f1f;
+    }
+    .container-fluid .navbar-collapse, .container-fluid .navbar-header, .container .navbar-collapse, .container .navbar-header {
+        margin-left: -16px;
+        margin-right: -16px;
     }
 
 
