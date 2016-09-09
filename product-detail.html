@@ -16,6 +16,7 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
 
+    <link href="css/main2.css" rel="stylesheet">
     <link href="css/temp-style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
@@ -350,15 +351,15 @@
         <!-- Product Carousal Section -->
         <div class="col-md-6">
             <!--Heading section for mobile view-->
-            <div class="row visible-xs">
+            <div class="row visible-xs prod-details-xs">
                 <div class="col-xs-12">
-                    <p>NATURAL</p>
+                    <p class="prod-mfg-xs">NATURAL</p>
                 </div>
                 <div class="col-xs-12">
-                    <p>Natural Balance® L.I.D. Limited Ingredient Diets</p>
+                    <p class="product-title-xs">Natural Balance® L.I.D. Limited Ingredient Diets</p>
                 </div>
                 <div class="col-xs-12">
-                    <p>$76.98</p>
+                    <p class="product-title-xs">$76.98</p>
                 </div>
                 <div class="col-xs-12">
                     <div class="rating">
@@ -366,7 +367,7 @@
                         <span class="text-muted">(12)</span>
                         <span><u>Write a Review</u></span>
                         <img class="pull-right" src="images/share-icon-grey.jpg"/>
-                        <img class="pull-right" src="images/heart-green-filled.jpg"/>
+                        <img class="pull-right fav-icon-xs" src="images/heart-green-filled.jpg"/>
 
                     </div>
 
@@ -460,7 +461,7 @@
                     </div>
                 </div>
                 <hr>
-
+               </div>
                 <div class="dropdown dropdown-product-details pull-left" >
                         <button class="btn btn-primary dropdown-toggle pull-left drop-down-btn"  type="button" data-toggle="dropdown">
                             <span class="pull-left">
@@ -470,9 +471,9 @@
                             <img class="pull-right" src="images/arrow-down-light.jpg" />
                         </button>
                         <ul class="dropdown-menu dd-menu">
-                            <li><a href="#">20 LBS</a></li>
-                            <li><a href="#">10 LBS</a></li>
-                            <li><a href="#">5 LBS</a></li>
+                            <li>20 LBS</li>
+                            <li>10 LBS</li>
+                            <li>5 LBS</li>
                         </ul>
                     </div>
                 <div class="dropdown dropdown-product-details pull-left" >
@@ -484,17 +485,17 @@
                         <img class="pull-right" src="images/arrow-down-light.jpg"/>
                     </button>
                     <ul class="dropdown-menu dd-menu">
-                        <li><a href="#">Crisp Fish</a></li>
-                        <li><a href="#">Another Flavor</a></li>
-                        <li><a href="#">More Flavor</a></li>
+                        <li>Crisp Fish</li>
+                        <li>Another Flavor</li>
+                        <li>More Flavor</li>
                     </ul>
                 </div>
 
                 <br>
                 <br>
                 <hr>
-                <div class="row row-zero-margin">
-                    <img class="pull-left top-margin-6 img-responsive" src="images/location-black.png"/>
+                <div class="row row-zero-margin prod-store-xs">
+                    <img class="pull-left top-margin-6 location-img-pdp img-responsive" src="images/location-black.png"/>
                     <p class="availability-title pull-left regular-font">Available at your store</p>
                     <span class="in-stock-flag top-margin-6 pull-left">IN STOCK</span>
                 </div>
@@ -696,7 +697,7 @@
                 <br><br><br class="hidden-xs"><hr class="hidden-xs">
                 <img class="img-responsive promo-image" src="images/fish-advertisement.png"/>
 
-            </div>
+
                 <!-- /Product Description-->
             </div>
 
@@ -728,24 +729,24 @@
                 </ul>
             </div>
             <div class="col-md-6 col-xs-12">
-                <p class="bold-18">Guaranteed Analysis</p>
+                <p class="bold-18 hidden-xs">Guaranteed Analysis</p>
 
-                <p class="bold-14">Crude Protein: <span class="regular-14">27.0% min</span></p>
+                <p class="prod-feature">Crude Protein: <span>27.0% min</span></p>
 
-                <p class="bold-14">Crude Fat:<span class="regular-14"> 16.0% min</span></p>
+                <p class="prod-feature">Crude Fat:<span> 16.0% min</span></p>
 
-                <p class="bold-14">Crude Fiber:<span class="regular-14"> 5.0% min</span></p>
+                <p class="prod-feature">Crude Fiber:<span> 5.0% min</span></p>
                 <br>
 
-                <p class="bold-18">More Info</p>
+                <p class="bold-18 hidden-xs">More Info</p>
 
-                <p class="bold-14">Brand:<span class="regular-14"> Natural Balance</span></p>
+                <p class="prod-feature">Brand:<span> Natural Balance</span></p>
 
-                <p class="bold-14">Weight:<span class="regular-14"> Lorem Ipsum</span></p>
+                <p class="prod-feature">Weight:<span> Lorem Ipsum</span></p>
 
-                <p class="bold-14">Size:<span class="regular-14"> 12" H 24.5" W 15" D</span></p>
+                <p class="prod-feature">Size:<span> 12" H 24.5" W 15" D</span></p>
 
-                <p class="bold-14">Shipping Weight:<span class="regular-14"> 28 LBS</span></p>
+                <p class="prod-feature">Shipping Weight:<span> 28 LBS</span></p>
 
 
             </div>
@@ -761,58 +762,95 @@
         <div class="row">
             <div class="col-md-6">
                 <p class="bold-18">Protein</p>
-                <p class="bold-14"><span class="regular-14">Salmon,Salmon Meal</span></p>
+                <p class="accordion-text">Salmon,Salmon Meal</p>
                 <br>
                 <p class="bold-18">Carbohydrates</p>
-                <p class="bold-14"><span class="regular-14">Sweet Potatoes, Potato Fiber</span></p>
+                <p class="accordion-text">Sweet Potatoes, Potato Fiber</p>
             </div>
             <div class="col-md-6">
                 <p class="bold-18">Other</p>
-                <p class="bold-14"><span class="regular-14">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</span></p>
+                <p class="accordion-text">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</p>
             </div>
         </div>
     </div>
 </div>
-<hr class="horizontal-break-line">
+<hr class="horizontal-break-line visible-xs">
 <!--Ingredients Accordion-->
 
 
-
 <!-- Reviews Accordion visible only in Mobile View-->
-<div class="container prod-details-accordion visible-xs">
-    <div  id="reviews-accordion" class="panel panel-default">
-        <div class="set-toggle panel-heading rating" data-toggle="collapse" href="#reviews-accordion-body">
-            <span class="pull-left">
-                    <span class="pull-left">Reviews</span>
+<div class="container prod-details-accordion review-accordion visible-xs">
+    <button class="filter-accordion review-accordion-btn">
+        <span class="pull-left">
+                <span class="pull-left">Reviews</span>
+                <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
+                <span class="text-muted text-muted-1">(12)</span>
+        </span>
+
+    </button>
+    <div class="panel filter-panel">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="rating">
+                    <h5><b>Karen Page</b></h5>
+                    <h6>June 11,2016</h6>
                     <input class="stars-home" value="3" type="number" min=0 max=5 step=1 data-size="sm"/>
-                    <span class="text-muted text-muted-1">(12)</span>
-
-            </span>
-            <span class="pull-right">-</span>
-        </div>
-        <br class="hidden-xs"><br class="hidden-xs">
-
-        <div id="reviews-accordion-body" class="panel-collapse accordion-list">
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="bold-18">Protein</p>
-                        <p class="bold-14"><span class="regular-14">Salmon,Salmon Meal</span></p>
-                        <br>
-                        <p class="bold-18">Carbohydrates</p>
-                        <p class="bold-14"><span class="regular-14">Sweet Potatoes, Potato Fiber</span></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="bold-18">Other</p>
-                        <p class="bold-14"><span class="regular-14">Canola Oil, Natural Flavor, Salt, Salmon Oil (a source of DHA), Flaxseed, Potassium Chloride, DL-methionine, Choline Chloride, Natural Mixed Tocopherols, Taurine, Vitamin E Supplement, Iron Proteinate, Zinc Proteinate, Copper Proteinate, Ferrous Sulfate, Zinc Sulfate, Copper Sulfate, Potassium Iodide, Thiamine Mononitrate (Vitamin B-1), Manganese Proteinate, Manganous Oxide, Ascorbic Acid, Vitamin A Supplement, Biotin, Niacin, Calcium Pantothenate, Manganese Sulfate, Sodium Selenite, Pyridoxine Hydrochloride (Vitamin B-6), Vitamin B-12 Supplement, Riboflavin (Vitamin B-2), Vitamin D-3 Supplement, Folic Acid</span></p>
-                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col-xs-12">
+                <h4 class="pull-left">Loved it!</h4>
+                <h6 class="pull-right">12 People found this review helpful</h6>
+                <br><br><br>
 
+                <p class="accordion-text">My 2 dogs were really interested in this food. They are normally 'grazers' and finally show some
+                    interest in eating and finishing it all at the same time. I find that they are less likely to beg
+                    for snacks or eat the cat's food, so it is obvious they are satisfied. ALSO have had serious dry
+                    skin and itching problems due to other foods that had grains & fillers. Both of my dogs have shown
+                    remarkable improvement in their coats, eyes, and disposition. Highly recommend this product.
+                </p>
+                <br>
+
+                <p class="accordion-text">Was this review helpful to you?
+                    <button class="btn btn-small review-btn-desktop">Yes</button>
+                    <button class="btn btn-small review-btn-desktop">No</button>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <button class="btn btn-primary">Write a Review</button>
+        </div>
     </div>
 </div>
-<!-- /Ingredients Accordion-->
+<hr class="horizontal-break-line visible-xs">
+<!-- /Reviews Accordion visible only in Mobile View-->
+
+<!--Photos Slider Accordion-->
+<div class="container prod-details-accordion visible-xs photos-accordion">
+    <button class="filter-accordion">SHARE YOUR PHOTOS| #MYPSP</button>
+    <div class="panel filter-panel">
+        <div class="row">
+            <!--Share photos Slider - Carousel-->
+            <div>
+                <div class="psp-photos-slider-mobile col-xs-12">
+                    <div><img src="images/my-psp-5.jpg" /></div>
+                    <div><img src="images/my-psp-1.jpg" /></div>
+                    <div><img src="images/my-psp-2.jpg" /></div>
+                    <div><img src="images/my-psp-3.jpg" /></div>
+                    <div><img src="images/my-psp-4.jpg" /></div>
+                    <div><img src="images/my-psp-6.jpg" /></div>
+                </div>
+                <br>
+                <div class="col-xs-12">
+                    <button class="btn add-photos-btn"><img src="images/photos-share-icon-green.png"/>Add Photos</button>
+                </div>
+            </div>
+            <!--/Share photos Slider - Carousel-->
+        </div>
+    </div>
+</div>
+<hr class="horizontal-break-line hidden-xs">
+<!--Photos Slider Accordion-->
 
 <!--Recommended Products-->
 <section id="recommended-products">
@@ -824,11 +862,6 @@
             </h3>
         </div>
         <div class="pull-right view-all">
-            <div class="pull-left">
-                <!--<p class="text-faded pull-left">VIEW ALL-->
-                <!--</p>-->
-                <img class="visible-xs arrow-forward" src="images/forward-arrow.png">
-            </div>
             <a href="#" class="product-circle-arrow hidden-xs"><img src="images/arrow-fade.jpg"> </a>
             <a href="#" class="product-circle-arrow hidden-xs"><img src="images/arrow-dark.jpg"> </a>
 
@@ -1092,7 +1125,7 @@
 <!--/Products-->
 
 <!--Reviews-->
-<div class="container-fluid reviews-desktop">
+<div class="container-fluid reviews-desktop hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-md-2 col-sm-2 pull-left">
@@ -1191,11 +1224,6 @@
             </h3>
         </div>
         <div class="pull-right view-all">
-            <div class="pull-left">
-                <!--<p class="text-faded pull-left">VIEW ALL-->
-                <!--</p>-->
-                <img class="visible-xs arrow-forward" src="images/forward-arrow.png">
-            </div>
             <a href="#" class="product-circle-arrow hidden-xs"><img src="images/arrow-fade.jpg"> </a>
             <a href="#" class="product-circle-arrow hidden-xs"><img src="images/arrow-dark.jpg"> </a>
 
