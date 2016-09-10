@@ -26,7 +26,7 @@ hr {
 }
 
 #topbar {
-    position:fixed;
+    position: fixed;
     top: -60px; /* has to be around the height of the bar or more. */
     display: block;
     z-index: 99999;
@@ -44,6 +44,7 @@ hr {
 #toggleTop {
     display: none;
 }
+
 /* Styling the lables, to show and hide the bar */
 #showTop {
     position: fixed;
@@ -55,10 +56,12 @@ hr {
     background-color: #000000;
     color: #fff;
 }
+
 #hideTop {
     float: right;
     display: inline-block;
 }
+
 .show-notification {
     display: block;
 }
@@ -69,6 +72,7 @@ hr {
 header .global-header {
     background-color: #00af41;
 }
+
 .nav-search::-webkit-input-placeholder {
     text-align: center;
 }
@@ -86,9 +90,11 @@ header .global-header {
 .nav-search:-ms-input-placeholder {
     text-align: center;
 }
+
 .nav-search {
     display: none;
 }
+
 .main-header a {
     color: #000;
 }
@@ -222,9 +228,41 @@ header .global-header {
     line-height: 1.0;
 }
 
+#hero-slider .carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    margin-right: 5px;
+}
+
 .carousel-indicators li {
     background-color: #817b77;
     border: none;
+}
+
+#hero-slider .carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill-carousel {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.overlay-carousel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -257,12 +295,19 @@ header .global-header {
     margin-bottom: 120px;
 }
 
-.categories-banner img {
-    width: 100%;
-}
+/*.categories-banner img {*/
+/*width: 100%;*/
+/*}*/
 
-.category-index {
-    max-width: 560px;
+/*.category-index {*/
+/*max-width: 570px;*/
+/*minx-width: 560px;*/
+/*}*/
+
+.category-banner {
+    max-width: 570px;
+    min-width: 560px;
+    height: 415px;
 }
 
 .category-index .btn-primary {
@@ -311,6 +356,7 @@ header .global-header {
 .products-container {
     overflow-x: auto;
 }
+
 
 #promotions .container {
     padding-bottom: 20px;
@@ -514,7 +560,6 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     margin-bottom: 300px;
 }
 
-
 .signup-login-container .form-container .un-registered {
     padding-top: 40px;
 }
@@ -549,8 +594,8 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 }
 
 /*.signup-login-container small {*/
-    /*color: black;*/
-    /*font-size: 1.128em*/
+/*color: black;*/
+/*font-size: 1.128em*/
 /*}*/
 
 .signup-login-container .account-error {
@@ -568,13 +613,13 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     color: #00af41 !important;
 }
 
-.signup-login-container .form-container .btn-primary{
+.signup-login-container .form-container .btn-primary {
     font-size: 1.875em;
     line-height: 36px;
     padding: 12px 12px;
 }
 
-.signup-login-container .form-container .login-btn{
+.signup-login-container .form-container .login-btn {
     padding: 12px 93px;
 }
 
@@ -587,12 +632,13 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     font-size: 1.313em;
 }
 
-.forgot-password small{
+.forgot-password small {
     padding-top: 5px;
     color: black;
     font-size: 1.128em;
 }
-.forgot-password:hover{
+
+.forgot-password:hover {
     text-decoration: underline !important;
 }
 
@@ -670,15 +716,16 @@ button:focus {
 .text-faded {
     color: #9fa2a2;
 }
+
 /*Form controls*/
 .has-error .form-control {
     border-color: #ed1d23;
 }
+
 .has-error .input-group-addon {
     color: #ed1d23;
     border-color: #ed1d23;
 }
-
 
 /*Filter*/
 .filter-checked {
@@ -859,12 +906,14 @@ button:focus {
     font-size: 2.0075000200752em;
     font-weight: 900;
     color: #221f1f;
+    margin-bottom: 0;
 }
 
 .heading-mobile p {
-    font-size: 1.2546875125469998em;
+    font-size: 1.1em;
     font-weight: 400;
     color: #939598;
+    margin: 0 0 18px;
 }
 
 /*Images*/
@@ -946,6 +995,7 @@ button:focus {
 
 .product-tile img {
     margin-top: 20px;
+    max-height: 195px;
 }
 
 .product-tile .caption h3 {
@@ -1802,13 +1852,13 @@ button:focus {
     padding: 20px 30px;
 }
 
-
 /*Navbar toggle cross button*/
 
 .navbar-toggle {
     border: none;
     background: transparent !important;
 }
+
 .navbar-toggle:hover {
     background: transparent !important;
 }
@@ -1817,23 +1867,29 @@ button:focus {
     /*width: 22px;*/
     transition: all 0.2s;
 }
+
 .navbar-toggle .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
 }
+
 .navbar-toggle .middle-bar {
     opacity: 0;
 }
+
 .navbar-toggle .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
+
 .navbar-toggle.collapsed .top-bar {
     transform: rotate(0deg);
 }
+
 .navbar-toggle.collapsed .middle-bar {
     opacity: 1;
 }
+
 .navbar-toggle.collapsed .bottom-bar {
     transform: rotate(0deg);
 }
