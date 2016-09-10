@@ -75,24 +75,29 @@ header .global-header {
 
 .nav-search::-webkit-input-placeholder {
     text-align: center;
+    color: #282828;
 }
 
 .nav-search:-moz-placeholder {
     /* Firefox 18- */
     text-align: center;
+    color: #282828;
 }
 
 .nav-search::-moz-placeholder {
     /* Firefox 19+ */
     text-align: center;
+    color: #282828;
 }
 
 .nav-search:-ms-input-placeholder {
     text-align: center;
+    color: #282828;
 }
 
 .nav-search {
     display: none;
+    font-size: 0.9em;
 }
 
 .main-header a {
@@ -229,8 +234,8 @@ header .global-header {
 }
 
 #hero-slider .carousel-indicators .active {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: 1px;
     margin-right: 5px;
 }
@@ -238,6 +243,8 @@ header .global-header {
 .carousel-indicators li {
     background-color: #817b77;
     border: none;
+    width: 8px;
+    height: 8px;
 }
 
 #hero-slider .carousel-inner {

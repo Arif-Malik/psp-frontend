@@ -47,12 +47,24 @@
     /*}*/
 
     .carousel-content {
-        top: 35%
+        top: 30%
     }
 
     .carousel-inner > .item > img {
         height: 360px;
     }
+
+    #hero-slider .carousel-inner {
+        height: 45%;
+    }
+    #hero-slider .carousel-content .text-large {
+        font-size: 1.900em;
+    }
+    #hero-slider .carousel-content .btn-primary {
+        font-size: 1.000em;
+        padding: 12px 12px;
+    }
+
 
 
     /*Containers*/
@@ -148,7 +160,7 @@
 
     .img-content .career {
         top: 0;
-        left: 50%;
+        left: 46%;
         line-height: 1;
     }
 
