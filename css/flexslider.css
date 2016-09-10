@@ -162,7 +162,7 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
 }
 .flex-direction-nav .flex-disabled {
-  opacity: 0!important;
+  opacity: 0.3 !important;
   filter: alpha(opacity=0);
   cursor: default;
 }

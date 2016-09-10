@@ -41,7 +41,10 @@ jQuery(document).ready(function () {
         slidesToScroll: 1,
         dots: false
     });
+
+
     /*
+
 
 
      * Stars rating configuration
@@ -56,9 +59,22 @@ jQuery(document).ready(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
-        slideshow: false
+        slideshow: false,
+        animationLoop: false
     });
+    $( ".flex-disabled" ).click(function(e) {
+        e.preventDefault();
 
+        //var target;
+        //if (watchedEvent === "" || watchedEvent === event.type) {
+        //    target = ($(this).hasClass(namespace + 'next')) ? slider.getTarget('next') : slider.getTarget('prev');
+        //    slider.flexAnimate(target, slider.vars.pauseOnAction);
+        //            slider.flexAnimate(target, slider.vars.pauseOnAction);
+        //        if (!$(this).hasClass(namespace + 'disabled')) {
+        //            target = ($(this).hasClass(namespace + 'next')) ? slider.getTarget('next') : slider.getTarget('prev');
+        //        }
+        //}
+    });
     /*Show/Hide Password*/
     $(".show-pwd").mousedown(function () {
         $("#password").attr('type', 'text');

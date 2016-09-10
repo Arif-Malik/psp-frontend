@@ -340,6 +340,10 @@
     margin-left: 20px;
     padding: 0px 15px;
 }
+.img-right-prod-details{
+    margin-top: -5px;
+    width:7px;
+}
 .review-rows h4{
     font-size: 1.375em;
     font-weight: 700;
@@ -619,11 +623,17 @@
         font-family: Arial;
         color: #ffffff;
         font-size: 14px;
-        padding: 5px;
+        padding: 5px 15px;
         text-decoration: none;
         font-weight: 700;
         margin-top: 10px;
         margin-left: 32%;
     }
-
+    .add-photos-btn img{
+        margin-right: 10px;
+    }
+    .img-right-prod-details{
+        margin-top: -3px;
+        width:7px;
+    }
 }
