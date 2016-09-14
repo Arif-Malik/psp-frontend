@@ -1,42 +1,5 @@
 
 /*Product Hover Carousel*/
 @media (min-width: 768px){
-.hover-details{
-    padding:9px;
-    display: none;
-}
-.hover-details .btn-primary{
-    width:100%;
-}
-.hover-details ul{
-    padding-left: 18px !important;
-}
-.hover-details .custom-checkbox{
-    margin-left: 0px !important;
-    margin-top: 10px !important;
-}
-.hover-details .custom-checkbox label{
-    font-weight: 400 !important;
-}
-.prod-carousel{
-    display: none;
-}
-.prod-img-tile{
-    display: block;
-}
-.carousel-control {
-    color:#939598;
-    top:44%;
-    bottom:auto;
-    opacity:1;
-    background-image:none !important;
-}
-.carousel-control.right {
-    left:auto;
-    right:-15px;
-}
-.carousel-control.left {
-    right:auto;
-    left:-15px;
-}
+
 }

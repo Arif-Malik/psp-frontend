@@ -111,8 +111,11 @@ jQuery(document).ready(function () {
      *bootstrap carousel
      **/
     $('.carousel').carousel({
-        interval: 3000
+        interval: 5000
     });
+
+    /*product carousel*/
+    $('.prod-carousel').carousel();
 
 
     $('#accordion').on('show.bs.collapse', function () {
@@ -147,13 +150,22 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
-            //$("#carousel-img").attr("src","images/PSP_02_mobile.png");
-
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "");
-            //$("#carousel-img").attr("src","images/PSP_02.png");
+
+            $(".product-tile").mouseenter(function(){
+                $carousel = $(this).children(".prod-carousel");
+                $carousel.toggle();
+                img = $(this).find(".prod-img-tile");
+                img.toggle();
+            }).mouseleave(function(){
+                $carousel = $(this).children(".prod-carousel");
+                $carousel.toggle();
+                img = $(this).find(".prod-img-tile");
+                img.toggle();
+            });
         }
     }
 

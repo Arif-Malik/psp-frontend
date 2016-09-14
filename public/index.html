@@ -14,7 +14,6 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/star-rating.min.css" rel="stylesheet">
-    <link href="css/temp-style.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
@@ -31,19 +30,19 @@
 <body>
 
 <!--Notification Bar-->
-<!--<section id="main-notification">-->
-    <!--&lt;!&ndash;ADD 'show-notification class to show the notification&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="notification-bar show-notification">&ndash;&gt;-->
-    <!--<div class="notification-bar">-->
-        <!--<input type="checkbox" id="toggleTop" name="toggleTop" value="toggleTop" checked="checked">-->
+<section id="main-notification">
+    <!--ADD 'show-notification class to show the notification-->
+    <!--<div class="notification-bar show-notification">-->
+    <div class="notification-bar">
+        <input type="checkbox" id="toggleTop" name="toggleTop" value="toggleTop" checked="checked">
 
-        <!--<div id="topbar">-->
-            <!--&lt;!&ndash; You're content here &ndash;&gt;-->
-            <!--my notification goes here-->
-            <!--<label for="toggleTop" id="hideTop">X</label>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
+        <div id="topbar">
+            <!-- You're content here -->
+            my notification goes here
+            <label for="toggleTop" id="hideTop">X</label>
+        </div>
+    </div>
+</section>
 <!--/Notification Bar-->
 
 <!--Header-->
@@ -388,9 +387,10 @@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="item active carousel-image">
+            <div class="item active">
                 <!--<img src="images/PSP_01.png" alt="Bruno">-->
-                <div class="fill-carousel" style="background-image:url('images/PSP_01.png');"></div>\
+                <div class="fill-carousel" style="background-image:url('images/PSP_01.png');"></div>
+                \
                 <div class="overlay-carousel"></div>
                 <div class="carousel-content">
                     <p class="text-large">Carefully selected products.</p>
@@ -517,6 +517,207 @@
                                 <div class="carousel-inner">
                                     <div class="item active">
                                         <div>
+                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                                        </div>
+                                    </div><!-- End Item -->
+                                    <div class="item">
+                                        <div >
+                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                        </div>
+                                    </div><!-- End Item -->
+                                </div><!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel" data-slide="prev"><img class="center-block"  src="images/arrow-left-grey.png" /></a>
+                                    <a class="right carousel-control" href="#prodCarousel" data-slide="next"><img class="center-block"  src="images/arrow-right-grey.png" /></a>
+                                </div>
+                            </div>
+                            <!-- /.carousel -->
+
+                        </a>
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="prod-rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
+                        <div class="hover-details">
+                            <h4>Details</h4>
+                            <ul>
+                                <li>All Natural Ingredients</li>
+                                <li>Free Range Chicken</li>
+                                <li>Made in USA</li>
+                            </ul>
+                            <button class="btn btn-primary">Add To Favourites</button>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox1">
+                                <label for="checkbox1">Compare</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
+
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
+                        </div>
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarousel2" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                                        </div>
+                                    </div><!-- End Item -->
+                                    <div class="item">
+                                        <div >
+                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                        </div>
+                                    </div><!-- End Item -->
+                                </div><!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel2" data-slide="prev"><img class="center-block"  src="images/arrow-left-grey.png" /></a>
+                                    <a class="right carousel-control" href="#prodCarousel2" data-slide="next"><img class="center-block"  src="images/arrow-right-grey.png" /></a>
+                                </div>
+                            </div>
+                            <!--carousel-->
+
+                        </a>
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="prod-rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
+                        <div class="hover-details">
+                            <h4>Details</h4>
+                            <ul>
+                                <li>All Natural Ingredients</li>
+                                <li>Free Range Chicken</li>
+                                <li>Made in USA</li>
+                            </ul>
+                            <button class="btn btn-primary">Add To Favourites</button>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox2">
+                                <label for="checkbox2">Compare</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
+
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
+                        </div>
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarouse3" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                                        </div>
+                                    </div><!-- End Item -->
+                                    <div class="item">
+                                        <div >
+                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                        </div>
+                                    </div><!-- End Item -->
+                                </div><!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarouse3" data-slide="prev"><img class="center-block"  src="images/arrow-left-grey.png" /></a>
+                                    <a class="right carousel-control" href="#prodCarouse3" data-slide="next"><img class="center-block"  src="images/arrow-right-grey.png" /></a>
+                                </div>
+                            </div>
+                            <!-- /.carousel -->
+
+                        </a>
+
+                        <div class="caption">
+                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
+                            <hr>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
+
+                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
+                            <del class="text-muted">$49.88</del>
+                            <span class="price"><strong>$46.98</strong></span>
+                            <small>with card</small>
+                            <div class="prod-rating">
+                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
+                                       data-size="sm"/>
+                                <span class="text-muted">(12)</span>
+                            </div>
+                        </div>
+                        <div class="hover-details">
+                            <h4>Details</h4>
+                            <ul>
+                                <li>All Natural Ingredients</li>
+                                <li>Free Range Chicken</li>
+                                <li>Made in USA</li>
+                            </ul>
+                            <button class="btn btn-primary">Add To Favourites</button>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox3">
+                                <label for="checkbox3">Compare</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+                    <div class="thumbnail product-tile">
+                        <div class="advert">
+                            <p class="bg-purple">NEW</p>
+
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
+                        </div>
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarouse4" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
                                             <img class="center-block" src="images/recommended-1.png" alt="Slide1">
                                         </div>
                                     </div>
@@ -530,9 +731,9 @@
                                 </div>
                                 <!-- End Carousel Inner -->
                                 <div class="carousel-controls">
-                                    <a class="left carousel-control" href="#prodCarousel" data-slide="prev">
+                                    <a class="left carousel-control" href="#prodCarouse4" data-slide="prev">
                                         <img class="center-block" src="images/arrow-left-grey.png"/></a>
-                                    <a class="right carousel-control" href="#prodCarousel" data-slide="next">
+                                    <a class="right carousel-control" href="#prodCarouse4" data-slide="next">
                                         <img class="center-block" src="images/arrow-right-grey.png"/></a>
                                 </div>
                             </div>
@@ -546,16 +747,19 @@
                             <a href="#"><h3>REDFORD NATURALS</h3></a>
 
                             <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
                             <del class="text-muted">$49.88</del>
                             <span class="price"><strong>$46.98</strong></span>
                             <small>with card</small>
-                            <div class="rating">
+                            <div class="prod-rating">
                                 <input class="stars-home" value="3" type="number" min=0 max=5 step=1
                                        data-size="sm"/>
                                 <span class="text-muted">(12)</span>
                             </div>
                         </div>
-                        <div class="hover-details hidden-xs">
+                        <div class="hover-details">
                             <h4>Details</h4>
                             <ul>
                                 <li>All Natural Ingredients</li>
@@ -564,208 +768,12 @@
                             </ul>
                             <button class="btn btn-primary">Add To Favourites</button>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox4">
+                                <label for="checkbox4">Compare</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
-                    <div class="thumbnail product-tile">
-                        <div class="advert">
-                            <p class="bg-red">NEW</p>
-
-                        </div>
-                        <a href="#">
-                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                            <!-- Carousel================================================== -->
-                            <div id="prodCarousel2" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                    <div class="item">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                </div>
-                                <!-- End Carousel Inner -->
-                                <div class="carousel-controls">
-                                    <a class="left carousel-control" href="#prodCarousel2" data-slide="prev"><img
-                                            src="images/arrow-left-grey.png" class="center-block" /></a>
-                                    <a class="right carousel-control" href="#prodCarousel2" data-slide="next"><img
-                                            src="images/arrow-right-grey.png" class="center-block" /></a>
-                                </div>
-                            </div>
-                            <!-- /.carousel -->
-                        </a>
-
-                        <div class="caption">
-                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                            <hr>
-                            <a href="#"><h3>REDFORD NATURALS</h3></a>
-
-                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
-                            <del class="text-muted">$49.88</del>
-                            <span class="price"><strong>$46.98</strong></span>
-                            <small>with card</small>
-                            <div class="rating">
-                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
-                                       data-size="sm"/>
-                                <span class="text-muted">(12)</span>
-                            </div>
-                        </div>
-                        <div class="hover-details hidden-xs">
-                            <h4>Details</h4>
-                            <ul>
-                                <li>All Natural Ingredients</li>
-                                <li>Free Range Chicken</li>
-                                <li>Made in USA</li>
-                            </ul>
-                            <button class="btn btn-primary">Add To Favourites</button>
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
-                    <div class="thumbnail product-tile">
-                        <div class="advert">
-                            <p class="bg-red">NEW</p>
-
-                        </div>
-                        <a href="#">
-                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                            <!-- Carousel================================================== -->
-                            <div id="prodCarousel3" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                    <div class="item">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                </div>
-                                <!-- End Carousel Inner -->
-                                <div class="carousel-controls">
-                                    <a class="left carousel-control" href="#prodCarousel3" data-slide="prev"><img
-                                            src="images/arrow-left-grey.png" class="center-block" /></a>
-                                    <a class="right carousel-control" href="#prodCarousel3" data-slide="next"><img
-                                            src="images/arrow-right-grey.png" class="center-block" /></a>
-                                </div>
-                            </div>
-                            <!-- /.carousel -->
-                        </a>
-
-                        <div class="caption">
-                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                            <hr>
-                            <a href="#"><h3>REDFORD NATURALS</h3></a>
-
-                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
-                            <del class="text-muted">$49.88</del>
-                            <span class="price"><strong>$46.98</strong></span>
-                            <small>with card</small>
-                            <div class="rating">
-                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
-                                       data-size="sm"/>
-                                <span class="text-muted">(12)</span>
-                            </div>
-                        </div>
-                        <div class="hover-details hidden-xs">
-                            <h4>Details</h4>
-                            <ul>
-                                <li>All Natural Ingredients</li>
-                                <li>Free Range Chicken</li>
-                                <li>Made in USA</li>
-                            </ul>
-                            <button class="btn btn-primary">Add To Favourites</button>
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
-                    <div class="thumbnail product-tile">
-                        <div class="advert">
-                            <p class="bg-red">NEW</p>
-
-                        </div>
-                        <a href="#">
-                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                            <!-- Carousel================================================== -->
-                            <div id="prodCarousel4" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                    <div class="item">
-                                        <div>
-                                            <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
-                                        </div>
-                                    </div>
-                                    <!-- End Item -->
-                                </div>
-                                <!-- End Carousel Inner -->
-                                <div class="carousel-controls">
-                                    <a class="left carousel-control" href="#prodCarousel4" data-slide="prev"><img
-                                            src="images/arrow-left-grey.png" class="center-block" /></a>
-                                    <a class="right carousel-control" href="#prodCarousel4" data-slide="next"><img
-                                            src="images/arrow-right-grey.png" class="center-block" /></a>
-                                </div>
-                            </div>
-                            <!-- /.carousel -->
-                        </a>
-
-                        <div class="caption">
-                            <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
-                            <hr>
-                            <a href="#"><h3>REDFORD NATURALS</h3></a>
-
-                            <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
-                            <del class="text-muted">$49.88</del>
-                            <span class="price"><strong>$46.98</strong></span>
-                            <small>with card</small>
-                            <div class="rating">
-                                <input class="stars-home" value="3" type="number" min=0 max=5 step=1
-                                       data-size="sm"/>
-                                <span class="text-muted">(12)</span>
-                            </div>
-                        </div>
-                        <div class="hover-details hidden-xs">
-                            <h4>Details</h4>
-                            <ul>
-                                <li>All Natural Ingredients</li>
-                                <li>Free Range Chicken</li>
-                                <li>Made in USA</li>
-                            </ul>
-                            <button class="btn btn-primary">Add To Favourites</button>
-                            <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -804,49 +812,55 @@
 
                             <p class="bg-blue">USA</p>
                         </div>
-                        <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                        <!-- Carousel================================================== -->
-                        <div id="prodCarousel5" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarousel5" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-1.png" alt="Slide1">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- End Item -->
-                                <div class="item">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                    <!-- End Item -->
+                                    <div class="item">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-2.png" alt="Slide2">
+                                        </div>
                                     </div>
+                                    <!-- End Item -->
                                 </div>
-                                <!-- End Item -->
+                                <!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel5" data-slide="prev">
+                                        <img class="center-block" src="images/arrow-left-grey.png"/></a>
+                                    <a class="right carousel-control" href="#prodCarousel5" data-slide="next">
+                                        <img class="center-block" src="images/arrow-right-grey.png"/></a>
+                                </div>
                             </div>
-                            <!-- End Carousel Inner -->
-                            <div class="carousel-controls">
-                                <a class="left carousel-control" href="#prodCarousel5" data-slide="prev"><img
-                                        src="images/arrow-left-grey.png" class="center-block" /></a>
-                                <a class="right carousel-control" href="#prodCarousel5" data-slide="next"><img
-                                        src="images/arrow-right-grey.png" class="center-block" /></a>
-                            </div>
-                        </div>
-                        <!-- /.carousel -->
+                            <!-- /.carousel -->
+
+                        </a>
 
                         <div class="caption">
                             <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
                             <hr>
-                            <h3>REDFORD NATURALS</h3>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
 
                             <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
                             <del class="text-muted">$49.88</del>
                             <span class="price"><strong>$46.98</strong></span>
                             <small>with card</small>
-                            <div class="rating">
+                            <div class="prod-rating">
                                 <input class="stars-home" value="3" type="number" min=0 max=5 step=1
                                        data-size="sm"/>
                                 <span class="text-muted">(12)</span>
                             </div>
                         </div>
-                        <div class="hover-details hidden-xs">
+                        <div class="hover-details">
                             <h4>Details</h4>
                             <ul>
                                 <li>All Natural Ingredients</li>
@@ -855,8 +869,8 @@
                             </ul>
                             <button class="btn btn-primary">Add To Favourites</button>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox5">
+                                <label for="checkbox5">Compare</label>
                             </div>
                         </div>
                     </div>
@@ -866,50 +880,59 @@
                         <div class="advert">
                             <p class="bg-purple">NEW</p>
 
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
                         </div>
-                        <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                        <!-- Carousel================================================== -->
-                        <div id="prodCarousel8" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarousel6" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-1.png" alt="Slide1">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- End Item -->
-                                <div class="item">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                    <!-- End Item -->
+                                    <div class="item">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-2.png" alt="Slide2">
+                                        </div>
                                     </div>
+                                    <!-- End Item -->
                                 </div>
-                                <!-- End Item -->
+                                <!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel6" data-slide="prev">
+                                        <img class="center-block" src="images/arrow-left-grey.png"/></a>
+                                    <a class="right carousel-control" href="#prodCarousel6" data-slide="next">
+                                        <img class="center-block" src="images/arrow-right-grey.png"/></a>
+                                </div>
                             </div>
-                            <!-- End Carousel Inner -->
-                            <div class="carousel-controls">
-                                <a class="left carousel-control" href="#prodCarousel8" data-slide="prev"><img
-                                        src="images/arrow-left-grey.png" class="center-block" /></a>
-                                <a class="right carousel-control" href="#prodCarousel8" data-slide="next"><img
-                                        src="images/arrow-right-grey.png" class="center-block" /></a>
-                            </div>
-                        </div>
-                        <!-- /.carousel -->
+                            <!-- /.carousel -->
+
+                        </a>
 
                         <div class="caption">
                             <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
                             <hr>
-                            <h3>REDFORD NATURALS</h3>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
 
                             <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
                             <del class="text-muted">$49.88</del>
                             <span class="price"><strong>$46.98</strong></span>
                             <small>with card</small>
-                            <div class="rating">
+                            <div class="prod-rating">
                                 <input class="stars-home" value="3" type="number" min=0 max=5 step=1
                                        data-size="sm"/>
                                 <span class="text-muted">(12)</span>
                             </div>
                         </div>
-                        <div class="hover-details hidden-xs">
+                        <div class="hover-details">
                             <h4>Details</h4>
                             <ul>
                                 <li>All Natural Ingredients</li>
@@ -918,8 +941,8 @@
                             </ul>
                             <button class="btn btn-primary">Add To Favourites</button>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox6">
+                                <label for="checkbox6">Compare</label>
                             </div>
                         </div>
                     </div>
@@ -929,50 +952,59 @@
                         <div class="advert">
                             <p class="bg-purple">NEW</p>
 
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
                         </div>
-                        <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                        <!-- Carousel================================================== -->
-                        <div id="prodCarousel6" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarousel7" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-1.png" alt="Slide1">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- End Item -->
-                                <div class="item">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                    <!-- End Item -->
+                                    <div class="item">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-2.png" alt="Slide2">
+                                        </div>
                                     </div>
+                                    <!-- End Item -->
                                 </div>
-                                <!-- End Item -->
+                                <!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel7" data-slide="prev">
+                                        <img class="center-block" src="images/arrow-left-grey.png"/></a>
+                                    <a class="right carousel-control" href="#prodCarousel7" data-slide="next">
+                                        <img class="center-block" src="images/arrow-right-grey.png"/></a>
+                                </div>
                             </div>
-                            <!-- End Carousel Inner -->
-                            <div class="carousel-controls">
-                                <a class="left carousel-control" href="#prodCarousel6" data-slide="prev"><img
-                                        src="images/arrow-left-grey.png" class="center-block" /></a>
-                                <a class="right carousel-control" href="#prodCarousel6" data-slide="next"><img
-                                        src="images/arrow-right-grey.png" class="center-block" /></a>
-                            </div>
-                        </div>
-                        <!-- /.carousel -->
+                            <!-- /.carousel -->
+
+                        </a>
 
                         <div class="caption">
                             <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
                             <hr>
-                            <h3>REDFORD NATURALS</h3>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
 
                             <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
                             <del class="text-muted">$49.88</del>
                             <span class="price"><strong>$46.98</strong></span>
                             <small>with card</small>
-                            <div class="rating">
+                            <div class="prod-rating">
                                 <input class="stars-home" value="3" type="number" min=0 max=5 step=1
                                        data-size="sm"/>
                                 <span class="text-muted">(12)</span>
                             </div>
                         </div>
-                        <div class="hover-details hidden-xs">
+                        <div class="hover-details">
                             <h4>Details</h4>
                             <ul>
                                 <li>All Natural Ingredients</li>
@@ -981,8 +1013,8 @@
                             </ul>
                             <button class="btn btn-primary">Add To Favourites</button>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox7">
+                                <label for="checkbox7">Compare</label>
                             </div>
                         </div>
                     </div>
@@ -992,50 +1024,59 @@
                         <div class="advert">
                             <p class="bg-purple">NEW</p>
 
+                            <p class="bg-red">SALE</p>
+
+                            <p class="bg-blue">USA</p>
                         </div>
-                        <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
-                        <!-- Carousel================================================== -->
-                        <div id="prodCarousel7" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-1.png" alt="Slide1">
+                        <a href="#">
+                            <img class="center-block prod-img-tile" src="images/promotion.png" alt="product name">
+                            <!-- Carousel================================================== -->
+                            <div id="prodCarousel8" class="carousel slide prod-carousel hidden-xs" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-1.png" alt="Slide1">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- End Item -->
-                                <div class="item">
-                                    <div>
-                                        <img class="center-block"  src="images/recommended-2.png" alt="Slide2">
+                                    <!-- End Item -->
+                                    <div class="item">
+                                        <div>
+                                            <img class="center-block" src="images/recommended-2.png" alt="Slide2">
+                                        </div>
                                     </div>
+                                    <!-- End Item -->
                                 </div>
-                                <!-- End Item -->
+                                <!-- End Carousel Inner -->
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#prodCarousel8" data-slide="prev">
+                                        <img class="center-block" src="images/arrow-left-grey.png"/></a>
+                                    <a class="right carousel-control" href="#prodCarousel8" data-slide="next">
+                                        <img class="center-block" src="images/arrow-right-grey.png"/></a>
+                                </div>
                             </div>
-                            <!-- End Carousel Inner -->
-                            <div class="carousel-controls">
-                                <a class="left carousel-control" href="#prodCarousel7" data-slide="prev"><img
-                                        src="images/arrow-left-grey.png" class="center-block" /></a>
-                                <a class="right carousel-control" href="#prodCarousel7" data-slide="next"><img
-                                        src="images/arrow-right-grey.png" class="center-block" /></a>
-                            </div>
-                        </div>
-                        <!-- /.carousel -->
+                            <!-- /.carousel -->
+
+                        </a>
 
                         <div class="caption">
                             <a class="fa fa-heart-o pull-left icon-heart" aria-hidden="true"></a>
                             <hr>
-                            <h3>REDFORD NATURALS</h3>
+                            <a href="#"><h3>REDFORD NATURALS</h3></a>
 
                             <p>Grain Free chicken & Potatao Dog Food,24 LBS.</p>
+
+                        </div>
+                        <div class="prod-footer">
                             <del class="text-muted">$49.88</del>
                             <span class="price"><strong>$46.98</strong></span>
                             <small>with card</small>
-                            <div class="rating">
+                            <div class="prod-rating">
                                 <input class="stars-home" value="3" type="number" min=0 max=5 step=1
                                        data-size="sm"/>
                                 <span class="text-muted">(12)</span>
                             </div>
                         </div>
-                        <div class="hover-details hidden-xs">
+                        <div class="hover-details">
                             <h4>Details</h4>
                             <ul>
                                 <li>All Natural Ingredients</li>
@@ -1044,8 +1085,8 @@
                             </ul>
                             <button class="btn btn-primary">Add To Favourites</button>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="filter-input-checkbox" value="1" >
-                                <label for="compare">Compare</label>
+                                <input type="checkbox" class="filter-input-checkbox" value="1" id="checkbox8">
+                                <label for="checkbox8">Compare</label>
                             </div>
                         </div>
                     </div>
@@ -1309,39 +1350,8 @@
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 <script>
-    $(".product-tile").mouseenter(function () {
-        $carousel = $(this).children(".prod-carousel");
-        $carousel.toggle();
-        img = $(this).find(".prod-img-tile");
-        img.toggle();
-    }).mouseleave(function () {
-        $carousel = $(this).children(".prod-carousel");
-        $carousel.toggle();
-        img = $(this).find(".prod-img-tile");
-        img.toggle();
-    });
-    var width = $(window).width();
-    $(".product-tile").mouseenter(function(){
-        if ((width > 767)) {
-            $hoverSection = $(this).children(".hover-details");
-            $hoverSection.toggle();
-            $carousel = $(this).children(".prod-carousel");
-            $carousel.toggle();
-            img = $(this).find(".prod-img-tile");
-            img.toggle();
-        }
-    }).mouseleave(function(){
-        if ((width > 767)) {
-            $hoverSection = $(this).children(".hover-details");
-            $hoverSection.toggle();
-            $carousel = $(this).children(".prod-carousel");
-            $carousel.toggle();
-            img = $(this).find(".prod-img-tile");
-            img.toggle();
-        }
-    });
 
-    $('.prod-carousel').carousel();
+
 </script>
 </body>
 </html>
