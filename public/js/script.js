@@ -8,20 +8,35 @@ jQuery(document).ready(function () {
     var captionText = document.getElementById("caption");
 
     /*Header Search Bar*/
-    $(".search-icon").click(function(){
+    $(".search-icon").click(function () {
         $(".nav-search").toggle('fast');
     });
 
-    /*Modal  window*/
+    /*Toggle drop-down menu*/
 
-    $('#zoom-btn').click(function() {
-        var active_li=document.getElementsByClassName("flex-active-slide")[0].firstChild.nextSibling;
+    $('.navbar-toggle').click(function () {
+        if ($(this).hasClass('collapsed')) {
+            $(this).addClass('open').removeClass('collapsed');
+        }
+        else {
+            $(this).addClass('collapsed').removeClass('open');
+        }
+    });
+
+    /*Initiate menu instance*/
+    $(function () {
+        $('#dl-menu').dlmenu();
+    });
+
+    /*Modal  window*/
+    $('#zoom-btn').click(function () {
+        var active_li = document.getElementsByClassName("flex-active-slide")[0].firstChild.nextSibling;
         productModal.style.display = "block";
         modalImg.src = active_li.getAttribute("src");
     });
     // Get the modal element that closes the modal
 
-    $('#product-zoom-modal').click(function(){
+    $('#product-zoom-modal').click(function () {
         productModal.style.display = "none";
     });
 
@@ -44,9 +59,6 @@ jQuery(document).ready(function () {
 
 
     /*
-
-
-
      * Stars rating configuration
      */
 
@@ -62,7 +74,7 @@ jQuery(document).ready(function () {
         slideshow: false,
         animationLoop: false
     });
-    $( ".flex-disabled" ).click(function(e) {
+    $(".flex-disabled").click(function (e) {
         e.preventDefault();
 
         //var target;
@@ -92,20 +104,6 @@ jQuery(document).ready(function () {
     }).mouseout(function () {
         $("#RePassword").attr('type', 'password');
     });
-
-    /*Toggle drop-down menu*/
-
-    //$(".yamm-fw").hover(
-    //    function() {
-    //        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-    //        $(this).toggleClass('open');
-    //    },
-    //    function() {
-    //        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-    //        $(this).toggleClass('open');
-    //    }
-    //);
-
 
     /*
      *bootstrap carousel
@@ -155,12 +153,12 @@ jQuery(document).ready(function () {
             $('.toggle-footer').removeClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "");
 
-            $(".product-tile").mouseenter(function(){
+            $(".product-tile").mouseenter(function () {
                 $carousel = $(this).children(".prod-carousel");
                 $carousel.toggle();
                 img = $(this).find(".prod-img-tile");
                 img.toggle();
-            }).mouseleave(function(){
+            }).mouseleave(function () {
                 $carousel = $(this).children(".prod-carousel");
                 $carousel.toggle();
                 img = $(this).find(".prod-img-tile");
