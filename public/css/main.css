@@ -41,29 +41,17 @@ hr {
 }
 
 /* Hiding the checkbox */
-#toggleTop {
+.toggleTop {
     display: none;
 }
 
-/* Styling the lables, to show and hide the bar */
-#showTop {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    right: 30px;
-    /*display: block;*/
-    padding: 10px;
-    background-color: #000000;
-    color: #fff;
-}
-
-#hideTop {
+.hideTop {
     float: right;
     display: inline-block;
 }
 
 /* Displaying the bar when the checkbox is checked */
-#toggleTop:checked + .topbar {
+.toggleTop:checked + .topbar {
     transition: top 1s;
     top:0px;
 }
