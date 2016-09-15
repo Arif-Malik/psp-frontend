@@ -25,10 +25,10 @@ hr {
     display: none;
 }
 
-#topbar {
+.topbar {
     position: fixed;
     top: -60px; /* has to be around the height of the bar or more. */
-    display: block;
+    display: none;
     z-index: 99999;
     box-sizing: border-box;
     width: 100%;
@@ -51,7 +51,7 @@ hr {
     z-index: 9999;
     top: 0;
     right: 30px;
-    display: block;
+    /*display: block;*/
     padding: 10px;
     background-color: #000000;
     color: #fff;
@@ -63,7 +63,7 @@ hr {
 }
 
 /* Displaying the bar when the checkbox is checked */
-#toggleTop:checked + #topbar {
+#toggleTop:checked + .topbar {
     transition: top 1s;
     top:0px;
 }
