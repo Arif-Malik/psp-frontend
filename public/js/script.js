@@ -12,17 +12,6 @@ jQuery(document).ready(function () {
         $(".nav-search").toggle('fast');
     });
 
-    /*Toggle drop-down menu*/
-
-    $('.navbar-toggle').click(function () {
-        if ($(this).hasClass('collapsed')) {
-            $(this).addClass('open').removeClass('collapsed');
-        }
-        else {
-            $(this).addClass('collapsed').removeClass('open');
-        }
-    });
-
     /*Initiate menu instance*/
     $(function () {
         $('#dl-menu').dlmenu();

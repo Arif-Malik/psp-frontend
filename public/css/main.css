@@ -232,6 +232,9 @@ header .global-header {
     margin: 1px;
     margin-right: 5px;
 }
+#hero-slider .carousel-indicators {
+    z-index: 6;
+}
 
 .carousel-indicators li {
     background-color: #817b77;
@@ -1883,28 +1886,28 @@ button:focus {
     background: transparent !important;
 }
 
-.navbar-toggle.open .icon-bar {
+.dl-active .icon-bar {
     /*width: 22px;*/
-    transition: all 0.2s;
+    transition: all 0.2s !important;
 }
-.navbar-toggle.open .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+.dl-active .top-bar {
+    transform: rotate(45deg) !important;
+    transform-origin: 10% 10% !important;
 }
-.navbar-toggle.open .middle-bar {
-    opacity: 0;
+.dl-active .middle-bar {
+    opacity: 0 !important;
 }
-.navbar-toggle.open .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+.dl-active .bottom-bar {
+    transform: rotate(-45deg) !important;
+    transform-origin: 10% 90% !important;
 }
-.navbar-toggle.collapsed .top-bar {
+.navbar-toggle .top-bar {
     transform: rotate(0deg);
 }
-.navbar-toggle.collapsed .middle-bar {
+.navbar-toggle .middle-bar {
     opacity: 1;
 }
-.navbar-toggle.collapsed .bottom-bar {
+.navbar-toggle .bottom-bar {
     transform: rotate(0deg);
 }
 
@@ -1920,7 +1923,7 @@ button:focus {
     background: transparent !important;
 }
 .dl-menuwrapper .dl-menuwrapper , .dl-menuwrapper ul {
-    background: black !important;
+    background: #231f1f !important;
 }
 .dl-menuwrapper {
     max-width: none !important;

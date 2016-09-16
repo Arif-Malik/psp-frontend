@@ -421,6 +421,12 @@
 
 }
 
+@media (max-width: 320px) {
+    .img-content .career {
+        left: 41%;
+    }
+}
+
 /*@media (max-width: 767px) {*/
 /*Tablets layouts*/
 @media (max-width: 992px) and (min-width: 768px) {

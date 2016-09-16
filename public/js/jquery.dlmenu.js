@@ -1,14 +1,4 @@
-/**
- * jquery.dlmenu.js v1.0.1
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
-;( function( $, window, undefined ) {
+( function( $, window, undefined ) {
 
 	'use strict';
 
@@ -66,8 +56,11 @@
 		},
 		_config : function() {
 			this.open = false;
+			this.bottomMenu= this.$el.children('.dl-bottom-menu');
+			this.topMenu= this.$el.children('.dl-top-menu');
 			this.$trigger = this.$el.children( '.dl-trigger' );
-			this.$menu = this.$el.children( 'ul.dl-menu' );
+			this.$menu = this.$el.children( '.dl-menu' );
+			this.$menuBtn = $( '.navbar-toggle' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
 			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">back</a></li>' );
 			this.$back = this.$menu.find( 'li.dl-back' );
@@ -89,11 +82,11 @@
 			} );
 
 			this.$menuitems.on( 'click.dlmenu', function( event ) {
-				
 				event.stopPropagation();
 
 				var $item = $(this),
 					$submenu = $item.children( 'ul.dl-submenu' );
+
 
 				if( $submenu.length > 0 ) {
 
@@ -102,6 +95,10 @@
 							self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classout ).addClass( 'dl-subview' );
 							$item.addClass( 'dl-subviewopen' ).parents( '.dl-subviewopen:first' ).removeClass( 'dl-subviewopen' ).addClass( 'dl-subview' );
 							$flyin.remove();
+							var hideTop = $(".dl-bottom-menu").find(".dl-subviewopen");
+							if(hideTop.length > 0) {
+								$('.dl-top-menu').css("display", "none");
+							}
 						};
 
 					setTimeout( function() {
@@ -115,7 +112,10 @@
 						}
 
 						self.options.onLevelClick( $item, $item.children( 'a:first' ).text() );
+
 					} );
+
+
 
 					return false;
 
@@ -123,6 +123,8 @@
 				else {
 					self.options.onLinkClick( $item, event );
 				}
+
+
 
 			} );
 
@@ -156,7 +158,13 @@
 						$subview.addClass( 'dl-subviewopen' );
 					}
 					$subview.removeClass( 'dl-subview' );
+					var hideTop = $(".dl-bottom-menu").find(".dl-subviewopen");
+					console.log(hideTop);
+					if(hideTop.length === 0) {
+						$('.dl-top-menu').css("display", "block");
+					}
 				} );
+
 
 				return false;
 
@@ -176,6 +184,7 @@
 				};
 			
 			this.$menu.removeClass( 'dl-menuopen' );
+			this.$menuBtn.removeClass( 'dl-menuopen' );
 			this.$menu.addClass( 'dl-menu-toggle' );
 			this.$trigger.removeClass( 'dl-active' );
 			
@@ -204,6 +213,7 @@
 			} );
 			this.$trigger.addClass( 'dl-active' );
 			this.open = true;
+
 		},
 		// resets the menu to its original state (first level of options)
 		_resetMenu : function() {
