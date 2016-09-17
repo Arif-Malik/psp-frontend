@@ -27,7 +27,7 @@ hr {
 
 .topbar {
     position: fixed;
-    top: -60px; /* has to be around the height of the bar or more. */
+    top: -200px; /* has to be around the height of the bar or more. */
     display: none;
     z-index: 99999;
     box-sizing: border-box;
