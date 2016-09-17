@@ -324,6 +324,25 @@ All this is done for any sub-level being entered.
     margin-right: -20px;
 }
 
+.dl-menuwrapper li ul li img {
+    height: 25px;
+    width: 25px;
+}
+.dl-menuwrapper .dl-top-menu li ul {
+    padding: 0;
+}
+.dl-menuwrapper li ul li a {
+    padding: 15px 0;
+}
+.dl-menuwrapper li ul li a span {
+    padding-left: 10px;
+}
+.dl-back span {
+    padding-left: 25px !important;
+}
+.dl-menuwrapper  li.dl-back:after {
+    left: 25px !important;
+}
 /*hide border from opened list in menu*/
 .dl-subviewopen {
     border-bottom: none !important;
@@ -332,10 +351,6 @@ All this is done for any sub-level being entered.
 .dl-subview {
     border-bottom: none !important;
 }
-
-/*.dl-menuwrapper .dl-top-menu ul li{*/
-/*padding: 18px;*/
-/*}*/
 
 /* No JS Fallback */
 .no-js .dl-menuwrapper .dl-menu {
@@ -364,7 +379,7 @@ All this is done for any sub-level being entered.
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
     .dl-menuwrapper .dl-top-menu li {
-        padding-right: 26px !important;
+        padding-right: 24px !important;
     }
 
     .dl-menuwrapper .dl-top-menu li:nth-child(3n+3) {

@@ -126,6 +126,14 @@ jQuery(document).ready(function () {
             $(this).next().removeClass("filter-checked");
         }
     });
+    //
+    //$("#notifyMe").change(function(event){
+    //    if (this.checked){
+    //        $('.notifyMe').css(" background-color","#00af41");
+    //    } else {
+    //        alert("You have elected to turn off checkout history.");
+    //    }
+    //});
 
 
     /*

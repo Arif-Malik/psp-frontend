@@ -5,6 +5,7 @@
     /*header*/
     .navbar-toggle {
         z-index: 10;
+        padding: 7px 10px;
     }
     .navbar-toggle .icon-bar {
         background-color: #ffffff;
@@ -425,6 +426,25 @@
     .img-content .career {
         left: 41%;
     }
+
+    .carousel-content {
+        top: 15% !important;
+    }
+    #hero-slider .carousel-content .text-large {
+        font-size: 1.600em;
+    }
+    #hero-slider .carousel-content .btn-primary {
+        font-size: 1.000em;
+        padding: 10px 12px;
+        height: 45px;
+    }
+
+}
+@media (max-width: 480px) {
+    .carousel-content {
+        top: 20% !important;
+    }
+
 }
 
 /*@media (max-width: 767px) {*/
