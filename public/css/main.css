@@ -1209,7 +1209,7 @@ button:focus {
 /**
  * Create the checked state
  */
-.round-circle-signup input[type=checkbox]:checked + label {
+.round-circle-signup input[type=checkbox]:checked ~ label {
     background: #00af41;
 }
 
