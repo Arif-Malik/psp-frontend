@@ -919,13 +919,14 @@ button:focus {
 
 /*Images*/
 .img-content {
-    display: inline-block;
-    position: relative;
-}
+     display: inline-block;
+     position: relative;
+ }
 
 .img-content img {
     display: block;
     max-width: 100%;
+    width: 100%;
 }
 
 /*
