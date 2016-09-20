@@ -496,6 +496,9 @@
     .navbar-brand {
         top: -95px;
     }
+    .navbar-brand .hidden-xs {
+        height: 45px !important;
+    }
     .navbar-nav {
         float: none;
         margin: 0;
@@ -531,6 +534,9 @@
         bottom: 0;
         z-index: 1500;
     }
+    .account-display-picture {
+        height: 30px !important;
+    }
 
     /*
     * Slider
@@ -557,6 +563,14 @@
     /*Products*/
 
 
+    .product-heading .firefly {
+        height: 60px;
+        width: 35px;
+    }
+    .product-heading .account-product-display {
+        height: 45px;
+        width: 45px;
+    }
     .product-circle-arrow {
         text-decoration: none !important;
         padding-right: 10px;
