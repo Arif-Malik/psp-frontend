@@ -409,6 +409,9 @@
     .signup-login-container .btn-primary{
         width: 100%;
     }
+    .signup-login-container .form-container .btn-primary {
+        padding: 6px 12px;
+    }
     .input-group-addon{
         background-color: white !important;
         cursor: pointer;
