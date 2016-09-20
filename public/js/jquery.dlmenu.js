@@ -60,8 +60,6 @@
         },
         _config: function () {
             this.open = false;
-            this.bottomMenu = this.$el.children('.dl-bottom-menu');
-            this.topMenu = this.$el.children('.dl-top-menu');
             this.$trigger = this.$el.children('.dl-trigger');
             this.$menu = this.$el.children('.dl-menu');
             this.$menuBtn = $('.navbar-toggle');
@@ -88,9 +86,9 @@
             this.$menuitems.on('click.dlmenu', function (event) {
                 event.stopPropagation();
 
+
                 var $item = $(this),
                     $submenu = $item.children('ul.dl-submenu');
-
 
                 if ($submenu.length > 0) {
 
@@ -135,6 +133,7 @@
             });
 
             this.$back.on('click.dlmenu', function (event) {
+
 
                 var $this = $(this),
                     $submenu = $this.parents('ul.dl-submenu:first'),
