@@ -415,6 +415,9 @@
     .signup-login-container .btn-primary{
         width: 100%;
     }
+    .signup-login-container .row-inline-control{
+        padding-top: 15px;
+    }
     .signup-login-container .form-container .btn-primary {
         padding: 6px 12px;
     }
