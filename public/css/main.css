@@ -363,6 +363,9 @@ header .global-header {
 .product-tile .advert p:first-child {
     border-radius: 5px 0 0;
 }
+.products-container .product-tile .caption .icon-heart {
+    color: #999999;
+}
 
 
 
@@ -538,16 +541,10 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 
 /*Product Detail Page*/
 
-#recently-viewed .products-container .container {
-    width: 1170px;
-}
 
-#recommended-products .products-container .container {
-    width: 1170px;
-}
 
 #recommended-products .product-tile {
-    min-height: 445px;
+    min-height: 400px;
 }
 
 .horizontal-break-line {
@@ -995,7 +992,7 @@ button:focus {
 .product-tile {
     position: relative;
     border-radius: 6px;
-    min-height: 390px;
+    min-height: 400px;
     padding: 0;
     box-shadow: 4px 4px 5px #ddd;
 }

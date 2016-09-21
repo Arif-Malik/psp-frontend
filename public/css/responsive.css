@@ -129,9 +129,31 @@
     .products-container {
         overflow-x: auto;
     }
-    #hero-products .products-container .container {
-        width: 1170px;
+    .products-container .row .col-xs-3 {
+        width: 25%;
+        padding-right: 0;
     }
+    .products-container .row .col-xs-3 .product-tile, #recommended-products .product-tile {
+        min-height: 355px;
+    }
+    .products-container .row .col-xs-3 .product-tile .caption h3,
+    .products-container .row .col-xs-3 .product-tile .advert{
+        font-size: 0.675em;
+    }
+    .products-container .row .col-xs-3 .product-tile .caption p,
+    .products-container .row .col-xs-3 .product-tile .prod-footer .text-muted,
+    .products-container .row .col-xs-3 .product-tile .prod-footer .rating-sm,
+    .products-container .row .col-xs-3 .product-tile .prod-footer .price {
+        font-size: 0.875em;
+    }
+    .products-container .row .col-xs-3 .product-tile .prod-footer {
+        top: 87%;
+    }
+
+    #hero-products .products-container .container, #recently-viewed .products-container .container , #recommended-products .products-container .container {
+        width: 750px;
+    }
+
 
     /*Promotions*/
     #promotions .text-large {
