@@ -459,7 +459,8 @@
         color: #00af41 !important;
     }
     .label-group-signup p {
-        margin: 10px 25px 10px 10px;
+        margin: 18px 25px 10px 10px;
+        font-size: 1.000em;
     }
 
     /*Components*/
