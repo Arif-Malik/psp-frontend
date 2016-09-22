@@ -94,6 +94,17 @@ jQuery(document).ready(function () {
         $("#RePassword").attr('type', 'password');
     });
 
+    $(".show-pwd").bind('touchstart', function(){
+        $("#password").attr('type', 'text');
+    }).bind('touchend', function(){
+        $("#password").attr('type', 'password');
+    });
+
+    $(".show-pwd-re").bind('touchstart', function(){
+        $("#RePassword").attr('type', 'text');
+    }).bind('touchend', function(){
+        $("#RePassword").attr('type', 'password');
+    });
     /*
      *bootstrap carousel
      **/
