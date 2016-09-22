@@ -53,8 +53,9 @@ hr {
 /* Displaying the bar when the checkbox is checked */
 .toggleTop:checked + .topbar {
     transition: top 1s;
-    top:0px;
+    top: 0px;
 }
+
 .show-notification {
     display: block;
 }
@@ -110,6 +111,15 @@ header .global-header {
     font-weight: 500;
     line-height: 0.857em;
     z-index: 1;
+}
+
+.main-header .newsletter .fa-file-text-o {
+    font-size: 1.4em;
+    padding-right: 5px
+}
+.main-header .newsletter .fa-angle-right {
+    font-size: 1.2em;
+    padding-left: 2px
 }
 
 .main-header .profile-section {
@@ -232,6 +242,7 @@ header .global-header {
     margin: 1px;
     margin-right: 5px;
 }
+
 #hero-slider .carousel-indicators {
     z-index: 6;
 }
@@ -334,10 +345,12 @@ header .global-header {
     padding-top: 70px;
     padding-bottom: 140px;
 }
+
 .product-heading .firefly {
     height: 60px;
     width: 35px;
 }
+
 .product-heading .account-product-display {
     height: 45px;
     width: 45px;
@@ -363,12 +376,10 @@ header .global-header {
 .product-tile .advert p:first-child {
     border-radius: 5px 0 0;
 }
+
 .products-container .product-tile .caption .icon-heart {
     color: #999999;
 }
-
-
-
 
 #promotions .container {
     padding-bottom: 20px;
@@ -540,8 +551,6 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 }
 
 /*Product Detail Page*/
-
-
 
 #recommended-products .product-tile {
     min-height: 400px;
@@ -924,9 +933,9 @@ button:focus {
 
 /*Images*/
 .img-content {
-     display: inline-block;
-     position: relative;
- }
+    display: inline-block;
+    position: relative;
+}
 
 .img-content img {
     display: block;
@@ -1051,13 +1060,14 @@ button:focus {
 .products-header .pull-left {
     margin-left: -5px;
 }
+
 /*product detail section*/
-.hover-details{
+.hover-details {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
     box-shadow: 4px 4px 5px #ddd;
-    padding:9px;
+    padding: 9px;
     display: none;
     position: absolute;
     background-color: #FFFFFF;
@@ -1099,11 +1109,14 @@ button:focus {
 }
 
 /*Breadcrumbs*/
+#breadcrumb {
+    background-color: #231f1f;
+}
+
 .breadcrumb-bar {
     /*centering*/
     overflow: hidden;
-    padding: 0px 200px 0 150px;
-    background-color: #231f1f;
+    padding: 0 200px 0 0;
 }
 
 .breadcrumb-bar a {
@@ -1111,12 +1124,11 @@ button:focus {
     outline: none;
     display: block;
     float: left;
-    font-size: 1.000em;
+    font-size: 0.875em;
     line-height: 36px;
     color: #ffffff;
     font-weight: 100;
     /*need more margin on the left of links to accomodate the numbers*/
-    padding: 0px 10px 0 30px;
     position: relative;
 }
 
@@ -1127,7 +1139,6 @@ button:focus {
 
 /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
 .breadcrumb-bar a:first-child {
-    padding-left: 46px;
     border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
 }
 
@@ -1138,6 +1149,7 @@ button:focus {
 .breadcrumb-bar a:last-child {
     color: #00af41;
     border-right: 1px solid #494646;
+    padding: 0 10px;
 }
 
 /*hover/active styles*/
@@ -1888,6 +1900,7 @@ button:focus {
     border: none;
     background: transparent !important;
 }
+
 .navbar-toggle:hover {
     background: transparent !important;
 }
@@ -1896,48 +1909,79 @@ button:focus {
     /*width: 22px;*/
     transition: all 0.2s !important;
 }
+
 .dl-active .top-bar {
     transform: rotate(45deg) !important;
     transform-origin: 10% 10% !important;
 }
+
 .dl-active .middle-bar {
     opacity: 0 !important;
 }
+
 .dl-active .bottom-bar {
     transform: rotate(-45deg) !important;
     transform-origin: 10% 90% !important;
 }
+
 .navbar-toggle .top-bar {
     transform: rotate(0deg);
 }
+
 .navbar-toggle .middle-bar {
     opacity: 1;
 }
+
 .navbar-toggle .bottom-bar {
     transform: rotate(0deg);
 }
 
 /*Mobile Drill down menu*/
 
-.drill-down-icon-header{
+.drill-down-icon-header {
     z-index: 10;
 }
+
 .dl-menuwrapper:first-child {
     margin-right: -85%;
 }
-.dl-menu-btn-toggle{
+
+.dl-menu-btn-toggle {
     background: transparent !important;
 }
-.dl-menuwrapper .dl-menuwrapper , .dl-menuwrapper ul {
+
+.dl-menuwrapper .dl-menuwrapper, .dl-menuwrapper ul {
     background: #231f1f !important;
 }
+
 .dl-menuwrapper {
     max-width: none !important;
     text-transform: uppercase;
 }
+
 .dl-menuwrapper .dl-menu {
     margin: 48px 0 0 0;
 }
+
 .dl-menuwrapper li > a:after {
     color: whitesmoke;
+}
+
+/*Account Info*/
+#account-info .account-header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.account-info-profile {
+    border-radius: 50%;
+    max-width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.account-header h1 {
+    font-size: 48px;
+    font-weight: 900;
 }
