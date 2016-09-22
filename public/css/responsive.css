@@ -466,6 +466,9 @@
     .breadcrumb-bar {
     padding: 0;
     }
+    .breadcrumb-bar a{
+    text-transform: uppercase;
+    }
 
     .breadcrumb-bar a:nth-last-child(2) {
     display: block !important;
