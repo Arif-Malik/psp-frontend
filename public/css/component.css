@@ -260,11 +260,11 @@ All this is done for any sub-level being entered.
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    padding-top: 15px;
+    padding-top: 17px;
 }
 
 .dl-menuwrapper .dl-top-menu .menu-circle-icon img {
-    height: 30px;
+    height: 24px;
     width: 30px;
 }
 
