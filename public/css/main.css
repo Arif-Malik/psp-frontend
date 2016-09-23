@@ -117,6 +117,7 @@ header .global-header {
     font-size: 1.4em;
     padding-right: 5px
 }
+
 .main-header .newsletter .fa-angle-right {
     font-size: 1.2em;
     padding-left: 2px
@@ -1968,20 +1969,82 @@ button:focus {
 }
 
 /*Account Info*/
-#account-info .account-header {
+.account-section-container {
+    min-height: 400px;
+}
+#account-info .container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.account-header {
     margin-top: 30px;
     margin-bottom: 70px;
 }
 
-.account-info-profile {
+#account-info .account-header img {
     border-radius: 50%;
-    max-width: 140px;
-    height: 140px;
-    background-repeat: no-repeat;
-    background-position: center;
+    max-width: 170px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
 }
 
 .account-header h1 {
     font-size: 48px;
     font-weight: 900;
+    padding-top: 45px;
+    margin: 0;
+}
+
+.account-header h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+.account-sidebar li {
+    color: #00af41;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.account-sidebar li.active {
+    color: #909090;
+    padding-left: 10px;
+}
+.account-section-container  h1 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    font-size: 28px;
+    font-weight: 400;
+    width: 70%;
+    border-bottom: 1px solid #f6f6f6;
+}
+.account-section-container  .form-control {
+    width: 65%;
+    border: 2px solid #d2d2d2;
+}
+.account-section-container .form-control:disabled {
+    background-color: #f4f4f2;
+}
+.account-section-container form {
+    margin-top: 40px;
+}
+.account-section-container form label{
+    color: #515253;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 25px;
+}
+.account-section-container form .btn-primary{
+    background-color: transparent;
+    color: #00af41;
+    border: none;
+    font-size: 14px;
+    padding: 6px 0;
+}
+.account-section-container form .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #00af41 !important;
 }
