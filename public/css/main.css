@@ -106,10 +106,22 @@ header .global-header {
     margin-top: 8px;
     position: relative;
     padding-top: 20px;
-    font-size: 0.857em;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     line-height: 0.857em;
     z-index: 1;
+    letter-spacing: 0.5px;
+   
+}
+
+.main-header .newsletter span {
+    background-image: url("../images/icons/doc.png"), url("../images/icons/right-arrow.png");
+    background-position: left center, right 7px;
+    background-repeat: no-repeat, no-repeat;
+    line-height: 24px;
+    display: block;
+    padding-right: 8px;
+    padding-left: 29px;
 }
 
 .main-header .profile-section {
