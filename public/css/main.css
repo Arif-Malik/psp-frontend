@@ -93,6 +93,12 @@ header .global-header {
     font-size: 0.9em;
 }
 
+.main-header {
+    text-align: center;
+    min-height: 96px;
+    line-height: 96px;
+}
+
 .main-header a {
     color: #000;
 }
@@ -103,12 +109,9 @@ header .global-header {
 
 .main-header .newsletter {
     background-color: transparent;
-    margin-top: 8px;
     position: relative;
-    padding-top: 20px;
     font-size: 12px;
     font-weight: 600;
-    line-height: 0.857em;
     z-index: 1;
     letter-spacing: 0.5px;
    
@@ -116,9 +119,8 @@ header .global-header {
 
 .main-header .newsletter span {
     background-image: url("../images/icons/doc.png"), url("../images/icons/right-arrow.png");
-    background-position: left center, right 7px;
+    background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
-    line-height: 24px;
     display: block;
     padding-right: 8px;
     padding-left: 29px;
@@ -126,14 +128,32 @@ header .global-header {
 
 .main-header .profile-section {
     background-color: transparent;
-    font-size: 0.857em;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 2.000em;
-    margin-top: 8px;
+    margin-top: 0px;
     position: relative;
-    padding-top: 10px;
+    padding-top: 0px;
     z-index: 1;
+}
 
+.main-header .profile-section .list-inline p,
+.main-header .profile-section .list-inline {
+    margin-bottom: 0px;
+}
+
+.main-header .profile-section .list-inline a {
+    display: inline-table;
+}
+
+.main-header .profile-section .locations img,
+.main-header .profile-section .favourites img {
+    margin-top: 24px;
+}
+
+.main-header .profile-section .locations p,
+.main-header .profile-section .favourites p {
+    margin-top: 5px;
 }
 
 .header-separator {
@@ -231,11 +251,10 @@ header .global-header {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 25%;
+    top: 30%;
     text-align: center;
     margin: auto;
-    height: 100%;
-    line-height: 1.0;
+    line-height: 62px;
 }
 
 #hero-slider .carousel-indicators .active {
@@ -257,6 +276,7 @@ header .global-header {
 
 #hero-slider .carousel-inner {
     height: 100%;
+    max-height: 597px;
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -277,7 +297,7 @@ header .global-header {
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /*
@@ -751,7 +771,7 @@ button:focus {
 }
 
 .text-large {
-    font-size: 4.264em;
+    font-size: 60px;
     font-weight: 900;
 }
 
