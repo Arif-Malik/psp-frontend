@@ -655,14 +655,17 @@
     }
 
     .navbar-nav .open .dropdown-toggle:after {
-        border-bottom: 15px solid #FFFFFF;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
         content: "";
-        left: 14px;
         position: absolute;
-        bottom: 0;
-        z-index: 1500;
+        width: 0px;
+        height: 0px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+        right: 0px;
+        left: 0px;
+        margin: 0 auto;
+        top: 22px;
     }
 
     .account-display-picture {
