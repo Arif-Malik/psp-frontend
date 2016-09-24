@@ -339,6 +339,7 @@ All this is done for any sub-level being entered.
 }
 .dl-back span {
     padding-left: 25px !important;
+    color: #6b6969;
 }
 .dl-menuwrapper  li.dl-back:after {
     left: 25px !important;
@@ -350,6 +351,13 @@ All this is done for any sub-level being entered.
 
 .dl-subview {
     border-bottom: none !important;
+}
+.dl-submenu > li:last-child {
+    border-bottom: none;
+    padding-left: 8px;
+}
+.dl-submenu > li:last-child img{
+    display: none;
 }
 
 /* No JS Fallback */
