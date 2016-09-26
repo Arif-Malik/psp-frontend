@@ -2109,3 +2109,39 @@ button:focus {
 .account-section-container .btn-primary {
     font-size: 1.300em;
 }
+.account-section-container .upload-btns .btn {
+    margin:0 15px;
+    padding: 10px 75px;
+}
+.account-section-container .upload-btns .remove-btn {
+    background-color: #231f1f;
+    border: 1px solid #231f1f;
+}
+.account-section-container #pet-info .btn-primary:active, .btn-primary:focus {
+    background-color: #00af41 !important;
+    border-color: #00af41 !important;
+    color: #FFFFFF !important;
+}
+.account-section-container #pet-info .remove-btn:active, .remove-btn:focus {
+    background-color: #231f1f !important;
+    border-color: #231f1f !important;
+}
+.account-section-container #pet-info .no-pet {
+    margin: 40px 0;
+    font-size: 14px;
+}
+.account-section-container .label-group-signup {
+    display: inline-block;
+}
+.account-section-container .round-circle-signup {
+    position: absolute;
+    margin: 0;
+    background-color: #eeeeee;
+}
+.account-section-container .label-group-signup p {
+    margin: 0 0 10px 50px;
+}
+.account-section-container .round-circle-signup label {
+    position: absolute;
+    left: 5px;
+}
