@@ -2006,7 +2006,7 @@ button:focus {
     font-weight: 400;
 }
 
-.account-sidebar li {
+.account-sidebar li a{
     color: #00af41;
     font-size: 14px;
     font-weight: 700;
@@ -2014,7 +2014,7 @@ button:focus {
     line-height: 25px;
 }
 
-.account-sidebar li.active {
+.account-sidebar li.active a {
     color: #909090;
     padding-left: 10px;
 }
