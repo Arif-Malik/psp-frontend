@@ -665,11 +665,34 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     margin-bottom: 300px;
 }
 
-.signup-login-container .login-well .input-lg {
+.signup-login-container h6.required {
+    margin-bottom: 35px;
+}
+
+.signup-login-container .login-well .input-lg,
+.signup-login-container .signup-well .input-lg {
     border: 2px solid #d2d2d2;
     height: 52px;
     color: #231f1f;
     font-weight: 400;
+}
+
+
+.signup-login-container .signup-well .form-group {
+    float: left;
+    width: 100%;
+}
+
+.signup-login-container .signup-well small.form-text.text-muted {
+    font-size: 18px;
+    font-weight: 400;
+    color: #231f1f;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block;
+}
+.margin-bottom-25 {
+    margin-bottom: 25px !important;
 }
 
 .signup-login-container .login-well input[type="email"] {
@@ -691,6 +714,11 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     font-size: 1.313em !important;
     font-weight: 400 !important;
     margin-bottom: 0px;
+    line-height: 29px;
+}
+
+.signup-login-container .un-registered h6 {
+      margin-bottom: 25px;
 }
 
 .signup-login-container h5 {
@@ -726,10 +754,15 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 .signup-login-container .input-group-addon {
     background-color: white !important;
     cursor: pointer;
+    border: 2px solid #d2d2d2;
+    border-left: 0px;
 }
 
 .signup-login-container .form-group .ppc-no-group {
     color: #00af41 !important;
+    border: 2px solid #d2d2d2;
+    border-left: 0px;
+
 }
 
 .signup-login-container .form-container .btn-primary {

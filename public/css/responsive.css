@@ -660,7 +660,7 @@
         display: none;
     }
     .navbar-nav>li .dropdown-menu {
-        margin-top: -3px !important;
+        margin-top: 4px !important;
     }
     .navbar-nav .open .dropdown-toggle:after {
         /*border-bottom: 15px solid #FFFFFF;
@@ -682,7 +682,7 @@
         /* bottom: -25px; */
         left: 0px;
         margin: 0 auto;
-        top: 22px;
+        top: 16px;
     }
     .account-display-picture {
         height: 34px;

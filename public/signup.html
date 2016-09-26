@@ -48,35 +48,30 @@
 <!--Header-->
 <header>
     <div class="global-header">
-        <div class="container main-header">
+        <div class="container-fluid main-header">
 
             <div class="newsletter pull-left hidden-xs">
                 <a href="#">
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                    <span>MONTHLY SALE FLYER ></span>
-
+                    <span>MONTHLY SALE FLYER</span>
                 </a>
             </div>
             <div class="profile-section pull-right hidden-xs">
                 <ul class="list-unstyled list-inline">
-                    <li class="text-center">
+                    <li class="text-center locations">
                         <a href="#">
                             <img src="images/location-icon.png" alt="locations">
-
                             <p>ROYAL OAK</p>
                         </a>
                     </li>
-                    <li class="text-center">
+                    <li class="text-center favourites">
                         <a href="#">
-                            <img src="images/heart-icon.jpg" alt="favourites">
-
+                            <img src="images/heart-icon.png" alt="favourites">
                             <p>FAVOURITES</p>
                         </a>
                     </li>
                     <li class="text-center">
                         <a href="#">
-                            <img class="img-circle" src="images/display.jpg" height="30px"/>
-
+                            <img class="img-circle account-display-picture" src="images/display.jpg" />
                             <p>MY PPC ACCOUNT</p>
                         </a>
                         <!--<a href="#">-->
@@ -85,10 +80,11 @@
                     </li>
                 </ul>
             </div>
+            <img src="images/logo-desktop.png" class="hidden-xs logo-wrap">
         </div>
         <hr class="header-separator">
         <div class="navbar yamm navbar--default">
-            <div class="container nav-container">
+            <div class="container-fluid nav-container">
                 <div class="navbar-header">
                     <!--mobile menu-->
                     <div id="dl-menu" class="dl-menuwrapper drill-down-icon-header visible-xs">
@@ -335,7 +331,6 @@
 
                     <div class="navbar-center navbar-brand">
                         <a href="#">
-                            <img src="images/logo-desktop.png" class="hidden-xs">
                             <img src="images/logo-mobile.png" class="visible-xs">
                         </a>
                     </div>
@@ -605,14 +600,14 @@
             </div>
         </div>
         <input type="search" class="form-control input-lg nav-search"
-               placeholder="Search for dog food, supplies and more.">
+               placeholder="&#128269; Search for dog food, supplies and more.">
     </div>
 </header>
 <!--/Header-->
 
 <!-- breadcrumbs -->
 <section id="breadcrumb">
-    <div class="breadcrumb-bar">
+    <div class="breadcrumb-bar container">
         <a href="#" class="active">Create an Account</a>
         <a href="" class=" breadcrumb-list pull-right fa fa-angle-down">
         </a>
@@ -621,9 +616,10 @@
 <!-- /breadcrumbs -->
 
 <section id="signup-section">
-    <div class="container signup-login-container">
-        <h1>Create a new Pet Supplies Plus online account.</h1>
-        <h6>* Required information</h6>
+    <div class="container">
+      <div class="signup-login-container">
+        <h1>Create a new Pet Supplies Plus<br> online account.</h1>
+        <h6 class="required">* Required information</h6>
         <br class="hidden-xs"><br class="hidden-xs">
 
         <div class="well well-lg signup-well">
@@ -633,23 +629,23 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="fname">* FIRST NAME</label>
-                                <input type="text" class="form-control input-lg" id="fname" required>
+                                <input type="text" class="form-control input-lg margin-bottom-25" id="fname" required>
                             </div>
                             <div class="col-md-6 row-inline-control">
                                 <label for="lname">* LAST NAME</label>
-                                <input type="text" class="form-control input-lg" id="lname" required>
+                                <input type="text" class="form-control input-lg margin-bottom-25" id="lname" required>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email">* EMAIL ADDRESS</label>
-                        <input type="email" class="form-control input-lg" id="email" required>
+                        <input type="email" class="form-control input-lg margin-bottom-25" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="ppc-no">PPC CARD NUMBER</label>
 
                         <div class="input-group input-group-lg">
-                            <input type="password" class="form-control" id="ppc-no" aria-describedby="ppcHelp">
+                            <input type="password" class="form-control input-lg" id="ppc-no" aria-describedby="ppcHelp">
                             <span class="input-group-addon ppc-no-group"> <abbr title="World Health Organization">?</abbr></span>
                         </div>
 
@@ -659,7 +655,7 @@
                         <label for="password">* PASSWORD</label>
 
                         <div class="input-group input-group-lg">
-                            <input type="password" class="form-control" id="password"  required>
+                            <input type="password" class="form-control input-lg" id="password"  required>
                             <span class="input-group-addon show-pwd">Show</span>
                         </div>
                         <small id="passwordHelp" class="form-text text-muted">6-16 Characters</small>
@@ -667,9 +663,9 @@
                     <div class="form-group">
                         <label for="RePassword">* CONFIRM PASSWORD</label>
 
-                        <div class="input-group input-group-lg">
-                            <input type="password" class="form-control" id="RePassword" required>
-                            <span class="input-group-addon show-pwd-re">Show</span>
+                        <div class="input-group input-group-lg margin-bottom-25">
+                            <input type="password" class="form-control input-lg " id="RePassword" required>
+                            <span class="input-group-addon show-pwd">Show</span>
                         </div>
 
                     </div>
@@ -695,6 +691,7 @@
             </div>
 
         </div>
+      </div>
     </div>
 </section>
 
