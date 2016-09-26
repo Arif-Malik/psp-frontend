@@ -557,6 +557,24 @@
     .navbar-nav > li .dropdown-menu {
         margin-top: -52px !important;
     }
+    .prod-footer {
+        top: 83%;
+    }
+    .product-tile {
+        min-height: 412px;
+    }
+    .img-content .our-pack {
+        top: 0%;
+    }
+    .text-large {
+        font-size: 3.264em;
+        font-weight: 900;
+    }
+    .img-content .career {
+        top: 5%;
+        left: 52%;
+    }
+
 
     #category-banners .scroll-container .container {
         width: 992px;
