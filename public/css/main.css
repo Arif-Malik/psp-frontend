@@ -338,23 +338,30 @@ header .global-header {
 /*max-width: 570px;*/
 /*minx-width: 560px;*/
 /*}*/
+.img-content.category-index {
+    width: 49%;
+}
 
-.category-banner {
-    max-width: 570px;
-    min-width: 560px;
-    height: 415px;
+.category-index .category-banner {
+    width: 100%;
+    height: 448px;
 }
 
 .category-index .btn-primary {
     border-radius: 2px;
-    height: 50px;
-    margin: 5px;
+    height: 55px;
     text-align: center;
-    width: 250px;
+    width: 46.7%;
+}
+
+.category-index .btn-primary:last-child {
+  float: right;
 }
 
 .category-content .shop-buttons {
-    margin-top: 235px;
+    margin-top: 267px;
+    width: 100%;
+    float: left;
 }
 
 /*
@@ -403,11 +410,11 @@ header .global-header {
 
 
 #promotions .container {
-    padding-bottom: 20px;
+    padding: 0px 0px 20px 0px;
 }
 
 #promotions .img-content .btn-primary {
-    padding: 10px 36px;
+    padding: 13px 36px;
 }
 
 #newsletter h3 {
@@ -418,9 +425,14 @@ header .global-header {
 
 .img-content .food-finder {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 15.5%;
+    left: 8.5%;
     color: white;
+}
+
+.img-content .food-finder p {
+    margin-top: 15px;
+    margin-bottom: 22px;
 }
 
 .img-content .our-pack {
@@ -430,19 +442,32 @@ header .global-header {
     color: white;
 }
 
+.img-content .our-pack p {
+    margin-bottom: 20px;
+}
+
 .img-content .resource {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 24%;
+    left: 8.1%;
     color: white;
+}
+
+.img-content .resource p {
+    margin-bottom: 25px;
 }
 
 .img-content .career {
     position: absolute;
     padding-right: 30px;
-    top: 20%;
-    left: 55%;
+    top: 13%;
+    left: 58.5%;
     color: white;
+}
+
+.img-content .career p {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #social-main {
@@ -462,12 +487,17 @@ header .global-header {
 
 #newsletter h3 {
     color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: #231f1f;
-    padding: 15px;
+}
 
+footer .main-footer {
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 footer .panel, .panel-default, .panel-heading {
@@ -495,25 +525,62 @@ footer .panel-heading a:hover {
     text-decoration: none;
 }
 
+.toggle-footer {
+    
+    font-size: 13px;
+    font-weight: 700;
+}
+
 footer .copyright {
     color: #dfe0df;
-    font-size: 0.816em;
+    font-size: 13px;
     line-height: 1.129em;
     font-weight: 400;
     white-space: nowrap;
 }
 
+footer .main-footer ul > li {
+  margin-bottom: 5px;
+}
+
+footer .main-footer .panel-group .col-md-2 {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+footer .main-footer .panel-group .col-md-2:first-child {
+  padding-left: 0px;
+}
+
+footer .main-footer .panel-default {
+  box-shadow: none;
+}
+
+footer .main-footer .panel-default .panel-body,
+footer .main-footer .panel-default .panel-body ul,
+footer .main-footer .panel-default .panel-body ul li:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+footer .main-footer .panel-default .social {
+    margin-top: 5px;
+}
+
 footer .main-footer ul > li > a {
     color: #dfe0df;
-    font-size: 0.813em;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.500em;
+    margin-bottom: 10px;
 }
 
 footer .main-footer h5 {
     color: #00af41;
     font-weight: bold;
     /*font-size: 10px;*/
+    margin-top: 56px;
+    margin-bottom: 8px;
 }
 
 footer .layer-footer {
@@ -598,18 +665,32 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
     margin-bottom: 300px;
 }
 
+.signup-login-container .login-well .input-lg {
+    border: 2px solid #d2d2d2;
+    height: 52px;
+    color: #231f1f;
+    font-weight: 400;
+}
+
+.signup-login-container .login-well input[type="email"] {
+    margin-bottom: 38px;
+}
+
 .signup-login-container .form-container .un-registered {
-    padding-top: 40px;
+    padding-top: 89px;
 }
 
 .signup-login-container h1 {
     font-size: 3.751em !important;
-    font-weight: 800 !important;
+    font-weight: 900 !important;
+    margin-top: 80px;
+    margin-bottom: 35px;
 }
 
 .signup-login-container h6 {
     font-size: 1.313em !important;
     font-weight: 400 !important;
+    margin-bottom: 0px;
 }
 
 .signup-login-container h5 {
@@ -639,7 +720,7 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 .signup-login-container .account-error {
     color: #ed1d23;
     font-size: 1.875em;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .signup-login-container .input-group-addon {
@@ -671,9 +752,13 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 }
 
 .forgot-password small {
-    padding-top: 5px;
     color: black;
-    font-size: 1.128em;
+    font-size: 18px;
+    font-weight: 400;
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 38px;
 }
 
 .forgot-password:hover {
@@ -720,35 +805,32 @@ button:focus {
 
 .advert {
     color: #FFFFFF;
-    font-size: 0.875em;
+    font-size: 12px;
     font-weight: 700;
-    /*height: 16px;*/
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
+.advert p {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5px 9.1px;
+    margin-bottom: 7px;
+}
+
 /*Typography*/
 .bg-red {
-    color: #FFFFFF;
     background-color: #e31c21;
-    text-align: center;
-    padding: 0 3px;
 }
 
 .bg-purple {
-    color: #FFFFFF;
     background-color: #872d91;
-    text-align: center;
-    padding: 0 3px;
 }
 
 .bg-blue {
-    color: #FFFFFF;
     background-color: #0098ce;
-    text-align: center;
-    padding: 0 3px;
 }
 
 .text-faded {
@@ -757,12 +839,15 @@ button:focus {
 
 /*Form controls*/
 .has-error .form-control {
-    border-color: #ed1d23;
+    border: 2px solid #ed1d23 !important;
+    border-right: 0px !important;
+    color: #ed1d23 !important;
 }
 
 .has-error .input-group-addon {
     color: #ed1d23;
-    border-color: #ed1d23;
+    border: 2px solid #ed1d23;
+    border-left: 0px;
 }
 
 /*Filter*/
@@ -1032,6 +1117,7 @@ button:focus {
 .product-tile hr {
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: 25px;
 }
 
 .product-tile img {
@@ -1040,7 +1126,7 @@ button:focus {
 }
 
 .product-tile .caption h3 {
-    font-size: 0.875em;
+    font-size: 14.07px;
     font-weight: 700;
     color: #231f1f;
     margin: 0;
@@ -1062,6 +1148,14 @@ button:focus {
 .product-tile .prod-footer .text-muted {
     color: #dddddd;
     font-size: 1.125em;
+    font-weight: 700;
+}
+
+.product-tile .prod-footer .prod-rating .text-muted {
+    color: #b1b1b1;
+    font-size: 14.7px;
+    font-weight: 500;
+    margin-left: 4px;
 }
 
 .product-tile .prod-footer .price {
@@ -1127,15 +1221,18 @@ button:focus {
 }
 
 .rating-sm {
-    font-size: 1.0em !important;
+    font-size: 12px !important;
 }
 
 /*Breadcrumbs*/
-.breadcrumb-bar {
-    /*centering*/
-    overflow: hidden;
-    padding: 0px 200px 0 150px;
+#breadcrumb {
     background-color: #231f1f;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 3px #e8e8e8;
+}
+
+.breadcrumb-bar {
 }
 
 .breadcrumb-bar a {
@@ -1150,6 +1247,8 @@ button:focus {
     /*need more margin on the left of links to accomodate the numbers*/
     padding: 0px 10px 0 30px;
     position: relative;
+    font-weight: 400;
+    padding: 7px 22px 7px 22px;
 }
 
 /*we dont need an arrow after the last link*/
@@ -1159,8 +1258,8 @@ button:focus {
 
 /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
 .breadcrumb-bar a:first-child {
-    padding-left: 46px;
     border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+    padding-left: 0px;
 }
 
 .breadcrumb-bar a:first-child:before {
@@ -1186,11 +1285,11 @@ button:focus {
 .breadcrumb-bar a:after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 5px;
     right: -18px; /*half of square's length*/
     /*same dimension as the line-height of .breadcrumb a */
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's:
     length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
     if diagonal required = 1; length = 1/1.414 = 0.707*/
@@ -1203,6 +1302,11 @@ button:focus {
     /*5px - for rounded arrows and
     50px - to prevent hover glitches on the border created using shadows*/
     border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb-bar a.breadcrumb-list {
+    font-size: 21px;
+    padding-right: 14px;
 }
 
 .round-circle-signup input[type=checkbox] {

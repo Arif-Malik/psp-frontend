@@ -48,35 +48,30 @@
 <!--Header-->
 <header>
     <div class="global-header">
-        <div class="container main-header">
+        <div class="container-fluid main-header">
 
             <div class="newsletter pull-left hidden-xs">
                 <a href="#">
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                    <span>MONTHLY SALE FLYER ></span>
-
+                    <span>MONTHLY SALE FLYER</span>
                 </a>
             </div>
             <div class="profile-section pull-right hidden-xs">
                 <ul class="list-unstyled list-inline">
-                    <li class="text-center">
+                    <li class="text-center locations">
                         <a href="#">
                             <img src="images/location-icon.png" alt="locations">
-
                             <p>ROYAL OAK</p>
                         </a>
                     </li>
-                    <li class="text-center">
+                    <li class="text-center favourites">
                         <a href="#">
                             <img src="images/heart-icon.png" alt="favourites">
-
                             <p>FAVOURITES</p>
                         </a>
                     </li>
                     <li class="text-center">
                         <a href="#">
                             <img class="img-circle account-display-picture" src="images/display.jpg" />
-
                             <p>MY PPC ACCOUNT</p>
                         </a>
                         <!--<a href="#">-->
@@ -85,10 +80,11 @@
                     </li>
                 </ul>
             </div>
+            <img src="images/logo-desktop.png" class="hidden-xs logo-wrap">
         </div>
         <hr class="header-separator">
         <div class="navbar yamm navbar--default">
-            <div class="container nav-container">
+            <div class="container-fluid nav-container">
                 <div class="navbar-header">
                     <!--mobile menu-->
                     <div id="dl-menu" class="dl-menuwrapper drill-down-icon-header visible-xs">
@@ -335,7 +331,6 @@
 
                     <div class="navbar-center navbar-brand">
                         <a href="#">
-                            <img src="images/logo-desktop.png" class="hidden-xs">
                             <img src="images/logo-mobile.png" class="visible-xs">
                         </a>
                     </div>
@@ -612,8 +607,8 @@
 
 <!-- breadcrumbs -->
 <section id="breadcrumb">
-    <div class="breadcrumb-bar">
-        <a href="#" class="active hidden-xs">Create an Account</a>
+    <div class="breadcrumb-bar container">
+        <a href="#" class="active hidden-xs">Your Account Login</a>
         <a href="" class="hidden-xs breadcrumb-list pull-right fa fa-angle-down">
         </a>
     </div>
@@ -621,11 +616,11 @@
 <!-- /breadcrumbs -->
 
 <section id="signup-section">
-    <div class="container signup-login-container">
+    <div class="container">
+      <div class="signup-login-container">
         <h1>Log in or create an account below.</h1>
         <h6 class="hidden-xs">Your Pet Supplies Plus online account.</h6>
-        <br class="hidden-xs"><br class="hidden-xs">
-
+        <br class="hidden-xs">
         <div class="account-error">
             <p>Sorry, that password isn't right.please try Again.</p>
         </div>
@@ -642,7 +637,7 @@
 
                         <!--Remove has error class from below div to remove red border from password-->
                         <div class="input-group input-group-lg has-error">
-                            <input type="password" class="form-control" id="password" required>
+                            <input type="password" class="form-control input-lg" id="password" required>
                             <span class="input-group-addon show-pwd">Show</span>
                         </div>
                         <a href="" class="forgot-password">
@@ -662,6 +657,7 @@
 
             </div>
         </div>
+      </div>
     </div>
 </section>
 

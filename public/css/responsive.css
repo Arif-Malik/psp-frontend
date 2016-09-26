@@ -653,6 +653,7 @@
         float: none;
         margin: 0;
         text-align: center;
+        padding-top: 6px;
     }
 
     .nav-search {
@@ -708,8 +709,10 @@
     .category-index .category-content {
         position: absolute;
         top: 0;
-        left: 4%;
+        left: 0;
         color: white;
+        width: 100%;
+        padding: 0px 20px;
     }
 
     /*Products*/
@@ -735,9 +738,16 @@
     }
     .hover-details h4{
         margin-top: 0;
+        margin-bottom: 4px;
     }
     .hover-details ul{
         padding-left: 18px !important;
+        margin-bottom: 38px;
+    }
+    .hover-details ul li {
+      font-weight: 400;
+      font-size: 14px;
+      text-indent: -5px;
     }
     .hover-details .custom-checkbox{
         margin-left: 0px !important;
@@ -745,6 +755,7 @@
     }
     .hover-details .custom-checkbox label{
         font-weight: 400 !important;
+        font-size: 14px;
     }
     .prod-carousel{
         display: none;
@@ -770,7 +781,7 @@
 
 
     #promotions {
-        padding-top: 90px;
+        padding-top: 83px;
     }
 
     section#social-main .container-fluid img {
@@ -800,7 +811,15 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
     }
+
+    footer .row.social {
+        margin-right: -11px;
+        margin-left: -11px;
+    }
+
     footer .row img {
         display: -webkit-box;
         margin-top: 25px;
@@ -1318,17 +1337,20 @@
         margin-left: -15px;
         margin-right: 0px;
     }
-
+    #signup-section {
+      clear: both;
+    }
     /*Login/Signup*/
     .signup-login-container {
-        padding-left: 100px;
-        padding-right: 100px;
+        width: 83%;
+        float: none;
+        margin: 0 auto;
     }
     .signup-login-container .form-container {
-        padding: 30px 60px;
+        padding: 65px 82px;
     }
     .main-footer .panel-default .panel-heading {
-        padding: 10px 0;
+        padding: 0 0 5px 0;
     }
     .main-footer .panel-default .panel-body {
         padding: 15px 0;
@@ -1337,8 +1359,15 @@
         width: 15.666667%;
     }
     footer .layer-footer {
-        padding-right: 56px;
+      padding-right: 67px;
+      padding-bottom: 20px;
     }
+
+    footer .layer-footer small {
+        font-size: 12.22px;
+        font-weight: 400;
+    }
+
     .navbar-nav>li>a {
         padding: 10px 20px;
     }
