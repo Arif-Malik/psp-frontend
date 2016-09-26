@@ -1972,6 +1972,7 @@ button:focus {
 .account-section-container {
     min-height: 400px;
     padding-bottom: 100px;
+    width: 80%;
 }
 #account-info .container {
     margin-left: 120px;
@@ -2018,7 +2019,6 @@ button:focus {
     padding-bottom: 8px;
     font-size: 28px;
     font-weight: 400;
-    width: 70%;
     border-bottom: 1px solid #f6f6f6;
 }
 .account-section-container  .form-control {
@@ -2032,9 +2032,6 @@ button:focus {
 .account-section-container #personal-info .row .form-control, .account-section-container #account-address .row .form-control {
     width: 100%;
     border: 2px solid #d2d2d2;
-}
-.account-section-container #personal-info form, .account-section-container #account-address form {
-    width: 70%;
 }
 .account-section-container #personal-info form .form-control {
     width: 47.5%;
@@ -2062,4 +2059,15 @@ button:focus {
     background-color: transparent !important;
     border-color: transparent !important;
     color: #00af41 !important;
+}
+.account-section-container .pet-info-header h1 {
+    margin: 0;
+    border-bottom: none;
+    width: 50%;
+}
+.account-section-container .pet-info-header {
+    width: 70%;
+}
+.account-section-container .btn-primary {
+    font-size: 1.300em;
 }
