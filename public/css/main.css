@@ -2009,10 +2009,11 @@ button:focus {
 
 .account-sidebar li a{
     color: #00af41;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 25px;
+    padding: 0;
 }
 
 .account-sidebar li.active a {
