@@ -649,7 +649,7 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 }
 
 .horizontal-break-line {
-    width: 85%;
+    width: 95%;
 }
 
 /*Signup page*/
@@ -851,7 +851,7 @@ button:focus {
 .advert p {
     color: #FFFFFF;
     text-align: center;
-    padding: 1.5px 9.1px;
+    padding: 3.5px 14px;
     margin-bottom: 7px;
 }
 
@@ -2139,4 +2139,25 @@ button:focus {
 }
 .dl-menuwrapper li > a:after {
     color: whitesmoke;
+}
+
+.flexslider {
+    border: 0px !important;
+    margin-bottom: 70px !important;
+}
+
+.flex-viewport {
+    border: 1px solid #f4f4f2;
+}
+
+.flex-direction-nav .flex-next {
+    margin-right: 11px;
+}
+
+.flex-direction-nav .flex-prev {
+    margin-left: 8px;
+}
+
+.flexslider .flex-control-thumbs {
+    margin: 15px 0 0;
 }

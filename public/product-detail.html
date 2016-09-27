@@ -47,35 +47,30 @@
 <!--Header-->
 <header>
     <div class="global-header">
-        <div class="container main-header">
+        <div class="container-fluid main-header">
 
             <div class="newsletter pull-left hidden-xs">
                 <a href="#">
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                    <span>MONTHLY SALE FLYER ></span>
-
+                    <span>MONTHLY SALE FLYER</span>
                 </a>
             </div>
             <div class="profile-section pull-right hidden-xs">
                 <ul class="list-unstyled list-inline">
-                    <li class="text-center">
+                    <li class="text-center locations">
                         <a href="#">
                             <img src="images/location-icon.png" alt="locations">
-
                             <p>ROYAL OAK</p>
                         </a>
                     </li>
-                    <li class="text-center">
+                    <li class="text-center favourites">
                         <a href="#">
                             <img src="images/heart-icon.png" alt="favourites">
-
                             <p>FAVOURITES</p>
                         </a>
                     </li>
                     <li class="text-center">
                         <a href="#">
                             <img class="img-circle account-display-picture" src="images/display.jpg" />
-
                             <p>MY PPC ACCOUNT</p>
                         </a>
                         <!--<a href="#">-->
@@ -84,10 +79,11 @@
                     </li>
                 </ul>
             </div>
+            <img src="images/logo-desktop.png" class="hidden-xs logo-wrap">
         </div>
         <hr class="header-separator">
         <div class="navbar yamm navbar--default">
-            <div class="container nav-container">
+            <div class="container-fluid nav-container">
                 <div class="navbar-header">
                     <!--mobile menu-->
                     <div id="dl-menu" class="dl-menuwrapper drill-down-icon-header visible-xs">
@@ -334,7 +330,6 @@
 
                     <div class="navbar-center navbar-brand">
                         <a href="#">
-                            <img src="images/logo-desktop.png" class="hidden-xs">
                             <img src="images/logo-mobile.png" class="visible-xs">
                         </a>
                     </div>
@@ -611,7 +606,7 @@
 
 <!-- breadcrumbs -->
 <section id="breadcrumb">
-    <div class="breadcrumb-bar">
+    <div class="breadcrumb-bar container">
         <a href="#" class="active hidden-xs">Dog</a>
         <a href="#" class="hidden-xs">Food</a>
         <a href="#" class="hidden-xs">Dry Food</a>
@@ -621,12 +616,9 @@
 </section>
 <!-- /breadcrumbs -->
 
-<br>
-
 <!--Product Details-->
-<div class="container prod-details">
-    <div class="row">
-
+<div class="container">
+    <div class="row prod-details">
         <!-- Product Carousal Section -->
         <div class="col-md-6">
             <!--Heading section for mobile view-->
@@ -660,7 +652,7 @@
                 <img class="zoom-modal-content" id="img01">
             </div>
             <div class="flexslider">
-                <img id="zoom-btn" class="hidden-xs zoom-icon-carousel" src="images/zoom-icon-grey.jpg"/>
+                <img id="zoom-btn" class="hidden-xs zoom-icon-carousel" src="images/zoom-icon-grey.png"/>
                 <ul class="slides">
                     <li data-thumb="images/dog-food-thumbnail.jpg">
                         <img src="images/dog-food.jpg" data-zoom-image="images/dog-food1.jpg" />
@@ -790,7 +782,7 @@
                    <p  data-toggle="modal" data-target="#StoresModal" class="fourteen-px-p-underline pull-left left-margin-20">
                       <a> Check another store</a>
                    </p>
-                    <img class="left-margin-7 img-right-prod-details" src="images/arrow-right-dark.png">
+                    <img class="left-margin-7 img-right-prod-details" src="images/icons/right-arrow.png">
                    <!-- Stores List Modal-->
                    <div class="modal fade stores-modal" id="StoresModal" role="dialog">
                        <div class="modal-dialog">
@@ -982,9 +974,8 @@
 
             </div>
         <!-- /Product Description-->
-
-        </div>
     </div>
+</div>
 <!--/Product Details-->
 <hr class="horizontal-break-line">
 <!--Details Accordion-->
@@ -1010,22 +1001,22 @@
             <div class="col-md-6 col-xs-12">
                 <p class="bold-18 hidden-xs">Guaranteed Analysis</p>
 
-                <p class="prod-feature">Crude Protein: <span>27.0% min</span></p>
+                <p class="prod-feature"><b>Crude Protein:</b> <span>27.0% min</span></p>
 
-                <p class="prod-feature">Crude Fat:<span> 16.0% min</span></p>
+                <p class="prod-feature"><b>Crude Fat:</b><span> 16.0% min</span></p>
 
-                <p class="prod-feature">Crude Fiber:<span> 5.0% min</span></p>
+                <p class="prod-feature"><b>Crude Fiber:</b><span> 5.0% min</span></p>
                 <br>
 
-                <p class="bold-18 hidden-xs">More Info</p>
+                <p class="bold-18 hidden-xs"><b>More Info</b></p>
 
-                <p class="prod-feature">Brand:<span> Natural Balance</span></p>
+                <p class="prod-feature"><b>Brand:</b><span> Natural Balance</span></p>
 
-                <p class="prod-feature">Weight:<span> Lorem Ipsum</span></p>
+                <p class="prod-feature"><b>Weight:</b><span> Lorem Ipsum</span></p>
 
-                <p class="prod-feature">Size:<span> 12" H 24.5" W 15" D</span></p>
+                <p class="prod-feature"><b>Size:</b><span> 12" H 24.5" W 15" D</span></p>
 
-                <p class="prod-feature">Shipping Weight:<span> 28 LBS</span></p>
+                <p class="prod-feature"><b>Shipping Weight:</b><span> 28 LBS</span></p>
 
 
             </div>
@@ -1428,7 +1419,6 @@
             </div>
         </div>
     </div>
-
 </section>
 <!--/Products-->
 
@@ -1834,7 +1824,6 @@
             </div>
         </div>
     </div>
-
 </section>
 <!--/Products-->
 
