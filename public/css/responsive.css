@@ -520,6 +520,42 @@
         border: none;
     }
 
+    /*Account info page*/
+    .account-header {
+        margin-bottom: 20px;
+    }
+
+    #account-info .account-header img {
+        max-width: 140px;
+        height: 135px;
+        float: none;
+    }
+    .account-header h1 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .account-sidebar li a {
+        color: #565a5c;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: capitalize;
+        border-top: 1px solid #dfe0df;
+        line-height: 27px;
+        padding: 12px 0;
+        position: relative;
+    }
+    .account-sidebar li a:after {
+        position: absolute;
+        top: 0;
+        line-height: 50px;
+        font-family: 'icomoon';
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        content: "\f105";
+        right: 10px;
+        color: #b2b2b2;
+    }
+
 }
 
 @media (max-width: 320px) {
