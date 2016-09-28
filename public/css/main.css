@@ -1976,10 +1976,7 @@ button:focus {
     width: 80%;
 }
 
-#account-info .container {
-    margin-left: 120px;
-    margin-right: 120px;
-}
+
 
 .account-header {
     margin-top: 30px;
@@ -2030,25 +2027,12 @@ button:focus {
 }
 
 .account-section-container .form-control {
-    width: 65%;
     border: 2px solid #d2d2d2;
+    background-color: #f4f4f2;
 }
 
-.account-section-container .form-control {
-    width: 65%;
-    border: 2px solid #d2d2d2;
-}
-
-.account-section-container #personal-info .row .form-control, .account-section-container #account-address .row .form-control {
-    width: 100%;
-    border: 2px solid #d2d2d2;
-}
-
-.account-section-container #personal-info form .form-control{
-    width: 47.5%;
-}
-.account-section-container #pet-info form .form-control {
-    width: 100%;
+.account-section-container #save-btn {
+    margin-top: 100px;
 }
 
 .account-section-container .form-control:disabled {
@@ -2059,6 +2043,10 @@ button:focus {
     margin-top: 40px;
     margin-bottom: 80px;
 }
+.account-section-container .tab-pane {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #f6f6f6;
+}
 
 .account-section-container form label {
     color: #515253;
@@ -2067,7 +2055,7 @@ button:focus {
     line-height: 25px;
 }
 
-.account-section-container #email-password form .btn-primary {
+.account-section-container #email-password .btn-primary {
     background-color: transparent;
     color: #00af41;
     border: none;
@@ -2075,7 +2063,7 @@ button:focus {
     padding: 6px 0;
 }
 
-.account-section-container #email-password form .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+.account-section-container #email-password .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background-color: transparent !important;
     border-color: transparent !important;
     color: #00af41 !important;
