@@ -1436,10 +1436,14 @@
         margin-right: 120px;
     }
     .account-section-container #save-btn {
-        margin: 100px 0;
+        margin: 50px 0 100px;
         padding: 15px 100px;
         font-size: 28px;
         line-height: 28px;
+    }
+    .account-section-container .no-pet-check {
+        padding-top: 40px;
+        text-align: right;
     }
 
 }

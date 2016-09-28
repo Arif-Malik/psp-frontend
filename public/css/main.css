@@ -2044,7 +2044,7 @@ button:focus {
     margin-bottom: 80px;
 }
 .account-section-container .tab-pane {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #f6f6f6;
 }
 
@@ -2116,9 +2116,9 @@ button:focus {
     background-color: #231f1f !important;
     border-color: #231f1f !important;
 }
-.account-section-container #pet-info .no-pet {
-    margin: 40px 0;
+.account-section-container #pet-info .no-pet-check .custom-checkbox label {
     font-size: 14px;
+    font-weight: 400;
 }
 .account-section-container .label-group-signup {
     display: inline-block;
@@ -2135,3 +2135,26 @@ button:focus {
     position: absolute;
     left: 5px;
 }
+
+.no-pet-check .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+.no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:before {
+    height: 20px;
+    width: 20px;
+    left: -4px;
+    border-radius: 3px;
+}
+.no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #4dc77a;
+    border: 2px solid #026937;
+    height: 20px;
+    width: 21px;
+    left: -4px;
+    top: 49%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
