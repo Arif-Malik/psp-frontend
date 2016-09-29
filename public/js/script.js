@@ -6,6 +6,9 @@ jQuery(document).ready(function () {
     //var productZoom = document.getElementById('zoom-btn');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
+    var Modernizr = window.Modernizr;
+    var query = Modernizr.mq('(max-width: 767px)');
+
 
     /*Header Search Bar*/
     $(".search-icon").click(function () {
@@ -147,15 +150,16 @@ jQuery(document).ready(function () {
     //});
 
 
+
     /*
      * Apply toggle on window load
      */
     function applyToggle() {
-        var width = $(window).width();
-        if ((width < 768)) {
+        if (query) {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
+            
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
