@@ -82,10 +82,13 @@ jQuery(document).ready(function () {
     /*Show/Hide Password*/
     $(".show-pwd").mousedown(function () {
         $("#password").attr('type', 'text');
+        $("#change-pass").attr('type', 'text');
     }).mouseup(function () {
         $("#password").attr('type', 'password');
+        $("#change-pass").attr('type', 'password');
     }).mouseout(function () {
         $("#password").attr('type', 'password');
+        $("#change-pass").attr('type', 'password');
     });
 
     //    Show Password of Confirm Password Field
@@ -97,15 +100,17 @@ jQuery(document).ready(function () {
         $("#RePassword").attr('type', 'password');
     });
 
-    $(".show-pwd").bind('touchstart', function(){
+    $(".show-pwd").bind('touchstart', function () {
         $("#password").attr('type', 'text');
-    }).bind('touchend', function(){
+        $("#change-pass").attr('type', 'text');
+    }).bind('touchend', function () {
         $("#password").attr('type', 'password');
+        $("#change-pass").attr('type', 'password');
     });
 
-    $(".show-pwd-re").bind('touchstart', function(){
+    $(".show-pwd-re").bind('touchstart', function () {
         $("#RePassword").attr('type', 'text');
-    }).bind('touchend', function(){
+    }).bind('touchend', function () {
         $("#RePassword").attr('type', 'password');
     });
     /*
@@ -150,7 +155,6 @@ jQuery(document).ready(function () {
     //});
 
 
-
     /*
      * Apply toggle on window load
      */
@@ -159,6 +163,13 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
+            $('.tab-pane').removeClass('active');
+            $('#save-btn').hide();
+            $('.account-sidebar> li').click(function() {
+                $('.account-sidebar').hide();
+                $('#save-btn').show();
+                $('.account-header').hide();
+            });
 
         } else {
             $('.accordion-list').removeClass('collapse');

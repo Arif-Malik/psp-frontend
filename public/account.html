@@ -657,7 +657,7 @@
                 </ul>
             </div>
             <div class="col-md-9">
-                <form role="form" class="account-section-container tab-content">
+                <form role="form"  class="account-section-container tab-content">
                     <!--email and password-->
                     <div id="email-password" class="tab-pane active">
                         <h1>Email & Password</h1>
@@ -666,7 +666,7 @@
                         <div class="form-group">
                             <label for="email">email/username</label>
                             <input type="email" class="form-control input-lg" value="JFilipovski@gmail.com"
-                                   id="email" disabled>
+                                   id="email">
                         </div>
                         <a href="#change-password" data-toggle="tab" class="btn btn-primary">Change Password</a>
                     </div>
@@ -678,12 +678,16 @@
                         <p class="text-danger">Your password must be 6-16 characters long</p>
                         <div class="form-group">
                             <label for="change-pass">old password</label>
-                            <input type="password" class="form-control input-lg" id="change-pass">
+
+                            <div class="input-group input-group-lg">
+                                <input type="password" class="form-control" id="change-pass"  required>
+                                <span class="input-group-addon show-pwd">Show</span>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="password">new password</label>
 
-                            <div class="input-group input-group-lg">
+                            <div class="input-group input-group-lg has-error">
                                 <input type="password" class="form-control" id="password"  required>
                                 <span class="input-group-addon show-pwd">Show</span>
                             </div>
@@ -707,12 +711,12 @@
 
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-12">
                                     <label for="fname">FIRST NAME</label>
                                     <input type="text" class="form-control input-lg" value="James" id="fname"
                                            disabled>
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="lname">LAST NAME</label>
                                     <input type="text" class="form-control input-lg" value="Dolor" id="lname"
                                            disabled>
@@ -721,7 +725,7 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-12">
                                     <label for="phone-number">Phone Number</label>
                                     <input type="text" class="form-control input-lg" value="(586) 749-9592"
                                            id="phone-number" disabled>
@@ -739,43 +743,40 @@
 
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-12">
                                     <label for="country">country</label>
-                                    <select class="form-control input-lg" id="country" disabled>
+                                    <select class="form-control input-lg" id="country">
                                         <option>United States</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="zip">zip/postal code</label>
-                                    <input type="text" class="form-control input-lg" value="48073" id="zip"
-                                           disabled>
+                                    <input type="text" class="form-control input-lg" value="48073" id="zip">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-12">
                                     <label for="address">address</label>
                                     <input type="text" class="form-control input-lg" value="4250N, Marine DR."
-                                           id="address" disabled>
+                                           id="address">
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="address-2">address</label>
-                                    <input type="text" class="form-control input-lg" value="APT 403" id="address-2"
-                                           disabled>
+                                    <input type="text" class="form-control input-lg" value="APT 403" id="address-2">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label for="fname">city</label>
-                                    <input type="text" class="form-control input-lg" value="Detroit" id="fname"
-                                           disabled>
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="city">city</label>
+                                    <input type="text" class="form-control input-lg" value="Detroit" id="city">
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="state">state</label>
-                                    <select class="form-control input-lg" id="state" disabled>
+                                    <select class="form-control input-lg" id="state">
                                         <option>Michigan</option>
                                     </select>
                                 </div>
@@ -787,8 +788,8 @@
                     <!--Pet Info-->
                     <div id="pet-info" class="tab-pane">
 
-                        <h1 class="pull-left">Pet Info</h1>
-                        <a class="btn btn-primary pull-right" href="">Add a Pet</a>
+                        <h1 class="pull-left hidden-xs">Pet Info</h1>
+                        <a class="btn btn-primary hidden-xs pull-right" href="">Add a Pet</a>
                         <hr>
                         <div class="pet-info-head text-center">
                             <div class="pet-display-image"
@@ -809,17 +810,16 @@
                                     <a class="btn btn-primary remove-btn" href="">Remove Image</a>
                                 </div>
                             </div>
-
                         </div>
 
 
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-xs-12">
                                     <label for="name">Name</label>
                                     <input type="text" class="form-control input-lg" value="Hendrick" id="name">
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="attr-1">Attribute</label>
                                     <select class="form-control input-lg" id="attr-1">
                                         <option>Choclate Labrador</option>
@@ -829,13 +829,13 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="birth">Birthday</label>
                                     <select class="form-control input-lg" id="birth" >
                                         <option>4/26/2014</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="attr-2">Attribute</label>
                                     <select class="form-control input-lg" id="attr-2" >
                                         <option>Male</option>
@@ -845,33 +845,35 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-6 row-inline-control">
+                                <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="species">Species</label>
                                     <select class="form-control input-lg" id="species" >
                                         <option>Dog</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 row-inline-control no-pet-check">
+                                <div class="col-md-6 col-xs-12 row-inline-control no-pet-check">
                                     <div class="custom-checkbox">
-                                        <input type="checkbox" id="not-check" checked="checked" value="1">
+                                        <input type="checkbox" id="not-check"  value="1">
                                         <label for="not-check">I no longer have this pet.</label>
-                                        <!--<label for="species">I no longer have this pet.</label>-->
                                     </div>
-                                    <!--<p class="pull-right no-pet">I no longer have this pet.</p>-->
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <a class="btn btn-primary add-pet visible-xs pull-right" href="">Add a Pet</a>
                         </div>
 
                     </div>
                     <!--/Pet Info-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="save-btn"></label>
-                        <div class="col-md-4 center-block">
+
+
+
+                        <div class="center-block">
                             <button type="submit" id="save-btn" class="btn btn-primary center-block">
                                 Save
                             </button>
                         </div>
-                    </div>
+
 
                 </form>
 

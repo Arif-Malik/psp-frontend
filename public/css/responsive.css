@@ -524,11 +524,16 @@
     .account-header {
         margin-bottom: 20px;
     }
-
+    .account-section-container {
+        width: 100%;
+    }
     #account-info .account-header img {
         max-width: 140px;
         height: 135px;
         float: none;
+    }
+    .account-section-container .tab-pane {
+        border: none;
     }
     .account-header h1 {
         font-size: 30px;
@@ -555,6 +560,102 @@
         right: 10px;
         color: #b2b2b2;
     }
+    .account-section-container h1 {
+        font-size: 21px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .account-section-container label {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        position: relative;
+        padding-top: 15px;
+    }
+    .account-section-container .form-control {
+        color: #231f1f;
+        background-color: transparent !important;
+        border: none;
+        float: right;
+        font-size: 15px;
+        position: relative;
+        width: 55%;
+    }
+    #email-password .btn-primary {
+        border-bottom: 1px solid #dfe0df !important;
+        float: left !important;
+        width: 100% !important;
+        text-align: left;
+        height: 40px;
+        padding-bottom: 0 !important;
+    }
+    .account-section-container #save-btn {
+        margin: 0;
+        width: 100%;
+        font-size: 24px;
+    }
+    .account-section-container .center-block {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 500;
+    }
+    #pet-info .visible-xs {
+        width: 100%;
+    }
+    .account-section-container #pet-info hr {
+        display: none;
+    }
+    .account-section-container #pet-info .pet-info-head {
+        margin-top: 20px;
+    }
+    .account-section-container #pet-info .pet-display-image {
+        height: 140px;
+        width: 160px;
+    }
+    .account-section-container .label-group-signup {
+        margin-bottom: 30px;
+    }
+    .account-section-container .label-group-signup p {
+        margin: 0 0 10px 20px;
+    }
+    .account-section-container .add-pet {
+        margin: 40px 0;
+    }
+    .account-section-container .upload-btns .btn {
+        margin: 0;
+        padding: 10px 14px;
+        font-size: 18px;
+    }
+    .account-section-container .round-circle-signup label {
+        top:0;
+    }
+    .account-section-container .custom-checkbox {
+        text-align: right;
+        margin: 15px 0;
+    }
+    .account-section-container .form-group {
+        border-bottom: 1px solid #dfe0df;
+    }
+    .account-section-container #email-password .form-group {
+        border-bottom: 1px solid #dfe0df !important;
+    }
+    .account-section-container .form-group .row .col-xs-12 {
+        border-bottom: 1px solid #dfe0df;
+    }
+    .account-section-container .form-group .row .col-xs-12:last-of-type {
+        border: none;
+    }
+    .account-section-container .form-group:last-of-type {
+        border: none;
+    }
+    .custom-checkbox > [type="checkbox"]:not(:checked) + label:before, .custom-checkbox > [type="checkbox"]:checked + label:before {
+        top: 66%;
+        background-color: #dddede;
+    }
+    .no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:after {
+        top: 66%;
+    }
 
 }
 
@@ -575,6 +676,20 @@
         font-size: 1.000em;
         padding: 10px 12px;
         height: 45px;
+    }
+
+    /*Account page*/
+    .account-section-container .upload-btns .btn {
+        margin: 0;
+        padding: 10px 14px;
+        font-size: 16px;
+        min-width: inherit;
+        height: 47px;
+    }
+    .account-section-container #pet-info form, .account-section-container #pet-info hr,
+    .account-section-container #pet-info .pet-info-head{
+        float: none !important;
+        width: 100%;
     }
 
 }
@@ -1472,7 +1587,6 @@
         margin-right: 120px;
     }
     .account-section-container #save-btn {
-        margin: 50px 0 100px;
         padding: 15px 100px;
         font-size: 28px;
         line-height: 28px;
