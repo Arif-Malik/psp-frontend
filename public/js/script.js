@@ -156,10 +156,15 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
+            $(".panel-heading").addClass("collapsed");
+
+        
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "");
+            $(".panel-heading").removeClass("collapsed");
+
 
             $(".product-tile").mouseenter(function () {
                 $carousel = $(this).children(".prod-carousel");
