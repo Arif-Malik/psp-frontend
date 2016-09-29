@@ -668,9 +668,38 @@
                             <input type="email" class="form-control input-lg" value="JFilipovski@gmail.com"
                                    id="email" disabled>
                         </div>
-                        <a href="#" class="btn btn-primary">Change Password</a>
+                        <a href="#change-password" data-toggle="tab" class="btn btn-primary">Change Password</a>
                     </div>
                     <!--/email and password-->
+
+                    <!--Change Password-->
+                    <div id="change-password" class="tab-pane">
+                        <h1>Change Password</h1>
+                        <p class="text-danger">Your password must be 6-16 characters long</p>
+                        <div class="form-group">
+                            <label for="change-pass">old password</label>
+                            <input type="password" class="form-control input-lg" id="change-pass">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">new password</label>
+
+                            <div class="input-group input-group-lg">
+                                <input type="password" class="form-control" id="password"  required>
+                                <span class="input-group-addon show-pwd">Show</span>
+                            </div>
+                            <small id="passwordHelp" class="form-text text-danger">6-16 Character and 1 symbol.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="RePassword">confirm password</label>
+
+                            <div class="input-group input-group-lg">
+                                <input type="password" class="form-control" id="RePassword" required>
+                                <span class="input-group-addon show-pwd-re">Show</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/Change Password-->
 
                     <!--Personal info-->
                     <div id="personal-info" class="tab-pane">
@@ -1019,7 +1048,6 @@
 <script src="js/jquery.flexslider.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/modernizr.custom.js"></script>
-<script src="js/modernizr-media.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 

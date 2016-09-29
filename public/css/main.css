@@ -2048,11 +2048,12 @@ button:focus {
     border-bottom: 1px solid #f6f6f6;
 }
 
-.account-section-container form label {
+.account-section-container label {
     color: #515253;
     text-transform: uppercase;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
 }
 
 .account-section-container #email-password .btn-primary {
@@ -2155,6 +2156,17 @@ button:focus {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.text-danger {
+    color: #ed1d23;
+}
+#change-password p.text-danger {
+    font-weight: 700;
+}
+#passwordHelp {
+    font-size: 14px;
+    line-height: 28px;
 }
 
 

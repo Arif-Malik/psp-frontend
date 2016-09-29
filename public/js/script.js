@@ -159,7 +159,7 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
-            
+
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
