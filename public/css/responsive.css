@@ -656,6 +656,23 @@
     .no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:after {
         top: 66%;
     }
+    #change-password .form-group .form-control {
+        width: 100%;
+    }
+    #change-password .form-group .form-control {
+        width: 100%;
+    }
+    #change-password .form-group .input-group {
+        display: inline-table;
+        width: 50%;
+        float: right;
+    }
+    .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+        height: 24px;
+        padding: 8px 16px;
+        font-size: 15px;
+        border: none;
+    }
 
 }
 
