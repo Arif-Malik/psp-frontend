@@ -100,7 +100,7 @@ jQuery(document).ready(function () {
         $("#RePassword").attr('type', 'password');
     });
 
-    $(".show-pwd").bind('touchstart', function () {
+    $(".show-pwd").bind('touchstart', function(){
         $("#password").attr('type', 'text');
         $("#change-pass").attr('type', 'text');
     }).bind('touchend', function () {
@@ -108,9 +108,9 @@ jQuery(document).ready(function () {
         $("#change-pass").attr('type', 'password');
     });
 
-    $(".show-pwd-re").bind('touchstart', function () {
+    $(".show-pwd-re").bind('touchstart', function(){
         $("#RePassword").attr('type', 'text');
-    }).bind('touchend', function () {
+    }).bind('touchend', function(){
         $("#RePassword").attr('type', 'password');
     });
     /*
@@ -159,11 +159,11 @@ jQuery(document).ready(function () {
      */
 
     $( "#sub-ul li" ).click(function() {
-      var currentoption = "<li>" + $("#selected-location").text() + "</li>";
-      $("#selected-location").text($(this).text());
-      $("#sub-ul").addClass("selected");
-      setInterval(function(){ $("#sub-ul").removeClass("selected"); }, 2000);
-      //$(currentoption).appendTo( "#sub-ul" );
+        var currentoption = "<li>" + $("#selected-location").text() + "</li>";
+        $("#selected-location").text($(this).text());
+        $("#sub-ul").addClass("selected");
+        setInterval(function(){ $("#sub-ul").removeClass("selected"); }, 2000);
+        //$(currentoption).appendTo( "#sub-ul" );
     });
 
 
@@ -175,6 +175,7 @@ jQuery(document).ready(function () {
             $('.accordion-list').addClass('collapse');
             $('.toggle-footer').addClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "collapse");
+            $(".panel-heading").addClass("collapsed");
             $('.tab-pane').removeClass('active');
             $('#save-btn').hide();
             $('.account-sidebar> li').click(function() {
@@ -183,10 +184,13 @@ jQuery(document).ready(function () {
                 $('.account-header').hide();
             });
 
+
         } else {
             $('.accordion-list').removeClass('collapse');
             $('.toggle-footer').removeClass('accordion-toggle');
             $(".set-toggle").attr("data-toggle", "");
+            $(".panel-heading").removeClass("collapsed");
+
 
             $(".product-tile").mouseenter(function () {
                 $carousel = $(this).children(".prod-carousel");
