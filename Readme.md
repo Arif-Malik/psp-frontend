@@ -12,5 +12,4 @@ run
 
  npm install livereload
 
-
  open browser and enter localhost:3000 to access the site

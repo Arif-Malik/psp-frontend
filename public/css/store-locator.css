@@ -71,3 +71,74 @@
     padding-top: 15px;
     padding-bottom: 50px;
 }
+
+
+/*Search results page styling*/
+
+.breadcrumb-bar .title {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 1.000em;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 100;
+    position: relative;
+    font-weight: 400;
+    padding: 7px 0;
+    margin-left: 0;
+}
+
+#categories-home {
+    clear: both;
+}
+
+.categories-home-header h1 {
+    font-size: 3.751em !important;
+    font-weight: 800 !important;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.categories-home-header h6 {
+    font-size: 1.313em !important;
+    font-weight: 400 !important;
+}
+
+.bg-purple,
+.bg-red,
+.bg-blue {
+    margin-bottom: 3px;
+}
+
+.img-content .percent-off {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.text-ad-large {
+    font-size: 3.50em;
+    font-weight: 900;
+}
+
+.img-content .percent-off .btn{
+    margin-top: 10px;
+    }
+
+.advertisement-product {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.advertisement-product img{
+    height: 100%;
+    }
+
+.product-tile .prod-footer .price-normal {
+    color: #231f1f;
+    font-size: 1.125em;
+}
