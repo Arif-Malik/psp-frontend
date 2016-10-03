@@ -1218,9 +1218,9 @@ button:focus {
 }
 /*product detail section*/
 .hover-details{
-    /*border-right: 1px solid #ddd; */
+    border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    /*border-left: 1px solid #ddd; */
+    border-left: 1px solid #ddd;
     box-shadow: 4px 4px 5px #ddd;
     padding:9px;
     display: none;
@@ -1229,7 +1229,8 @@ button:focus {
     top: 99%;
     width: 100%;
     z-index: 10001;
-
+    width:calc(100% + 2px);
+    margin-left:-1px
 }
 
 /*General*/
@@ -2302,8 +2303,6 @@ background-image: url("../images/icons/down-g-arrow.png");
     padding-bottom: 100px;
     width: 80%;
 }
-
-
 
 .account-header {
     margin-top: 30px;
