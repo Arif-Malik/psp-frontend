@@ -645,8 +645,6 @@ footer .col-sm-2:last-child, .col-md-2:last-child, .col-lg-2:last-child {
 
 /*Product Detail Page*/
 
-
-
 #recommended-products .product-tile {
     min-height: 400px;
 }
@@ -1354,6 +1352,26 @@ button:focus {
     padding-right: 14px;
 }
 
+.editable-breadcrum:hover ul {
+    display: block;
+}
+
+.editable-breadcrum:hover ul.selected {
+    display: none;
+}
+
+.editable-breadcrum ul li {
+    padding: 11px 0px 11px 37px;
+    border-bottom: 1px solid #efefef;
+}
+
+.editable-breadcrum ul li:first-child {
+    border-top: 1px solid #efefef;
+}
+
+.editable-breadcrum ul li:hover {
+    background-color: #efefef;
+}
 .round-circle-signup input[type=checkbox] {
     visibility: hidden;
 }
@@ -1362,10 +1380,10 @@ button:focus {
     width: 32px;
     height: 32px;
     background: #ffffff;
-    margin: 25px 0;
+    /*margin: 25px 0;*/
 
     border-radius: 100%;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -1403,10 +1421,10 @@ button:focus {
 /*Round checkboxes color*/
 /*White*/
 .round-circle-one {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     position: relative;
-    margin: 0px auto;
+    margin: 20px auto;
     /*color after click*/
     background: #ffffff;
 
@@ -2163,4 +2181,203 @@ button:focus {
 
 .flexslider .flex-control-thumbs {
     margin: 15px 0 0;
+}
+/*Account Info*/
+.account-section-container {
+    min-height: 400px;
+    padding-bottom: 100px;
+    width: 80%;
+}
+
+
+
+.account-header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+#account-info .account-header img {
+    border-radius: 50%;
+    max-width: 170px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.account-header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 45px;
+    margin: 0;
+}
+
+.account-header h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.account-sidebar li a{
+    color: #00af41;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 25px;
+    padding: 0;
+}
+
+.account-sidebar li.active a {
+    color: #909090;
+    padding-left: 10px;
+}
+
+.account-section-container h1 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    font-size: 28px;
+    font-weight: 400;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.account-section-container .form-control {
+    border: 2px solid #d2d2d2;
+    background-color: #f4f4f2;
+}
+
+.account-section-container #save-btn {
+    margin-top: 100px;
+}
+
+.account-section-container .form-control:disabled {
+    background-color: #f4f4f2;
+}
+
+.account-section-container form {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.account-section-container .tab-pane {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.account-section-container label {
+    color: #515253;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+
+.account-section-container #email-password .btn-primary {
+    background-color: transparent;
+    color: #00af41;
+    border: none;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.account-section-container #email-password .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #00af41 !important;
+}
+
+.account-section-container #pet-info h1 {
+    margin-bottom: 15px;
+    border-bottom: none;
+    width: 50%;
+}
+
+.account-section-container #pet-info form, .account-section-container #pet-info hr,
+.account-section-container #pet-info .pet-info-head{
+    float: left;
+    width: 100%;
+}
+.account-section-container #pet-info .pet-info-head{
+    margin-bottom: 50px;
+}
+
+.account-section-container #pet-info .pet-display-image {
+    height: 150px;
+    width: 198px;
+    float: none;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.account-section-container .btn-primary {
+    font-size: 1.300em;
+}
+.account-section-container .upload-btns .btn {
+    margin:0 15px;
+    padding: 10px 75px;
+}
+.account-section-container .upload-btns .remove-btn {
+    background-color: #231f1f;
+    border: 1px solid #231f1f;
+}
+.account-section-container #pet-info .btn-primary:active, .btn-primary:focus {
+    background-color: #00af41 !important;
+    border-color: #00af41 !important;
+    color: #FFFFFF !important;
+}
+.account-section-container #pet-info .remove-btn:active, .remove-btn:focus {
+    background-color: #231f1f !important;
+    border-color: #231f1f !important;
+}
+.account-section-container #pet-info .no-pet-check .custom-checkbox label {
+    font-size: 14px;
+    font-weight: 400;
+}
+.account-section-container .label-group-signup {
+    display: inline-block;
+}
+.account-section-container .round-circle-signup {
+    position: absolute;
+    margin: 0;
+    background-color: #eeeeee;
+}
+.account-section-container .label-group-signup p {
+    margin: 0 0 10px 50px;
+}
+.account-section-container .round-circle-signup label {
+    position: absolute;
+    left: 5px;
+}
+
+.no-pet-check .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+.no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:before {
+    height: 20px;
+    width: 20px;
+    left: -4px;
+    border-radius: 3px;
+}
+.no-pet-check .custom-checkbox > [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #4dc77a;
+    border: 2px solid #026937;
+    height: 20px;
+    width: 21px;
+    left: -4px;
+    top: 49%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.text-danger {
+    color: #ed1d23;
+}
+#change-password p.text-danger {
+    font-weight: 700;
+}
+#passwordHelp {
+    font-size: 14px;
+    line-height: 28px;
 }
