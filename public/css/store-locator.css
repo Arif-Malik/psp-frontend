@@ -71,6 +71,11 @@
     padding-top: 15px;
     padding-bottom: 50px;
 }
+.map-address-detail .main-head {
+  color: #231f1f;
+    font-size: 35.99px;
+    font-weight: 400;  
+} 
 
 
 /*Search results page styling*/
