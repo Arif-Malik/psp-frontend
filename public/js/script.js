@@ -9,6 +9,18 @@ jQuery(document).ready(function () {
     var Modernizr = window.Modernizr;
     var query = Modernizr.mq('(max-width: 767px)');
 
+    var url = GMaps.staticMapURL({
+        size: [610, 300],
+        lat: -12.043333,
+        lng: -77.028333,
+        markers: [
+            {lat: -12.043333, lng: -77.028333}
+        ]
+    });
+
+    $('<img/>').attr('src', url)
+        .appendTo('#map');
+
 
     /*Header Search Bar*/
     $(".search-icon").click(function () {
