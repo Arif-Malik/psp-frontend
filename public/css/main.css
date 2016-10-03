@@ -1414,11 +1414,56 @@ background-image: url("../images/icons/down-g-arrow.png");
     /*5px - for rounded arrows and
     50px - to prevent hover glitches on the border created using shadows*/
     border-radius: 0 5px 0 50px;
+    background-color: #231f1f;
 }
 
-.breadcrumb-bar a.breadcrumb-list {
-    font-size: 21px;
-    padding-right: 14px;
+/* dropdown-breadcrum */
+
+.editable-breadcrum {
+    border: 0px;
+    min-height: 50px;
+    margin-left: -1px;
+    width: 80%;
+    float: left;
+    cursor:pointer;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background-image: url("../images/icons/down-g-arrow.png");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    padding-left: 37px;
+    color: #fff;
+    background-color: #231f1f;
+    border-right: 1px solid #d3d2d2;
+    list-style: none;
+    margin-bottom: 0px;
+    padding: 14px 0px 14px 37px;
+    position: relative;
+}
+
+.editable-breadcrum:hover {
+    outline: none !important;
+    border:0px;
+    box-shadow:none;
+    background-image: url("../images/icons/up-arrow.png");
+    color: #231f1f;
+    background-color: #fff;
+}
+
+.editable-breadcrum ul {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 5;
+    color: #231f1f;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0px;
+    display: none;
 }
 
 .editable-breadcrum:hover ul {
