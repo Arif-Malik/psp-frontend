@@ -447,7 +447,13 @@ header .global-header {
 footer {
     background-color: #231f1f;
     padding: 15px;
+    float: left;
+    width: 100%;
+}
 
+footer .main-footer {
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
 
 footer .panel, .panel-default, .panel-heading {
@@ -1113,12 +1119,16 @@ button:focus {
 /*Breadcrumbs*/
 #breadcrumb {
     background-color: #231f1f;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 3px #e8e8e8;
+    margin-bottom: 20px;
 }
 
 .breadcrumb-bar {
     /*centering*/
-    overflow: hidden;
-    padding: 0 200px 0 0;
+    /*overflow: hidden;
+    padding: 0 200px 0 0;*/
 }
 
 .breadcrumb-bar a {
@@ -1126,12 +1136,15 @@ button:focus {
     outline: none;
     display: block;
     float: left;
-    font-size: 0.875em;
+    font-size: 1.000em;
     line-height: 36px;
     color: #ffffff;
     font-weight: 100;
     /*need more margin on the left of links to accomodate the numbers*/
     position: relative;
+    font-weight: 400;
+    padding: 7px 22px 7px 22px;
+    margin-left: 12px;
 }
 
 /*we dont need an arrow after the last link*/
@@ -1142,6 +1155,11 @@ button:focus {
 /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
 .breadcrumb-bar a:first-child {
     border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+    padding-left: 0px;
+}
+
+.breadcrumb-bar a:first-child {
+    margin-left: 0px;
 }
 
 .breadcrumb-bar a:first-child:before {
@@ -1168,11 +1186,11 @@ button:focus {
 .breadcrumb-bar a:after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 5px;
     right: -18px; /*half of square's length*/
     /*same dimension as the line-height of .breadcrumb a */
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's:
     length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
     if diagonal required = 1; length = 1/1.414 = 0.707*/
@@ -1185,8 +1203,78 @@ button:focus {
     /*5px - for rounded arrows and
     50px - to prevent hover glitches on the border created using shadows*/
     border-radius: 0 5px 0 50px;
+    background-color: #231f1f;
 }
 
+/* dropdown-breadcrum */
+
+.editable-breadcrum {
+    border: 0px;
+    min-height: 50px;
+    margin-left: -1px;
+    width: 80%;
+    float: left;
+    cursor:pointer;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background-image: url("../images/icons/down-g-arrow.png");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    padding-left: 37px;
+    color: #fff;
+    background-color: #231f1f;
+    border-right: 1px solid #d3d2d2;
+    list-style: none;
+    margin-bottom: 0px;
+    padding: 14px 0px 14px 37px;
+    position: relative;
+}
+
+.editable-breadcrum:hover {
+    outline: none !important;
+    border:0px;
+    box-shadow:none;
+    background-image: url("../images/icons/up-arrow.png");
+    color: #231f1f;
+    background-color: #fff;
+}
+
+.editable-breadcrum ul {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 5;
+    color: #231f1f;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0px;
+    display: none;
+}
+
+.editable-breadcrum:hover ul {
+    display: block;
+}
+
+.editable-breadcrum:hover ul.selected {
+    display: none;
+}
+
+.editable-breadcrum ul li {
+    padding: 11px 0px 11px 37px;
+    border-bottom: 1px solid #efefef;
+}
+
+.editable-breadcrum ul li:first-child {
+    border-top: 1px solid #efefef;
+}
+
+.editable-breadcrum ul li:hover {
+    background-color: #efefef;
+}
 .round-circle-signup input[type=checkbox] {
     visibility: hidden;
 }

@@ -154,6 +154,18 @@ jQuery(document).ready(function () {
     //    }
     //});
 
+    /*
+     * Editable breadcrum
+     */
+
+    $( "#sub-ul li" ).click(function() {
+      var currentoption = "<li>" + $("#selected-location").text() + "</li>";
+      $("#selected-location").text($(this).text());
+      $("#sub-ul").addClass("selected");
+      setInterval(function(){ $("#sub-ul").removeClass("selected"); }, 2000);
+      //$(currentoption).appendTo( "#sub-ul" );
+    });
+
 
     /*
      * Apply toggle on window load
