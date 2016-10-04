@@ -3,17 +3,20 @@
     padding: 100px 0;
     margin-right: 50px;
 }
+
 .map-address-detail h4 {
     color: #818181;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
 }
+
 .map-address-detail p {
     color: #231f1f;
     font-size: 18px;
     line-height: 31px;
 }
+
 .map-address-detail .owner-img {
     height: 95px;
     background-repeat: no-repeat;
@@ -21,30 +24,36 @@
     background-position: center;
     border-radius: 50%;
 }
+
 .map-address-detail .owner-detail {
     padding: 15px 10px;
 }
+
 #about-store {
     background-color: #f4f4f2;
 }
 
-#about-store .container{
+#about-store .container {
     background-color: #f4f4f2;
     padding: 100px 0;
 }
-#about-store .container h2{
+
+#about-store .container h2 {
     margin: 0;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
 }
-#about-store .container p{
+
+#about-store .container p {
     font-size: 18px;
     line-height: 36px;
 }
-#store-services .container{
+
+#store-services .container {
     padding: 100px 0;
 }
+
 #store-services .service-img {
     background-repeat: no-repeat;
     background-color: #0098ce;
@@ -53,19 +62,23 @@
     height: 100px;
     width: 110px;
 }
+
 #store-services .service-detail {
     padding-bottom: 30px;
 }
+
 #store-services h4 {
     color: #231f1f;
     font-size: 24px;
     line-height: 31px;
 }
+
 #store-services p {
     color: #231f1f;
     font-size: 17px;
     line-height: 31px;
 }
+
 #in-stores {
     background-color: #f4f4f2;
     padding-top: 15px;
@@ -111,9 +124,9 @@
     font-weight: 400 !important;
 }
 
-.bg-purple,
-.bg-red,
-.bg-blue {
+p.bg-purple,
+p.bg-red,
+p.bg-blue {
     margin-bottom: 3px;
 }
 
@@ -129,9 +142,9 @@
     font-weight: 900;
 }
 
-.img-content .percent-off .btn{
+.img-content .percent-off .btn {
     margin-top: 10px;
-    }
+}
 
 .advertisement-product {
     border-radius: 5px;
@@ -139,9 +152,9 @@
     height: 400px;
 }
 
-.advertisement-product img{
+.advertisement-product img {
     height: 100%;
-    }
+}
 
 .product-tile .prod-footer .price-normal {
     color: #231f1f;
