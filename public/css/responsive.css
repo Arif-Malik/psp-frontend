@@ -1892,6 +1892,13 @@
     float: left;
     width: 100%;
   }
+  .products-container .row .col-xs-3 .product-tile,
+  #recommended-products .product-tile {
+    min-height: 400px;
+  }
+  .products-container .row .col-xs-3 .product-tile .prod-footer {
+    top: 84%;
+  }
 }
 
 @media (max-width: 320px) {
