@@ -529,10 +529,17 @@ header .global-header {
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 20px;
+  clear: both;
+}
+
+.newsletter-invitation {
+    margin-bottom: 20px;
 }
 
 footer {
   background-color: #231f1f;
+  float: left;
+  width: 100%;
 }
 
 footer .main-footer {
@@ -1594,7 +1601,8 @@ button.filter-accordion:hover {
   background-color: #efefef;
 }
 
-.round-circle-signup input[type=checkbox] {
+.round-circle-signup input[type=checkbox],
+.round-circle-signup input[type=radio] {
   visibility: hidden;
 }
 
@@ -1635,7 +1643,8 @@ button.filter-accordion:hover {
  * Create the checked state
  */
 
-.round-circle-signup input[type=checkbox]:checked ~ label {
+.round-circle-signup input[type=checkbox]:checked ~ label,
+.round-circle-signup input[type=radio]:checked ~ label {
   background: #00af41;
 }
 
@@ -2640,7 +2649,6 @@ button.filter-accordion:hover {
   font-size: 14px;
   line-height: 28px;
 }
-
 
 /*Header Search box*/
 
