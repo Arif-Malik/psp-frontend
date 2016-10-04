@@ -190,10 +190,9 @@ jQuery(document).ready(function () {
 
     /* datepicker support for all browsers */
 
-    if ( $('#test')[0].type != 'date' ) $('#test').datepicker();
-
-
-
+     $( function() {
+        $( "#datepicker" ).datepicker();
+     } );
     /*
      * Apply toggle on window load
      */
