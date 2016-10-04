@@ -101,6 +101,17 @@
   width: 216px !important;
 }
 
+.meet-team {
+  background-color: #f4f4f2;
+  padding: 95px;
+}
+
+.member-pic {
+  max-width: 100%;
+  border-radius: 100%;
+  height: auto;
+}
+
 /*.social-slider .slick-slide {
   max-width: 216px !important;
   width: 100% !important;

@@ -653,6 +653,10 @@
     width: 100%;
     color: #f0f0f0;
   }
+  .reviews-header {
+    padding: 22px;
+    border-bottom: 1px solid #f0f0f0;
+  }
   .review-rows h5 {
     font-size: 1.00em;
     font-weight: 700;
