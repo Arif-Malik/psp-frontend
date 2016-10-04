@@ -141,9 +141,7 @@
     text-align: center;
     padding-top: 6px;
   }
-  .nav-search {
-    display: none;
-  }
+  .nav-search {}
   .dropdown-product-details .dropdown-menu {
     padding: 10px;
   }
@@ -1248,7 +1246,21 @@
 
 
 /*Mobile layout*/
-
+@media (max-width: 992px) {
+  .navbar-nav .yamm-fw.search-li {
+    position: static;
+  }
+  .search-box {
+    display: none;
+    position: absolute;
+    top: 90px;
+    z-index: 100;
+    right: 0;
+  }
+  .logo-wrap {
+    max-width: 25%;
+  }
+}
 @media (max-width: 767px) {
   .main-header {
     display: none;
@@ -1672,6 +1684,131 @@
   .categories-home-header select.input-lg {
     margin-top: 30px;
   }
+  /*Mobile Search box*/
+  .mobile.search-box {
+    display: none;
+    top: 49px;
+    z-index: 101;
+    right: -1px;
+    background-color: #fff;
+    width: calc(100% + 2px);
+  }
+  .mobile.search-box form {
+    margin-bottom: 0;
+  }
+  .mobile.search-box .clear-text {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.20em;
+    display: none;
+  }
+  .mobile.search-box .tt-menu {
+    position: relative !important;
+    text-align: left;
+    margin: 0 0 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #ededee;
+  }
+  .mobile.search-box .tt-suggestion {
+    padding: 30px 20px;
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+  }
+  .search-products-list {
+    padding: 0 0 0;
+    max-height: none;
+    overflow: visible;
+  }
+  .mobile.search-box .tt-suggestion:after {
+    float: right;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: "\f105";
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.500em;
+  }
+  .search-products-list .products-title {
+    background-color: #f4f4f2;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ededee;
+    margin-bottom: 20px;
+    font-size: 0.875em;
+  }
+  .search-product-tile {
+    padding: 0 20px 15px;
+    border-bottom: 1px solid #ededee;
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+  .search-product-tile:last-child {
+    margin-bottom: 0;
+  }
+  .search-product-tile .prod-footer {
+    margin-top: 15px;
+  }
+  .search-product-tile .prod-footer a {
+    color: #00af41;
+    margin-top: 0;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 0.875em;
+    text-transform: uppercase;
+  }
+  .search-product-tile .prod-footer a .fa {
+    margin-left: 3px;
+  }
+  .search-product-tile .prod-footer .in-stock {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #00af41;
+    padding: 3px 10px;
+    color: #010101;
+    font-weight: 500;
+    font-size: 0.875em;
+    margin-right: 10px;
+  }
+  .search-stores-list {
+    padding: 0 0 0;
+    max-height: none;
+    overflow: visible;
+  }
+  .search-stores-list .stores-title {
+    background-color: #f4f4f2;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ededee;
+    margin-bottom: 20px;
+    font-size: 0.875em;
+  }
+  .search-store-tile {
+    padding: 0 20px 15px;
+    border-bottom: 1px solid #ededee;
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+  .search-store-tile:last-child {
+    margin-bottom: 0;
+  }
+  .advertisement-product {
+    background:url(../images/img-product-adverts-SR-mobile.jpg) no-repeat center center;
+    background-size: cover; 
+    border-radius: 0; 
+  }
+  .img-content .percent-off {
+    width: 90%;
+    color: #231f1f;
+    position: relative;
+  }
+  .img-content .percent-off h2 br {
+    display: none;
+  }
+  .categories-home-header h1 {
+    font-size: 2.625em !important;
+  }
 }
 
 
@@ -1865,7 +2002,7 @@
     font-size: 2em !important;
   }
   #categories-home .categories-home-header {
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 30px;
     float: left;
     width: 100%;
