@@ -11,6 +11,7 @@
     <!--Components-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/component.css" rel="stylesheet"/>
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <!--Custom Css-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -818,9 +819,7 @@
                             <div class="row">
                                 <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="birth">Birthday</label>
-                                    <select class="form-control input-lg" id="birth" >
-                                        <option>4/26/2014</option>
-                                    </select>
+                                    <input type="date" id="datepicker" placeholder="mm/dd/yyyy" class="form-control input-lg" name="">
                                 </div>
                                 <div class="col-md-6 col-xs-12 row-inline-control">
                                     <label for="attr-2">Attribute</label>
@@ -1038,7 +1037,12 @@
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
-
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </body>
 </html>

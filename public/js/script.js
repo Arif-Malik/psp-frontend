@@ -178,6 +178,21 @@ jQuery(document).ready(function () {
         //$(currentoption).appendTo( "#sub-ul" );
     });
 
+    /* Social Slider store locator */
+
+    $('.social-slider').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    /* datepicker support for all browsers */
+
+    if ( $('#test')[0].type != 'date' ) $('#test').datepicker();
+
+
 
     /*
      * Apply toggle on window load
