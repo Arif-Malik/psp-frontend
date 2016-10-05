@@ -1,7 +1,5 @@
 .map-address-detail {
-  min-height: 400px;
-  padding: 100px 0;
-  margin-right: 50px;
+  padding: 55px 0 115px 0px;
 }
 
 .map-address-detail h4 {
@@ -9,6 +7,43 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 0px;
+}
+
+.map-address-detail .address h4,
+.map-address-detail .hours h4 {
+  text-transform: uppercase;
+}
+
+.map-address-detail .address .link {
+  color: #00af41;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 95px;
+  display: block;
+}
+
+.map-address-detail .address .link .mystore,
+.map-address-detail .hours .link .document {
+  display: block;
+  float: left;
+  margin-right: 12px;
+}
+
+.map-address-detail .hours .link .arrow {
+  margin-left: 2px;
+  margin-top: -2px;
+}
+
+.map-address-detail .hours .link {
+  color: #00af41;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-top: 68px;
+    display: block;
 }
 
 .map-address-detail p {
@@ -17,23 +52,35 @@
   line-height: 31px;
 }
 
+.map-address-detail .hours p {
+  margin-bottom: 0px;
+}
+
 .map-address-detail .owner-img {
-  height: 95px;
+  height: 100px;
   background-repeat: no-repeat;
   width: 100px;
   background-position: center;
   border-radius: 50%;
+  margin-top: 27px;
+  background-size: cover;
 }
 
 .map-address-detail .owner-detail {
-  padding: 15px 10px;
+  padding: 50px 0px 0px;
+  margin-bottom: 0px;
+}
+
+.map-address-detail .owner-detail small {
+  text-transform: capitalize;
+  line-height: 0px;
 }
 
 #about-store {
   background-color: #f4f4f2;
 }
 
-#about-store .container {
+#about-store {
   background-color: #f4f4f2;
   padding: 100px 0;
 }
@@ -50,8 +97,8 @@
   line-height: 36px;
 }
 
-#store-services .container {
-  padding: 100px 0;
+#store-services {
+  padding: 55px 0px 100px 0px;
 }
 
 #store-services .service-img {
@@ -59,12 +106,12 @@
   background-color: #0098ce;
   background-position: center center;
   border-radius: 50%;
-  height: 100px;
+  height: 110px;
   width: 110px;
 }
 
 #store-services .service-detail {
-  padding-bottom: 30px;
+  padding-top: 80px;
 }
 
 #store-services h4 {
@@ -73,9 +120,13 @@
   line-height: 31px;
 }
 
+#store-services .service-detail h4 {
+  margin: 20px 0px 0px;
+}
+
 #store-services p {
   color: #231f1f;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 31px;
 }
 
@@ -89,6 +140,7 @@
   color: #231f1f;
   font-size: 35.99px;
   font-weight: 400;
+  margin-bottom: 55px;
 }
 
 .social-slider .slick-prev,
@@ -113,7 +165,8 @@
 
 .meet-team .main-head,
 .events .main-head h4,
-.meet-team .member-name {
+.meet-team .member-name,
+#store-services .main-head h4 {
   color: #231f1f;
   font-weight: 400;
   font-size: 36px;
@@ -143,7 +196,7 @@
 
 .events {
   background-color: #fff;
-  padding: 80px 0px 60px 0px;
+  padding: 80px 0px 50px 0px;
 }
 
 .events .row {
@@ -216,6 +269,18 @@
 .event-action .btn-primary.already-slected:focus {
   background-color: #4f4c4c !important;
   border-color: #4f4c4c !important;
+}
+
+.events .show-more a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00af41;
+  text-transform: uppercase;
+}
+
+.events .show-more {
+  text-align: center;
+  padding-top: 40px;
 }
 
 
