@@ -883,7 +883,7 @@
     padding: 0px;
   }
   .navbar-nav>li>a {
-    padding: 10px 10px;
+   
   }
   .yamm .yamm-content {
     padding: 15px 0px;
@@ -1706,6 +1706,8 @@
     top: 20px;
     font-size: 1.20em;
     display: none;
+    cursor: pointer;
+    z-index: 2000;
   }
   .mobile.search-box .tt-menu {
     position: relative !important;

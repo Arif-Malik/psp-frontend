@@ -253,16 +253,9 @@ jQuery(document).ready(function() {
     source: searchsuggested
   });
 
-    $('.clear-text').click(function(){
-        $('.searchsuggested').typeahead('val', ' ');
-    });
-
+    
     $( ".searchsuggested").focusin(function() {
         $('.clear-text').show();
-    });
-
-    $( ".searchsuggested").focusout(function() {
-        $('.clear-text').hide();
     });
 
     /* Social Slider store locator */
@@ -280,5 +273,10 @@ jQuery(document).ready(function() {
      $( function() {
         $( "#datepicker" ).datepicker();
      } );
+
+     $('.clear-text').click(function(){
+        $('.searchsuggested').typeahead('val', ' ');
+        $('.clear-text').hide();
+    });
  
 });
