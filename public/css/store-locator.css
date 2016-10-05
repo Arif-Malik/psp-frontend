@@ -103,13 +103,48 @@
 
 .meet-team {
   background-color: #f4f4f2;
-  padding: 95px;
+  padding: 80px 0px 95px 0px;
 }
 
 .member-pic {
   max-width: 100%;
   border-radius: 100%;
   height: auto;
+}
+
+.meet-team .main-head,
+.events .main-head,
+.meet-team .member-name {
+  color: #231f1f;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.meet-team .member-name {
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.meet-team .small-head,
+.meet-team .member-designation {
+  color: #231f1f;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.meet-team .small-head {
+  margin-bottom: 70px;
+  display: block;
+}
+
+.meet-team .member-designation {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.events {
+  background-color: #fff;
+  padding: 80px 0px 60px 0px;
 }
 
 /*.social-slider .slick-slide {
