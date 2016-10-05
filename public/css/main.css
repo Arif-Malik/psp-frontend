@@ -523,6 +523,8 @@ header .global-header {
 #newsletter {
   background-color: #393535;
   padding-bottom: 25px;
+  float: left;
+  width: 100%;
 }
 
 #newsletter h3 {
@@ -3009,4 +3011,8 @@ button.filter-accordion:hover {
 header {
   position: relative;
   z-index: 205;
+}
+
+.slick-slide {
+  height: auto !important;
 }
