@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
   $(".search-icon").click(function() {
     $("#desktop-search").toggle('fast');
     $(".body-overlay").toggle('fast');
-    
+
   });
 
   /*Mobile Header Search Bar*/
@@ -244,7 +244,7 @@ jQuery(document).ready(function() {
 
   searchsuggested.initialize();
 
-  
+
 
   $('.searchsuggested').typeahead({
     hint: true,
@@ -253,30 +253,59 @@ jQuery(document).ready(function() {
     source: searchsuggested
   });
 
-    
-    $( ".searchsuggested").focusin(function() {
-        $('.clear-text').show();
-    });
 
-    /* Social Slider store locator */
+  $(".searchsuggested").focusin(function() {
+    $('.clear-text').show();
+  });
 
-    $('.social-slider').slick({
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
+  /* Social Slider store locator */
 
-    /* datepicker support for all browsers */
+  $('.social-slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+  });
 
-     $( function() {
-        $( "#datepicker" ).datepicker();
-     } );
+  /* datepicker support for all browsers */
 
-     $('.clear-text').click(function(){
-        $('.searchsuggested').typeahead('val', ' ');
-        $('.clear-text').hide();
-    });
- 
+  $(function() {
+    $("#datepicker").datepicker();
+  });
+
+  $('.clear-text').click(function() {
+    $('.searchsuggested').typeahead('val', ' ');
+    $('.clear-text').hide();
+  });
+
+  // Social Image Slider
+
+  $("#social-slider").owlCarousel({
+    autoPlay: 3000,
+    pagination: false,
+    items: 6,
+    itemsDesktop: [1199, 5],
+    itemsDesktopSmall: [979, 4],
+    itemsTablet: [768, 3],
+    itemsMobile: [479, 3]
+  });
+
+  var width = 0;
+
+  $('.breadcrumb-bar a.child').each(function() {
+   width += $(this).outerWidth(true);
+  });
+
+  if (screen.width > 768) {
+    $('.editable-breadcrum').css({ "margin-left": width + 0, "width": "auto" });
+    var width = 0;
+  } else {
+    $('.editable-breadcrum').css({ "margin-left": 0, "width": "auto" });
+    var width = 0;
+  }
+
+  //alert (width);
+  //$('body').css('width', width + 250);
+
 });

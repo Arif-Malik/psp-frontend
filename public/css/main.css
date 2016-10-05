@@ -524,6 +524,8 @@ header .global-header {
   clear: both;
   background-color: #393535;
   padding-bottom: 25px;
+  float: left;
+  width: 100%;
 }
 
 #newsletter h3 {
@@ -1356,7 +1358,7 @@ button.filter-accordion:hover {
   border: 0px;
   min-height: 50px;
   margin-left: -1px;
-  width: 80%;
+  width: auto;
   float: left;
   cursor: pointer;
   appearance: none;
@@ -1443,7 +1445,7 @@ button.filter-accordion:hover {
   font-weight: 400;
   padding: 7px 22px 7px 22px;
   margin-left: 12px;
-  width: 20%;
+  width: auto;
 }
 
 .breadcrumb-bar a:first-child {
@@ -1535,8 +1537,8 @@ button.filter-accordion:hover {
 .editable-breadcrum {
   border: 0px;
   min-height: 50px;
-  margin-left: 41%;
-  width: 60%;
+  margin-left: 0;
+  width: auto;
   float: none;
   cursor: pointer;
   appearance: none;
@@ -1555,6 +1557,7 @@ button.filter-accordion:hover {
   margin-bottom: 0px;
   padding: 14px 0px 14px 37px;
   position: relative;
+  left: 10px;
 }
 
 .editable-breadcrum:hover {
@@ -3022,7 +3025,7 @@ header {
 
 .slick-slide {
   max-height: 220px;
-  width: 216px !important;
+  width: 215px !important;
 }
 
 section {
@@ -3130,4 +3133,30 @@ section {
 
 .mb30 {
   margin-bottom: 30px;
+}
+
+.slick-slide {
+  height: auto !important;
+}
+
+.slick-slider.social-slider {
+  height: 220px;
+}
+
+.social-owl-slider .item {
+  margin: 0px;
+}
+
+.social-owl-slider .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.social-owl-slider .owl-controls {
+  display: none;
+}
+
+body {
+  overflow-x: hidden; 
 }

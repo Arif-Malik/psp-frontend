@@ -96,9 +96,8 @@
   display: none !important;
 }
 
-.slick-slide {
+.social-slider .slick-slide {
   max-height: 220px;
-  width: 216px !important;
 }
 
 .meet-team {
@@ -113,7 +112,7 @@
 }
 
 .meet-team .main-head,
-.events .main-head,
+.events .main-head h4,
 .meet-team .member-name {
   color: #231f1f;
   font-weight: 400;
@@ -146,6 +145,79 @@
   background-color: #fff;
   padding: 80px 0px 60px 0px;
 }
+
+.events .row {
+  border-bottom: 1px solid #f4f4f2;
+  padding-bottom: 6px;
+}
+
+.events .main-head select {
+  width: 17%;
+  border: 0px;
+  background: #eeeeee;
+  color: #231f1f;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 20px;
+  margin-top: 6px;
+}
+
+.events .main-head label {
+  color: #231f1f;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 19px 25px 0px 0px;
+}
+
+.events .event-date h5 {
+  border-bottom: 1px solid #f4f4f2;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 69px 0px 18px 0px;
+}
+
+.events .event-time,
+.events .event-detail h5 {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.events .event-detail h5 {
+  color: #00af41;
+  margin-top: 7px;
+}
+
+.events .event-detail p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #231f1f;
+}
+
+.event-action .btn-primary {
+  font-size: 18.24px;
+  font-weight: 400;
+  padding: 18px 16px;
+  margin-top: 30px;
+  float: right;
+}
+
+.event-action .btn-primary i {
+  font-size: 18px;
+  display: block;
+  float: left;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.event-action .btn-primary.already-slected,
+.event-action .btn-primary.already-slected:hover,
+.event-action .btn-primary.already-slected:focus {
+  background-color: #4f4c4c !important;
+  border-color: #4f4c4c !important;
+}
+
 
 /*.social-slider .slick-slide {
   max-width: 216px !important;
