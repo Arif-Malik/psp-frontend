@@ -1656,7 +1656,11 @@
     padding: 0;
   }
   .breadcrumb-bar a:nth-last-child(2) {
-    display: block !important;
+    
+  }
+  .editable-breadcrum {
+    margin-left: 0;
+    width: 100%;
   }
   .breadcrumb-bar .breadcrumb-list {
     display: block !important;

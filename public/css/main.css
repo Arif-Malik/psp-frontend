@@ -521,6 +521,7 @@ header .global-header {
 }
 
 #newsletter {
+  clear: both;
   background-color: #393535;
   padding-bottom: 25px;
 }
@@ -1423,7 +1424,6 @@ button.filter-accordion:hover {
   background-color: #231f1f;
   float: left;
   width: 100%;
-  box-shadow: 0px 3px #e8e8e8;
 }
 
 .breadcrumb-bar {}
@@ -1443,6 +1443,7 @@ button.filter-accordion:hover {
   font-weight: 400;
   padding: 7px 22px 7px 22px;
   margin-left: 12px;
+  width: 20%;
 }
 
 .breadcrumb-bar a:first-child {
@@ -1534,9 +1535,9 @@ button.filter-accordion:hover {
 .editable-breadcrum {
   border: 0px;
   min-height: 50px;
-  margin-left: -1px;
-  width: 80%;
-  float: left;
+  margin-left: 41%;
+  width: 60%;
+  float: none;
   cursor: pointer;
   appearance: none;
   -moz-appearance: none;
@@ -1569,7 +1570,7 @@ button.filter-accordion:hover {
   width: 100%;
   background-color: #fff;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 50px;
   z-index: 5;
   color: #231f1f;
@@ -3009,4 +3010,124 @@ button.filter-accordion:hover {
 header {
   position: relative;
   z-index: 205;
+}
+
+
+/*Events page styling*/
+
+.social-slider .slick-prev,
+.social-slider .slick-next {
+  display: none !important;
+}
+
+.slick-slide {
+  max-height: 220px;
+  width: 216px !important;
+}
+
+section {
+  clear: both;
+}
+
+.page-banner.event-banner {
+  background: url(../images/banners/event-detail-banner.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  float: none;
+}
+
+.page-banner.event-banner .banner-heading {
+  color: #FFFFFF;
+  text-align: left;
+  position: relative;
+  top: 0;
+  margin-top: 14%;
+}
+
+.page-banner.event-banner .date-time {
+  color: #FFFFFF;
+}
+
+.page-banner.event-banner .date-time .date {
+  color: #FFFFFF;
+  font-size: 1.625em;
+  font-weight: 600;
+}
+
+.page-banner.event-banner .date-time .time {
+  color: #FFFFFF;
+  font-size: 1.625em;
+  font-weight: 400;
+}
+
+#event-detail {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+#event-detail h2 {
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#event-detail h2:first-child {
+  margin-bottom: 50px;
+}
+
+#event-detail p {
+  font-size: 1.313em;
+  margin-bottom: 20px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.upcoming-event {
+  border: 1px solid #eaeae9;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-event .event-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.upcoming-event .event-img img {
+  height: 100%;
+}
+
+.upcoming-event .event-details {
+  padding: 15px;
+  background-color: #f4f4f2;
+}
+
+.upcoming-event .event-details .date {
+  color: #818181;
+  font-size: 0.750em;
+  margin-bottom: 10px;
+}
+
+.upcoming-event .event-details .event-title {
+  color: #292a2c;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.upcoming-event .event-details .event-desc {
+  color: #231f1f;
+  margin-bottom: 30px;
+}
+
+.upcoming-event .event-details .btn {
+  font-size: 0.875em;
+}
+
+.mb30 {
+  margin-bottom: 30px;
 }
