@@ -107,7 +107,6 @@ header .global-header {
 .main-header {
   text-align: center;
   min-height: 96px;
-  line-height: 96px;
   position: relative;
 }
 
@@ -126,15 +125,23 @@ header .global-header {
   font-weight: 600;
   z-index: 1;
   letter-spacing: 0.5px;
+  padding-top: 36px;
+}
+
+.main-header .newsletter .doc-icon {
+  display: block;
+  float: left;
 }
 
 .main-header .newsletter span {
-  background-image: url("../images/icons/doc.png"), url("../images/icons/right-arrow.png");
+  /*background-image: url("../images/icons/doc.png"), url("../images/icons/right-arrow.png");
   background-position: left center, right center;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat;*/
   display: block;
   padding-right: 8px;
-  padding-left: 29px;
+  padding-left: 10px;
+  float: left;
+  padding-top: 3px;
 }
 
 .main-header .profile-section {
@@ -146,6 +153,12 @@ header .global-header {
   position: relative;
   padding-top: 0px;
   z-index: 1;
+}
+
+.main-header .newsletter .right-arrow {
+  display: block;
+  float: left;
+  padding-top: 6px;
 }
 
 .main-header .profile-section .list-inline p,
