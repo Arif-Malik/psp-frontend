@@ -15,12 +15,14 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link href="css/star-rating.min.css" rel="stylesheet">
-  <!--temp css-->
-  <link href="css/store-locator.css" rel="stylesheet">
-  <!--/temp css-->
   <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/slick.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/slick-theme.css" type="text/css" media="screen" />
+  <link href="css/ninja-slider.css" rel="stylesheet" />
+  <link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+   <!--temp css-->
+  <link href="css/store-locator.css" rel="stylesheet">
+  <!--/temp css-->
   <script src="https://use.typekit.net/mdw8wog.js"></script>
   <script>
   try {
@@ -584,7 +586,6 @@
           </div>
         </div>
       </div>
-     
     </div>
   </header>
   <!--/Header-->
@@ -610,44 +611,103 @@
   <!-- /breadcrumbs -->
   <!--Map-->
   <section id="maps">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <div id="map"></div>
+    <div class="col-md-6 map-slider">
+      <div id="map">
+        <div id="ninja-slider">
+          <div class="slider-inner">
+            <ul>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large1.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large2.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large1.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large2.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large1.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large2.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large1.jpg"></a>
+              </li>
+              <li>
+                <a class="ns-img" href="images/map-slider/large/large2.jpg"></a>
+              </li>
+            </ul>
+            <div class="fs-icon" title="Expand/Close"></div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="map-address-detail">
+        <div id="thumbnail-slider">
+          <div class="inner">
+            <ul>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb1.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb2.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb3.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb4.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb1.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb2.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb3.png"></a>
+              </li>
+              <li>
+                <a class="thumb" href="images/map-slider/thumb4.png"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </div>
+    <div class="col-md-6 map-address">
+      <div class="map-address-detail">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="main-head">Pet Supplies Plus Bloomfield Hills</h4>
+          </div>
+          <div class="col-md-6 address">
+            <h4>Address</h4>
+            <p>Pet supplies Plus
+              <br> 2057 S Telegraph RD
+              <br> Bloomfield Hills, Ml 48302</p>
+            <h4>Phone</h4>
+            <p>248-333-7545</p>
+            <a class="link" href="#"> <img class="mystore" src="images/icons/my-store.png" alt="store-icon"> My Store</a>
+          </div>
+          <div class="col-md-6 hours">
+            <h4>Hours</h4>
+            <p>Mon-Sat 9:00AM-9:00PM</p>
+            <p>Sun 10:00AM-6:00PM</p>
             <div class="row">
-              <div class="col-md-12">
-                <h4 class="main-head">Pet Supplies Plus Bloomfield Hills</h4>
+              <div class="col-md-4">
+                <div class="owner-img" style="background-image: url('images/james.png')"></div>
               </div>
-              <div class="col-md-6 address">
-                <h4>Address</h4>
-                <p>Pet supplies Plus
-                  <br> 2057 S Telegraph RD
-                  <br> Bloomfield Hills, Ml 48302</p>
-                <h4>Phone</h4>
-                <p>248-333-7545</p>
-                <a class="link" href="#"> <img class="mystore" src="images/icons/my-store.png" alt="store-icon"> My Store</a>
-              </div>
-              <div class="col-md-6 hours">
-                <h4>Hours</h4>
-                <p>Mon-Sat 9:00AM-9:00PM</p>
-                <p>Sun 10:00AM-6:00PM</p>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="owner-img" style="background-image: url('images/james.png')"></div>
-                  </div>
-                  <div class="col-md-8">
-                    <p class="owner-detail">James & Dakota
-                      <br>
-                      <small>store manager</small>
-                    </p>
-                  </div>
-                </div>
-                <a class="link" href="#"> <img class="document" src="images/icons/green-doc.png" alt="doc-icon"> Monthly Sale Flyer <img class="arrow" src="images/icons/right-arrow-green.png" alt="arrow-right"> </a>
+              <div class="col-md-8">
+                <p class="owner-detail">James & Dakota
+                  <br>
+                  <small>store manager</small>
+                </p>
               </div>
             </div>
+            <a class="link" href="#"> <img class="document" src="images/icons/green-doc.png" alt="doc-icon"> Monthly Sale Flyer <img class="arrow" src="images/icons/right-arrow-green.png" alt="arrow-right"> </a>
           </div>
         </div>
       </div>
@@ -1354,6 +1414,8 @@
   <script src="js/jquery.dlmenu.js"></script>
   <script src="js/jquery-ui.js" type="text/javascript"></script>
   <script src="js/typeahead.bundle.js" type="text/javascript"></script>
+  <script src="js/ninja-slider.js"></script>
+  <script src="js/thumbnail-slider.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 

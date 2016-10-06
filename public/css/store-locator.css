@@ -1,5 +1,5 @@
 .map-address-detail {
-  padding: 55px 0 115px 0px;
+  padding: 55px 0px 115px 100px;
 }
 
 .map-address-detail h4 {
@@ -43,7 +43,7 @@
   line-height: 22px;
   text-transform: uppercase;
   margin-top: 68px;
-    display: block;
+  display: block;
 }
 
 .map-address-detail p {
@@ -83,6 +83,7 @@
 #about-store {
   background-color: #f4f4f2;
   padding: 100px 0;
+  clear: both;
 }
 
 #about-store .container h2 {
@@ -284,12 +285,68 @@
   padding-top: 40px;
 }
 
+.map-slider {
+  padding: 0px;
+}
 
-/*.social-slider .slick-slide {
-  max-width: 216px !important;
-  width: 100% !important;
-  height: 220px !important;
-}*/
+.map-slider #ninja-slider {
+  width: 100%;
+      min-height: 594px;
+}
+
+#map {
+  position: relative;
+}
+
+.map-slider #thumbnail-slider {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  top: 0px;
+}
+
+.map-slider #ninja-slider ul {
+  margin-bottom: 0px;
+  min-height: 594px
+}
+
+.map-slider #thumbnail-slider div.inner {
+  background-color: #dfe0df;
+  padding: 0 22px;
+  max-width: 130px;
+}
+
+.map-slider #thumbnail-slider ul li {
+  width: 86px !important;
+  height: 86px !important;
+  border: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.map-slider #thumbnail-slider .thumb {
+  background-size: inherit;
+}
+
+.map-slider #ninja-slider .ns-img {
+  background-size: inherit;
+  box-shadow: none;
+}
+
+.map-slider #ninja-slider div.fs-icon,
+.map-slider #ninja-slider-prev,
+.map-slider #ninja-slider-next,
+.map-slider #thumbnail-slider-prev,
+.map-slider #thumbnail-slider-next {
+  display: none;
+}
+
+#maps {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+}
 
 
 /*Search results page styling*/
