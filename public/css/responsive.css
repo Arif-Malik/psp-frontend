@@ -1233,7 +1233,7 @@
   }
   .event-action .btn-primary.already-slected {
     padding: 16px 10px;
-    font-size: 15px;  
+    font-size: 15px;
   }
   .event-action .btn-primary i {
     font-size: 15px;
@@ -1404,6 +1404,7 @@
   .logo-wrap {
     max-width: 25%;
   }
+
   #store-locator {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -1585,6 +1586,7 @@
     width: 50%;
     float: right;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -2184,20 +2186,20 @@
   }
   .map-slider #ninja-slider ul,
   .map-slider #ninja-slider {
-    min-height: none;
+    min-height: auto;
   }
-  .map-slider #ninja-slider-prev, 
+  .map-slider #ninja-slider-prev,
   .map-slider #ninja-slider-next {
     display: block;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     opacity: 0.6;
   }
-  .map-slider #ninja-slider-prev::before, 
+  .map-slider #ninja-slider-prev::before,
   .map-slider #ninja-slider-next::before {
     border-left: 2px solid #000;
     border-top: 2px solid #000;
   }
-  .map-slider #ninja-slider-prev:hover, 
+  .map-slider #ninja-slider-prev:hover,
   .map-slider #ninja-slider-next:hover {
     opacity: 1;
   }
@@ -2223,6 +2225,96 @@
   }
   .map-address-detail .address {
     position: relative;
+  }
+  .map-address-detail .hours .row,
+  .events .main-head select,
+  .events .main-head label {
+    display: none;
+  }
+  .map-address-detail .hours .link {
+    margin-top: 15px;
+  }
+  #about-store {
+    background-color: #fff;
+    padding: 0px;
+    clear: both;
+  }
+  #about-store .container,
+  #store-services .container,
+  .events .container {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+  #about-store .filter-accordion,
+  #store-services .filter-accordion,
+  .events .filter-accordion {
+    border-top: 1px solid #ccc;
+    min-height: 70px;
+    padding: 0px;
+  }
+  #about-store .filter-accordion h2,
+  #store-services .filter-accordion h2,
+  .events .filter-accordion h2 {
+    font-size: 24px;
+    padding: 0px 15px;
+    float: left;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 500
+  }
+  .filter-accordion:after {
+    float: right;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  #store-services,
+  section.events {
+    padding: 0px;
+  }
+  #about-store .filter-panel,
+  #store-services .filter-panel,
+  .reviews-desktop .filter-panel {
+    padding-bottom: 40px;
+  }
+  #in-stores .products-header {
+    border: 0px;
+  }
+  #store-services .service-detail {
+    padding-top: 45px;
+  }
+  #store-services .service-detail:first-child {
+    padding-top: 12px;
+  }
+  .events .row.short-detail {
+    border-bottom: 1px solid #f4f4f2;
+    padding: 25px 0px;
+    margin: 0px;
+  }
+  section.events .short-detail:first-child {
+    border-top: 1px solid #f4f4f2;
+  }
+  .events .short-detail .event-detail h5 {
+    padding: 0px;
+    color: #231f1f;
+    padding-right: 20px;
+    margin: 0px;
+  }
+  .events .short-detail .event-detail span {
+    font-size: 18px;
+    clear: both;
+    display: block;
+    line-height: 26px;
+  }
+  .events .short-detail .event-action .btn-primary {
+    margin-top: 7px;
+  }
+  .events .row {
+    padding-bottom: 0px;
+  }
+  .meet-team {
+    background-color: #fff;
+    padding: 60px 0px 75px 0px;
   }
 }
 
@@ -2450,6 +2542,39 @@
   }
   .products-container .row .col-xs-3 .product-tile .prod-footer {
     top: 84%;
+  }
+  .map-slider #ninja-slider .ns-img {
+    background-size: cover;
+  }
+  .map-address-detail .main-head {
+    margin-bottom: 40px;
+    line-height: 33px;
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  .map-address-detail .address .link {
+    color: #00af41;
+  }
+  #about-store .filter-accordion h2, #store-services .filter-accordion h2, .events .filter-accordion h2 {
+    font-size: 18px;
+  }
+  .events .row.short-detail .event-action,
+  .events .row.short-detail .event-action .btn-primary,
+  .events .row.short-detail .event-detail {
+    width: 100%;
+  }
+  .event-action .btn-primary i {
+    display: inline-block;
+    float: none;
+    margin-right: 10px;
+  }
+  .meet-team .member-name {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .meet-team {
+    background-color: #fff;
+    padding: 40px 0px 40px 0px;
   }
 }
 
