@@ -1,0 +1,68 @@
+﻿
+label.custom-file-upload {
+    background-color: #00af41;
+    border: 1px solid #00af41;
+    font-size: 1.500em;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #fff;
+    padding: 10px 75px;
+    font-size: 1.300em;
+    margin: 0 15px;
+    display: inline-block;
+    float: none;
+    border-radius: 5px;
+    margin-top: 2px;
+    text-transform:capitalize;
+    vertical-align: top;
+}
+
+input[type=file] {
+    display: none;
+}
+.img-content .left-align{
+    position: absolute;
+    top: 10% !important;
+    left: 10% !important;
+    color: white;
+}
+.img-content .center-align{
+    position: absolute;
+    top: 20% !important;
+    left: 30% !important;
+    color: white;
+}
+.img-content .right-align{
+    position: absolute;
+    top: 13% !important;
+    left: 55% !important;
+    padding-right: 30px;
+    color: white;
+}
+
+.errorMsg
+{
+    color: #ed1d23;
+}
+
+
+.img-content .left-align{
+    position: absolute;
+    top: 10% !important;
+    left: 10% !important;
+    color: white;
+}
+.img-content .center-align{
+    position: absolute;
+    top: 20% !important;
+    left: 30% !important;
+    color: white;
+}
+.img-content .right-align{
+    position: absolute;
+    top: 13% !important;
+    left: 55% !important;
+    padding-right: 30px;
+    color: white;
+}
