@@ -284,6 +284,7 @@ jQuery(document).ready(function() {
   $("#social-slider").owlCarousel({
     autoPlay: 3000,
     pagination: false,
+    navigation : true,
     items: 6,
     itemsDesktop: [1199, 5],
     itemsDesktopSmall: [979, 4],
