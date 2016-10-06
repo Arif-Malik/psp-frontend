@@ -3158,5 +3158,66 @@ section {
 }
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  width: 40px;
+  height: 60px;
+  background: #000001;
+  border-radius: 0;
+  vertical-align: top;
+  color: transparent;
+  opacity: 1;
+  margin: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  float: right;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+  float: left;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-next:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f105";
+  height: 60px;
+  line-height: 60px;
+  font-size: 3em;
+  color: #fff;
+  width: 24px;
+  position: relative;
+  line-height: 20px;
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f104";
+  height: 60px;
+  line-height: 60px;
+  font-size: 3em;
+  color: #fff;
+  width: 16px;
+  left: -2px;
+  position: relative;
+  line-height: 20px;
+  text-align: center;
+}
+
+.owl-theme .owl-controls {
+  margin-top: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  margin-top: -30px;
+  width: 100%;
 }
