@@ -1486,10 +1486,8 @@
   }
   .account-section-container label {
     font-weight: 400;
-    font-size: 14px;
     text-align: left;
     position: relative;
-    padding-top: 15px;
   }
   .account-section-container .form-control {
     color: #231f1f;
@@ -1536,7 +1534,7 @@
     margin-bottom: 30px;
   }
   .account-section-container .label-group-signup p {
-    margin: 0 0 10px 20px;
+    margin: 0 0 10px 35px;
   }
   .account-section-container .add-pet {
     margin: 40px 0;
@@ -1547,7 +1545,7 @@
     font-size: 18px;
   }
   .account-section-container .round-circle-signup label {
-    top: 0;
+    top: 5px;
   }
   .account-section-container .custom-checkbox {
     text-align: right;
