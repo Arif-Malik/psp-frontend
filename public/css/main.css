@@ -1039,8 +1039,7 @@ button:focus {
 }
 
 .custom-checkbox {
-  margin-left: -15px !important;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .custom-checkbox > [type="checkbox"],
@@ -2521,7 +2520,6 @@ button.filter-accordion:hover {
 
 .account-section-container .tab-pane {
   padding-bottom: 20px;
-  border-bottom: 1px solid #f6f6f6;
 }
 
 .account-section-container label {
@@ -2567,7 +2565,7 @@ button.filter-accordion:hover {
 
 .account-section-container #pet-info .pet-display-image {
   height: 150px;
-  width: 198px;
+  width: 150px;
   float: none;
   margin: 0 auto;
   -webkit-border-radius: 50%;
@@ -2575,6 +2573,7 @@ button.filter-accordion:hover {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .account-section-container .btn-primary {
@@ -3450,4 +3449,16 @@ p.bg-blue {
 .product-tile .prod-footer .price-normal {
   color: #231f1f;
   font-size: 1.125em;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+hr {
+  border-top: 1px solid #f6f6f6;
+}
+
+.img-circle {
+  border:2px solid #eee;
 }
