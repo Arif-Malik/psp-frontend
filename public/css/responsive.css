@@ -86,6 +86,17 @@
     font-size: 1.675em;
     font-weight: 400;
   }
+  .map-address-detail {
+    padding: 30px 0px 80px 0px;
+    padding-left: 20px;
+  }
+  .map-address-detail .owner-detail {
+    padding: 0px 0px 0px;
+  }
+  .map-address-detail .hours .link {
+    font-size: 15px;
+    margin-top: 40px;
+  }
 }
 
 
@@ -300,9 +311,7 @@
     display: flex;
     flex-direction: column;
   }
-  footer .col-md-2,
-  .col-sm-2,
-  .col-lg-2 {
+  footer .col-md-2 {
     border-right: 1px solid #383434;
   }
   /*

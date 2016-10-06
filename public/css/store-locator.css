@@ -1,5 +1,6 @@
 .map-address-detail {
-  padding: 55px 0px 115px 100px;
+  padding: 55px 0px 115px 0px;
+  padding-left: 13%;
 }
 
 .map-address-detail h4 {
@@ -64,16 +65,22 @@
   border-radius: 50%;
   margin-top: 27px;
   background-size: cover;
+  float: left;
+  margin-right: 15px;
+  display: block
 }
 
 .map-address-detail .owner-detail {
   padding: 50px 0px 0px;
   margin-bottom: 0px;
+  line-height: 22px;
+  display: block;
+  float: left;
 }
 
 .map-address-detail .owner-detail small {
   text-transform: capitalize;
-  line-height: 0px;
+  line-height: 10px;
 }
 
 #about-store {
@@ -91,6 +98,12 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  text-transform: none;
+}
+
+#about-store .filter-accordion,
+#store-services .filter-accordion {
+  padding: 0px;
 }
 
 #about-store .container p {
@@ -142,6 +155,8 @@
   font-size: 35.99px;
   font-weight: 400;
   margin-bottom: 55px;
+  line-height: 38px;
+  margin-top: 5px;
 }
 
 .social-slider .slick-prev,
@@ -290,7 +305,7 @@
 
 .map-slider #ninja-slider {
   width: 100%;
-      min-height: 594px;
+  min-height: 594px;
 }
 
 #map {
@@ -345,6 +360,18 @@
   float: left;
   width: 100%;
   background-color: #fff;
+}
+
+#about-store .filter-panel,
+#store-services .filter-panel,
+.events .filter-panel,
+.reviews-desktop .filter-panel {
+  border-bottom: 0px;
+  box-shadow: none;
+  margin-bottom: 0px;
+  border: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
 }
 
 
