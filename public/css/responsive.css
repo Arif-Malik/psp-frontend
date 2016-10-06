@@ -1831,9 +1831,7 @@
   .prod-details-accordion ul {
     padding: 0px;
   }
-  .reviews-desktop {
-    display: none;
-  }
+
   .flex-control-thumbs {
     display: none;
   }
@@ -2180,7 +2178,7 @@
     margin-right: -15px;
     position: relative;
     width: calc(100% + 30px);
-
+}
   .map-slider #thumbnail-slider {
     display: none;
   }
@@ -2254,7 +2252,8 @@
   }
   #about-store .filter-accordion h2,
   #store-services .filter-accordion h2,
-  .events .filter-accordion h2 {
+  .events .filter-accordion h2,
+  .reviews-header h2 {
     font-size: 24px;
     padding: 0px 15px;
     float: left;
@@ -2315,6 +2314,14 @@
   .meet-team {
     background-color: #fff;
     padding: 60px 0px 75px 0px;
+  }
+  .review-rows .rating{
+    display: block;
+    float: none !important;
+    text-align: left;
+  }
+  .review-rows h5 {
+    clear: both;
   }
 }
 
@@ -2438,7 +2445,7 @@
     margin-bottom: 15px !important;
     border-bottom: 1px solid #ccc !important;
   }
-  .dropdown-product-details ..dropdown-menu {
+  .dropdown-product-details .dropdown-menu {
     width: 98%;
     padding: 10px;
   }
