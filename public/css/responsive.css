@@ -903,7 +903,7 @@
     background-repeat: no-repeat;
   }
   #hero-slider .carousel-inner {
-    height: 40%;
+    height: 100%;
   }
   .carousel-content {
     top: 10%;
@@ -1256,6 +1256,9 @@
     float: left;
     margin-right: 0px;
   }
+  #hero-slider {
+    height: 540px;
+  }
 }
 
 
@@ -1375,7 +1378,8 @@
     line-height: 26px;
     border-radius: 5px;
   }
-  .custom-checkbox > [type="checkbox"]:not(:checked) ~ label::before, .custom-checkbox > [type="checkbox"]:checked ~ label::before {
+  .custom-checkbox > [type="checkbox"]:not(:checked) ~ label::before,
+  .custom-checkbox > [type="checkbox"]:checked ~ label::before {
     margin-top: 0px;
   }
   .account-section-container .center-block {
@@ -1384,7 +1388,7 @@
     left: 0;
     z-index: 500;
   }
-  .account-section-container .center-block .btn{
+  .account-section-container .center-block .btn {
     display: block;
     width: 100%;
   }
@@ -1404,7 +1408,6 @@
   .logo-wrap {
     max-width: 25%;
   }
-
   #store-locator {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -1590,11 +1593,12 @@
   #notifications .form-group .toggle-caption {
     color: #565a5c;
   }
-
   #notifications .form-group {
     margin-bottom: 0;
   }
-
+  .feature-wrap {
+    padding: 25px 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1661,8 +1665,12 @@
     height: 100%;
   }
   #hero-slider .carousel-content .text-large {
-    font-size: 1.900em;
+    font-size: 2.100em;
     line-height: 25px
+  }
+  #hero-slider .carousel-content .text-medium {
+    font-size: 1.900em;
+    font-weight: 400;
   }
   #hero-slider .carousel-content .btn-primary {
     font-size: 1.000em;
@@ -1839,7 +1847,6 @@
   .prod-details-accordion ul {
     padding: 0px;
   }
-
   .flex-control-thumbs {
     display: none;
   }
@@ -2177,7 +2184,6 @@
     margin-left: 0 !important;
     left: 0;
   }
-
   .breadcrumb-bar .title {
     padding-left: 20px;
   }
@@ -2323,7 +2329,7 @@
     background-color: #fff;
     padding: 60px 0px 75px 0px;
   }
-  .review-rows .rating{
+  .review-rows .rating {
     display: block;
     float: none !important;
     text-align: left;
@@ -2331,7 +2337,7 @@
   .review-rows h5 {
     clear: both;
   }
-    .in-stock-flag {
+  .in-stock-flag {
     font-size: 0.750em;
     font-weight: 700;
     border-style: solid;
@@ -2358,7 +2364,7 @@
     padding: 2px 10px;
     margin-left: 20px;
   }
-    .prod-details a {
+  .prod-details a {
     text-decoration: underline !important;
     color: black !important;
     cursor: pointer;
@@ -2376,6 +2382,32 @@
   }
   .img-right-prod-details {
     left: 5px;
+  }
+  .carousel-control {
+    top: 44%;
+    background-image: none !important;
+    bottom: auto;
+    color: #939598;
+    opacity: 1;
+  }
+  #hero-slider .carousel-inner .carousel-content {
+    padding: 50px;
+  }
+  #hero-slider .carousel-inner .carousel-content br {
+    display: none;
+  }
+  .feature-wrap {
+    padding: 20px 0;
+  }
+  .feature-wrap .feature-details .feature-title {
+    font-size: 2.213em;
+    margin: 20px 0 10px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  #careers-page {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -2507,11 +2539,9 @@
 
 @media (max-width: 480px) {
   .carousel-content {
-    top: 20% !important;
+    top: 10% !important;
   }
-  #hero-slider .carousel-inner {
-    height: 45%;
-  }
+  #hero-slider .carousel-inner {}
   #promotions .text-large {
     font-size: 1.3em;
     margin-bottom: 0px;
@@ -2616,7 +2646,9 @@
   .map-address-detail .address .link {
     color: #00af41;
   }
-  #about-store .filter-accordion h2, #store-services .filter-accordion h2, .events .filter-accordion h2 {
+  #about-store .filter-accordion h2,
+  #store-services .filter-accordion h2,
+  .events .filter-accordion h2 {
     font-size: 18px;
   }
   .events .row.short-detail .event-action,
@@ -2641,7 +2673,7 @@
 
 @media (max-width: 420px) {
   .sl-store {
-     padding: 20px;
+    padding: 20px;
   }
   .sl-store .sl-store-left,
   .sl-store .sl-store-right {
@@ -2656,19 +2688,17 @@
     left: 41%;
   }
   .carousel-content {
-    top: 10% !important;
+    top: 5% !important;
   }
   #hero-slider .carousel-content .text-large {
-    font-size: 1.400em;
+    font-size: 1.900em;
   }
   #hero-slider .carousel-content .btn-primary {
     font-size: 1.000em;
     padding: 8px 12px;
     height: 40px
   }
-  #hero-slider .carousel-inner {
-    height: 35%;
-  }
+  #hero-slider .carousel-inner {}
   .img-content.category-index {
     width: 255px;
     max-width: none;

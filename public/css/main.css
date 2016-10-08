@@ -22,6 +22,9 @@ hr {
   border-top: 1px solid #d6d7d6;
 }
 
+img {
+  max-width: 100%;
+}
 
 /*Notification*/
 
@@ -3936,4 +3939,105 @@ input.togglecheckbox:checked + label:after {
   border-radius: 0px;
   -webkit-box-shadow: none;
   clear:both;
+}
+
+/*Careers page styles*/
+
+#hero-slider {
+  height: 650px;
+}
+
+#hero-slider .carousel {
+  height: 100%;
+}
+
+#hero-slider .carousel-inner > .item {
+  height: 100%;
+}
+
+.text-medium {
+  font-size: 1.875em;
+  font-weight: 400;
+}
+
+#hero-slider .text-medium {
+  margin-top: 30px;
+  line-height: 150%;
+}
+
+#hero-slider .carousel-content {
+  top: 25%;
+}
+
+#hero-slider .carousel-control .fa {
+  font-size: 32px;
+}
+
+
+.feature-wrap {
+  padding: 50px 60px;
+}
+
+.feature-wrap .feature-img {
+}
+
+.feature-wrap .feature-img img {
+  height: 100%;
+}
+
+.feature-wrap .feature-details {
+
+}
+
+.feature-wrap .feature-details .feature-title {
+  color: #231f1f;
+  font-size: 3.000em;
+  margin: 25px 0 20px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.feature-wrap .feature-details .feature-desc {
+  color: #939598;
+  line-height: 150%;
+  font-size: 1.125em;
+}
+
+.feature-wrap .feature-details .learn-more {
+  color: #00af41;
+  line-height: 150%;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.feature-wrap .feature-details .learn-more .fa{
+  font-size: 0.875em;
+  margin-left: 5px;
+  }
+#careers-page {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+#work-with-us {
+  text-align: center;
+  background-color: #f4f4f2;
+  padding: 80px 0 140px;
+}
+
+#work-with-us h3 {
+  color: #231f1f;
+  font-size: 3.750em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+#work-with-us .btn-primary {
+    height: 70px;
+    width: 335px;
+    font-size: 1.875em;
+    line-height: 160%;
 }
