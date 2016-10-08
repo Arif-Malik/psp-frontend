@@ -1481,7 +1481,7 @@
     color: #b2b2b2;
   }
   .account-section-container h1 {
-    font-size: 21px;
+    font-size: 2.250em;
     margin-top: 20px;
     text-align: center;
   }
@@ -1585,6 +1585,14 @@
     display: inline-table;
     width: 50%;
     float: right;
+  }
+  /*Accounts Notification tab*/
+  #notifications .form-group .toggle-caption {
+    color: #565a5c;
+  }
+
+  #notifications .form-group {
+    margin-bottom: 0;
   }
 
 }
@@ -2178,7 +2186,7 @@
     margin-right: -15px;
     position: relative;
     width: calc(100% + 30px);
-}
+  }
   .map-slider #thumbnail-slider {
     display: none;
   }
@@ -2322,6 +2330,52 @@
   }
   .review-rows h5 {
     clear: both;
+  }
+    .in-stock-flag {
+    font-size: 0.750em;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00AF41;
+    padding: 2px 10px;
+    margin-left: 20px;
+  }
+  .low-stock-flag {
+    font-size: 0.8571428571428571em;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0098ce;
+    padding: 2px 10px;
+    margin-left: 20px;
+  }
+  .out-of-stock-flag {
+    font-size: 0.8571428571428571em;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ed1d23;
+    padding: 2px 10px;
+    margin-left: 20px;
+  }
+    .prod-details a {
+    text-decoration: underline !important;
+    color: black !important;
+    cursor: pointer;
+  }
+  .prod-details a:hover {
+    text-decoration: none !important;
+  }
+  .my-store-modal {
+    font-size: 1.4285714285714286em;
+    color: #00af41;
+    margin-left: 12px;
+  }
+  .left-margin-20 {
+    margin-left: 20px;
+  }
+  .img-right-prod-details {
+    left: 5px;
   }
 }
 
