@@ -1,2 +1,77 @@
+/*  Contact us pages simple/organization */
 
+.contact-container .description {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 95px;
+}
 
+.contact-container h1 {
+  margin-bottom: 15px;
+}
+
+.contact-container form label {
+  color: #515253;
+  text-transform: uppercase;
+}
+
+.contact-container textarea,
+.contact-container input,
+.contact-container select {
+  color: #231f1f;
+  margin-bottom: 25px;
+}
+
+.contact-container .form-container .btn-primary {
+  margin-top: 20px;
+}
+
+.contact-container .contact-well {
+  margin-bottom: 170px;
+  float: left;
+}
+
+.contact-container .form-container {
+  float: left;
+}
+
+.contact-container .contact-well textarea {
+  min-height: 300px;
+  line-height: 30px;
+}
+
+.contact-container .custom-checkbox {
+  margin-top: 12px;
+}
+
+.contact-container .custom-checkbox:first-child {
+  margin-top: 5px;
+}
+
+.contact-container form .custom-checkbox label {
+  padding-left: 34px !important;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #231f1f;
+}
+
+.contact-container .custom-checkbox > [type="checkbox"]:not(:checked) ~ label:before,
+.contact-container .custom-checkbox > [type="checkbox"]:checked ~ label:before {
+  width: 19px;
+  height: 19px;
+  border: 3px solid #ffffff;
+  background: #fff;
+  margin-top: 0px;
+  top: 0px;
+}
+
+.contact-container .custom-checkbox > [type="checkbox"]:checked ~ label:after {
+  background-color: #00af41;
+  border: 3px solid #fff;
+  height: 19px;
+  width: 19px;
+  content: '';
+  margin-top: 0px;
+  top: 0px;
+}

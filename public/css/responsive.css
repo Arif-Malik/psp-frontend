@@ -97,6 +97,9 @@
     font-size: 15px;
     margin-top: 40px;
   }
+  .contact-container {
+    width: 100%;
+  }
 }
 
 
@@ -831,16 +834,19 @@
     margin-left: -15px;
     margin-right: 0px;
   }
-  #signup-section {
+  #signup-section,
+  #contact-us {
     clear: both;
   }
   /*Login/Signup*/
-  .signup-login-container {
+  .signup-login-container,
+  .contact-container {
     width: 83%;
     float: none;
     margin: 0 auto;
   }
-  .signup-login-container .form-container {
+  .signup-login-container .form-container,
+  .contact-container .form-container {
     padding: 65px 82px;
   }
   .main-footer .panel-default .panel-heading {
@@ -1029,13 +1035,16 @@
     content: "\f054";
     float: right;
   }
-  .signup-login-container {
+  .signup-login-container,
+  .contact-container {
     width: 90%;
   }
-  .signup-login-container .login-well {
+  .signup-login-container .login-well,
+  .contact-container .login-well {
     margin-bottom: 150px;
   }
-  .signup-login-container .form-container {
+  .signup-login-container .form-container,
+  .contact-container .form-container {
     padding: 35px 0px;
   }
   #categories-home .col-md-3.hidden-xs {
@@ -1589,6 +1598,12 @@
     width: 50%;
     float: right;
   }
+  #about-store .filter-panel,
+  #store-services .filter-panel,
+  .events .filter-panel,
+  .reviews-desktop .filter-panel {
+    clear: both;
+  }
   /*Accounts Notification tab*/
   #notifications .form-group .toggle-caption {
     color: #565a5c;
@@ -1599,6 +1614,7 @@
   .feature-wrap {
     padding: 25px 30px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -1952,7 +1968,8 @@
   .horizontal-break-line {
     width: 100%;
   }
-  .signup-login-container .well {
+  .signup-login-container .well,
+  .contact-container .well {
     margin-left: -15px;
     margin-right: -15px;
     padding-left: 15px;
@@ -1961,22 +1978,27 @@
     margin-bottom: 0px;
     box-shadow: none;
   }
-  .signup-login-container .well {
+  .signup-login-container .well,
+  .contact-container .well {
     background-color: #f4f4f2 !important;
   }
-  .signup-login-container .btn-primary {
+  .signup-login-container .btn-primary,
+  .contact-container .btn-primary {
     width: 100%;
   }
   .signup-login-container .row-inline-control {
     padding-top: 15px;
   }
-  .signup-login-container .form-container .btn-primary {
+  .signup-login-container .form-container .btn-primary,
+  .contact-container .form-container .btn-primary {
     padding: 6px 12px;
   }
-  .signup-login-container h1 {
+  .signup-login-container h1,
+  .contact-container h1 {
     font-size: 2.151em !important;
   }
-  .signup-login-container h6 {
+  .signup-login-container h6,
+  .contact-container h6 {
     font-size: 1.113em !important;
     padding: 10px 0;
   }
@@ -2011,20 +2033,25 @@
   .breadcrumb-bar a:after {
     border: none;
   }
-  .signup-login-container .account-error {
+  .signup-login-container .account-error,
+  .contact-container .account-error {
     font-size: 1.275em;
   }
-  .signup-login-container h1 {
+  .signup-login-container h1,
+  .contact-container h1 {
     margin-bottom: 15px;
   }
-  .signup-login-container .well {
+  .signup-login-container .well,
+  .contact-container .well {
     border-radius: 0px;
   }
-  .signup-login-container .form-container .un-registered {
+  .signup-login-container .form-container .un-registered,
+  .contact-container .form-container .un-registered {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .signup-login-container {
+  .signup-login-container,
+  .contact-container {
     width: 100%;
   }
   .categories-home-header select.input-lg {
@@ -2337,6 +2364,11 @@
   .review-rows h5 {
     clear: both;
   }
+
+  .mts15 {
+    margin-top: 15px;
+  }
+
   .in-stock-flag {
     font-size: 0.750em;
     font-weight: 700;
@@ -2590,13 +2622,15 @@
   .category-index .btn-primary {
     min-width: auto;
   }
-  .signup-login-container .account-error {
+  .signup-login-container .account-error,
+  .contact-container .account-error {
     font-size: 95%;
   }
   .main-footer .panel-default .social .fa-2x {
     font-size: 3.14em;
   }
-  .signup-login-container h1 {
+  .signup-login-container h1,
+  .contact-container h1 {
     font-size: 2em !important;
   }
   #categories-home .categories-home-header {
@@ -2669,6 +2703,15 @@
     background-color: #fff;
     padding: 40px 0px 40px 0px;
   }
+  .contact-container .row .col-sm-6:first-child {
+    padding-right: 5px;
+  }
+  .contact-container .row .col-sm-6:last-child {
+    padding-left: 5px;
+  }
+  .contact-container .row .col-sm-6.col-xs-12 {
+    padding-right: 11px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2715,7 +2758,8 @@
     left: 47%;
     line-height: 1;
   }
-  .signup-login-container .account-error {
+  .signup-login-container .account-error,
+  .contact-container .account-error {
     font-size: 80%;
   }
   .header-icon {

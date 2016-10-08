@@ -26,6 +26,7 @@ img {
   max-width: 100%;
 }
 
+
 /*Notification*/
 
 .show-notification {
@@ -726,38 +727,47 @@ footer .col-sm-2:last-child,
 
 /*Signup page*/
 
-.signup-login-container .well {
+.signup-login-container .well,
+.contact-container .well {
   background-color: #f4f4f2 !important;
   margin-bottom: 60px;
 }
 
-.signup-login-container .signup-well {
+.signup-login-container .signup-well,
+.contact-container .signup-well,
+.contact-container .contact-well {
   margin-bottom: 80px;
 }
 
-.signup-login-container .login-well {
+.signup-login-container .login-well,
+.contact-container .login-well,
+.contact-container .contact-well {
   background-color: #f4f4f2 !important;
   margin-bottom: 300px;
 }
 
-.signup-login-container h6.required {
+.signup-login-container h6.required,
+.contact-container h6.required {
   margin-bottom: 35px;
 }
 
 .signup-login-container .login-well .input-lg,
-.signup-login-container .signup-well .input-lg {
+.signup-login-container .signup-well .input-lg,
+.contact-container .contact-well .input-lg {
   border: 2px solid #d2d2d2;
   height: 52px;
   color: #231f1f;
   font-weight: 400;
 }
 
-.signup-login-container .signup-well .form-group {
+.signup-login-container .signup-well .form-group,
+.contact-container .contact-well .form-group {
   float: left;
   width: 100%;
 }
 
-.signup-login-container .signup-well small.form-text.text-muted {
+.signup-login-container .signup-well small.form-text.text-muted,
+.contact-container .contact-well small.form-text.text-muted {
   font-size: 18px;
   font-weight: 400;
   color: #231f1f;
@@ -770,47 +780,56 @@ footer .col-sm-2:last-child,
   margin-bottom: 25px !important;
 }
 
-.signup-login-container .login-well input[type="email"] {
+.signup-login-container .login-well input[type="email"],
+.contact-container .contact-well input[type="email"] {
   margin-bottom: 38px;
 }
 
-.signup-login-container .form-container .un-registered {
+.signup-login-container .form-container .un-registered,
+.contact-container .form-container .un-registered {
   padding-top: 89px;
 }
 
-.signup-login-container h1 {
+.signup-login-container h1,
+.contact-container h1 {
   font-size: 3.751em !important;
   font-weight: 900 !important;
   margin-top: 80px;
   margin-bottom: 35px;
 }
 
-.signup-login-container h6 {
+.signup-login-container h6,
+.contact-container h6 {
   font-size: 1.313em !important;
   font-weight: 400 !important;
   margin-bottom: 0px;
   line-height: 29px;
 }
 
-.signup-login-container .un-registered h6 {
+.signup-login-container .un-registered h6,
+.contact-container .un-registered h6 {
   margin-bottom: 25px;
 }
 
-.signup-login-container h5 {
+.signup-login-container h5,
+.contact-container h5 {
   font-size: 1.313em !important;
   font-weight: 700 !important;
 }
 
-.signup-login-container form label {
+.signup-login-container form label,
+.contact-container form label {
   font-size: 1.002em;
   font-weight: 700;
 }
 
-.signup-login-container form .input-group .form-control {
+.signup-login-container form .input-group .form-control,
+.contact-container form .input-group .form-control {
   border-right: none;
 }
 
-.signup-login-container abbr {
+.signup-login-container abbr,
+.contact-container abbr {
   border: none;
   text-decoration: none;
 }
@@ -827,32 +846,37 @@ footer .col-sm-2:last-child,
 
 /*}*/
 
-.signup-login-container .account-error {
+.signup-login-container .account-error,
+.contact-container .account-error {
   color: #ed1d23;
   font-size: 1.875em;
   padding-bottom: 15px;
 }
 
-.signup-login-container .input-group-addon {
+.signup-login-container .input-group-addon,
+.contact-container .input-group-addon {
   background-color: white !important;
   cursor: pointer;
   border: 2px solid #d2d2d2;
   border-left: 0px;
 }
 
-.signup-login-container .form-group .ppc-no-group {
+.signup-login-container .form-group .ppc-no-group,
+.contact-container .form-group .ppc-no-group {
   color: #00af41 !important;
   border: 2px solid #d2d2d2;
   border-left: 0px;
 }
 
-.signup-login-container .form-container .btn-primary {
+.signup-login-container .form-container .btn-primary,
+.contact-container .form-container .btn-primary {
   font-size: 1.875em;
   line-height: 36px;
   padding: 12px 12px;
 }
 
-.signup-login-container .form-container .login-btn {
+.signup-login-container .form-container .login-btn,
+.contact-container .form-container .login-btn {
   padding: 12px 93px;
 }
 
@@ -3477,6 +3501,7 @@ hr {
   margin-top: 5px;
 }
 
+
 /*Notifications page styling*/
 
 #notifications .form-group .toggle-caption {
@@ -3558,10 +3583,12 @@ input.togglecheckbox:checked ~ label:after {
 }
 
 .img-right-prod-details {
-   max-height: 14px;
-    position: relative;
-    top: 8px;
+  max-height: 14px;
+  position: relative;
+  top: 8px;
 }
+
+
 /* Store Detailed page */
 
 .map-address-detail {
@@ -3784,6 +3811,12 @@ input.togglecheckbox:checked ~ label:after {
 .events .row {
   border-bottom: 1px solid #f4f4f2;
   padding-bottom: 6px;
+  clear: both;
+}
+
+.events .panel .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .events .main-head select {
@@ -3865,7 +3898,7 @@ input.togglecheckbox:checked ~ label:after {
   padding-top: 40px;
 }
 
-.map-slider {
+.col-md-6.map-slider {
   padding: 0px;
 }
 
@@ -3938,8 +3971,9 @@ input.togglecheckbox:checked ~ label:after {
   border: 0px;
   border-radius: 0px;
   -webkit-box-shadow: none;
-  clear:both;
+  clear: both;
 }
+
 
 /*Careers page styles*/
 
@@ -3973,21 +4007,17 @@ input.togglecheckbox:checked ~ label:after {
   font-size: 32px;
 }
 
-
 .feature-wrap {
   padding: 50px 60px;
 }
 
-.feature-wrap .feature-img {
-}
+.feature-wrap .feature-img {}
 
 .feature-wrap .feature-img img {
   height: 100%;
 }
 
-.feature-wrap .feature-details {
-
-}
+.feature-wrap .feature-details {}
 
 .feature-wrap .feature-details .feature-title {
   color: #231f1f;
@@ -4013,13 +4043,14 @@ input.togglecheckbox:checked ~ label:after {
   display: inline-block;
 }
 
-.feature-wrap .feature-details .learn-more .fa{
+.feature-wrap .feature-details .learn-more .fa {
   font-size: 0.875em;
   margin-left: 5px;
-  }
+}
+
 #careers-page {
-   padding-top: 70px;
-   padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 #work-with-us {
@@ -4036,8 +4067,8 @@ input.togglecheckbox:checked ~ label:after {
 }
 
 #work-with-us .btn-primary {
-    height: 70px;
-    width: 335px;
-    font-size: 1.875em;
-    line-height: 160%;
+  height: 70px;
+  width: 335px;
+  font-size: 1.875em;
+  line-height: 160%;
 }
