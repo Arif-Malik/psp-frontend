@@ -3503,7 +3503,7 @@ input.togglecheckbox {
   z-index: 1
 }
 
-input.togglecheckbox + label {
+input.togglecheckbox ~ label {
   display: block;
   position: relative;
   box-shadow: inset 0 0 0px 2px #e5e5e5;
@@ -3516,7 +3516,7 @@ input.togglecheckbox + label {
   cursor: pointer;
 }
 
-input.togglecheckbox + label:before {
+input.togglecheckbox ~ label:before {
   content: "";
   position: absolute;
   display: block;
@@ -3531,7 +3531,7 @@ input.togglecheckbox + label:before {
   transition: .25s ease-in-out;
 }
 
-input.togglecheckbox + label:after {
+input.togglecheckbox ~ label:after {
   content: "";
   position: absolute;
   display: block;
@@ -3547,12 +3547,12 @@ input.togglecheckbox + label:after {
   transition: .25s ease-in-out;
 }
 
-input.togglecheckbox:checked + label:before {
+input.togglecheckbox:checked ~ label:before {
   width: 60px;
   background: #00af41;
 }
 
-input.togglecheckbox:checked + label:after {
+input.togglecheckbox:checked ~ label:after {
   left: 25px;
   box-shadow: inset 0 0 0 1px rgba(19, 191, 17, 1), 0 2px 4px rgba(0, 0, 0, .2);
 }
