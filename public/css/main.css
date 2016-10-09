@@ -3325,7 +3325,7 @@ body {
 }
 
 .sl-store .sl-store-left .store-no {
-  background: url(../images/icons/icon-store-count.jpg) no-repeat center center;
+  background: url(../images/icons/icon-store-count.png) no-repeat center center;
   width: 48px;
   height: 45px;
   text-align: left;
@@ -3385,6 +3385,32 @@ body {
   margin-top: -5px;
 }
 
+.sl-store:hover,
+.sl-store:focus,
+.sl-store.active {
+  background-color: rgba(0, 152, 206, .5);
+  color: #fff;  
+}
+
+
+.sl-store:hover .sl-store-right p,
+.sl-store:focus .sl-store-right p,
+.sl-store.active .sl-store-right p {
+  color: #eee;  
+}
+.sl-store:hover .sl-store-right a,
+.sl-store:hover .sl-store-right a .fa {
+ 
+}
+
+.sl-store:hover .sl-store-right a:hover,
+.sl-store:hover .sl-store-right a:hover .fa {
+  
+}
+
+.sl-store:hover .sl-store-right .my-store {
+  
+  }
 .btn-default {
   background-color: #4f4c4c;
   border: 1px solid #4f4c4c;

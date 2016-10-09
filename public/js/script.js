@@ -306,7 +306,12 @@ jQuery(document).ready(function() {
     var width = 0;
   }
 
-  //alert (width);
-  //$('body').css('width', width + 250);
+   (function($){ 
+   $(".sl-store").click(function() {
+    $(".sl-store").removeClass("active");
+      $(this).toggleClass("active");
+   });
+})(jQuery);
+
 
 });
