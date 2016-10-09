@@ -2577,6 +2577,8 @@ button.filter-accordion:hover {
 
 .account-section-container #save-btn {
   margin-top: 30px;
+  min-width: 273px;
+  min-height: 64px;
 }
 
 .account-section-container .form-control:disabled {
@@ -2794,6 +2796,8 @@ button.filter-accordion:hover {
   line-height: 20px;
   font-size: 0.875em;
 }
+
+/* opt out popup of pet info page */
 
 
 /* Products list search in header*/
