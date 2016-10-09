@@ -75,3 +75,27 @@
   margin-top: 0px;
   top: 0px;
 }
+
+/*  Franchise final page */
+
+.page-banner.franchise-banner {
+  background: url(../images/banners/franchise-banner.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 398px;
+  float: none;
+}
+
+.page-banner.franchise-banner .banner-heading {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 9%;
+  text-align: center;
+  line-height: 62px;
+}
+
+.program-overview {
+  background-color: #f4f4f2;
+  padding: 120px 0px;
+  clear: both;
+}
