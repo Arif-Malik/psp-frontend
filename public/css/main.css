@@ -26,6 +26,62 @@ img {
   max-width: 100%;
 }
 
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding-right: 11px;
+  padding-left: 11px;
+}
+
+.row {
+  margin-left: -11px;
+  margin-right: -11px;
+}
 
 /*Notification*/
 
@@ -3998,15 +4054,15 @@ input.togglecheckbox:checked ~ label:after {
 
 /*Careers page styles*/
 
-#hero-slider {
+#hero-slider.careers {
   height: 650px;
 }
 
-#hero-slider .carousel {
+#hero-slider.careers .carousel {
   height: 100%;
 }
 
-#hero-slider .carousel-inner > .item {
+#hero-slider.careers .carousel-inner > .item {
   height: 100%;
 }
 
@@ -4015,16 +4071,16 @@ input.togglecheckbox:checked ~ label:after {
   font-weight: 400;
 }
 
-#hero-slider .text-medium {
+#hero-slider.careers .text-medium {
   margin-top: 30px;
   line-height: 150%;
 }
 
-#hero-slider .carousel-content {
+#hero-slider.careers .carousel-content {
   top: 25%;
 }
 
-#hero-slider .carousel-control .fa {
+#hero-slider.careers .carousel-control .fa {
   font-size: 32px;
 }
 
@@ -4093,3 +4149,248 @@ input.togglecheckbox:checked ~ label:after {
   font-size: 1.875em;
   line-height: 160%;
 }
+
+
+.page-banner.franchise-banner {
+  text-align: center;
+  height: 550px;
+}
+
+.page-banner.franchise-banner .banner-heading {
+  top: 0;
+  margin-top: 13%;
+}
+
+.page-banner.franchise-banner .btn-primary {
+  padding: 6px 75px;
+  font-size: 1.875em;
+  margin-top: 10px;
+}
+
+.page-banner.franchise-banner {
+    background-image: url("../images/banners/img-banner-franchise-landing.jpg");
+
+  }
+
+#fl-big-business {
+  background-color: #f4f4f2;
+  padding: 45px 0 55px;
+}
+
+.fl-big-business h2 {
+  color: #231f1f;
+  font-size: 2.250em;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.fl-big-business .fl-business-wrap {
+  text-align: center;
+}
+
+.fl-big-business .fl-business-wrap img{
+  margin-bottom: 35px;
+}
+
+.fl-big-business .fl-business-wrap p{
+  color: #939598;
+  font-size: 1.125em;
+}
+
+.fl-page-title {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+#franchise-landing-page {
+  padding-bottom: 120px;
+}
+#franchise-landing-page .feature-wrap {
+  padding: 50px 110px 10px;
+}
+
+#franchise-landing-page .feature-wrap .feature-details .feature-title {   
+    font-size: 1.875em;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 25px 0 20px;
+}
+
+#owner-slider {
+  background-color: #f4f4f2;
+  height: auto;
+}
+
+#owner-slider .carousel-indicators .active {
+  width: 8px;
+  height: 8px;
+  margin: 1px;
+  margin-right: 5px;
+}
+
+#owner-slider .carousel-indicators {
+  z-index: 6;
+}
+
+#owner-slider .carousel-inner {
+  height: 100%;
+}
+
+#owner-slider .carousel {
+  height: 100%;
+}
+
+#owner-slider .carousel-inner > .item {
+  height: 100%;
+}
+
+#owner-slider .text-medium {
+  margin-top: 30px;
+  line-height: 150%;
+}
+
+#owner-slider .carousel-content {
+  top: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #231f1f;
+  position: relative;
+}
+
+#owner-slider .carousel-content .owner-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+}
+
+#owner-slider .carousel-content .owner-details {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  padding-left: 140px;
+  text-align: left;
+}
+
+#owner-slider .carousel-content h2 {
+  font-size: 2.625em;
+  margin-bottom: 40px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+#owner-slider .carousel-content p {
+  font-size: 1.313em;
+  line-height: 150%;
+}
+
+#owner-slider .carousel-content .owner-name {
+  margin-top: 20px;
+  line-height: 100%;
+}
+
+#owner-slider .carousel-content .owner-name a {
+  color: #00af41;
+  font-size: 0.875em;
+  text-transform: uppercase;
+   line-height: 100%;
+   font-weight: 500;
+}
+
+#owner-slider .carousel-content .owner-name a:hover {
+  color: #231f1f;
+}
+
+#owner-slider .carousel-control .fa {
+  font-size: 32px;
+}
+
+#owner-slider .carousel-control:focus, 
+#owner-slider .carousel-control:hover {
+  color: #231f1f;
+}
+
+#owner-slider .carousel-control {
+  text-shadow:none;
+}
+
+#owner-slider  .carousel-indicators li {
+  background-color: #cbcbcb;
+}
+
+#owner-slider  .carousel-indicators li.active {
+  background-color: #231f1f;
+}
+
+#fl-details {
+  padding: 70px 0;
+}
+
+#fl-details p {
+  font-size: 1.313em;
+  margin-bottom: 40px;
+}
+
+#franchise-moreinfo {
+  background-color: #393535;
+  padding: 90px 0;
+  color: #fff;
+}
+
+#franchise-moreinfo .block-title h2{
+  font-size: 2.625em;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+#franchise-moreinfo .block-title p{
+  font-size: 1.313em;
+  font-weight: 400;
+}
+
+
+#franchise-moreinfo h3{
+  font-size: 1.625em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#franchise-moreinfo .btn {
+  font-size: 1.313em;
+  font-weight: 400;
+  margin-top: 60px;
+}
+#franchise-moreinfo .more-infos-wrap {
+  display: table;
+}
+#franchise-moreinfo .more-infos-wrap .col-sm-4 {
+  border-right: 2px solid #322e2e;
+  padding: 0 35px;
+  float: none;
+  display: table-cell;
+  height: 100%;
+}
+
+#franchise-moreinfo .more-infos-wrap .col-sm-4:last-child {
+  border-right: none;
+
+  }
+
+#franchise-moreinfo .more-infos-wrap img {
+  margin-bottom: 10px;
+}
+
+#franchise-moreinfo .more-infos-wrap .moreinfo-wrap {
+  position: relative;
+  padding-bottom: 70px;
+  display: table;
+  height: 100%;
+}
+
+#franchise-moreinfo .more-infos-wrap .moreinfo-wrap .btn { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
