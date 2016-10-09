@@ -35,7 +35,11 @@ jQuery(document).ready(function() {
     $(".body-overlay").toggle('fast');
   });
 
+  /*Initiate tooltip*/
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
   /*Initiate menu instance*/
   $(function() {
