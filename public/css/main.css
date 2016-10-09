@@ -49,29 +49,43 @@ img {
   transition: top 1s;
 }
 
-  /* Tooltip */
-  .tooltip > .tooltip-inner {
-      background-color: #00af41;
-      color: #FFFFFF;
-      max-width: none;
-      border: 1px solid #00af41;
-  }
-  /* Tooltip on top */
-  .tooltip.top > .tooltip-arrow {
-      border-top: 5px solid #00af41;
-  }
-  /* Tooltip on bottom */
-  .tooltip.bottom > .tooltip-arrow {
-      border-bottom: 5px solid #00af41;
-  }
-  /* Tooltip on left */
-  .tooltip.left > .tooltip-arrow {
-      border-left: 5px solid #00af41;
-  }
-  /* Tooltip on right */
-  .tooltip.right > .tooltip-arrow {
-      border-right: 5px solid #00af41;
-  }
+
+/* Tooltip */
+
+.tooltip > .tooltip-inner {
+  background-color: #00af41;
+  color: #FFFFFF;
+  max-width: none;
+  border: 1px solid #00af41;
+}
+
+
+/* Tooltip on top */
+
+.tooltip.top > .tooltip-arrow {
+  border-top: 5px solid #00af41;
+}
+
+
+/* Tooltip on bottom */
+
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom: 5px solid #00af41;
+}
+
+
+/* Tooltip on left */
+
+.tooltip.left > .tooltip-arrow {
+  border-left: 5px solid #00af41;
+}
+
+
+/* Tooltip on right */
+
+.tooltip.right > .tooltip-arrow {
+  border-right: 5px solid #00af41;
+}
 
 
 /* Hiding the checkbox */
@@ -856,6 +870,11 @@ footer .col-sm-2:last-child,
 .contact-container abbr {
   border: none;
   text-decoration: none;
+}
+
+.signup-login-container .form-group .field-validation-error {
+  margin-top: -20px;
+  display: block;
 }
 
 

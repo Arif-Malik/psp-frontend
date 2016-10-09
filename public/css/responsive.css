@@ -1428,6 +1428,13 @@
     display: block;
     width: 100%;
   }
+  .signup-login-container .label-group-signup {
+    position: relative;
+  }
+  .signup-login-container .label-group-signup p {
+    position: static;
+    padding-left: 52px;
+  }
 }
 
 @media (max-width: 992px) {
