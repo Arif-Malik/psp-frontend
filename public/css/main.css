@@ -3389,28 +3389,23 @@ body {
 .sl-store:focus,
 .sl-store.active {
   background-color: rgba(0, 152, 206, .5);
-  color: #fff;  
+  color: #fff;
 }
-
 
 .sl-store:hover .sl-store-right p,
 .sl-store:focus .sl-store-right p,
 .sl-store.active .sl-store-right p {
-  color: #eee;  
+  color: #eee;
 }
+
 .sl-store:hover .sl-store-right a,
-.sl-store:hover .sl-store-right a .fa {
- 
-}
+.sl-store:hover .sl-store-right a .fa {}
 
 .sl-store:hover .sl-store-right a:hover,
-.sl-store:hover .sl-store-right a:hover .fa {
-  
-}
+.sl-store:hover .sl-store-right a:hover .fa {}
 
-.sl-store:hover .sl-store-right .my-store {
-  
-  }
+.sl-store:hover .sl-store-right .my-store {}
+
 .btn-default {
   background-color: #4f4c4c;
   border: 1px solid #4f4c4c;

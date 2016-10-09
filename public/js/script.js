@@ -284,7 +284,7 @@ jQuery(document).ready(function() {
   $("#social-slider").owlCarousel({
     autoPlay: 3000,
     pagination: false,
-    navigation : true,
+    navigation: true,
     items: 6,
     itemsDesktop: [1199, 5],
     itemsDesktopSmall: [979, 4],
@@ -295,7 +295,7 @@ jQuery(document).ready(function() {
   var width = 0;
 
   $('.breadcrumb-bar a.child').each(function() {
-   width += $(this).outerWidth(true);
+    width += $(this).outerWidth(true);
   });
 
   if (screen.width > 768) {
@@ -306,12 +306,12 @@ jQuery(document).ready(function() {
     var width = 0;
   }
 
-   (function($){ 
-   $(".sl-store").click(function() {
-    $(".sl-store").removeClass("active");
+  (function($) {
+    $(".sl-store").click(function() {
+      $(".sl-store").removeClass("active");
       $(this).toggleClass("active");
-   });
-})(jQuery);
+    });
+  })(jQuery);
 
 
 });
