@@ -76,6 +76,7 @@
   top: 0px;
 }
 
+
 /*  Franchise final page */
 
 .page-banner.franchise-banner {
@@ -96,6 +97,132 @@
 
 .program-overview {
   background-color: #f4f4f2;
+  padding: 101px 0px 60px 0px;
+  clear: both;
+}
+
+.overview-desc {
+  padding-right: 30px;
+}
+
+.overview-desc h2 {
+  margin-top: 0px;
+}
+
+.overview-desc p,
+.owner-right p {
+  font-size: 21px;
+  margin-top: 17px
+}
+
+.overview-video iframe {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 10px;
+}
+
+.become-owner {
+  background-color: #fff;
   padding: 120px 0px;
   clear: both;
+}
+
+.owner-desc h2 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.owner-desc p {
+  font-size: 21px;
+  color: #939598;
+}
+
+.owner-right h2 {
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.owner-right .block h2:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border: 3px solid #00af41;
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: -14px;
+  top: 0px;
+}
+
+.owner-right .block.selected h2:before {
+  background-color: #00af41;
+  border: 3px solid #00af41;
+}
+
+.owner-right .block:hover h2:before {
+  background-color: #00af41;
+  border: 3px solid #00af41;
+}
+
+.owner-right p {
+  margin-bottom: 35px;
+}
+
+.owner-right .view-faq {
+  font-size: 13px;
+  font-weight: 700;
+  color: #00af41;
+}
+
+.owner-right .block {
+  padding-bottom: 100px;
+  padding-left: 95px;
+  border-left: 1px solid #dfe0df;
+  position: relative;
+}
+
+.owner-right .block:last-child {
+  border-left: 0px;
+  padding-bottom: 0px;
+}
+
+.look-for {
+  background-color: #f4f4f2;
+  clear: both;
+  padding: 135px 0px;
+}
+
+.round-img {
+  width: 351px;
+  height: 351px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  float: none;
+  margin: 0 auto;
+}
+
+.look-for-desc h5 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.check-list {
+  padding-left: 0px;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.check-list li {
+  background: url(../images/tick.png) no-repeat top 4px left;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-left: 35px;
+  padding-bottom: 17px;
 }

@@ -50,6 +50,9 @@
   .contact-container {
     width: 100%;
   }
+  .owner-right h2 {
+    line-height: 32px;
+  }
 }
 
 
@@ -1251,6 +1254,17 @@
   }
   #hero-slider.careers {
     height: 540px;
+  }
+  .breadcrumb-bar a.hidden-xs {
+    display: none;
+  }
+  .editable-breadcrum {
+    padding-left: 15px;
+    left: 0px;
+    margin-left: 0px !important;
+  }
+  .editable-breadcrum ul li {
+    padding: 11px 0px 11px 15px;
   }
 }
 
@@ -2574,6 +2588,47 @@
   #franchise-moreinfo .block-title {
     margin-bottom: 40px;
   }
+  .program-overview {
+    padding: 60px 0px 0px 0px;
+  }
+  .overview-desc h2 {
+    margin-bottom: 40px;
+  }
+  .overview-desc p {
+    margin-bottom: 40px;
+  }
+  .overview-video {
+    padding: 0px;
+  }
+  .become-owner {
+    padding: 40px 0px;
+  }
+  .owner-desc p {
+    display: none;
+  }
+  .owner-desc h2 {
+    line-height: 42px;
+    margin-bottom: 42px
+  }
+  .owner-right {
+    width: 94%;
+    float: none;
+    margin: 0 auto;
+  }
+  .owner-right .block {
+    padding-left: 40px;
+    padding-bottom: 50px;
+  }
+  .look-for {
+    padding: 60px 0px;
+  }
+  .look-for-img {
+    margin-bottom: 50px;
+  }
+  .check-list li {
+    background: url(../images/green-tick.png) no-repeat top 4px left;
+    background-size: 18px;
+  }
 }
 
 
@@ -2857,6 +2912,10 @@
     float: none;
     text-align: left;
   }
+  .round-img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2902,5 +2961,11 @@
   .navbar-brand img {
     width: 155px;
     height: auto;
+  }
+  .owner-right .block {
+    padding-left: 25px;
+  }
+  .dl-menuwrapper .dl-top-menu li {
+    padding-right: 19px !important;
   }
 }
