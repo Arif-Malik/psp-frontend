@@ -1412,10 +1412,6 @@
     line-height: 26px;
     border-radius: 5px;
   }
-  .custom-checkbox > [type="checkbox"]:not(:checked) ~ label::before,
-  .custom-checkbox > [type="checkbox"]:checked ~ label::before {
-    margin-top: 0px;
-  }
   .account-section-container .center-block {
     position: relative;
     bottom: 0;
@@ -1684,6 +1680,13 @@
   }
   #franchise-moreinfo .block-title h2 {
     font-size: 1.875em;
+  }
+  .custom-checkbox > [type="checkbox"]:not(:checked) ~ label::before,
+  .custom-checkbox > [type="checkbox"]:checked ~ label::before {
+    margin-top: 0px;
+  }
+  .product-tile:hover .hover-details {
+    display: none;
   }
 }
 
