@@ -3977,6 +3977,10 @@ input.togglecheckbox:checked ~ label:after {
   padding-top: 10px;
 }
 
+.events .event-time {
+  font-size: 22px;
+}
+
 .events .event-detail h5 {
   color: #00af41;
   margin-top: 7px;

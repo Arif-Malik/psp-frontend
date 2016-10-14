@@ -192,6 +192,21 @@ jQuery(document).ready(function() {
     //$(currentoption).appendTo( "#sub-ul" );
   });
 
+  /*
+   * show/hide more record
+   */
+
+  $("#viewmorerecord").click(function() {
+    $("#hideonload").show();
+    $("#viewmorerecord").hide();
+  });
+
+  $("#viewlessrecord").click(function() {
+    $("#hideonload").hide();
+    $("#viewmorerecord").show();
+  });
+
+
 
   /*
    * Apply toggle on window load
