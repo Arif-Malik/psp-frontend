@@ -79,7 +79,8 @@
 
 /*  Franchise final page */
 
-.page-banner.franchise-banner {
+.franchise-owner .page-banner.franchise-banner,
+.franchise-faq .page-banner.franchise-banner {
   background: url(../images/banners/franchise-banner.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
@@ -87,7 +88,8 @@
   float: none;
 }
 
-.page-banner.franchise-banner .banner-heading {
+.franchise-owner .page-banner.franchise-banner .banner-heading,
+.franchise-faq .page-banner.franchise-banner .banner-heading {
   color: #FFFFFF;
   text-align: center;
   margin-top: 9%;
@@ -225,4 +227,68 @@
   line-height: 22px;
   padding-left: 35px;
   padding-bottom: 17px;
+}
+
+
+/*  Franchise FAQ page */
+
+.faq-section {
+  padding-bottom: 150px;
+}
+
+.franchise-faq .page-banner.franchise-banner {
+  background: url(../images/banners/faq-banner.jpg) no-repeat center center;
+}
+
+.franchise-faq .page-banner.franchise-banner .banner-heading {
+  margin-top: 11%;
+}
+
+.centered-align {
+  float: none;
+  margin: 0 auto;
+  clear: both;
+}
+
+.faq-section .main-head {
+  font-weight: 700;
+  margin: 50px 0px;
+}
+
+.faq-section .filter-accordion {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: none;
+  position: relative;
+  padding: 19px 100px 35px 0px;
+  border-top: 1px solid #f0f0f0;
+  color: #7b7979;
+}
+
+.faq-section .filter-accordion:after {
+  font-size: 15px;
+  color: #7b7979;
+  margin-left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 26px;
+  height: 15px;
+  padding: 0px;
+  margin: 0px
+}
+
+
+.faq-section .filter-accordion.active:after,
+.faq-section .filter-accordion.active {
+  color: #231f1f;
+}
+
+.faq-section .filter-panel {
+  font-size: 21px;
+  font-weight: 400;
+  color: #282828;
+  padding: 0px;
+  border: none;
+  box-shadow: none;
+  padding-right: 100px;
 }

@@ -2632,6 +2632,12 @@
     background: url(../images/green-tick.png) no-repeat top 4px left;
     background-size: 18px;
   }
+  .faq-section .filter-panel {
+    padding-right: 50px;
+  }
+  .faq-section .filter-accordion {
+    padding: 19px 50px 35px 0px;
+  }
 }
 
 
@@ -2902,6 +2908,18 @@
   }
   .contact-container .row .col-sm-6.col-xs-12 {
     padding-right: 11px;
+  }
+  .franchise-faq .page-banner.franchise-banner {
+    max-height: 350px;
+  }
+  .franchise-faq .page-banner.franchise-banner .banner-heading {
+    margin-top: 24%;
+  }
+  .faq-section .filter-accordion {
+    padding: 19px 30px 35px 0px;
+  }
+  .faq-section .filter-panel {
+    padding-right: 30px;
   }
 }
 
