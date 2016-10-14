@@ -1,0 +1,16 @@
+.bg-light-gray {
+  background: #f4f4f2;
+}
+.about-landing-boxs .feature-wrap .feature-img img {
+  height: auto;
+  width: 100%;
+}
+#franchise-landing-page.about-landing-boxs {
+  padding: 50px 0 100px;  
+}
+.page-banner.about-banner {
+    background-image: url(../images/banners/about-banner.jpg);
+}
+#franchise-landing-page.about-landing-boxs .feature-wrap {
+  padding-left: 0;
+}
