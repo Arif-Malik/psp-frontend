@@ -14,3 +14,139 @@
 #franchise-landing-page.about-landing-boxs .feature-wrap {
   padding-left: 0;
 }
+/*News landing*/
+.news-cards {
+  background: #f4f4f2;
+  padding: 50px 0;  
+}
+.card-bx {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+  margin: 0 0 20px;
+  border-radius: 4px;
+}
+.card-img img {
+  width: 100%;
+}
+.card-txt {
+  padding: 20px;
+}
+.card-txt time {
+  font-size: 12px;
+  display: block;
+  margin: 0 0 10px;
+  color: #818181;
+}
+.card-txt h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+.card-txt h6 {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+.card-txt p {
+  margin: 0 0 20px;
+  opacity: 0.8;
+}
+.card-txt .btn-primary {
+  font-size: 16px;
+}
+/**/
+.header-strip-2 {
+  background: #231f1f;
+}
+ul.strip-2-list {
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+}
+ul.strip-2-list li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+ul.strip-2-list li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #00af41;
+  text-transform: uppercase;
+  border: 1px solid #231f1f;
+  padding: 5px 10px 3px;
+  border-radius: 20px;
+  line-height: 16px;
+  font-weight: bold;
+}
+ul.strip-2-list li a:hover {
+  color: #fff;
+}
+ul.strip-2-list li.active a {
+  color: #fff;
+  border-color: #00af41;
+}
+#breadcrumb {
+  position: relative;
+}
+.page-banner.franchise-banner .v-align-banner .banner-heading {
+    top: 0;
+    margin-top: 0 !important;
+}
+.v-align-banner {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  ul.strip-2-list li {
+    text-align: center;
+  }
+  ul.strip-2-list li a {
+    font-size: 13px;
+    padding: 5px 4px 3px;
+  }
+}
+@media (max-width: 767px) {
+  #page-banner .page-banner.franchise-banner .btn-primary.banner-btn {
+    font-size: 18px;
+  }
+  .header-strip-2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 101px;
+  }
+  .header-strip-2 ul.strip-2-list li {
+    width: 100%;
+    margin: 0 5px 10px;
+    text-align: left;
+  }
+  .news-filter-btn {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    cursor: pointer;
+  }
+  .news-filter-btn .fa {
+    font-size: 18px;
+    color: #00af41;
+    padding: 0 6px;
+  }
+  .news-filter-btn span {
+    background: #fff;
+    display: inline-block;
+    padding: 13px 20px 14px;
+    color: #00af41;
+    font-size: 16px;
+  }
+  .header-strip-2.navbar-collapse {
+    padding-left: 0px;
+  }
+  ul.strip-2-list li a {
+    font-size: 16px;
+    padding: 5px 8px 3px;
+  }
+}
