@@ -277,7 +277,6 @@
   margin: 0px
 }
 
-
 .faq-section .filter-accordion.active:after,
 .faq-section .filter-accordion.active {
   color: #231f1f;
@@ -291,4 +290,53 @@
   border: none;
   box-shadow: none;
   padding-right: 100px;
+}
+
+
+/*  Resource Landing page */
+
+.promotion-container {
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+}
+
+.promotion-text {
+  background-color: #231f1f;
+  height: 448px;
+  color: #fff;
+  padding: 100px 6.7% 112px;
+}
+
+.promotion-text h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 0px;
+}
+
+.promotion-text p {
+  font-size: 18px;
+  padding-right: 30px;
+  color: #939598;
+  margin: 25px 0px 20px 0px;
+}
+
+.promotion-text .btn {
+  min-width: 195px;
+  height: 64px;
+}
+
+.promotion-banner {
+  min-height: 448px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promotion-container .left-radius {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.promotion-container .right-radius {
+  border-radius: 0px 5px 5px 0px;
 }

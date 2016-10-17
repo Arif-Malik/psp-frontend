@@ -53,6 +53,12 @@
   .owner-right h2 {
     line-height: 32px;
   }
+  .promotion-text {
+    padding: 100px 5% 112px;
+  }
+  .promotion-text h2 {
+    font-size: 36px;
+  }
 }
 
 
@@ -1537,11 +1543,14 @@
     font-size: 2.250em;
     margin-top: 20px;
     text-align: center;
+    border-bottom: none;
   }
   .account-section-container label {
     font-weight: 400;
     text-align: left;
     position: relative;
+    color: #7b7979;
+    font-size: 16px;
   }
   .account-section-container .form-control {
     color: #231f1f;
@@ -1551,25 +1560,43 @@
     font-size: 15px;
     position: relative;
     width: 55%;
+    box-shadow: none;
+    text-align: right;
+    padding-right: 0px;
+    font-size: 16px;
   }
-  #email-password .btn-primary {
+  .account-section-container #email.form-control {
+    margin-top: -20px;
+  }
+  .account-section-container #email-password .btn-primary {
     border-bottom: 1px solid #dfe0df !important;
     float: left !important;
     width: 100% !important;
     text-align: left;
     height: 40px;
     padding-bottom: 0 !important;
+    border-bottom: 1px solid #dfe0df !important;
+    box-shadow: none;
+    font-size: 16px;
+    height: 48px;
+  }
+  .account-section-container #email-password .btn-primary:hover {
+    border-bottom: 1px solid #dfe0df !important;
   }
   .account-section-container #save-btn {
     margin: 0;
     width: 100%;
     font-size: 24px;
+    margin-top: 40px;
   }
   .account-section-container .center-block {
     position: relative;
     bottom: 0;
     left: 0;
     z-index: 500;
+  }
+  .container {
+    width: 100%;
   }
   #pet-info .visible-xs {
     width: 100%;
@@ -1607,6 +1634,7 @@
   }
   .account-section-container .form-group {
     border-bottom: 1px solid #dfe0df;
+    padding-bottom: 20px;
   }
   .account-section-container #email-password .form-group {
     border-bottom: 1px solid #dfe0df !important;
@@ -1687,6 +1715,15 @@
   }
   .product-tile:hover .hover-details {
     display: none;
+  }
+  .container-overflow {
+    overflow-x: scroll;
+  }
+  .container-overflow .inner-container {
+    min-width: 992px;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
   }
 }
 
@@ -2637,6 +2674,46 @@
   }
   .faq-section .filter-accordion {
     padding: 19px 50px 35px 0px;
+  }
+  .account-section-container #email.form-control {
+    margin-top: 0px;
+  }
+  #promotions-landing-page .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #promotions-landing-page .right-radius,
+  #promotions-landing-page .left-radius {
+    border-radius: 0px;
+  }
+  .promotion-text {
+    padding: 45px 5%;
+    height: auto;
+    background-color: #fff;
+    color: #231f1f;
+  }
+  .promotion-text .btn,
+  .promotion-text .btn:hover {
+    color: #00af41 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: auto;
+    border: none;
+    text-align: left;
+    min-width: auto;
+    box-shadow: none !important;
+    background-repeat: no-repeat;
+    background-image: url("../images/right-green.png");
+    background-position: right center;
+    padding-right: 23px;
+  }
+  .promotion-container {
+    margin-top: 0px;
   }
 }
 

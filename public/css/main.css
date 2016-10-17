@@ -1497,9 +1497,11 @@ button.filter-accordion:hover {
   float: left;
   cursor: pointer;
   appearance: none;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none;   /* Safari and Chrome */ 
-  background-image: url("../images/icons/down-g-arrow.png"); 
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  background-image: url("../images/icons/down-g-arrow.png");
   background-position: right 15px center;
   background-repeat: no-repeat;
   padding-left: 37px;
@@ -2580,16 +2582,20 @@ button.filter-accordion:hover {
 }
 
 .account-header {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 70px;
+  float: left;
+  width: 100%;
 }
 
-#account-info .account-header img {
+#account-info .account-header .account-img {
   border-radius: 50%;
-  max-width: 170px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   float: left;
-  margin-right: 10px;
+  margin-right: 30px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .account-header h1 {
@@ -4202,7 +4208,8 @@ input.togglecheckbox:checked ~ label:after {
   line-height: 160%;
 }
 
-.page-banner.franchise-banner {
+.page-banner.franchise-banner,
+.page-banner.resource-banner {
   text-align: center;
   height: 550px;
 }
@@ -4220,6 +4227,10 @@ input.togglecheckbox:checked ~ label:after {
 
 .page-banner.franchise-banner {
   background-image: url("../images/banners/img-banner-franchise-landing.jpg");
+}
+
+.page-banner.resource-banner {
+  background-image: url("../images/banners/resource-landing.jpg");
 }
 
 #fl-big-business {
@@ -4241,7 +4252,19 @@ input.togglecheckbox:checked ~ label:after {
 }
 
 .fl-big-business .fl-business-wrap img {
-  margin-bottom: 35px;
+  
+}
+
+.pet-img {
+  min-height: 125px;
+  line-height: 125px;
+}
+
+.fl-big-business .fl-business-wrap span {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 .fl-big-business .fl-business-wrap p {
