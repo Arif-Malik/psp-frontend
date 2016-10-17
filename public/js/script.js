@@ -332,5 +332,8 @@ jQuery(document).ready(function() {
     });
   })(jQuery);
 
-
+  // social icons hide/show mobile
+  $(".show-social-mob").click(function() {
+    $(".detail-social").toggleClass("show-icons");
+  });
 });
