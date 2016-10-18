@@ -2665,7 +2665,7 @@ button.filter-accordion:hover {
   letter-spacing: 0.5px;
 }
 
-.account-section-container #email-password .btn-primary {
+/*.account-section-container #email-password .btn-primary {
   background-color: transparent;
   color: #00af41;
   border: none;
@@ -2679,7 +2679,7 @@ button.filter-accordion:hover {
   background-color: transparent !important;
   border-color: transparent !important;
   color: #00af41 !important;
-}
+}*/
 
 .account-section-container #pet-info h1 {
   margin-bottom: 15px;
@@ -3532,9 +3532,15 @@ body {
 
 .sl-map {
   width: 100%;
-  height: 740px;
+  height: 620px;
   background-color: #e9e7e5;
   border: 2px solid #dfe0df;
+}
+
+.sl-map-fixed {
+  position: fixed;
+  top: 5px;
+  z-index: 10000;
 }
 
 .sl-map iframe {
