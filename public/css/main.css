@@ -934,6 +934,9 @@ footer .col-sm-2:last-child,
   display: block;
 }
 
+.signup-login-container .custom-alert.form-group .field-validation-error {
+  margin-top: 5px;
+}
 
 /*.signup-login-container small {*/
 
@@ -3229,6 +3232,15 @@ section {
   margin-top: 50px;
 }
 
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.pb100,
+#in-stores.pb100 {
+  padding-bottom: 100px;
+}
+
 .upcoming-event {
   border: 1px solid #eaeae9;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
@@ -3541,6 +3553,7 @@ body {
   position: fixed;
   top: 5px;
   z-index: 10000;
+  max-width: 628px;
 }
 
 .sl-map iframe {
