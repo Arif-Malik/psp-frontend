@@ -825,10 +825,10 @@
                     <!-- Account page contents -->
                     
 <form action="/api/sitecore/Neighbor/PetInfoContent" class="account-section-container tab-content" enctype="multipart/form-data" id="addEditForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="_8wfmwQAyHGCPTS5dV8Ady-8tiQE_QblQeRsn3_XxItj1HtpFIo7Dbs59_L27GXRcoFQD4gwm2Xl6szevWb50RXOKWExNVWVvb1qnCjKXdunSNi1XUXy01fCM59UdhKzTUhRnRnzpSGD9wXf_y305g2" />    <!--Pet Info-->
-    <div id="pet-info" class="tab-pane active">
+    <div id="pet-info" class="account-info-data">
 
         <h1 class="pull-left hidden-xs">Pet Info</h1>
-        <a class="btn btn-primary pull-right" id="add-form-link" href="">Add a Pet</a>
+        <a class="btn btn-primary pull-right hidden-xs" id="add-form-link" href="">Add a Pet</a>
         <hr>
         <input type="hidden" value="/api/sitecore/Neighbor/GetBreedOnSpecies" id="selectBreedUrl" />
         <input type="hidden" value="/api/sitecore/Neighbor/GetDefaultImage" id="GetDefaultImage" />
@@ -894,8 +894,8 @@
                                     <label for="attr-1">*Breed</label>
 
                                     <select class="form-control input-lg breedId" id="breedId0" name="[0].Breed"><option value="1">Labrador Retriever</option>
-<option value="2">Siberian Husky</option>
-</select>
+                                    <option value="2">Siberian Husky</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -909,9 +909,9 @@
                                     <label for="attr-2">*Gender</label>
 
                                     <select class="form-control input-lg" id="gender0" name="[0].Gender"><option value="1">Male</option>
-<option value="2">Female</option>
-<option value="6">Unkown</option>
-</select>
+                                    <option value="2">Female</option>
+                                    <option value="6">Unkown</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -921,8 +921,8 @@
                                             <label for="species">Species</label>
                                             <input type="hidden" value="0" id="selectBreedUrl" />
                                             <select class="form-control input-lg speciesId" name="[0].Species"><option value="1">Dog</option>
-<option value="2">Cat</option>
-</select>
+                                                    <option value="2">Cat</option>
+                                            </select>
                                         </div>
                                
                                 <div class="col-md-6 col-xs-12 row-inline-control no-pet-check">
@@ -933,9 +933,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                <div class="form-group">
-                    <a class="btn btn-primary add-pet visible-xs pull-right" href="">Add a Pet</a>
                         </div>
                     </div>
                     <hr>
@@ -998,8 +995,8 @@
                                     <label for="attr-1">*Breed</label>
 
                                     <select class="form-control input-lg breedId" id="breedId1" name="[1].Breed"><option selected="selected" value="1">Labrador Retriever</option>
-<option value="2">Siberian Husky</option>
-</select>
+                                    <option value="2">Siberian Husky</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -1013,9 +1010,9 @@
                                     <label for="attr-2">*Gender</label>
 
                                     <select class="form-control input-lg" id="gender1" name="[1].Gender"><option selected="selected" value="1">Male</option>
-<option value="2">Female</option>
-<option value="6">Unkown</option>
-</select>
+                                    <option value="2">Female</option>
+                                    <option value="6">Unkown</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -1025,8 +1022,8 @@
                                             <label for="species">Species</label>
                                             <input type="hidden" value="1" id="selectBreedUrl" />
                                             <select class="form-control input-lg speciesId" name="[1].Species"><option selected="selected" value="1">Dog</option>
-<option value="2">Cat</option>
-</select>
+                                            <option value="2">Cat</option>
+                                            </select>
                                         </div>
                                
                                 <div class="col-md-6 col-xs-12 row-inline-control no-pet-check">
@@ -1038,9 +1035,7 @@
                                 </div>
                             </div>
                         </div>
-                <div class="form-group">
-                    <a class="btn btn-primary add-pet visible-xs pull-right" href="">Add a Pet</a>
-                        </div>
+                
                     </div>
 
             
@@ -1049,15 +1044,16 @@
         </form>
         <hr>
         <div class="center-block">
-            <button id="addEditFromSubmit" type="submit" class="btn btn-primary center-block save-btn">
+            <button id="addEditFromSubmit" type="submit" class="btn btn-primary center-block save-btn save-btn-mob-fixed">
                 Save
             </button>
         </div>
     </div>
     <!--/Pet Info-->
 </form>
-
-                
+<div class="add-form-btn-mob visible-xs">
+    <a class="btn btn-primary btn-block" id="add-form-link-mob" href="">Add a Pet</a>
+</div>           
             </div>
         </div>
     </div>
