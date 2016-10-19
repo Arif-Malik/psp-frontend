@@ -2778,6 +2778,15 @@
   #in-stores.pb100 {
     padding-bottom: 70px;
   }
+  .members-got-more .feature-wrap .learn-more {
+    display: none !important;
+  }
+  #fl-big-business.joinpak {
+    background-color: #f4f4f2;
+  }
+  .fl-big-business h2 {
+    font-size: 2.10em;
+  }
 }
 
 

@@ -388,12 +388,39 @@
 .guide-text p {
   color: #939598;
   font-size: 30px;
-      margin-bottom: 40px;
-          margin-top: 5px;
+  margin-bottom: 40px;
+  margin-top: 5px;
 }
 
 .overlay-text .btn,
 .guide-text .btn {
   min-width: 243px;
   height: 64px;
+}
+
+
+/* join our pack */
+
+.join-our-pack .fill-carousel {
+  background-position: inherit;
+}
+
+.members-got-more .feature-img {
+  min-height: 340px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.joinpak .fl-big-business .fl-business-wrap p {
+  margin-top: 24px;
+}
+
+#fl-big-business.joinpak {
+  background-color: #fff;
+}
+
+.members-got-more .main-head h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
 }
