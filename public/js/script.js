@@ -293,6 +293,32 @@ jQuery(document).ready(function() {
     $("#datepicker").datepicker();
   });
 
+  $(window).scroll(function () {
+    scrollTop = $(window).scrollTop();
+    headerheight = $('header').height();
+    breadcrum = $('#breadcrumb').height();
+    scrollheight=headerheight + breadcrum + 70;
+    if(scrollTop>scrollheight){
+      $('.sl-map').addClass("sl-map-fixed");
+    }
+    if(scrollTop<scrollheight){
+      $('.sl-map').removeClass("sl-map-fixed");
+    }
+    
+  });
+
+  // $(function() {
+  //   headerheight = $('header').height();
+  //   breadcrum = $('#breadcrumb').height();
+  //   scrollheight=headerheight + breadcrum + 70;
+  //   scrollTop = $(window).scrollTop();
+  //   alert (scrollTop);
+  //   if (window.scrollheight()>scrollheight){
+
+  //     alert (scrollheight);
+  //   }
+  // });
+
   $('.clear-text').click(function() {
     $('.searchsuggested').typeahead('val', ' ');
     $('.clear-text').hide();
