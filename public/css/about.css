@@ -343,3 +343,131 @@ ul.strip-2-list li.active a {
   }
 }
 /*Dog Food Finder*/
+
+/*My Offers*/
+.myOffers-data {
+  margin: 0 0 10px;
+}
+.offer-header {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0 0 6px;
+}
+.offer-header h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 32px;
+  margin: 0 0 4px;
+}
+.offer-header h6 {
+  margin: 0;
+  color: #878787;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: right;
+}
+.offer-listing {
+  padding: 40px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.offer-box {
+  text-align: center;
+}
+.offer-box-border-left {
+  border-left: 1px solid #f4f4f4;
+  margin: 0 0 60px;
+}
+.offer-box-img {
+  text-align: center;
+}
+.offer-box-img img {
+  max-width: 100%;
+}
+.offer-box-txt {
+  padding: 20px 0 0;
+}
+.offer-box-txt h3 {
+  color: #00af41;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+.offer-box-txt h3 span.dolr-sign {
+  position: relative;
+  font-size: 28px;
+  top: -9px;
+}
+.offer-box-txt h3 span.text-undeline {
+  text-decoration: underline;
+}
+.offer-box-txt p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.offer-btn.btn.btn-primary {
+  border-radius: 0;
+  color: #fff;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  min-width: 1px;
+}
+.offer-btn.btn.btn-primary:after {
+  font-family: FontAwesome;
+  margin: 0 0 0 6px;
+  content: "\f0da";
+  color: #fff;
+}
+.store-offer-boxs {
+  padding: 50px 0 20px;
+}
+.store-offer-add  {
+  border: 5px solid #00af41;
+  padding: 15px;
+}
+.offer-price {
+  float: left;
+  width: 60%;
+}
+.offer-store-logo {
+  width: 40%;
+  text-align: right;
+  float: left;
+}
+.offer-store-logo img {
+  max-width: 100%;
+}
+.offer-price h3 {
+  color: #00af41;
+  font-weight: bolder;
+  font-size: 50px;
+  margin: 0 0 10px;
+}
+.offer-price h3 span.dolr-sign {
+  position: relative;
+  font-size: 32px;
+  top: -16px;
+}
+.offer-price h3 span.text-undeline {
+  text-decoration: underline;
+}
+.offer-store-address {
+  float: left;
+  width: 100%;
+}
+.offer-store-address h5 {
+  margin: 0 0 2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+.offer-store-address p {
+  margin: 0;
+  color: #000;
+}
+.store-offer-col {
+  margin: 0 0 20px;
+}
