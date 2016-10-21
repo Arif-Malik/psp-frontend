@@ -2791,6 +2791,7 @@
   }
 }
 
+
 /*mobile landscape and below*/
 
 @media (max-width: 767px) {
@@ -3743,8 +3744,8 @@
   }
   /**/
   .account-section-container {
-      min-height: 10px;
-      padding-bottom: 30px; 
+    min-height: 10px;
+    padding-bottom: 30px;
   }
   .add-form-btn-mob {
     margin-bottom: 20px;
@@ -3763,7 +3764,57 @@
   #notifications .form-group .toggle-caption {
     font-size: 1.55em;
   }
+  .favorties-head .size-head,
+  .favorties-head .price-head,
+  .favorties-listing .size,
+  .favorties-listing .price {
+    text-align: left;
+  }
+  .favorties-listing .price span.striked,
+  .favorties-listing .price span.red-text,
+  .favorties-listing .price span {
+    float: left;
+    line-height: 22px;
+    padding-right: 5px;
+  }
+  .favorties-listing .price span:first-child {
+    font-weight: 900;
+    font-size: 22px;
+  }
+  .favorties-listing .size {
+    width: 100%;
+    clear: both;
+  }
+  .favorties-listing .size span:first-child {
+    font-weight: 900;
+    font-size: 22px;
+  }
+  .favorties-listing .description {
+    padding-left: 26px;
+  }
+  .favorties-listing .item-img a {
+    color: #7b7979;
+    font-weight: 500;
+  }
+  .brand-small {
+    background-color: #231f1f;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    line-height: 54px;
+    margin-bottom: 0px;
+    float: left;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .brand-small .green {
+    color: #00af41;
+  }
+  .brand-banner.page-banner {
+    max-height: 358px;
+  }
 }
+
 
 /*Iphone6 landscape and below*/
 
@@ -4112,5 +4163,13 @@
   }
   .dl-menuwrapper .dl-top-menu li {
     padding-right: 19px !important;
+  }
+  .favorties-listing .description .desc-footer .in-stock-flag {
+    padding: 2px 4px;
+  }
+  .description .desc-footer a {
+    font-size: 12px;
+    padding-top: 5px;
+    background: url(../images/small-right.png) no-repeat right 9px;
   }
 }
