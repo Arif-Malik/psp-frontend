@@ -2709,8 +2709,8 @@
     background-color: #fff;
     color: #231f1f;
   }
-  .promotion-text .btn,
-  .promotion-text .btn:hover {
+  .promotion-text .btn-transparent,
+  .promotion-text .btn-transparent:hover {
     color: #00af41 !important;
     background-color: #fff !important;
     border-color: #fff !important;
@@ -3813,6 +3813,27 @@
   .brand-banner.page-banner {
     max-height: 358px;
   }
+  #promotions-landing-page.brand-landing .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .brand-landing .promotion-text .btn {
+    min-width: 301px;
+    height: 82px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .brand-landing .promotion-text {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+  }
+  .brand-landing .promotion-text:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -4171,5 +4192,8 @@
     font-size: 12px;
     padding-top: 5px;
     background: url(../images/small-right.png) no-repeat right 9px;
+  }
+  .brand-landing .promotion-text .btn {
+    min-width: 100%;
   }
 }
