@@ -558,3 +558,72 @@
 .mt40 {
   margin-top: 40px;
 }
+
+
+/* Brands Landing page */
+
+.brand-banner.page-banner {
+  background-image: url(../images/banners/brands-banner.jpg);
+  height: 465px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+
+.brand-banner .banner-heading {
+  width: 502px;
+  float: left;
+  margin: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: #231f1f;
+  text-align: left;
+  padding: 100px 0px 0px 35px;
+}
+
+.brand-banner .banner-heading:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -112px;
+  width: 112px;
+  height: 100%;
+  z-index: 1;
+  background-image: url(../images/right-xl.png);
+  height: 465px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.brand-banner .banner-heading .green {
+  color: #00af41;
+}
+
+.all-brands .brand {
+  font-size: 18px;
+  color: #231f1f;
+  text-align: center;
+  padding-bottom: 70px
+}
+
+.all-brands .brand a {
+  font-size: 18px;
+  color: #231f1f;
+}
+
+.all-brands .brand span {
+  display: block;
+  padding-top: 25px;
+}
+
+.all-brands .brand-wrap {
+  min-height: 91px;
+  line-height: 91px;
+}
+
+.brand-head h2 {
+      text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 70px;
+}
