@@ -424,3 +424,137 @@
   font-size: 48px;
   margin-bottom: 60px;
 }
+
+
+/* My Favourties Page */
+
+#account-info .account-information {
+  padding-bottom: 100px;
+}
+
+.my-favorites h2 {
+  margin-top: 0px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.favorties-head {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+  margin-top: 65px;
+}
+
+.favorties-head .item-head,
+.favorties-head .size-head,
+.favorties-head .price-head {
+  color: #515252;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.favorties-head .size-head,
+.favorties-head .price-head,
+.favorties-listing .size,
+.favorties-listing .price {
+  text-align: right;
+}
+
+.favorties-listing {
+  border-bottom: 1px solid #eeeeee;
+  padding: 30px 0px 40px 0px;
+}
+
+.favorties-listing .item-img {
+  text-align: center;
+}
+
+.favorties-listing .item-img img {
+  padding: 12px;
+  border: 1px solid #f4f4f4;
+  margin-bottom: 6px;
+}
+
+.favorties-listing .item-img a {
+  font-size: 14px;
+  color: #231f1f;
+  font-weight: 400;
+}
+
+.favorties-listing .description {
+  padding-left: 50px;
+}
+
+.favorties-listing .description p.desc {
+  clear: both;
+  color: #515253;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.favorties-listing .description .desc-footer .in-stock-flag {
+  margin-left: 0px;
+  font-size: 12px;
+  padding: 2px 17px;
+  margin-top: 0px;
+}
+
+.description .desc-footer {
+  margin-top: 14px;
+}
+
+.description .desc-footer a {
+  color: #00af41;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+  display: inline-block;
+  padding-top: 3px;
+  background: url(../images/small-right.png) no-repeat center right;
+  padding-right: 15px;
+}
+
+.favorties-listing .advert {
+  position: static;
+  float: left;
+  clear: both;
+}
+
+.favorties-listing .size span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.favorties-listing .price span.striked,
+.favorties-listing .price span.red-text,
+.favorties-listing .price span {
+  font-size: 18px;
+  display: block;
+  font-weight: 700
+}
+
+.favorties-listing .price span.striked {
+  color: #dfe0df;
+}
+
+.favorties-listing .price span.red-text {
+  color: #ed1d23;
+}
+
+.favorties-listing .price span.with-card {
+  color: #231f1f;
+  font-size: 14px;
+  display: block;
+}
+
+.members-offer {
+  color: #ed1d23;
+  font-size: 18px;
+  background: url(../images/icons/offer-tag.png) no-repeat top left;
+  padding-left: 35px;
+  clear: both;
+  margin-top: 15px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
