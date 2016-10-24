@@ -560,7 +560,7 @@
 }
 
 
-/* Brands Landing page */
+/* All Brands page */
 
 .brand-banner.page-banner {
   background-image: url(../images/banners/brands-banner.jpg);
@@ -642,4 +642,102 @@
 
 .brand-landing .promotion-container:last-child {
   margin-bottom: 125px;
+}
+
+.brand-detail-banner.page-banner {
+  background-image: url(../images/banners/brands-landing.jpg);
+  height: 427px;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+}
+
+
+/* supporting dogs page */
+
+.page-banner.supporting-dog-banner {
+  height: 450px;
+  background-image: url(../images/banners/supporting-dogs.jpg);
+}
+
+.dog-category {
+  float: left;
+  text-align: center;
+  width: 162px;
+  padding: 0px 10px;
+}
+
+.dog-category .pet-img {
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: none;
+  margin: 0 auto;
+}
+
+.dog-category span {
+  color: #a09f9e;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dog-category.selected .pet-img {
+  border: 10px solid #00af41;
+}
+
+.dog-category.selected span {
+  color: #231f1f;
+}
+
+.filter-head {
+  font-size: 21px;
+  font-weight: 400;
+  color: #231f1f;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.filter-head .green-text {
+  color: #00af41;
+  padding-left: 5px;
+}
+
+.filter-head .green-text u {
+  margin-left: 8px;
+}
+
+#filterCategory {
+  padding: 40px 0px 100px 0px;
+}
+
+.filtered-result .pet-img {
+  height: 134px;
+  width: 134px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #231f1f;
+  float: left;
+  margin-right: 45px;
+}
+
+.filtered-result .pet-info {
+  font-size: 21px;
+  padding: 45px 0px 0px 0px;
+  display: block;
+}
+
+.filtered-result {
+  padding-top: 40px;
+}
+
+.container-overflow.dog-categories {
+  overflow-x: auto;
+}
+
+.dog-categories .inner-container {
+  min-width: 1340px;
 }

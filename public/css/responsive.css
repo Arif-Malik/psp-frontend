@@ -1272,6 +1272,10 @@
   .editable-breadcrum ul li {
     padding: 11px 0px 11px 15px;
   }
+  .brand-detail-banner.page-banner,
+  .brand-banner.page-banner {
+    background-image: url(../images/banners/brand-mobile.jpg);
+  }
 }
 
 
@@ -1741,6 +1745,9 @@
     font-size: 30px;
     padding: 0px;
     font-weight: 400;
+  }
+  .dog-categories .inner-container {
+    min-width: 1340px;
   }
 }
 
