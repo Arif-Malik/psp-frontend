@@ -4180,6 +4180,9 @@ input.togglecheckbox:checked ~ label:after {
   font-weight: 600;
   line-height: 100%;
 }
+.feature-wrap .feature-details .feature-title a {
+  color: #231f1f;
+}
 
 .feature-wrap .feature-details .feature-desc {
   color: #939598;
