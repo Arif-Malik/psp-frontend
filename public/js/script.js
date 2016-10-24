@@ -51,6 +51,30 @@ jQuery(document).ready(function() {
     $(".compare-boxs-landing").append(emptyDivHTML);
   });
 
+  //Dog Finder Questuions
+  $(".qus-btns .btn-next").click(function() {
+    if($(this).hasClass("link-disable")) {
+      alert("please Select your option");
+    }
+    else {
+      $(this).parents(".qus-box").hide();
+      $(this).parents(".qus-box").next().fadeIn();
+    }
+    
+  });
+  $(".qus-btns .btn-back").click(function() {
+    $(this).parents(".qus-box").hide();
+    $(this).parents(".qus-box").prev().fadeIn();
+    
+  });
+
+  $(".qus-options-list li label").click(function(){
+    $(this).addClass("optionActive");
+    $(this).parents(".qus-box").find(".btn-next").removeClass("link-disable");
+  });
+  //END Food Finder Script
+
+
   var filterAccordion = document.getElementsByClassName("filter-accordion");
   // Get the modal
   var productModal = document.getElementById('product-zoom-modal');
