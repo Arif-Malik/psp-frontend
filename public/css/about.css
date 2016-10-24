@@ -342,7 +342,6 @@ ul.strip-2-list li.active a {
     top: 4px;
   }
 }
-/*Dog Food Finder*/
 
 /*My Offers*/
 .myOffers-data {
@@ -643,4 +642,211 @@ h2.comapre-head {
 }
 .modal-footer .btn {
   font-size: 16px;
+}
+/*Dog Food Finder*/
+.dog-finder-options {
+  padding: 50px 0;
+  background: #f4f4f2;
+  margin: 0 0 1px;
+}
+.dog-finder-options h2 {
+  color: #231f1f;
+  font-weight: bolder;
+  font-size: 42px;
+  margin: 0 0 20px;
+}
+.dog-finder-options p {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+.dog-finder-options h5 {
+  color: #231f1f;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+.dogs-appears-box {
+}
+.dog-food-box {
+  margin: 0 0 50px;
+}
+.dog-food-box-inner {
+  text-align: center;
+}
+.dog-food-box-img {
+  margin: 0 0 15px;
+}
+.dog-food-box-img img {
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+}
+.dog-food-box-txt h5 {
+  margin: 0;
+  font-size: 24px;
+}
+.dog-food-box-txt h5 a {
+  color: #231f1f;
+  font-size: 24px;
+}
+.new-dog-search {
+  margin: 0;
+}
+.search-dog-input {
+  margin: 0 0 20px;
+}
+.search-dog-input .txt-field {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  display: block;
+  padding: 0 0 0 12px;
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  border: 2px solid #d2d2d2;
+  border-radius: 5px;
+  width: 100%;
+}
+.new-dog-search .btn {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+}
+.qus-sections {
+  padding: 0;
+}
+.qus-sections > .qus-box:nth-child(even) {
+  background: #f4f4f2;
+}
+.qus-box {
+  padding: 80px 0;
+}
+.qus-box h6 {
+  color: #939598;
+  font-size: 16px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+.qus-box h3 {
+  font-size: 28px;
+  margin: 0 0 50px;
+}
+.qus-box h3 span {
+  font-size: 14px;
+}
+.qus-options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.qus-options-list li {
+  float: left;
+  width: 33%;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 0 50px;
+  position: relative;
+  overflow: hidden;
+}
+.qus-options-list li input[type=radio],
+.qus-options-list li input[type=checkbox] {
+  
+  display: none;
+}
+.qus-options-list li .qus-img {
+  width: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  height: 140px;
+  border: 1px solid #b2b2b2;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+.qus-options-list li label {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  cursor: pointer;
+  line-height: 0;
+}
+.qus-options-list li.selected .qus-img,
+.qus-options-list li input[type=radio]:checked ~ label .qus-img,
+.qus-options-list li input[type=checkbox]:checked ~ label .qus-img {
+  border: 1px solid #008933;
+  background: #00af41;
+}
+.qus-options-list li .qus-img img {
+  max-width: 100%;
+}
+.qus-options-list li.selected .qus-img img,
+.qus-options-list li input[type=radio]:checked ~ label .qus-img img,
+.qus-options-list li input[type=checkbox]:checked ~ label .qus-img img {
+  visibility: hidden;
+}
+.qus-options-list li .qus-img .img-selected {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.qus-options-list li.selected .qus-img img.img-selected,
+.qus-options-list li input[type=radio]:checked ~ label .qus-img img.img-selected,
+.qus-options-list li input[type=checkbox]:checked ~ label .qus-img img.img-selected {
+  visibility: visible;
+  display: inline;
+}
+.qus-name {
+  margin: 0;
+  font-size: 18px;
+}
+.qus-btns {
+  padding: 10px 0 0;
+  text-align: center;
+}
+.qus-btns .btn-back {
+  background: #4f4c4c;
+  font-size: 18px;
+  width: 150px;
+  margin: 0 10px 0 0px;
+  color: #fff;
+}
+.qus-btns .btn-back:hover,
+.qus-btns .btn-back:focus {
+  color: #fff;
+}
+.qus-btns .btn-primary {
+  font-size: 18px;
+  width: 150px;
+}
+.container.container-find {
+  max-width: 890px;
+}
+.link-disable {
+  opacity: 0.3;
+  cursor: default;
+}
+.qus-sections > div.qus-box {
+  display: none;
+}
+.qus-sections > div.qus-box:first-child {
+  display: block;
+}
+@media (max-width: 767px) {
+  .qus-options-list li {
+    width: 50%;
+  }
+  .qus-options-list li .qus-img {
+    width: 130px;
+    height: 130px;
+  }
+  .qus-btns .btn-back {
+    width: 125px;
+  }
 }
