@@ -1,5 +1,80 @@
 jQuery(document).ready(function() {
 
+
+//Compare Popup
+  $(".thumbnail.product-tile .hover-details .custom-checkbox label").click(function() {
+    //$(".compare-section").show();
+
+    var compareBoxHTML = "";
+    var compareBoxImg = "";
+    var compareBoxHead = "";
+    var compareBoxTxt = "";
+    var thisChk = $(this);
+    var filterCount = "";
+
+    if(!$(this).hasClass("filter-checked")) {
+      //alert("asdas");
+      compareBoxImg = thisChk.parents(".product-tile").find(".prod-img-tile").attr("src");
+      compareBoxHead = thisChk.parents(".product-tile").find(".caption h3").text();
+      compareBoxTxt = thisChk.parents(".product-tile").find(".caption p").text();
+      compareBoxHTML = '<div class="col-sm-4"><div class="compare-prd-box clearfix"><span class="cross-prd"></span><div class="compare-prd-img"><img class="center-block" src="'+compareBoxImg+'" alt=""></div><div class="compare-prd-txt"><h6>'+compareBoxHead+'</h6><p>'+compareBoxTxt+'</p></div></div></div>'
+      thisChk.parents(".product-tile").parent().addClass("filter-compare-col");
+      filterCount = $(".product-categories-grid").find(".filter-compare-col").length;
+      //alert(filterCount);
+      if(filterCount == 4) {
+        $('.modalErrors').modal();
+      }
+      else if(filterCount == 3) {
+        
+        $(".col-compare-prd-box-empty").remove();
+        $(".compare-boxs-landing").append(compareBoxHTML);
+      }
+      else if(filterCount == 2) {
+        $(".col-compare-prd-box-empty:first").remove();
+        $(".compare-boxs-landing .col-compare-prd-box-empty").before(compareBoxHTML);
+      }
+      else {
+        $(".compare-boxs-landing .col-compare-prd-box-empty:first").before(compareBoxHTML);
+      }
+      $(".compare-section").show();
+      
+    }
+  });
+  //Remove Compare
+  var emptyDivHTML = '<div class="col-sm-4 col-compare-prd-box-empty"><div class="compare-prd-box-empty clearfix"></div></div>'
+  var removeProdFun = function() {
+
+  }
+  $(document).on("click", ".cross-prd",function() {
+    alert("asd");
+    $(this).parent().parent().remove();
+    $(".compare-boxs-landing").append(emptyDivHTML);
+  });
+
+  //Dog Finder Questuions
+  $(".qus-btns .btn-next").click(function() {
+    if($(this).hasClass("link-disable")) {
+      alert("please Select your option");
+    }
+    else {
+      $(this).parents(".qus-box").hide();
+      $(this).parents(".qus-box").next().fadeIn();
+    }
+    
+  });
+  $(".qus-btns .btn-back").click(function() {
+    $(this).parents(".qus-box").hide();
+    $(this).parents(".qus-box").prev().fadeIn();
+    
+  });
+
+  $(".qus-options-list li label").click(function(){
+    $(this).addClass("optionActive");
+    $(this).parents(".qus-box").find(".btn-next").removeClass("link-disable");
+  });
+  //END Food Finder Script
+
+
   var filterAccordion = document.getElementsByClassName("filter-accordion");
   // Get the modal
   var productModal = document.getElementById('product-zoom-modal');
@@ -362,4 +437,5 @@ jQuery(document).ready(function() {
   $(".show-social-mob").click(function() {
     $(".detail-social").toggleClass("show-icons");
   });
+  
 });
