@@ -1,0 +1,56 @@
+.page-banner.breed-banner {
+  background-image: url("../images/banners/breed-guide-banner.jpg");
+}
+
+.breeed-wrap {
+	width:100%;
+	float:left;
+	background-color:#f4f4f2;
+	height:720px;
+	}
+.breeed-wrap .breeed-wrap-img img {
+    height: 100%;
+}
+.upcoming-event.breed {
+	box-shadow:none;
+	border:none;	
+	padding-bottom: 34px;
+	}
+.upcoming-event.breed .event-img {
+	height:448px;
+	}
+.upcoming-event.breed .event-title {
+	
+	font-size:36px;
+	}
+	
+.upcoming-event.breed .event-details .event-desc {
+	font-size:20px;
+	height: 70px;
+	}
+.upcoming-event .event-details .btn {
+	    height: 64px;
+    width: 243px;
+    font-size: 30px;
+	}
+	
+.upcoming-event.breed .event-details {
+	padding:40px;
+	}
+.more-on-frd .more-main {
+	width:100%;
+	float:left;
+	background-color:#f4f4f2;
+	min-height:674px;
+	}
+.more-on-frd .card-bx {
+	background-color:#fff;
+	height: 345px;
+	}
+.more-on-frd .card-txt {
+	padding: 0px 20px 12px;
+}
+.more-main .products-header {padding-top:40px;padding-bottom:40px;} 
+.more-on-frd .card-txt h3 {font-size:18px;}
+.more-on-frd .card-txt p {font-size: 15px;line-height: 24px;}
+#franchise-landing-page.breed .fl-page-title p{font-size:21px;}

@@ -1272,6 +1272,22 @@
   .editable-breadcrum ul li {
     padding: 11px 0px 11px 15px;
   }
+  #franchise-landing-page.pet-breed .container{
+	 padding:0px;
+  } 
+  .upcoming-event.breed .event-details {
+	    background-color: #fff;
+		 padding: 15px 20px 0;
+	  }	
+  .upcoming-event.breed .event-details .event-desc {height:auto;}
+  .pet-breed .fl-page-title {
+    text-align: center;
+	padding:40px 30px 20px;
+}
+.upcoming-event.breed {
+	    padding-bottom: 60px;
+	}
+#franchise-landing-page.pet-breed { padding-bottom: 20px;}
 }
 
 
@@ -2961,8 +2977,10 @@ section.events .short-detail:first-child {
   background-color: #fff;
   color: #231f1f;
 }
-
+.upcoming-event.breed .event-details a {float:left;}
 .promotion-text .btn,
+.upcoming-event.breed .event-details a,
+.upcoming-event.breed .event-details a:hover
 .promotion-text .btn:hover {
   color: #00af41 !important;
   background-color: #fff !important;
@@ -2981,6 +2999,7 @@ section.events .short-detail:first-child {
   background-image: url("../images/right-green.png");
   background-position: right center;
   padding-right: 23px;
+  
 }
 
 .promotion-container {
@@ -2992,6 +3011,9 @@ section.events .short-detail:first-child {
 /*mobile landscape and below*/
 
 @media (max-width: 767px) {
+	  #franchise-landing-page#pet-breed .container{
+	  padding:0px;
+	  } 
   .main-header {
     display: none;
   }
