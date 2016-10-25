@@ -4282,11 +4282,12 @@ input.togglecheckbox:checked ~ label:after {
   line-height: 125px;
 }
 
-.fl-big-business .fl-business-wrap span {
+.fl-big-business a .fl-business-wrap span {
   display: block;
   width: 100%;
   font-size: 18px;
   margin-top: 15px;
+  color: #231f1f;
 }
 
 .fl-big-business .fl-business-wrap p {
