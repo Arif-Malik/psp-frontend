@@ -41,12 +41,73 @@ jQuery(document).ready(function() {
     }
   });
   //Remove Compare
+
+  // Slider Product-tile products-tile-slider
+  $('.products-tile-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    nextArrow: ".tile-arrow-next",
+    prevArrow: ".tile-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+//news-tiles-slider
+$('.news-tiles-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 4,
+    nextArrow: ".news-tile-arrow-next",
+    prevArrow: ".news-tile-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  // if ($(window).width() < 767) {
+  //   $('.news-tiles-slider').unslick();
+  // }
+
   var emptyDivHTML = '<div class="col-sm-4 col-compare-prd-box-empty"><div class="compare-prd-box-empty clearfix"></div></div>'
   var removeProdFun = function() {
 
   }
   $(document).on("click", ".cross-prd",function() {
-    alert("asd");
+    //alert("asd");
     $(this).parent().parent().remove();
     $(".compare-boxs-landing").append(emptyDivHTML);
   });
