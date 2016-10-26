@@ -5531,6 +5531,10 @@ section.events .short-detail:first-child {
   .dog-species h2 {
     font-size: 30px;
   }
+  .about-landing-boxs .feature-wrap .feature-img img {
+    max-height:  100%;
+    width: auto;
+  }
 }
 
 @media (max-width: 420px) {
