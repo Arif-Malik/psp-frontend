@@ -4501,9 +4501,12 @@ input.togglecheckbox:checked ~ label:after {
 .bg-light-gray {
   background: #f4f4f2;
 }
+.about-landing-boxs .feature-wrap .feature-img {
+  text-align: center;
+}
 .about-landing-boxs .feature-wrap .feature-img img {
-  height: auto;
-  width: 100%;
+  max-height: 340px;
+  width: auto;
 }
 #franchise-landing-page.about-landing-boxs {
   padding: 50px 0 100px;  
