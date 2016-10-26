@@ -4282,11 +4282,12 @@ input.togglecheckbox:checked ~ label:after {
   line-height: 125px;
 }
 
-.fl-big-business .fl-business-wrap span {
+.fl-big-business a .fl-business-wrap span {
   display: block;
   width: 100%;
   font-size: 18px;
   margin-top: 15px;
+  color: #231f1f;
 }
 
 .fl-big-business .fl-business-wrap p {
@@ -4496,9 +4497,12 @@ input.togglecheckbox:checked ~ label:after {
 .bg-light-gray {
   background: #f4f4f2;
 }
+.about-landing-boxs .feature-wrap .feature-img {
+  text-align: center;
+}
 .about-landing-boxs .feature-wrap .feature-img img {
-  height: auto;
-  width: 100%;
+  max-height: 340px;
+  width: auto;
 }
 #franchise-landing-page.about-landing-boxs {
   padding: 50px 0 100px;  
@@ -5269,4 +5273,45 @@ h2.comapre-head {
 
 #franchise-landing-page.breed .fl-page-title p {
   font-size: 21px;
+}
+.border-strip-top {
+  border-top: 1px solid #d4d5d4;
+}
+/*Dog - Species details*/
+.dog-species {
+  padding: 50px 0 10px;
+}
+.dog-species h2 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin: 0 0 40px;
+}
+.spec-img {
+  margin: 0 0 40px;
+}
+.spec-img img {
+  max-width: 100%;
+}
+.spec-txt {
+  margin: 0 0 40px;
+}
+.spec-txt p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #231f1f;
+}
+.container.container-850 {
+  max-width: 850px;
+}
+.products-tile-slider .thumbnail.product-tile {
+  margin-right: 22px;
+}
+.news-tiles-slide {
+  margin-right: 22px;
+}
+.more-on-frd .news-tiles-slide .card-txt p {
+  margin: 0;
+}
+.more-on-frd .news-tiles-slide  .card-bx {
+  height: 370px;
 }

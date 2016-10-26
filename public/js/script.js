@@ -41,12 +41,73 @@ jQuery(document).ready(function() {
     }
   });
   //Remove Compare
+
+  // Slider Product-tile products-tile-slider
+  $('.products-tile-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    nextArrow: ".tile-arrow-next",
+    prevArrow: ".tile-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+//news-tiles-slider
+$('.news-tiles-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 4,
+    nextArrow: ".news-tile-arrow-next",
+    prevArrow: ".news-tile-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  // if ($(window).width() < 767) {
+  //   $('.news-tiles-slider').unslick();
+  // }
+
   var emptyDivHTML = '<div class="col-sm-4 col-compare-prd-box-empty"><div class="compare-prd-box-empty clearfix"></div></div>'
   var removeProdFun = function() {
 
   }
   $(document).on("click", ".cross-prd",function() {
-    alert("asd");
+    //alert("asd");
     $(this).parent().parent().remove();
     $(".compare-boxs-landing").append(emptyDivHTML);
   });
@@ -73,8 +134,36 @@ jQuery(document).ready(function() {
     $(this).parents(".qus-box").find(".btn-next").removeClass("link-disable");
   });
   //END Food Finder Script
-
-
+  //Load Contents on scroll
+  $(window).scroll(function(){
+    var footerTop = $(".main-footer").offset().top;
+    //alert(newsLetterTop);
+    footerTop = footerTop - 600
+		if ($(this).scrollTop() > footerTop) {
+			$('.news-chk').show();
+      $('.news-chk-1').show();
+      alert("asd");
+		} 
+    // else {
+		// 	$('.scrollToTop').fadeOut();
+		// }
+	});
+//WOW Scroll
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
   var filterAccordion = document.getElementsByClassName("filter-accordion");
   // Get the modal
   var productModal = document.getElementById('product-zoom-modal');

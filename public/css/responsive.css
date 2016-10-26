@@ -5495,6 +5495,67 @@ section.events .short-detail:first-child {
   .faq-section .filter-panel {
     padding-right: 30px;
   }
+  .mob-tiles.news-tiles-slide  .card-bx {
+    height: auto !important;
+    position: relative;
+  }
+  .mob-tiles.news-tiles-slide .card-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.7);
+  } 
+  .mob-tiles.news-tiles-slide .card-txt h3 {
+    color: #fff;
+  }
+  .mob-tiles.news-tiles-slide .card-txt .news-tile-link {
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  .mob-tiles.news-tiles-slide .card-txt .news-tile-link:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    margin: 0 0 0 6px;
+  }
+  .products-container-no-scroll {
+    overflow-x: inherit !important;
+  }
+  .products-container.products-container-no-scroll .container {
+      width: auto;
+  }
+  .more-on-frd .news-tiles-slide  .card-bx {
+    height: auto;
+  }
+  .products-header .view-all {
+    padding-top: 16px;
+  }
+  .more-main .products-header {
+    padding-top: 20px;
+    padding-bottom: 00px;
+  }
+  .more-on-frd .more-main {
+    min-height: 1px;
+  }
+  .products-tile-slider .prod-footer {
+    position: static;
+    padding: 0 10px 10px;
+  }
+  .products-tile-slider .thumbnail.product-tile,
+  .news-tiles-slide  {
+    margin-right: 0px;
+  }
+  .dog-species h2 {
+    font-size: 30px;
+  }
+  .about-landing-boxs .feature-wrap .feature-img img {
+    max-height:  100%;
+    width: auto;
+  }
 }
 
 @media (max-width: 420px) {
@@ -5574,4 +5635,5 @@ section.events .short-detail:first-child {
   .brand-landing .promotion-text .btn {
     min-width: 100%;
   }
+  
 }

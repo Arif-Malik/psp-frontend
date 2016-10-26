@@ -850,3 +850,7 @@ h2.comapre-head {
     width: 125px;
   }
 }
+/*Dog - Species details*/
+.border-strip-top {
+  border-top: 1px solid #d4d5d4;
+}
