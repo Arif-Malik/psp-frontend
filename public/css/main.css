@@ -4273,6 +4273,10 @@ input.togglecheckbox:checked ~ label:after {
   text-align: center;
 }
 
+.fl-big-business .fl-business-wrap .imgwrap {
+  min-height: 90px;
+}
+
 .fl-big-business .fl-business-wrap img {
   
 }
