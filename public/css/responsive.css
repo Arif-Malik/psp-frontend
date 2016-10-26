@@ -1294,7 +1294,25 @@
   .brand-banner.page-banner {
     background-image: url(../images/banners/brand-mobile.jpg);
   }
-
+.page-banner.who-we-banner .banner-heading {
+	      top: 30%;
+    font-size: 32px;
+	}
+#we-content-section .we-content-main .container-we {
+	    width: 100%;
+    	padding: 0;
+    	margin: 0;
+	}
+	#we-content-section .we-content-main .container-we .col-sm-12 {
+		width: 100%;
+    	padding: 0;
+    	margin: 0;
+		}
+	#we-content-section .we-content-main .container-we h1,
+	#we-content-section .we-content-main .container-we .we-text p,
+	#we-content-section .we-content-main .container-we .look-for-desc {
+		    padding:30px 30px;
+		}
 }
 
 
@@ -1474,6 +1492,9 @@
 }
 
 @media (max-width: 992px) {
+  #we-content-section .card-txt .btn-primary {
+	  padding:0px;
+  }
   .navbar-nav .yamm-fw.search-li {
     position: static;
   }
