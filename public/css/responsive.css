@@ -5211,7 +5211,25 @@ section.events .short-detail:first-child {
     width: 125px;
   }
   .more-on-frd .card-bx {height:auto;}
-  
+  .qus-btns {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+  }
+  .qus-btns .btn,
+  .qus-btns .btn.btn-back {
+    float: left;
+    width: 50% !important;
+    margin: 0;
+    border-radius: 0;
+    
+  }
+  .btn.link-disable {
+    opacity: 1;
+  }
 }
 
 
