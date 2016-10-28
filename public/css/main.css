@@ -106,7 +106,9 @@ img {
   transition: top 1s;
 }
 
-
+.topbar.show-notification {
+  position: static;
+}
 /* Tooltip */
 
 .tooltip > .tooltip-inner {
