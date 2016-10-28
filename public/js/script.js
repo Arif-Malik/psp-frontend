@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
 
-
 //Compare Popup
   $(".thumbnail.product-tile .hover-details .custom-checkbox label").click(function() {
     //$(".compare-section").show();
