@@ -640,6 +640,13 @@ header .global-header {
   padding-bottom: 25px;
   float: left;
   width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.container-fluid.reviews-desktop {
+  position: relative;
+  z-index: -1;
 }
 
 #newsletter h3 {
@@ -5414,3 +5421,31 @@ h2.comapre-head {
     border-bottom: 1px solid #eee;
     margin-bottom: 50px;
 }
+
+#in-stores .slick-list,
+#recommended-products .slick-list,
+#recently-viewed .slick-list {
+  overflow:visible;
+}
+
+#recently-viewed .product-tile {
+    min-height: 400px;
+}
+
+.recent-products-tile-slider .thumbnail.product-tile {
+    margin-right: 22px;
+}
+
+/*.products-container .container:after,
+.products-container .container:before {
+    position: absolute;
+    background-color: #f4f4f2;
+    height: 110%;
+    width: 14%;
+    z-index: 9000;
+    left: 0px;
+}
+
+.products-container .container:after {
+  right: 0px;
+}*/
