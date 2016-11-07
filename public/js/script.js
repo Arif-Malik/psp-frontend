@@ -115,7 +115,8 @@ $('.news-tiles-slider').slick({
   //Dog Finder Questuions
   $(".qus-btns .btn-next").click(function() {
     if($(this).hasClass("link-disable")) {
-      alert("please Select your option");
+        //alert("please Select your option");
+        
     }
     else {
       $(this).parents(".qus-box").hide();
@@ -123,15 +124,26 @@ $('.news-tiles-slider').slick({
     }
     
   });
-  $(".qus-btns .btn-back").click(function() {
-    $(this).parents(".qus-box").hide();
-    $(this).parents(".qus-box").prev().fadeIn();
-    
+  $(".qus-btns .btn-back").click(function () {
+      if ($(this).hasClass("link-disable")) {
+          //alert("please Select your option");
+
+      }
+      else {
+          $(this).parents(".qus-box").hide();
+          $(this).parents(".qus-box").prev().fadeIn();
+      }
   });
 
-  $(".qus-options-list li label").click(function(){
-    $(this).addClass("optionActive");
-    $(this).parents(".qus-box").find(".btn-next").removeClass("link-disable");
+  $(".qus-options-list li label").click(function () {
+      var inputId= $(this).attr("for");
+      if ($(this).hasClass("optionActive") && $("#"+inputId).attr("type") != "radio") {
+          $(this).removeClass("optionActive");
+          $(this).parents(".qus-box").find(".btn-next").addClass("link-disable");
+      } else {
+          $(this).addClass("optionActive");
+          $(this).parents(".qus-box").find(".btn-next").removeClass("link-disable");
+      }
   });
   //END Food Finder Script
   //Load Contents on scroll
@@ -157,6 +169,28 @@ $('.news-tiles-slider').slick({
   $(".get-start-btn").click(function() {
     $(".qus-sections > div.qus-box:first").show();
   });
+    //
+  $(".dogs-appears-box").find(".dog-food-box label").click(function () {
+      $(this).addClass("dogActive");
+      $(".new-dog-search").find(".get-start-btn").removeClass("link-disable").removeAttr("disabled");
+  });
+  $(".new-dog-search").find("#SelectedPetName").keyup(function () {
+      if ($(this).val() == "" && !$(".dogs-appears-box").find(".dog-food-box label").hasClass("dogActive")) {
+          $(".new-dog-search").find(".get-start-btn").addClass("link-disable").attr("disabled");
+      }
+      else {
+          $(".new-dog-search").find(".get-start-btn").removeClass("link-disable").removeAttr("disabled");
+      }
+  });
+  $(".new-dog-search").find("#SelectedPetName").blur(function () {
+      if ($(this).val() == "" && !$(".dogs-appears-box").find(".dog-food-box label").hasClass("dogActive")) {
+          $(".new-dog-search").find(".get-start-btn").addClass("link-disable").attr("disabled");
+      }
+      else {
+          $(".new-dog-search").find(".get-start-btn").removeClass("link-disable").removeAttr("disabled");
+      }
+  });
+
 //WOW Scroll
 // var wow = new WOW(
 //   {
@@ -470,14 +504,38 @@ $('.news-tiles-slider').slick({
     scrollTop = $(window).scrollTop();
     headerheight = $('header').height();
     breadcrum = $('#breadcrumb').height();
+    var footerTop = $(".main-footer").position().top;
+    var winHeight = $(window).height();
     scrollheight=headerheight + breadcrum + 70;
-    if(scrollTop>scrollheight){
+
+    if (scrollTop>scrollheight) {
       $('.sl-map').addClass("sl-map-fixed");
     }
-    if(scrollTop<scrollheight){
+    else {
       $('.sl-map').removeClass("sl-map-fixed");
     }
-    
+
+    if (scrollTop > footerTop - winHeight) {
+        $('.sl-map').css({
+            top: "auto",
+            bottom: "320px"
+        });
+    }
+    else {
+        $('.sl-map').css({
+            top: "5px",
+            bottom: "auto"
+        });
+    }
+
+
+    //if (scrollTop > footerTop - winHeight) {
+    //    //alert("asd");
+    //    $('.sl-map').removeClass("sl-map-fixed");
+    //}
+    //if (scrollTop < footerTop - winHeight) {
+    //    $('.sl-map').addClass("sl-map-fixed");
+    //}
   });
 
   // $(function() {
