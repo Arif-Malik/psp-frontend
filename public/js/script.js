@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
 
-
 //Compare Popup
   $(".thumbnail.product-tile .hover-details .custom-checkbox label").click(function() {
     //$(".compare-section").show();
@@ -42,13 +41,41 @@ jQuery(document).ready(function() {
   });
   //Remove Compare
 
-  // Slider Product-tile products-tile-slider
+// Slider Product-tile products-tile-slider
   $('.products-tile-slider').slick({
     centerMode: true,
     centerPadding: '0px',
-    slidesToShow: 3,
+    slidesToShow: 4,
     nextArrow: ".tile-arrow-next",
     prevArrow: ".tile-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  // Slider recent-reviewd Product-tile products-tile-slider
+  $('.recent-products-tile-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 4,
+    nextArrow: ".recent-arrow-next",
+    prevArrow: ".recent-arrow-prev",
     responsive: [
       {
         breakpoint: 768,
