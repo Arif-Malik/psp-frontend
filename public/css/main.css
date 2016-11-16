@@ -5647,3 +5647,15 @@ h2.comapre-head {
 .container-overflow .inner-container .pull-left {
   padding: 0px 54px;
 }
+
+.text-ad-large .text-red {
+  color: #ed1c24;
+}
+
+.text-ad-large .small-text {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 30px;
+}

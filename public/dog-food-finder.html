@@ -702,8 +702,8 @@
       <!--//-->
       <div class="row new-dog-search">
         <div class="col-sm-12 text-center">
-          <div class="search-dog-input">
-            <input type="text" placeholder="...or enter a new dog’s name." class="txt-field">
+          <div class="search-dog-input"> 
+            <input type="text" placeholder="...or enter a new dog’s name." onfocus="this.placeholder = ''" onblur="this.placeholder = '...or enter a new dog’s name.'" class="txt-field">
           </div>
           <input type="submit" class="btn btn-primary get-start-btn" value="Get Started">
         </div>
