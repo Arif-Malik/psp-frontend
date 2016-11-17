@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
   });
 //news-tiles-slider
 $('.news-tiles-slider').slick({
-    centerMode: true,
+    centerMode: false,
     centerPadding: '0px',
     slidesToShow: 4,
     nextArrow: ".news-tile-arrow-next",

@@ -5659,3 +5659,8 @@ h2.comapre-head {
   display: block;
   margin-bottom: 30px;
 }
+
+label .age {
+  display: block;
+  line-height: 22px;
+}
