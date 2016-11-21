@@ -963,7 +963,7 @@ footer .col-sm-2:last-child,
 
 .signup-login-container .account-error,
 .contact-container .account-error,
-.forgetpassword  .account-error {
+.forgetpassword .account-error {
   color: #ed1d23;
   font-size: 1.875em;
   padding-bottom: 15px;
@@ -4292,7 +4292,9 @@ input.togglecheckbox:checked ~ label:after {
   min-height: 90px;
 }
 
-.fl-big-business .fl-business-wrap img {}
+.fl-big-business .fl-business-wrap img {
+  display: inline-block;
+}
 
 .pet-img {
   min-height: 125px;
