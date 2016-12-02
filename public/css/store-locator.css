@@ -165,11 +165,27 @@
   border: 3px solid #00af41;
 }
 
-.owner-right .block:hover h2:before {
+.owner-right .block.active-circle h2:before {
   background-color: #00af41;
   border: 3px solid #00af41;
 }
-
+#we-contact-section.sticky {
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#breadcrumb.sticky {
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+  top: 174px;
+  left: 0;
+}
+body.sticky-padding {
+  padding-top: 225px;
+}
 .owner-right p {
   margin-bottom: 35px;
 }
@@ -313,7 +329,14 @@
   font-weight: 900;
   margin-top: 0px;
 }
-
+a .promotion-text h2 {
+    text-decoration: none;
+    color: #fff;
+}
+a .promotion-text p {
+    color: #939598;
+    text-decoration: none;
+}
 .promotion-text p {
   font-size: 18px;
   padding-right: 30px;
@@ -323,7 +346,7 @@
 
 .promotion-text .btn {
   min-width: 195px;
-  height: 64px;
+  /*height: 64px;*/
 }
 
 .promotion-banner {
@@ -416,9 +439,9 @@
   margin-top: 24px;
 }
 
-#fl-big-business.joinpak {
+/*#fl-big-business.joinpak {
   background-color: #fff;
-}
+}*/
 
 .members-got-more .main-head h2 {
   font-size: 48px;
@@ -597,6 +620,9 @@
 .brand-banner .banner-heading .green {
   color: #00af41;
 }
+
+.brand-banner .banner-heading .brands-color 
+{color: #00af41;}
 
 .all-brands .brand {
   font-size: 18px;

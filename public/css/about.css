@@ -835,25 +835,8 @@ h2.comapre-head {
 .qus-sections > div.qus-box {
   display: none;
 }
-.dog-food-box input[type=radio],
-.dog-food-box input[type=checkbox] {
-  display: none;
-}
-.dog-food-box label {
+.qus-sections > div.qus-box:first-child {
   display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  cursor: pointer;
-  line-height: 0;
-}
-.dog-food-box-img img {
-  border: solid 5px;
-  border-color: transparent;
-}
-.dog-food-box input[type=radio]:checked ~ label .dog-food-box-img img {
-  border-color: #009f3b;
 }
 @media (max-width: 767px) {
   .qus-options-list li {
@@ -867,9 +850,3 @@ h2.comapre-head {
     width: 125px;
   }
 }
-/*Dog - Species details*/
-.border-strip-top {
-  border-top: 1px solid #d4d5d4;
-}
-
-

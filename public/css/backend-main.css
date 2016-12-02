@@ -1,5 +1,4 @@
-﻿
-label.custom-file-upload {
+﻿label.custom-file-upload {
     background-color: #00af41;
     border: 1px solid #00af41;
     font-size: 1.500em;
@@ -14,26 +13,32 @@ label.custom-file-upload {
     float: none;
     border-radius: 5px;
     margin-top: 2px;
-    text-transform:capitalize;
+    text-transform: none;
     vertical-align: top;
 }
-
+.event-action-details .btn-primary.already-slected, .event-action-details .btn-primary.already-slected:hover, .event-action-details .btn-primary.already-slected:focus {
+    background-color: #4f4c4c !important;
+    border-color: #4f4c4c !important;
+}
 input[type=file] {
     display: none;
 }
-.img-content .left-align{
+
+.img-content .left-align {
     position: absolute;
     top: 10% !important;
     left: 10% !important;
     color: white;
 }
-.img-content .center-align{
+
+.img-content .center-align {
     position: absolute;
     top: 20% !important;
     left: 30% !important;
     color: white;
 }
-.img-content .right-align{
+
+.img-content .right-align {
     position: absolute;
     top: 13% !important;
     left: 55% !important;
@@ -41,28 +46,273 @@ input[type=file] {
     color: white;
 }
 
-.errorMsg
-{
+.errorMsg {
     color: #ed1d23;
 }
 
+.map-label {
+    text-align: left;
+    color: #fff;
+    font-size: 1.313em;
+}
 
-.img-content .left-align{
+#loader {
     position: absolute;
-    top: 10% !important;
-    left: 10% !important;
-    color: white;
+    left: 50%;
+    display: block;
+    margin-left: -54px;
+    height: 0;
+    overflow: hidden;
+    line-height: 60px;
+    z-index: 100;
 }
-.img-content .center-align{
+
+    #loader.active {
+        height: 60px;
+    }
+
+    #loader img {
+        vertical-align: text-bottom;
+    }
+
+.sl-store .sl-store-left .store-no {
+    background: url(../images/paw.png) no-repeat center center !important;
+}
+
+.account-section-container .btn-primary.save-btn {
+    font-size: 1.300em;
+    min-width: 273px;
+    min-height: 62px;
+}
+
+.account-section-container #pet-info .pet-display-image img {
+    height: 150px;
+    width: 150px;
+}
+
+.main-header .profile-section .list-inline p {
+    margin-top: 4px;
+}
+
+.main-header .profile-section .list-inline p, .main-header .profile-section .list-inline {
+    text-transform: uppercase;
+}
+
+.input-group-addon {
+    cursor: pointer;
+}
+
+.main-header .profile-section .list-inline p {
+    margin-top: 4px;
+}
+
+.main-header .profile-section .list-inline p, .main-header .profile-section .list-inline {
+    text-transform: uppercase;
+}
+
+.btn-strip {
+    display: none;
+}
+
+
+.sl-map-fixed {
+  position: fixed !important;
+   width: 49% !important;
+}
+
+.pass-change {
+    margin-bottom: 20px;
+}
+.pass-change a {
+    color: #00af41;
+}
+.account-section-container label.custom-file-upload {
+    cursor: pointer;
+}
+@media (max-width: 992px) {
+    div#email-password .btn-primary {
+        border-bottom: 0px solid #dfe0df !important;
+        float: none !important;
+        width: 100% !important;
+        text-align: center;
+        height: auto;
+        padding-bottom: 6px !important;
+    }
+    .account-section-container label.custom-file-upload {
+        color: #fff;
+        font-size: 16px;
+        padding-top: 9px;
+    }
+}
+@media (max-width: 767px) {
+    .nav-stacked.account-sidebar {
+        display: none;
+    }
+
+    .btn-strip {
+        display: block;
+    }
+    
+    #account-info .account-header {
+        display: none;
+    }
+    .btn-strip {
+        display: block;
+        background-color: #231f1f;
+        padding: 12px 20px;
+        margin: -1px -15px 0;
+    }
+    .btn-strip a {
+        color: #fff;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    .btn-strip a .fa {
+        color: #00af41;
+        font-size: 18px;
+        margin-right: 6px;
+    }
+    .account-section-container {
+        min-height: 1px;
+        padding-bottom: 30px;
+    }
+}
+/*.account-section-container #save-btn {
+    margin-top: 30px;
+    min-width: 1px;
+    min-height: 1px;
+}*/
+
+.tooltip > .tooltip-inner,
+.ui-tooltip {
+  background-color: #00af41 !important;
+  color: #FFFFFF !important;
+  max-width: 200px !important;
+  border: 1px solid #00af41 !important;
+  font-size: 12px !important;
+}
+#account-info .account-header {
+    float: none;
+}
+@-ms-viewport{
+width:auto!important;
+}
+
+.ui-autocomplete {
+		max-height: 100px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+	}
+.loading-img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    z-index: 444;
+}
+.loading-icon {
+    background: url(Images/icons/example_loading.gif) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.TTwriteReview.btn-primary {
+    font-size: 20px !important ;
+    font-family:Effra !important;
+}
+
+.btn.link-disable:hover,
+.btn.link-disable:focus {
+    background-color: #00af41 !important;
+    border: 1px solid #00af41 !important;
+    cursor: not-allowed;
+}
+.qus-btns .btn-back.link-disable:hover,
+.qus-btns .btn-back.link-disable:focus {
+    background: #4f4c4c !important;
+    cursor: not-allowed;
+}
+.dropdown-product-details {
+
+}
+.product-details-select-box {
+    margin-bottom: 10px;
+    position: relative;
+}
+.product-details-select-box select {
+    border-color: transparent !important;
+    border-radius: 0px !important;
+    background-color: #eeeeee !important;
+    color: #080808 !important;
+    width: 100% !important;
+    height: 48px !important;
+    font-size: 0.875em !important;
+    padding-left: 10px;
+    text-indent: 100px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: url(/Assets/Images/arrow-down-light.jpg) no-repeat 96% center;
+}
+.product-details-select-box label {
     position: absolute;
-    top: 20% !important;
-    left: 30% !important;
-    color: white;
+    left: 28px;
+    top: 14px;
+    color: #080808 !important;
+    font-size: 0.875em !important;
+    margin: 0;
 }
-.img-content .right-align{
+.product-details-select-box:nth-child(odd) {
+    padding-right: 10px;
+}
+.product-details-select-box:nth-child(even) {
+    padding-left: 10px;
+}
+.NewTile {
+cursor:pointer;
+}
+#in-stores .slick-list, #recommended-products .slick-list, #recently-viewed .slick-list,
+#hero-products .slick-list  {
+    overflow: visible;
+}
+.email-ajax {
     position: absolute;
-    top: 13% !important;
-    left: 55% !important;
-    padding-right: 30px;
-    color: white;
+    z-index: 100;
+    right: 20%;
+    top: 15px;
+    display: none;
 }
+
+
+.store-btn-section .my-store {
+  display:none;
+}
+
+.store-btn-section .btn.btn-default {
+  display:block;
+}
+
+.selected.store-btn-section .my-store {
+  display:block;
+}
+
+.selected.store-btn-section .btn.btn-default {
+  display:none;
+}
+
+@media (max-width: 767px) {
+    .product-details-select-box:nth-child(odd) {
+        padding-right: 15px;
+    }
+    .product-details-select-box:nth-child(even) {
+        padding-left: 15px;
+    }
+}
+
+
