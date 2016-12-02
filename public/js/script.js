@@ -123,8 +123,66 @@ $('.news-tiles-slider').slick({
       }
     ]
   });
+
+//learnmore-slider
+$('.learnmore-slider').slick({
+    centerMode: false,
+    centerPadding: '0px',
+    slidesToShow: 6,
+    nextArrow: ".learnmore-arrow-next",
+    prevArrow: ".learnmore-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+//learnmore-slider
+$('.petclub-slider').slick({
+    centerMode: false,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    nextArrow: ".petclub-arrow-next",
+    prevArrow: ".petclub-arrow-prev",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
   // if ($(window).width() < 767) {
-  //   $('.news-tiles-slider').unslick();
+  //   $('.learnmore-slider').unslick();
   // }
 
   var emptyDivHTML = '<div class="col-sm-4 col-compare-prd-box-empty"><div class="compare-prd-box-empty clearfix"></div></div>'

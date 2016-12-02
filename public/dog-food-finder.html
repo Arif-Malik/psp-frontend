@@ -702,8 +702,8 @@
       <!--//-->
       <div class="row new-dog-search">
         <div class="col-sm-12 text-center">
-          <div class="search-dog-input">
-            <input type="text" placeholder="...or enter a new dog’s name." class="txt-field">
+          <div class="search-dog-input"> 
+            <input type="text" placeholder="...or enter a new dog’s name." onfocus="this.placeholder = ''" onblur="this.placeholder = '...or enter a new dog’s name.'" class="txt-field">
           </div>
           <input type="submit" class="btn btn-primary get-start-btn" value="Get Started">
         </div>
@@ -791,6 +791,7 @@
                   <img class="img-selected" src="images/dog-food-finder/how-old-1-selected.png">
                 </div>
                 <h4 class="qus-name">Puppy</h4>
+                <small class="age">(upto 12 months)</small>
               </label>
             </li>
             <li class="">
@@ -801,6 +802,7 @@
                   <img class="img-selected" src="images/dog-food-finder/how-old-2-selected.png">
                 </div>
                 <h4 class="qus-name">Adult</h4>
+                <small class="age">(upto 12 months)</small>
               </label>
             </li>
             <li>
@@ -811,6 +813,7 @@
                   <img class="img-selected" src="images/dog-food-finder/how-old-3-selected.png">
                 </div>
                 <h4 class="qus-name">Senior</h4>
+                <small class="age">(upto 12 months)</small>
               </label>
             </li>
             
