@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Supplies Plus</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pet Supplier Plus</title>
-  <!--Css references-->
+     <!--Css references-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <!--Components-->
@@ -20,36 +20,22 @@
   <link href="css/owl.carousel.css" rel="stylesheet">
   <link href="css/owl.theme.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/backend-main.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/about.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
-  <script src="https://use.typekit.net/mdw8wog.js"></script>
-  <script>
-  try {
-    Typekit.load({
-      async: true
-    });
-  } catch (e) {}
-  </script>
-</head>
+    
 
+    <script src="https://use.typekit.net/mdw8wog.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+
+</head>
 <body>
-  <!--Notification Bar-->
-  <section id="main-notification">
-    <div class="notification-bar">
-      <!--<div class="notification-bar">-->
-      <input type="checkbox" id="toggleTop" class="toggleTop" name="toggleTop" value="toggleTop" checked="checked">
-      <!--ADD 'show-notification class to show the notification-->
-      <div class="topbar">
-        <!-- You're content here -->
-        my notification goes here
-        <label for="toggleTop" class="hideTop">X</label>
-      </div>
-    </div>
-  </section>
-  <!--/Notification Bar-->
-  <!--Header-->
-  <header>
+    <!-- Top Notification Bar -->
+    
+
+
+    <!-- Header & Top Nav -->
+    
+<header>
     <div class="global-header">
       <div class="container-fluid main-header">
         <div class="newsletter pull-left hidden-xs">
@@ -588,697 +574,379 @@
       </div>
     </div>
   </header>
-  <!--/Header-->
-  
-  
-  <!--<section class="discount-strip">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<p>Fetch'n Save 10% on your order! Your pets will thank you! <a href="#">Learn more</a></p>
-			</div>
-		</div>
-	</div>
-  </section>-->
-  
-  <!--//-->
-  <section class="checkout-section checkout-pickup">
-	<div class="container">
-		<div class="row">
-			<div class="clearfix section-heading">
-				<div class="col-xs-8">
-					<h1>Checkout</h1>
-				</div>
-				<div class="col-xs-4 visible-xs">
-					<h4 class="check-total-mob">
-						Total: <br>
-						<b>$79.14</b>
-					</h4>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="clearfix gray-box-border">
-					<div class="row">
-						<div class="col-sm-12 col-md-8 checkout-items">
-							<div class="delivery-pickup-box checkout-data-box active">
-								<h3>Delivery and Pickup</h3>
-								<div class="check-inner-box">
-									<div class="pickup-info">
-										<div class="pickup-btns">
-											<span class="pickup-btn active">
-												<span class="pickup-icon"> Pickup</span>
-											</span>
-										</div>
-										<div class="pickup-location-info">
-											<div class="pickup-store-name">
-												<h5>678 Woodward Ave, Royal Oak</h5>
-												<a href="#">Change</a>
-											</div>
-											<p>
-												Orders are typically ready within one hour. A confirmation email will be sent  when your
-order is ready for pickup.
-											</p>
-										</div>
-										<div class="check-items-slider-box">
-											<h4>ONE-TIME ORDER ITEMS</h4>
-											
-											<div class="items-slider">
-												<div class="check-item-slide">
-													<div class="check-item-white-box">
-														<div class="check-item-slide-img">
-															<img src="images/" alt="">
-														</div>
-														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
-																-
-															</span>
-															<span class="check-item-number">
-																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
-															</span>
-															<span class="check-item-plus">
-																+
-															</span>
-														</div>
-													</div>
-													<div class="check-item-price">
-														<span class="price-red">$10.98</span>
-													</div>
-												</div>
-												<!--/Slide END/-->
-												<div class="check-item-slide">
-													<div class="check-item-white-box">
-														<div class="check-item-slide-img">
-															<img src="images/" alt="">
-														</div>
-														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
-																-
-															</span>
-															<span class="check-item-number">
-																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
-															</span>
-															<span class="check-item-plus">
-																+
-															</span>
-														</div>
-													</div>
-													<div class="check-item-price">
-														<span class="price-normal">$10.98</span>
-													</div>
-												</div>
-												<!--/Slide END/-->
-												<div class="check-item-slide">
-													<div class="check-item-white-box">
-														<div class="check-item-slide-img">
-															<img src="images/" alt="">
-														</div>
-														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
-																-
-															</span>
-															<span class="check-item-number">
-																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
-															</span>
-															<span class="check-item-plus">
-																+
-															</span>
-														</div>
-													</div>
-													<div class="check-item-price">
-														<span class="price-red">$10.98</span>
-													</div>
-												</div>
-												<!--/Slide END/-->
-												<div class="check-item-slide">
-													<div class="check-item-white-box">
-														<div class="check-item-slide-img">
-															<img src="images/" alt="">
-														</div>
-														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
-																-
-															</span>
-															<span class="check-item-number">
-																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
-															</span>
-															<span class="check-item-plus">
-																+
-															</span>
-														</div>
-													</div>
-													<div class="check-item-price">
-														<span class="price-normal">$10.98</span>
-													</div>
-												</div>
-												<!--/Slide END/-->
-											</div>
-											<!--//-->
-											<div class="check-save-btn">
-												<a href="javascript:void(0)" class="btn btn-primary">Save and Continue</a>
-											</div>
-										</div>
-									</div>
-								</div>
+<div class="body-overlay">
+</div>
+
+
+
+
+    <!-- BreadCrumbs -->
+        
+
+    <!-- Contents Area -->
+    
+<section id="account-info">
+    <!-- Account page title -->
+    
+    
+<div class="container account-header">
+   
+        <img src="/-/media/Images/PSP/DefaultImages/default.ashx" alt="profile images">
+   
+    <h1>
+        Welcome Back test12!
+    </h1>
+    <h6>Member Since 2012</h6>
+</div>
+
+    <div class="container account-information">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-stacked account-sidebar">
+                    <!-- Account page left menu -->
+                    
+        <li><a href="#">Email &amp; PassworD</a></li>
+        <li><a href="#">Personal Info</a></li>
+        <li><a href="#">Pet Info</a></li>
+        <li><a href="#">Address</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">My Favorites</a></li>
+        <li><a href="#">My Offers</a></li>
+        <li class="active"><a href="#">My Orders</a></li>
+        <li><a href="#">Payment Info</a></li>
+        <li><a href="#">Shipping Address</a></li>
+        <li><a href="#">Log Out</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-md-9">
+                
+				<!-- Address page contents -->
+				<div class="myOrdersSection account-section-container">
+					<div class="myOrders-heading">
+						<div class="clearfix">
+							<div class="col-sm-8">
+								<h1>Order #1234567890</h1>
 							</div>
-							<!--//-->
-							<div class="pickup-info-box checkout-data-box">
-								<h3>Pickup Information</h3>
-								<div class="check-inner-box">
-									<div class="form-group">
-										<div class="custom-checkbox">
-											<input type="radio" class="" name="pickingUp" id="pickingUp">
-											<label for="pickingUp">
-												<b>I am picking up</b>
-											</label>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="custom-checkbox">
-											<input type="radio" class="" name="pickingUp" id="pickingElse">
-											<label for="pickingElse">
-												<b>Someone else is picking up <span>(Photo I.D. needed for pickup)</span></b>
-											</label>
-										</div>
-									</div>
-									<div class="form-group ther-name-field clearfix">
-										<div class="col-sm-5">
-											<label>
-												THEIR NAME
-											</label>
-											<input type="text" class="form-control input-lg" placeholder="">
-										</div>
-									</div>
-									<div class="check-save-btn">
-										<a href="javascript:void(0)" class="btn btn-primary">Save and Continue</a>
-									</div>
-								</div>
-							</div>
-							<!--//-->
-							<div class="payment-billing-box checkout-data-box">
-								<h3>Payment and Billing</h3>
-								<div class="check-inner-box">
-									<h4>Payment Information</h4>
-									<div class="payment-icons"></div>
-									
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group clearfix">
-												<label>CHOOSE FROM SAVED PAYMENT METHODS</label>
-												<input type="text" class="form-control input-lg" placeholder="">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group clearfix">
-												<label>CARDHOLDER NAME</label>
-												<input type="text" class="form-control input-lg" placeholder="">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-6 col-xs-8">
-											<div class="form-group clearfix">
-												<label>Card NUMBER</label>
-												<input type="text" class="form-control input-lg" placeholder="">
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-4">
-											<div class="form-group clearfix">
-												<label>CCV</label>
-												<input type="text" class="form-control input-lg" placeholder="">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group clearfix">
-												<label>EXPIRATION DATE</label>
-												<div class="clearfix">
-													<div class="field-small">
-														<select class="form-control input-lg">
-															<option>Month</option>
-															<option>2</option>
-															<option>3</option>
-														</select>
-													</div>
-													<div class="field-small">
-														<select class="form-control input-lg">
-															<option>Year</option>
-															<option>2</option>
-															<option>3</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group clearfix">
-												<div class="custom-checkbox">
-													<input type="checkbox" id="saveCards">
-													<label for="saveCards">
-														<span>Save card for future orders</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--//-->
-									<div class="gift-card-box">
-										<h4>Gift Cards</h4>
-										<div class="form-group gift-card-select clearfix">
-											<div class="row">
-												<div class="col-sm-6 col-xs-9">
-													<label>CHOOSE FROM SAVED GIFT CARDS</label>
-													<select class="form-control input-lg">
-														<option>Gift Card 1 - Balance $3.36</option>
-														<option>2</option>
-														<option>3</option>
-													</select>
-												</div>
-												<div class="col-sm-6 col-xs-3">
-													<a href="#">Apply</a>
-												</div>
-											</div>
-										</div>
-										<div class="form-group gift-card-select clearfix">
-											<div class="row">
-												<div class="col-sm-6 col-xs-6">
-													<label>GIFT CARD NUMBER</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-												<div class="col-sm-3 col-xs-3">
-													<label>PIN #</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-												<div class="col-sm-3 col-xs-3">
-													<a href="#">Apply</a>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<p class="card-msg">Gift Card ending 4567 <span>$15.00</span></p>
-											</div>
-										</div>
-									</div>
-									<!--//-->
-									<div class="billing-address-box">
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>First Name</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>Last Name</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>Street Address</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>Street Address 2</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>City</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>State</label>
-													<select class="form-control input-lg">
-														<option>-- State --</option>
-														<option>2</option>
-														<option>3</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>Zip Code</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group clearfix">
-													<label>Phone Number</label>
-													<input type="text" class="form-control input-lg" placeholder="">
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--//-->
-									<div class="check-save-btn">
-										<a href="javascript:void(0)" class="btn btn-primary">Save and Continue</a>
-									</div>
-								</div>
-							</div>
-							<!--//-->
-							<div class="instruction-box checkout-data-box">
-								<h3>Additional Instructions</h3>
-								<div class="check-inner-box">
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group clearfix">
-												<label>MESSAGE <span>(Limited to 150 characters)</span></label>
-												<textarea class="form-control input-lg" placeholder=""></textarea>
-												<p class="msg-note">
-													Please note, additional instructions cannot be guaranteed, but we will do our best to meet them.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="check-place-btn">
-										<a href="#" class="btn btn-primary">Place Order</a>
-									</div>
-								</div>
-							</div>
-							<!--//-->
-						</div>
-						<div class="col-sm-12 col-md-4 checkout-sidebar items-bill-info">
-							<div class="box-white">
-								<div class="check-side-bar-items hidden-xs">
-									<h3>Your Items</h3>
-									<div class="check-side-item-box clearfix">
-										<div class="check-side-item-img">
-											<img src="" alt="">
-										</div>
-										<div class="check-side-item-detail">
-											<h5>
-												Natural Balance® L.I.D. Limited Ingredient Diets® Sweet Potato & Fish Dry Dog Formula, 26 Pound Bag
-											</h5>
-											<div class="side-item-bottom clearfix">
-												<div class="pull-left">
-													<div class="side-item-qty">Qty. 1</div>
-													<div class="side-item-price">
-														$44.98
-													</div>
-												</div>
-												<div class="pull-right">
-													<a href="#" class="side-item-remove">Remove</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--//-->
-									<div class="check-side-item-box clearfix">
-										<div class="check-side-item-img">
-											<img src="" alt="">
-										</div>
-										<div class="check-side-item-detail">
-											<h5>
-												Natural Balance® L.I.D. Limited Ingredient Diets® Sweet Potato & Fish Dry Dog Formula, 26 Pound Bag
-											</h5>
-											<div class="side-item-bottom clearfix">
-												<div class="pull-left">
-													<div class="side-item-qty">Qty. 1</div>
-													<div class="side-item-price">
-														$44.98
-													</div>
-												</div>
-												<div class="pull-right">
-													<a href="#" class="side-item-remove">Remove</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--//-->
-									<div class="check-side-bar-items-bottom">
-										<a href="#">view all</a>
-									</div>
-								</div>
-								<!--//-->
-								<div class="promo-code-box">
-									<h3>Order Summary</h3>
-									<h5>Have a promo code?</h4>
-									<div class="promo-field-box">
-										<input type="text" placeholder="" class="promo-field">
-										<a href="#">Apply</a>
-									</div>
-								</div>
-								<!--//-->
-								<div class="order-summary-box">
-									
-									<div class="clearfix summary-row">
-										<div class="col-sm-7 col-xs-7">
-											<h5>Total:</h5>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<span>$98.92</span>
-										</div>
-									</div>
-									<!--//-->
-									<div class="clearfix summary-row">
-										<div class="col-sm-7 col-xs-7">
-											<h5>Discounts:</h5>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<span>-$19.78</span>
-										</div>
-										<div class="col-sm-7 col-xs-7">
-											<a href="#" class="summary-item">DOGSRULE20</a>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<a href="#" class="remove-summary-item">remove</a>
-										</div>
-										<div class="col-sm-7 col-xs-7">
-											<a href="#" class="summary-item">FREESHIP17</a>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<a href="#" class="remove-summary-item">remove</a>
-										</div>
-										<div class="col-sm-7 col-xs-7">
-											<h5>Subtotal:</h5>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<span>$79.14</span>
-										</div>
-									</div>
-									<!--//-->
-									<div class="clearfix summary-row">
-										<div class="col-sm-7 col-xs-7">
-											<h5>Estimated tax:
-												<a href="#" class="color-dark">Calculate</a>
-											</h5>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<span>$0</span>
-										</div>
-									</div>
-									<!--//-->
-									<div class="clearfix summary-row">
-										<div class="col-sm-7 col-xs-7">
-											<h5>Estimated total:</h5>
-										</div>
-										<div class="col-sm-5 col-xs-5 text-right">
-											<span>$79.14</span>
-										</div>
-									</div>
-									<!--//-->
-									<div class="clearfix summary-row summary-row-last">
-										<div class="col-sm-12">
-											<a href="#" class="btn btn-primary checkout-btn">Checkout</a>
-										</div>
-									</div>
-									<!--//-->
-								</div>
-								<!--//-->
+							<div class="col-sm-4 text-right hidden-xs">
+								<a href="javascript:void(0)" class="all-orders-link">All Orders</a>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-  </section>
-  <!--//-->
-  
-  <!--News Letter-->
-  <section id="newsletter" class=" text-center">
-    <div class="container-fluid text-center">
-        <h3>Save $5 on your next purchase</h3>
-
-        <div class="container">
-            <form role="form" class="newsletter-invitation">
-                <div class="input-group input-group-lg">
-                    <input type="text" class="form-control" placeholder="Email Address">
-                <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button">GO</button>
-                   </span>
-                </div>
-            </form>
+					<!--//-->
+					<div class="orders-info-boxes">
+						<div class="order-status-box clearfix">
+							<div class="order-inProgress">
+								<h3>
+									In Progress
+								</h3>
+								<h4>
+									April 14, 2017
+								</h4>
+								<p>
+									Order Total:  <b>$50.07</b>
+									<br>
+									Payment Method: <b>1234</b>
+								</p>
+							</div>
+							<div class="order-inProgress-status">
+								<h4>
+									Order Status
+								</h4>
+								<div class="order-process">
+									<ul class="clearfix">
+										<li class="active">
+											<span>Ordered</span>
+										</li>
+										<li class="">
+											<span>Processing</span>
+										</li>
+										<li class="">
+											<span>Pickup</span>
+										</li>
+										<li class="">
+											<span>Delivered</span>
+										</li>
+									</ul>
+								</div>
+								<div class="box-more-options visible-xs">
+									<a href="javascript:void(0)">More Options</a>
+								</div>
+								<div class="order-inProgress-status-bottom hidden-xs">
+									<a href="javascript:void(0)" class="close-options visible-xs"></a>
+									<h5>What would you like to do?</h5>
+									<ul class="clearfix">
+										<li>
+											<a href="#">Reorder All</a>
+										</li>
+										<li>
+											<a href="#">Return All</a>
+										</li>
+										<li>
+											<a href="#">Email Receipt</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--//-->
+						<div class="order-item-boxes">
+							<div class="order-item-box clearfix">
+								<div class="order-item-img">
+									<a href="#">
+										<img src="images/" alt="">
+									</a>
+								</div>
+								<div class="order-item-detail">
+									<h3>
+										Natural Balance® L.I.D. Limited Ingredient Diets® Sweet Potato & Fish Dry Dog Formula, 26 Pound Bag
+									</h3>
+									<div class="order-item-price">
+										<span class="price-red">$44.98</span>
+									</div>
+									<div class="order-item-qty">
+										Qty. 1
+									</div>
+								</div>
+								<div class="order-item-actions">
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+									<div class="return-links">
+										<a href="#">Return</a>
+										<a href="#">Review Item</a>
+									</div>
+								</div>
+							</div>
+							<!--//-->
+							<div class="order-item-box clearfix">
+								<div class="order-item-img">
+									<a href="#">
+										<img src="images/" alt="">
+									</a>
+								</div>
+								<div class="order-item-detail">
+									<h3>
+										Natural Balance® L.I.D. Limited Ingredient Diets® Sweet Potato & Fish Dry Dog Formula, 26 Pound Bag
+									</h3>
+									<div class="order-item-price">
+										<span class="price-red">$44.98</span>
+									</div>
+									<div class="order-item-qty">
+										Qty. 1
+									</div>
+								</div>
+								<div class="order-item-actions">
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+									<div class="return-links">
+										<a href="#">Return</a>
+										<a href="#">Review Item</a>
+									</div>
+								</div>
+							</div>
+							<!--//-->
+						</div>
+					</div>
+					<!--//-->
+						
+				</div>          
+            </div>
         </div>
-
     </div>
 </section>
-<!--/News Letter-->
-  
-  <footer>
-    <div class="container main-footer">
-      <div class="panel-group" id="accordion">
-        <div class="row">
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion" href="#accordion-1">
-                <a class="toggle-footer">
-                                resource center
-                            </a>
-              </div>
-              <div id="accordion-1" class="panel-collapse accordion-list">
-                <div class="panel-body">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Dogs</a></li>
-                    <li><a href="#">Cats</a></li>
-                    <li><a href="#">Birds</a></li>
-                    <li><a href="#">Fish</a></li>
-                    <li><a href="#">Small Animals</a></li>
-                    <li><a href="#">Reptiles & Amphibians</a></li>
-                  </ul>
+
+    <!-- Signup Promotion -->
+    
+
+    <!-- Footer Navigation -->
+    
+
+
+    <footer>
+        <div class="container main-footer">
+            <div class="panel-group" id="accordion">
+                <div class="row">
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <div class="panel panel-default">
+                                <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion"
+                                     href="#accordion-1">
+                                    <a class="toggle-footer">
+                                        Resource Center
+                                    </a>
+                                </div>
+                                <div id="accordion-1" class="panel-collapse accordion-list">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                                <li><a href="#">Dogs</a></li>
+                                                <li><a href="#">Cats</a></li>
+                                                <li><a href="#">Birds</a></li>
+                                                <li><a href="#">Fish</a></li>
+                                                <li><a href="#">Small Animals</a></li>
+                                                <li><a href="#">Reptiles &amp; Amphibians</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <div class="panel panel-default">
+                                <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion"
+                                     href="#accordion-2">
+                                    <a class="toggle-footer">
+                                        Franchising
+                                    </a>
+                                </div>
+                                <div id="accordion-2" class="panel-collapse accordion-list">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                                <li><a href="#">Who We Are</a></li>
+                                                <li><a href="#">How to Become a Franchisee</a></li>
+                                                <li><a href="#">Who We&#39;re Looking For</a></li>
+                                                <li><a href="#">Why Pet Supplies Plus</a></li>
+                                                <li><a href="#">FAQ&#39;s</a></li>
+                                                <li><a href="#">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <div class="panel panel-default">
+                                <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion"
+                                     href="#accordion-3">
+                                    <a class="toggle-footer">
+                                        About Us
+                                    </a>
+                                </div>
+                                <div id="accordion-3" class="panel-collapse accordion-list">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                                <li><a href="#">Company News</a></li>
+                                                <li><a href="#">Executive Team</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <div class="panel panel-default">
+                                <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion"
+                                     href="#accordion-4">
+                                    <a class="toggle-footer">
+                                        My Account
+                                    </a>
+                                </div>
+                                <div id="accordion-4" class="panel-collapse accordion-list">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                                <li><a href="/en/Login">Login/Register</a></li>
+                                                <li><a href="#">Exclusive Offers</a></li>
+                                                <li><a href="#">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <div class="panel panel-default">
+                                <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion"
+                                     href="#accordion-5">
+                                    <a class="toggle-footer">
+                                        Contact Us
+                                    </a>
+                                </div>
+                                <div id="accordion-5" class="panel-collapse accordion-list">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                                <li><a href="#">Email Us</a></li>
+                                                <li><a href="#">Store Locator</a></li>
+                                                <li><a href="#">FAQ&#39;s</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="col-md-2 col-sm-2 col-lg-2">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading hidden-xs">
+                                <a class="toggle-footer">
+
+                                </a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row social">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="#">
+                                                    <i class="fa fa-2x fa-facebook"
+                                                       aria-hidden="true"></i>
+                                                </a>
+
+
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="#">
+                                                    <i class="fa fa-2x fa-twitter"
+                                                       aria-hidden="true"></i>
+                                                </a>
+
+
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="#">
+                                                    <i class="fa fa-2x fa-instagram"
+                                                       aria-hidden="true"></i>
+                                                </a>
+
+
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <a href="#">
+                                                    <i class="fa fa-2x fa-pinterest"
+                                                       aria-hidden="true"></i>
+                                                </a>
+
+
+                                    </div>
+                                </div>
+
+                                <h5 class="hidden-xs">
+                                    <img src="/Assets/Images/logo-footer.png" class="footer-logo"
+                                         alt="Pet Supplies Plus">
+                                </h5>
+                                <small class="copyright">
+                                    &copy;2016 Pet Supplies Plus<sup>&copy;</sup>.All Rights Reserved.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion" href="#accordion-2">
-                <a class="toggle-footer">
-                                franchising
-                            </a>
-              </div>
-              <div id="accordion-2" class="panel-collapse accordion-list">
-                <div class="panel-body">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">How to Become a Franchise</a></li>
-                    <li><a href="#">Who We're Looking For</a></li>
-                    <li><a href="#">Why Pet Supplies Plus</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Learn More</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion" href="#accordion-3">
-                <a class="toggle-footer">
-                                about us
-                            </a>
-              </div>
-              <div id="accordion-3" class="panel-collapse accordion-list">
-                <div class="panel-body">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Company News</a></li>
-                    <li><a href="#">Executive Team</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion" href="#accordion-4">
-                <a class="toggle-footer">
-                                my account
-                            </a>
-              </div>
-              <div id="accordion-4" class="panel-collapse accordion-list">
-                <div class="panel-body">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Login/Register</a></li>
-                    <li><a href="#">Exclusive Offers</a></li>
-                    <li><a href="#">Learn More</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="set-toggle panel-heading" data-toggle="collapse" data-parent="#accordion" href="#accordion-5">
-                <a class="toggle-footer">
-                                contact us
-                            </a>
-              </div>
-              <div id="accordion-5" class="panel-collapse accordion-list">
-                <div class="panel-body">
-                  <ul class="list-unstyled">
-                    <li><a href="#">Email Us</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-2 col-lg-2">
-            <div class="panel panel-default">
-              <div class="panel-heading hidden-xs">
-                <a class="toggle-footer">
-                                follow us
-                            </a>
-              </div>
-              <div class="panel-body">
-                <div class="row social">
-                  <div class="col-md-3 col-sm-3 col-xs-3"><a href="#"><i class="fa fa-2x fa-facebook"
-                                                                                       aria-hidden="true"></i></a></div>
-                  <div class="col-md-3 col-sm-3 col-xs-3"><a href="#"><i class="fa fa-2x fa-twitter"
-                                                                                       aria-hidden="true"></i></a></div>
-                  <div class="col-md-3 col-sm-3 col-xs-3"><a href="#"><i class="fa fa-2x fa-instagram"
-                                                                                       aria-hidden="true"></i></a></div>
-                  <div class="col-md-3 col-sm-3 col-xs-3"><a href="#"><i class="fa fa-2x fa-pinterest"
-                                                                                       aria-hidden="true"></i></a></div>
-                </div>
-                <h5 class="hidden-xs"><img src="images/logo-footer.png" alt="pet supplies plus"></h5>
-                <small class="copyright">&copy;2016 Pet Supplies Plus<sup>&copy;</sup>.All Rights Reserved.
-                            </small>
-              </div>
-            </div>
-          </div>
+
         </div>
-      </div>
-    </div>
-    <div class="container text-center layer-footer">
-      <ul class="list-inline">
-        <li>
-          <a href="#">
-            <small>Sitemap</small>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <small>Privacy Policy</small>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <!--JS reference-->
+        <div class="container text-center layer-footer">
+            <ul class="list-inline">
+                            <li>
+                                <a href="#">
+                                    <small>SiteMap</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <small>Privacy Policy</small>
+                                </a>
+                            </li>
+
+
+            </ul>
+        </div>
+    </footer>
+
+<!--JS reference-->
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/star-rating.min.js" type="text/javascript"></script>
@@ -1289,91 +957,40 @@ order is ready for pickup.
   <script src="js/typeahead.bundle.js" type="text/javascript"></script>
   <script src="js/jquery-ui.js" type="text/javascript"></script>
   <script src="js/owl.carousel.js"></script>
-  <script src="js/wow.min.js"></script>
   <script>
 	$(document).ready(function(){
-		/*Count Checkout Quantity*/
-		$(document).on("click",".check-item-plus",function(){
-			var qntVal = $(this).parent().find(".check-item-number-field").val();
-			qntVal = parseInt(qntVal) + 1;
-			$(this).parent().find(".check-item-number-field").val(qntVal);
+		//make-default-address
+		$(document).on("click",".make-default-address", function(){
+			$(".address-box").removeClass("address-active");
+			$(this).parents(".address-box").addClass("address-active");
 		});
-		$(document).on("click",".check-item-minus",function(){
-			var qntVal = $(this).parent().find(".check-item-number-field").val();
-			if(qntVal >= 2) {
-				qntVal = parseInt(qntVal) - 1;
-				$(this).parent().find(".check-item-number-field").val(qntVal);
-			}
+		//.box-more-options a .order-inProgress-status-bottom
+		$(document).on("click",".box-more-options a", function(){
+			$(this).parent().addClass("hidden");
+			$(".order-inProgress-status-bottom").addClass("active")
 		});
-		$(".check-item-number-field, .qnt-field").blur(function(){
-			var qntVal = $(this).val();
-			console.log(qntVal);
-			if(qntVal == 0) {
-				$(this).val("1");
-			}
-		});
-		//Checkout Items Slider
-		$('.items-slider').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  responsive: [
-			{
-			  breakpoint: 1024,
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				infinite: true,
-				dots: false
-			  }
-			},
-			{
-			  breakpoint: 600,
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				arrows: false
-			  }
-			},
-			{
-			  breakpoint: 480,
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				arrows: false
-			  }
-			},
-			{
-			  breakpoint: 360,
-			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false
-			  }
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		  ]
-		});
-		//check-save-btn
-		$(document).on("click",".check-save-btn a",function(){
-			$(".checkout-data-box").removeClass("active");
-			$(this).parents(".checkout-data-box").next().addClass("active");
+		//close-options 
+		$(document).on("click",".close-options", function(){
+			$(".box-more-options").removeClass("hidden");
+			$(".order-inProgress-status-bottom").removeClass("active")
 		});
 	});
-	function isNumber(evt) {
-		evt = (evt) ? evt : window.event;
-		var charCode = (evt.which) ? evt.which : evt.keyCode;
-		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-			return false;
-		}
-		return true;
-	}
+	
   </script>
   <script src="js/script.js" type="text/javascript"></script>
-</body>
 
+
+ <!--   <script src="/Assets/JS/jquery.min.js" type="text/javascript"></script>
+    <script src="/Assets/JS/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Assets/JS/star-rating.min.js" type="text/javascript"></script>
+    <script src="/Assets/JS/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="/Assets/JS/slick.js" type="text/javascript"></script>
+    <script src="/Assets/JS/modernizr.custom.js"></script>
+    <script src="/Assets/JS/jquery.dlmenu.js"></script>
+    <script src="/Assets/JS/script.js" type="text/javascript"></script>
+    <script src="/Assets/JS/jquery-ui.js"></script>
+    <script src="/Assets/JS/backend-scripts.js"></script>
+    <script src="/Assets/JS/jquery.validate.min.js"></script>
+    <script src="/Assets/JS/jquery.validate.unobtrusive.min.js"></script> -->
+</body>
 </html>

@@ -7098,20 +7098,25 @@ label .age {
 .order-item-box {
 	border-bottom: 0px solid #f4f4f2;
 }
+.order-item-img {
+	text-align: center;
+	width: 20%;
+	float: left;
+}
 .order-item-slide {
 	padding: 0 20px;
 }
-.order-item-img {
+.slide-order-item-img {
 	text-align: center;
 	height: 100px;
 }
-.order-item-img img {
+.slide-order-item-img img {
 	max-width: 100%;
 }
-.order-item-txt {
+.slide-order-item-txt {
 	padding: 15px 0 0;
 }
-.order-item-txt h4 {
+.slide-order-item-txt h4 {
 	color: #231f1f;
 	font-size: 14px;
 	line-height: 16px;
@@ -7120,15 +7125,15 @@ label .age {
 	font-weight: normal;
 	min-height: 62px;
 }
-.order-item-bottom {
+.slide-order-item-bottom {
 	color: #231f1f;
 	font-size: 14px;
 }
-.order-item-bottom > span {
+.slide-order-item-bottom > span {
 	display: inline-block;
 	margin-right: 14px;
 }
-.order-item-bottom > span:last-child {
+.slide-order-item-bottom > span:last-child {
 	margin-right: 0px;
 }
 .order-item-detail {
@@ -7237,7 +7242,7 @@ label .age {
     padding: 25px;
 }
 .order-pick-detail-box-btns {
-	padding: 22px 0 10px;
+	padding: 16px 0 20px;
 }
 .order-pick-detail-box-btns .btn.btn-primary {
 	font-size: 16px;
@@ -7274,4 +7279,147 @@ label .age {
 .order-details-slider .slick-prev {
 	background: none;
 	top: 33%;
+}
+@media (max-width: 767px) {
+	.order-details-slider {
+		display: none;
+	}
+	.order-pick-detail-box {
+		width: 100%;
+		float: none;
+		padding: 20px;
+		background: #fff;
+	}
+	.orders-detail-box {
+		border: 0px solid #d2d2d2;
+		border-radius: 0px;
+		margin-bottom: 25px;
+	}
+	.myOrdersSection {
+		background: #f4f4f2;
+	}
+	.order-pick-detail-box-btns {
+		text-align: center;
+	}
+	.order-pick-detail-box-btns .btn.btn-primary {
+		width: 116px;
+		min-width: 10px;
+	}
+	.order-sort .pull-right {
+		float: none !important;
+	}
+	.myOrdersSection .order-sort .sort-select-box .form-control {
+		width: 230px;
+		border-radius: 0;
+		border: 1px solid #939598;
+		background: #fff;
+		background-color: #fff !important;
+		font-weight: 500;
+		color: #231f1f;
+		font-size: 14px;
+		height: 45px;
+		padding: 0 20px;
+	}
+	.order-item-detail {
+		float: left;
+		width: 80%;
+	}
+	.order-item-actions {
+		float: left;
+		width: 100%;
+		padding-left: 20%;
+	}
+	.order-inProgress {
+		width: 100%;
+		float: left;
+		padding: 20px;
+		background: #fff;
+	}
+	.order-inProgress-status {
+		width: 100%;
+		float: left;
+		padding: 20px;
+		border-left: 0px solid #d2d2d2;
+		border-top: 1px solid #d2d2d2;
+	}
+	.order-status-box {
+		background: #fff;
+		margin-bottom: 20px;
+		border: 1px solid #d2d2d2;
+	}
+	.order-inProgress-status-bottom {
+		border-top: 2px solid #d2d2d2;
+		margin: 0 -20px;
+		padding: 25px 25px 0;
+	}
+	.orders-info-boxes {
+		border: 0px solid #d2d2d2;
+		border-radius: 0px;
+	}
+	.order-item-box {
+		border-bottom: 1px solid #dfe0df;
+		background: #fff;
+		margin-bottom: 20px;
+	}
+	.order-item-box:last-child {
+		border-bottom: 0px;
+	}
+	.account-section-container .myOrders-heading h1 {
+		font-size: 24px;
+		margin-top: 20px;
+		text-align: left;
+		border-bottom: none;
+	}
+	.myOrders-heading {
+		border-bottom: 0px solid #f1f1f1;
+		padding-bottom: 0px;
+		margin-bottom: 20px;
+	}
+	.box-more-options.hidden {
+		display: none!important;
+	}
+	.order-inProgress-status-bottom.hidden-xs.active {
+		    display: block!important;
+	}
+	.order-inProgress-status-bottom ul li {
+		float: none;
+		margin-right: 0px;
+		font-size: 15px;
+		line-height: 28px;
+	}
+	.close-options {
+		height: 40px;
+		background: url(../images/cross-icon.png) no-repeat top center;
+		padding: 0px 0 25px;
+		width: 100%;
+		background-size: 25px auto;
+	}
+	.close-options:hover,
+	.close-options:focus {
+		color: #939598;
+	}
+	.order-inProgress-status-bottom h5 {
+		font-size: 18px;
+	}
+	.order-item-boxes {
+		background: #fff;
+		border: 1px solid #d2d2d2;
+	}
+	.order-item-qty,
+	.order-item-price {
+		float: left;
+		width: 50%;
+	}
+}
+.box-more-options {
+	border-top: 2px solid #d2d2d2;
+    margin: 0px -20px;
+    padding: 20px 20px 0;
+	text-align: center;
+}
+.box-more-options a {
+	color: #00af41;
+	font-size: 20px;
+	text-decoration: underline !important;
+	font-weight: 500;
 }
