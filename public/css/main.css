@@ -6489,12 +6489,33 @@ label .age {
 	color: #00af41;
 	text-decoration: underline !important;
 }
+@media (max-width: 992px) {
+	.account-section-container.addressBookSection .form-control {
+		border: 2px solid #d2d2d2;
+		background-color: #f4f4f2 !important;
+		float: none;
+		font-size: 15px;
+		position: relative;
+		width: 100%;
+		padding: 0 10px;
+	}
+	.myOrdersSection.account-section-container .myOrders-heading h1 {
+		margin: 0;
+		text-align: left;
+	}
+}
 @media (max-width: 767px) {
 	.field-small {
 		width: 50%;
 		margin-right: 0px;
 		float: left;
 		padding-right: 10px;
+	}
+	.myOrdersSection.account-section-container .myOrders-heading h1 {
+		margin-top: 15px;
+	}
+	.address-btns a{
+		margin-right: 18px;
 	}
 	.field-small:last-child {
 		margin-right: 0px;
@@ -6547,15 +6568,65 @@ label .age {
 		top: 16%;
 		background-color: #dddede;
 	}
+	.payment-billing-box .custom-checkbox > [type="checkbox"]:not(:checked) + label:after, 
+	.payment-billing-box .custom-checkbox > [type="checkbox"]:checked + label:after {
+		top: 16%;
+	}
 	.section-heading h2, .section-heading h1 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.items-slider .slick-next, 
 	.items-slider .slick-prev {
 		display: none;
 	}
 	.check-item-slide {
-		margin: 0 24px;
+		margin: 0 5px;
+	}
+	.items-slider {
+		margin: 0 -25px;
+		padding: 0 0 30px;
+	}
+	.custom-checkbox>[type="radio"]:not(:checked)~label:before, 
+	.custom-checkbox>[type="radio"]:checked~label:before {
+		top: 6px;
+	}
+	.custom-checkbox>[type="radio"]:checked~label:after {
+		top: 6px;
+	}
+	.account-section-container .address-heading h1 {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.account-section-container .address-heading .new-address-btn.btn.btn-primary {
+		width: 100%;
+	}
+	.account-section-container .address-form label {
+		display: block;
+		margin-bottom: 6px;
+	}
+	.account-section-container .address-form  .form-control {
+		width: 100%;
+		background-color: #fff !important;
+		float: none;
+		border: 1px solid #d2d2d2;
+		padding: 0 10px;
+		text-align: left;
+	}
+	.account-section-container .address-form .form-row {
+		margin-bottom: 0px;
+	}
+	.account-section-container .address-form .form-row > div {
+		margin-bottom: 15px;
+	}
+	.address-heading {
+		margin-bottom: 0px;
+	}
+	.account-section-container .address-form form {
+		border-bottom: 1px solid #adaeb0;
+	}
+	.address-box {
+		margin-bottom: 20px;
+		background: #fff;
 	}
 }
 @media (max-width: 480px) {
@@ -6889,6 +6960,12 @@ label .age {
 	width: 100%;
 	padding: 10px 12px;
 	font-size: 30px;
+}
+@media (max-width: 992px) {
+	.return-customers.signup-login-container {
+		border-right: 0px solid #dfe0df;
+		border-bottom: 1px solid #dfe0df;
+	}
 }
 @media (max-width: 767px) {
 	.checkout-login-section {
@@ -7280,6 +7357,23 @@ label .age {
 	background: none;
 	top: 33%;
 }
+@media (max-width: 992px) {
+	.order-pick-detail-box-btns .btn.btn-primary {
+		padding: 12px 5px;
+		width: 114px;
+	}
+	.order-details-slider {
+		padding: 18px;
+	}
+	.account-section-container .sort-select-box .form-control {
+		width: 230px !important;
+		background-color: #f1f1f1 !important;
+	}
+	.account-section-container .sort-select-box  label {
+		padding-top: 15px;
+	}
+	
+}
 @media (max-width: 767px) {
 	.order-details-slider {
 		display: none;
@@ -7409,6 +7503,22 @@ label .age {
 	.order-item-price {
 		float: left;
 		width: 50%;
+	}
+	.item-prices {
+		margin-bottom: 20px;
+	}
+	.fvrt-item {
+		display: block;
+		text-align: right;
+		margin-right: 0;
+		margin-bottom: 6px;
+	}
+	.item-actions {
+		padding-top: 0px;
+	}
+	.cart-item-qty.text-center {
+		padding-left: 85px;
+		text-align: left;
 	}
 }
 .box-more-options {
