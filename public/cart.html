@@ -660,13 +660,16 @@
 						<div class="col-sm-2 col-xs-8 cart-item-qty text-center">
 							<div class="qnt-box">
 								<input type="text" value="1" class="qnt-field" onkeypress="return isNumber(event)">
+								<input type="hidden" value="10" class="aval">
 								<button class="qnt-plus">
 									<i class="fa fa-plus"></i>
 								</button>
 								<button class="qnt-minus">
 									<i class="fa fa-minus"></i>
 								</button>
+								<div class="form-loading hidden"></div>
 							</div>
+							<div class="qnt-error">Stock Not available More then <span></span></div>
 						</div>
 						<div class="col-sm-2 col-xs-4 text-right">
 							<p class="item-total-price hidden-xs">$44.98</p>
@@ -675,6 +678,7 @@
 								<a href="#" class="remove-cart-item">
 									Remove
 								</a>
+								<div class="form-loading hidden"></div>
 							</div>
 						</div>
 					</div>
@@ -709,6 +713,7 @@
 						<div class="col-sm-2 col-xs-8 cart-item-qty text-center">
 							<div class="qnt-box">
 								<input type="text" value="1" class="qnt-field" onkeypress="return isNumber(event)">
+								<input type="hidden" value="5" class="aval">
 								<button class="qnt-plus">
 									<i class="fa fa-plus"></i>
 								</button>
@@ -716,6 +721,7 @@
 									<i class="fa fa-minus"></i>
 								</button>
 							</div>
+							<div class="qnt-error">Stock Not available More then <span></span></div>
 						</div>
 						<div class="col-sm-2 col-xs-4 text-right">
 							<p class="item-total-price hidden-xs">$44.98</p>
@@ -994,11 +1000,20 @@
 	$(document).ready(function(){
 		/*Count Quantity*/
 		$(document).on("click",".qnt-plus",function(){
+			var avalVal = $(this).parent().find(".aval").val();
 			var qntVal = $(this).parent().find(".qnt-field").val();
-			qntVal = parseInt(qntVal) + 1;
-			$(this).parent().find(".qnt-field").val(qntVal);
+			$(".qnt-error span").text(avalVal);
+			if(qntVal == avalVal) {
+				//alert("Bus kar do");
+				$(this).parents(".cart-item-qty").addClass("error-qnt-field");
+			}
+			else {
+				qntVal = parseInt(qntVal) + 1;
+				$(this).parent().find(".qnt-field").val(qntVal);	
+			}
 		});
 		$(document).on("click",".qnt-minus",function(){
+			$(this).parents(".cart-item-qty").removeClass("error-qnt-field");
 			var qntVal = $(this).parent().find(".qnt-field").val();
 			if(qntVal >= 2) {
 				qntVal = parseInt(qntVal) - 1;

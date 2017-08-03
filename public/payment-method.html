@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Payment Method</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.petsuppliesplus.com/assets/css/component.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		
+
+body {
+	background: #f4f4f2;
+	font-family: Effra!important;
+}
+h1 {
+	font-family: effra;
+	font-weight: bolder;
+}
+.payment-method-iframes h4 {
+    color: #000000;
+    font-size: 21px;
+    padding: 0;
+    margin: 0 0 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.payment-icons {
+}
+.payment-method-iframes .form-group {
+    margin-bottom: 25px;
+}
+.payment-method-iframes .form-group label {
+    text-transform: uppercase;
+    color: #515253;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+.field-small {
+    width: 174px;
+    margin-right: 30px;
+    float: left;
+}
+.custom-checkbox {
+    margin-top: 20px;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked), 
+.custom-checkbox > [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.custom-checkbox > [type="checkbox"], .custom-checkbox > label {
+    margin-bottom: 0px !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.check-inner-box .form-group label {
+    text-transform: uppercase;
+    color: #515253;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) ~ label, 
+.custom-checkbox > [type="checkbox"]:checked ~ label {
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) ~ label:before, 
+.custom-checkbox > [type="checkbox"]:checked ~ label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin-top: -8px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #c8c9c8;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) ~ label:after, 
+.custom-checkbox > [type="checkbox"]:checked ~ label:after {
+    font: normal normal normal 12px/1.1 'Glyphicons Halflings';
+    content: '\e013';
+    position: absolute;
+    top: 10px;
+    margin-top: -7px;
+    left: 2px;
+    color: #ffffff;
+    transition: all .2s;
+}
+.custom-checkbox > [type="checkbox"]:not(:checked) ~ label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.custom-checkbox > [type="checkbox"]:checked ~ label:after {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #4dc77a;
+    border: 2px solid #026937;
+    height: 17px;
+    width: 18px;
+    left: 0;
+    top: 9px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.check-save-btn, .check-place-btn {
+    padding-top: 25px;
+}
+.check-save-btn .btn.btn-primary {
+    font-size: 30px;
+    padding: 10px 25px;
+	background-color: #00af41;
+    border: 1px solid #00af41;
+	color: #fff;
+	display: inline-block;
+	line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+}
+.card-exp-fieldset .field-small .error {
+	display: none !important;
+}
+.payment-method-iframes .card-exp-fieldset .form-group {
+    margin-bottom: 0;
+}
+.payment-method-iframes .card-exp-fieldset  {
+    margin-bottom: 25px;
+}
+.has-success .error {
+	display: none;
+}
+.form-group.has-error .form-control {
+	border-color: #ed1d23;
+}
+.error {
+	color: #ed1d23 !important;
+	font-style: normal;
+}
+@media (max-width: 767px) {
+	.field-small {
+		width: 50%;
+		margin-right: 0px;
+		float: left;
+		padding-right: 10px;
+	}
+	.field-small:last-child {
+		margin-right: 0px;
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+	.check-save-btn .btn.btn-primary {
+		font-size: 26px;
+		padding: 10px 15px;
+		width: 100%;
+	}
+}
+@media (max-width: 480px) {
+	.payment-method-iframes .form-group label {
+		font-size: 14px;
+	}
+}
+@media (max-width: 360px) {
+	.payment-method-iframes .form-group label {
+		font-size: 12px;
+	}
+}
+	</style>
+  </head>
+  <body>
+    <div class="payment-method-iframes">
+		<form id="paymentMethodForm">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group clearfix">
+						<label>CHOOSE FROM SAVED PAYMENT METHODS</label>
+						<select id="paymentMethod" name="paymentMethod" class="form-control input-lg">
+							<option></option>
+							<option value="amex">AMEX</option>
+							<option value="visa">VISA</option>
+							<option value="mastercard">Master Card</option>
+							<option value="discover">Discover</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group clearfix">
+						<label>CARD HOLDER NAME</label>
+						<input type="text" class="form-control input-lg" id="cardName" name="cardName">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xs-8">
+					<div class="form-group clearfix">
+						<label>Card NUMBER</label>
+						<input type="text" class="form-control input-lg" id="cardNumber" name="cardNumber" onkeypress="return isNumber(event)">
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-4">
+					<div class="form-group clearfix">
+						<label>CCV</label>
+						<input type="text" class="form-control input-lg" id="cardCCV" name="cardCCV" onkeypress="return isNumber(event)">
+					</div>
+				</div>
+			</div>
+			<div class="row card-exp-fieldset">
+				<div class="col-sm-12">
+					<div class="form-group clearfix">
+						<label>EXPIRATION DATE</label>
+						<div class="clearfix">
+							<div class="field-small">
+								<select class="form-control input-lg" id="cc-exp-month" name="cardExpYear">
+									<option value="default">Month</option>
+									<option value = "01">01</option>
+									<option value = "02">02</option>
+									<option value = "03">03</option>
+									<option value = "04">04</option>
+									<option value = "05">05</option>
+									<option value = "06">06</option>
+									<option value = "07">07</option>
+									<option value = "08">08</option>
+									<option value = "09">09</option>
+									<option value = "10">10</option>
+									<option value = "11">11</option>
+									<option value = "12">12</option> 
+								</select>
+							</div>
+							<div class="field-small">
+								<select class="form-control input-lg" id="cc-exp-year" name="cardExpYear">
+									<option value="default">Year</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//-->
+			<div class="check-save-btn">
+				<!--<a href="javascript:void(0)" class="btn btn-primary save-btn-iframe">Save and Continue</a>-->
+				<input type="submit" value="Place Order" class="btn btn-primary save-btn-iframe">
+			</div>
+		</form>	
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://www.petsuppliesplus.com/Assets/JS/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://www.petsuppliesplus.com/Assets/JS/bootstrap.min.js"></script>
+	<script src="https://www.petsuppliesplus.com/Assets/JS/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+	// Generated by CoffeeScript 1.10.0
+(function() {
+  var $, Range, Trie,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Trie = (function() {
+    function Trie() {
+      this.trie = {};
+    }
+
+    Trie.prototype.push = function(value) {
+      var char, i, j, len, obj, ref, results;
+      value = value.toString();
+      obj = this.trie;
+      ref = value.split('');
+      results = [];
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        char = ref[i];
+        if (obj[char] == null) {
+          if (i === (value.length - 1)) {
+            obj[char] = null;
+          } else {
+            obj[char] = {};
+          }
+        }
+        results.push(obj = obj[char]);
+      }
+      return results;
+    };
+
+    Trie.prototype.find = function(value) {
+      var char, i, j, len, obj, ref;
+      value = value.toString();
+      obj = this.trie;
+      ref = value.split('');
+      for (i = j = 0, len = ref.length; j < len; i = ++j) {
+        char = ref[i];
+        if (obj.hasOwnProperty(char)) {
+          if (obj[char] === null) {
+            return true;
+          }
+        } else {
+          return false;
+        }
+        obj = obj[char];
+      }
+    };
+
+    return Trie;
+
+  })();
+
+  Range = (function() {
+    function Range(trie1) {
+      this.trie = trie1;
+      if (this.trie.constructor !== Trie) {
+        throw Error('Range constructor requires a Trie parameter');
+      }
+    }
+
+    Range.rangeWithString = function(ranges) {
+      var j, k, len, n, r, range, ref, ref1, trie;
+      if (typeof ranges !== 'string') {
+        throw Error('rangeWithString requires a string parameter');
+      }
+      ranges = ranges.replace(/ /g, '');
+      ranges = ranges.split(',');
+      trie = new Trie;
+      for (j = 0, len = ranges.length; j < len; j++) {
+        range = ranges[j];
+        if (r = range.match(/^(\d+)-(\d+)$/)) {
+          for (n = k = ref = r[1], ref1 = r[2]; ref <= ref1 ? k <= ref1 : k >= ref1; n = ref <= ref1 ? ++k : --k) {
+            trie.push(n);
+          }
+        } else if (range.match(/^\d+$/)) {
+          trie.push(range);
+        } else {
+          throw Error("Invalid range '" + r + "'");
+        }
+      }
+      return new Range(trie);
+    };
+
+    Range.prototype.match = function(number) {
+      return this.trie.find(number);
+    };
+
+    return Range;
+
+  })();
+
+
+  /*
+  jQuery Credit Card Validator 1.1
+  
+  Copyright 2012-2015 Pawel Decowski
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software
+  is furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included
+  in all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+   */
+
+  $ = jQuery;
+
+  $.fn.validateCreditCard = function(callback, options) {
+    var bind, card, card_type, card_types, get_card_type, is_valid_length, is_valid_luhn, j, len, normalize, ref, validate, validate_number;
+    card_types = [
+      {
+        name: 'amex',
+        range: '34,37',
+        valid_length: [15]
+      }, {
+        name: 'diners_club_carte_blanche',
+        range: '300-305',
+        valid_length: [14]
+      }, {
+        name: 'diners_club_international',
+        range: '36',
+        valid_length: [14]
+      }, {
+        name: 'jcb',
+        range: '3528-3589',
+        valid_length: [16]
+      }, {
+        name: 'laser',
+        range: '6304, 6706, 6709, 6771',
+        valid_length: [16, 17, 18, 19]
+      }, {
+        name: 'visa_electron',
+        range: '4026, 417500, 4508, 4844, 4913, 4917',
+        valid_length: [16]
+      }, {
+        name: 'visa',
+        range: '4',
+        valid_length: [13, 14, 15, 16, 17, 18, 19]
+      }, {
+        name: 'mastercard',
+        range: '51-55,2221-2720',
+        valid_length: [16]
+      }, {
+        name: 'discover',
+        range: '6011, 622126-622925, 644-649, 65',
+        valid_length: [16]
+      }, {
+        name: 'dankort',
+        range: '5019',
+        valid_length: [16]
+      }, {
+        name: 'maestro',
+        range: '50, 56-69',
+        valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
+      }, {
+        name: 'uatp',
+        range: '1',
+        valid_length: [15]
+      }
+    ];
+    bind = false;
+    if (callback) {
+      if (typeof callback === 'object') {
+        options = callback;
+        bind = false;
+        callback = null;
+      } else if (typeof callback === 'function') {
+        bind = true;
+      }
+    }
+    if (options == null) {
+      options = {};
+    }
+    if (options.accept == null) {
+      options.accept = (function() {
+        var j, len, results;
+        results = [];
+        for (j = 0, len = card_types.length; j < len; j++) {
+          card = card_types[j];
+          results.push(card.name);
+        }
+        return results;
+      })();
+    }
+    ref = options.accept;
+    for (j = 0, len = ref.length; j < len; j++) {
+      card_type = ref[j];
+      if (indexOf.call((function() {
+        var k, len1, results;
+        results = [];
+        for (k = 0, len1 = card_types.length; k < len1; k++) {
+          card = card_types[k];
+          results.push(card.name);
+        }
+        return results;
+      })(), card_type) < 0) {
+        throw Error("Credit card type '" + card_type + "' is not supported");
+      }
+    }
+    get_card_type = function(number) {
+      var k, len1, r, ref1;
+      ref1 = (function() {
+        var l, len1, ref1, results;
+        results = [];
+        for (l = 0, len1 = card_types.length; l < len1; l++) {
+          card = card_types[l];
+          if (ref1 = card.name, indexOf.call(options.accept, ref1) >= 0) {
+            results.push(card);
+          }
+        }
+        return results;
+      })();
+      for (k = 0, len1 = ref1.length; k < len1; k++) {
+        card_type = ref1[k];
+        r = Range.rangeWithString(card_type.range);
+        if (r.match(number)) {
+          return card_type;
+        }
+      }
+      return null;
+    };
+    is_valid_luhn = function(number) {
+      var digit, k, len1, n, ref1, sum;
+      sum = 0;
+      ref1 = number.split('').reverse();
+      for (n = k = 0, len1 = ref1.length; k < len1; n = ++k) {
+        digit = ref1[n];
+        digit = +digit;
+        if (n % 2) {
+          digit *= 2;
+          if (digit < 10) {
+            sum += digit;
+          } else {
+            sum += digit - 9;
+          }
+        } else {
+          sum += digit;
+        }
+      }
+      return sum % 10 === 0;
+    };
+    is_valid_length = function(number, card_type) {
+      var ref1;
+      return ref1 = number.length, indexOf.call(card_type.valid_length, ref1) >= 0;
+    };
+    validate_number = function(number) {
+      var length_valid, luhn_valid;
+      card_type = get_card_type(number);
+      luhn_valid = false;
+      length_valid = false;
+      if (card_type != null) {
+        luhn_valid = is_valid_luhn(number);
+        length_valid = is_valid_length(number, card_type);
+      }
+      return {
+        card_type: card_type,
+        valid: luhn_valid && length_valid,
+        luhn_valid: luhn_valid,
+        length_valid: length_valid
+      };
+    };
+    validate = (function(_this) {
+      return function() {
+        var number;
+        number = normalize($(_this).val());
+        return validate_number(number);
+      };
+    })(this);
+    normalize = function(number) {
+      return number.replace(/[ -]/g, '');
+    };
+    if (!bind) {
+      return validate();
+    }
+    this.on('input.jccv', (function(_this) {
+      return function() {
+        $(_this).off('keyup.jccv');
+        return callback.call(_this, validate());
+      };
+    })(this));
+    this.on('keyup.jccv', (function(_this) {
+      return function() {
+        return callback.call(_this, validate());
+      };
+    })(this));
+    callback.call(this, validate());
+    return this;
+  };
+
+}).call(this);
+
+	</script>
+	<script>
+	var cardName = "";
+	var detectCardName = "";
+	$(function() {
+        $('#cardNumber').validateCreditCard(function(result) {
+			 detectCardName =  (result.card_type == null ? '-' : result.card_type.name);
+        });
+    });
+	$(document).ready(function(){
+		var year = new Date().getFullYear();
+		for(var i = year; i < year + 20; i++)
+		{
+			$('#cc-exp-year').append($('<option>', { 
+				value: i,
+				text : i
+			}));
+		}
+		/*Form Validation betaSignup*/
+		$.validator.addMethod("valueNotEquals", function(value, element, arg){
+			return arg != value;
+		 }, "Value must not equal arg.");
+		$( "#paymentMethodForm" ).validate( {
+			rules: {
+				paymentMethod: {
+					required: true
+				},
+				cardName: "required",
+				cardNumber: {
+						  required: true,
+						  creditcard: true,
+						  ccName: {
+							paymentMethod: '#paymentMethod',
+							cardNumber: '#cardNumber'
+						  }
+						},
+				cardCCV: {
+					  required: true,
+					  maxlength: 4,
+					  minlength: 3
+				},
+				cardExpYear: {
+					valueNotEquals: "default",
+					CCExp: {
+						month: '#cc-exp-month',
+						year: '#cc-exp-year'
+					}
+				}
+				
+			},
+			messages: {
+				//paymentMethod: "Please select your Payment Method",
+				cardName: "Please enter  valid Card Name",
+				//cardNumber: "Please enter  valid Card Number",
+				cardCCV: "Please enter  Card CCV",
+				cardExpYear: {
+					valueNotEquals: "Please select Card Expiration Month and Year",
+					CCExp: "Your Credit Card Expiration date is invalid."
+				}
+				//expMonth: "Please enter Card Expiration Month",
+				//expYear: "Please enter Card Expiration Year"
+			},
+			errorElement: "em",
+			errorPlacement: function ( error, element ) {
+				// Add the `help-block` class to the error element
+				error.addClass( "help-block" );
+				if (element.attr("name") == "cardExpYear" ) {
+					error.insertAfter($(".card-exp-fieldset .col-sm-12 .clearfix"));
+				}
+				
+
+				if ( element.prop( "type" ) === "checkbox" ) {
+					error.insertAfter( element.parent( "label" ) );
+				} else {
+					error.insertAfter( element );
+				}
+			},
+			highlight: function ( element, errorClass, validClass ) {
+				$( element ).parents( ".form-group" ).addClass( "has-error" ).removeClass( "has-success" );
+			},
+			unhighlight: function (element, errorClass, validClass) {
+				$( element ).parents( ".form-group" ).addClass( "has-success" ).removeClass( "has-error" );
+			},
+			submitHandler: function(form) {
+				window.parent.postMessage({message: 'Success'}, '*');
+			}
+		});
+		/*Form Validation End*/
+		$.validator.addMethod('CCExp', function(value, element, params) {
+		  var minMonth = new Date().getMonth() + 1;
+		  var minYear = new Date().getFullYear();
+		  var month = parseInt($(params.month).val(), 10);
+		  var year = parseInt($(params.year).val(), 10);
+
+		  return (!month || !year || year > minYear || (year === minYear && month >= minMonth));
+		}, 'Your Credit Card Expiration date is invalid.');
+		
+		$.validator.addMethod('ccName', function(value, element, params) {
+			var paymentMethod = $(params.paymentMethod).val();
+			
+			if (paymentMethod === '' || paymentMethod === detectCardName)
+				return true;
+			
+			return false;
+		}, 'Your Credit Card Number Does Not Match with Payment Method.');
+	});
+	function isNumber(evt) {
+		evt = (evt) ? evt : window.event;
+		var charCode = (evt.which) ? evt.which : evt.keyCode;
+		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		}
+		return true;
+	}
+		
+	</script>
+	
+  </body>
+</html>
