@@ -622,7 +622,7 @@
 				<div class="clearfix gray-box-border">
 					<div class="row">
 						<div class="col-sm-12 col-md-8 checkout-items">
-							<div class="delivery-pickup-box checkout-data-box">
+							<div class="delivery-pickup-box checkout-data-box active">
 								<h3>Delivery and Pickup</h3>
 								<div class="check-inner-box">
 									<div class="pickup-info">
@@ -651,16 +651,16 @@ order is ready for pickup.
 															<img src="images/" alt="">
 														</div>
 														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
+															<button class="check-item-minus">
 																-
-															</span>
+															</button>
 															<span class="check-item-number">
 																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
 															</span>
-															<span class="check-item-plus">
+															<button class="check-item-plus">
 																+
-															</span>
-															
+															</button>
+															<div class="form-loading hidden"></div>
 														</div>
 													</div>
 													<div class="check-item-price">
@@ -674,15 +674,16 @@ order is ready for pickup.
 															<img src="images/" alt="">
 														</div>
 														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
+															<button class="check-item-minus">
 																-
-															</span>
+															</button>
 															<span class="check-item-number">
 																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
 															</span>
-															<span class="check-item-plus">
+															<button class="check-item-plus">
 																+
-															</span>
+															</button>
+															<div class="form-loading hidden"></div>
 														</div>
 													</div>
 													<div class="check-item-price">
@@ -696,15 +697,16 @@ order is ready for pickup.
 															<img src="images/" alt="">
 														</div>
 														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
+															<button class="check-item-minus">
 																-
-															</span>
+															</button>
 															<span class="check-item-number">
 																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
 															</span>
-															<span class="check-item-plus">
+															<button class="check-item-plus">
 																+
-															</span>
+															</button>
+															<div class="form-loading hidden"></div>
 														</div>
 													</div>
 													<div class="check-item-price">
@@ -718,15 +720,16 @@ order is ready for pickup.
 															<img src="images/" alt="">
 														</div>
 														<div class="check-item-addon clearfix">
-															<span class="check-item-minus">
+															<button class="check-item-minus">
 																-
-															</span>
+															</button>
 															<span class="check-item-number">
 																<input type="text" class="check-item-number-field" onkeypress="return isNumber(event)" value="1">
 															</span>
-															<span class="check-item-plus">
+															<button class="check-item-plus">
 																+
-															</span>
+															</button>
+															<div class="form-loading hidden"></div>
 														</div>
 													</div>
 													<div class="check-item-price">
@@ -798,7 +801,7 @@ order is ready for pickup.
 								</div>
 							</div>
 							<!--//-->
-							<div id="checkBilling" class="payment-billing-box checkout-data-box active">
+							<div id="checkBilling" class="payment-billing-box checkout-data-box">
 								<h3>Payment and Billing</h3>
 								<div class="check-inner-box">
 									<h4>Payment Information</h4>

@@ -6292,6 +6292,7 @@ label .age {
 	max-width: 100%;
 }
 .check-item-addon {
+	position: relative;
 }
 .check-item-minus {
 	width: 43px;
@@ -6304,6 +6305,8 @@ label .age {
 	vertical-align: top;
 	cursor: pointer;
 	line-height: 48px;
+	background: none;
+    border: 0;
 }
 .check-item-slide:focus {
 	outline: 0;
@@ -6347,6 +6350,8 @@ label .age {
 	vertical-align: top;
 	cursor: pointer;
 	line-height: 48px;
+	background: none;
+    border: 0;
 }
 .check-items-slider-box {
 	padding: 20px 0 0;
@@ -7656,4 +7661,30 @@ label .age {
 .btn-disabled:hover {
 	background-color: #337ab7 !important;
     border-color: #2e6da4 !important;
+}
+.check-item-addon .form-loading {
+	position: absolute;
+	top: 9px;
+	left: 30%;
+}
+.promotion-txt-section {
+	padding: 20px 0;
+	border-bottom: 1px solid #d2d2d2;
+	text-align: center;
+}
+.promotion-txt-section h3 {
+	margin: 0;
+	padding: 0;
+	color: #00af41;
+	font-size: 24px;
+	font-weight: bold;
+}
+.promotion-txt-section h3 a {
+	color: #212121;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: underline !important;
+}
+.promotion-txt-section h3 a:hover {
+	text-decoration: underline !important;
 }
