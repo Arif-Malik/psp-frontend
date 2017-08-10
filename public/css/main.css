@@ -7688,3 +7688,6 @@ label .age {
 .promotion-txt-section h3 a:hover {
 	text-decoration: underline !important;
 }
+.checkout-data-box.save-active > h3 {
+    cursor: pointer;
+}
